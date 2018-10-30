@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTeacherAccountActivity">
+
+    <View
+        android:id="@+id/actionBar"
+        style="@style/ActionBar"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createTeacherAccount"
+        style="@style/LargeTextWithShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_teacher_account"
+        app:layout_constraintBottom_toTopOf="@+id/actionBar"
+        app:layout_constraintEnd_toStartOf="@+id/actionBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/actionBar"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar" />
+
+    <ImageView
+        android:id="@+id/exitButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickExit"
+        app:layout_constraintBottom_toBottomOf="@+id/actionBar"
+        app:layout_constraintStart_toStartOf="@+id/actionBar"
+        app:layout_constraintTop_toTopOf="@+id/actionBar"
+        app:srcCompat="@drawable/exit" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar">
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!-- First Name -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/firstName"
+                style="@style/TextInputLayout"
+                android:layout_marginTop="200dp">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/TextInputEditText"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- lastName Name -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lastName"
+                style="@style/TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/TextInputEditText"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Username -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/username"
+                style="@style/TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/TextInputEditText"
+                    android:hint="@string/username" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Password -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password"
+                style="@style/TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/TextInputEditText"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Reenter Password -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/reenterPassword"
+                style="@style/TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/TextInputEditText"
+                    android:hint="@string/reenter_password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Email Address -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailAddress"
+                style="@style/TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/TextInputEditText"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Spinner with elementary schools,
+                 Maybe add the option to add a school if it's not there -->
+            <Spinner
+                android:id="@+id/schools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Create Account Button -->
+            <Button
+                android:id="@+id/createAccountButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

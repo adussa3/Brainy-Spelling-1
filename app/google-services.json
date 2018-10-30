@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "257337801941",
+    "firebase_url": "https://spell-a-rhyme-90256.firebaseio.com",
+    "project_id": "spell-a-rhyme-90256",
+    "storage_bucket": "spell-a-rhyme-90256.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257337801941:android:85d9a089fc6b0e40",
+        "android_client_info": {
+          "package_name": "com.example.jda8301.spellarhyme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257337801941-6na5opjbu8kobqvps52aeqcd4pa2vt4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jda8301.spellarhyme",
+            "certificate_hash": "47f99dd660d1a70a9d81c8874f389de4d911240b"
+          }
+        },
+        {
+          "client_id": "257337801941-ubrogt5i3er5idpg7ahu8au8covfbajh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9gqaqdMbB6ue1qFRDqQXL9l5gun1Ybn8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257337801941-ubrogt5i3er5idpg7ahu8au8covfbajh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

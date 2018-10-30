@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Welcome Activity -->
+    <string name="welcome_message">Welcome to Spell A Rhyme!</string>
+
+    <!-- Home Activity -->
+    <string name="app_name">Spell A Rhyme</string>
+    <string name="im_a_teacher">I\'m a Teacher</string>
+
+    <!-- Teacher Login & Create Teacher Account Activities -->
+    <string name="teacher_login">Teacher Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="create_teacher_account">Create Teacher Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="reenter_password">Reenter Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="create_account">Create Account</string>
+</resources>
