@@ -1,5 +1,8 @@
 <resources>
 
+    <!-- Action Bar XML -->
+    <string name="placeholder">CHANGE NAME</string>
+
     <!-- Welcome Activity -->
     <string name="welcome_message">Welcome to Spell A Rhyme!</string>
 
@@ -21,4 +24,5 @@
     <string name="reenter_password">Reenter Password</string>
     <string name="email_address">Email Address</string>
     <string name="create_account">Create Account</string>
+
 </resources>

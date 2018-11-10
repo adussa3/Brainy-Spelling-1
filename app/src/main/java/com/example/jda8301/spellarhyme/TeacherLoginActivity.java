@@ -20,6 +20,11 @@ public class TeacherLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_login);
 
+        // Change Action Bar Title
+        View actionBar = findViewById(R.id.actionBar);
+        TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
+        actionBarTitle.setText(getString(R.string.teacher_login));
+
         // Initialize Variables
         exit = (ImageView) findViewById(R.id.exitButton);
         forgotPassword = (TextView) findViewById(R.id.forgotPassword);

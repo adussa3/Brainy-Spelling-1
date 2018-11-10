@@ -6,41 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".CreateTeacherAccountActivity">
 
-    <View
+    <include
         android:id="@+id/actionBar"
-        style="@style/ActionBar"
-        android:layout_width="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/createTeacherAccount"
-        style="@style/LargeTextWithShadow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/create_teacher_account"
-        app:layout_constraintBottom_toTopOf="@+id/actionBar"
-        app:layout_constraintEnd_toStartOf="@+id/actionBar"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/actionBar"
-        app:layout_constraintTop_toBottomOf="@+id/actionBar" />
-
-    <ImageView
-        android:id="@+id/exitButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:background="@android:color/transparent"
-        android:onClick="onClickExit"
-        app:layout_constraintBottom_toBottomOf="@+id/actionBar"
-        app:layout_constraintStart_toStartOf="@+id/actionBar"
-        app:layout_constraintTop_toTopOf="@+id/actionBar"
-        app:srcCompat="@drawable/exit" />
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <ScrollView
-        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -49,16 +21,18 @@
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
-            android:layout_width="500dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingTop="25dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="25dp">
 
             <!-- First Name -->
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/firstName"
-                style="@style/TextInputLayout"
-                android:layout_marginTop="200dp">
+                style="@style/TextInputLayout">
 
                 <android.support.design.widget.TextInputEditText
                     style="@style/TextInputEditText"
@@ -127,7 +101,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <!-- Spinner with elementary schools,
-                 Maybe add the option to add a school if it's not there -->
+             Maybe add the option to add a school if it's not there -->
             <Spinner
                 android:id="@+id/schools"
                 android:layout_width="match_parent"
@@ -142,6 +116,7 @@
                 android:text="@string/create_account" />
 
         </LinearLayout>
+
     </ScrollView>
 
 

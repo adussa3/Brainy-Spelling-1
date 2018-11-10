@@ -1,0 +1,56 @@
+<!-- https://developer.android.com/training/improving-layouts/reusing-layouts -->
+
+<!--
+    How to override an include's textview
+    https://stackoverflow.com/questions/9127013/include-a-textview-and-override-the-text
+
+    How to set text from string.xml
+    https://stackoverflow.com/questions/6938838/how-to-set-text-to-a-text-view-from-a-string-xml-and-normal-string-at-a-time
+ -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/actionBar"
+            style="@style/ActionBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/actionBarTitle"
+            style="@style/LargeTextWithShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder"
+            app:layout_constraintBottom_toTopOf="@+id/actionBar"
+            app:layout_constraintEnd_toStartOf="@+id/actionBar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/actionBar"
+            app:layout_constraintTop_toBottomOf="@+id/actionBar" />
+
+        <ImageView
+            android:id="@+id/exitButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:onClick="onClickExit"
+            app:layout_constraintBottom_toBottomOf="@+id/actionBar"
+            app:layout_constraintStart_toStartOf="@+id/actionBar"
+            app:layout_constraintTop_toTopOf="@+id/actionBar"
+            app:srcCompat="@drawable/exit" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
