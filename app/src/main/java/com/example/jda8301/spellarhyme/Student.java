@@ -10,8 +10,6 @@ public class Student extends Player {
     private School school;
     private Classroom classroom;
 
-    // How to add profile picture???
-
     // student login
     private int password;
 
