@@ -24,5 +24,6 @@
     <string name="reenter_password">Reenter Password</string>
     <string name="email_address">Email Address</string>
     <string name="create_account">Create Account</string>
+    <string name="title_activity_teacher_home">teacher_home</string>
 
 </resources>

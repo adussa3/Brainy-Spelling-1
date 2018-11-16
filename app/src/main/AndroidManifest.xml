@@ -24,7 +24,10 @@
         <activity android:name=".JoinClassActivity" />
         <activity android:name=".TeacherLoginActivity" />
         <activity android:name=".PlayerLoginActivity" />
-        <activity android:name=".CreateTeacherAccountActivity"></activity>
+        <activity android:name=".CreateTeacherAccountActivity" />
+        <activity
+            android:name=".teacher_home"
+            android:label="@string/title_activity_teacher_home"></activity>
     </application>
 
 </manifest>
