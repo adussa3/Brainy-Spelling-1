@@ -24,5 +24,10 @@
     <string name="reenter_password">Reenter Password</string>
     <string name="email_address">Email Address</string>
     <string name="create_account">Create Account</string>
+    <string name="title_activity_user_profile_selection">UserProfileSelection</string>
+
+    <!-- User Profile Selection Activity -->
+    <string name="who_playing">Who\'s Playing</string>
+    <string name="create_profile">Create Profile</string>
 
 </resources>

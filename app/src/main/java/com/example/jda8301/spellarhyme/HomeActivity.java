@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void onClickPlayerLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(), PlayerLoginActivity.class);
+        Intent intent = new Intent(getApplicationContext(), UserProfileSelection.class);
         startActivity(intent);
     }
 
