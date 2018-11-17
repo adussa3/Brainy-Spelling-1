@@ -33,9 +33,11 @@ public class Student extends Player {
 
     /**********************************************************************/
 
-    // constructor
-    public Student(String firstName, String lastName, School school, Classroom classroom, int password) {
-        super(firstName, lastName);
+    // constructors
+    public Student() {}
+
+    public Student(String firstName, String lastName, String profile, School school, Classroom classroom, int password) {
+        super(firstName, lastName, profile);
 
         this.school = school;
         this.classroom = classroom;

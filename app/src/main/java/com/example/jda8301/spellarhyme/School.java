@@ -17,15 +17,20 @@ public class School {
     private List<Teacher> teachers; // do we need a list of teachers? I'm not sure, maybe the school
                                     // only needs the classes it has, but what information does it
                                     // need from teachers?
+
     private List<Student> students; // do we need a list of students? I don't think we need this
                                     // because the classrooms already have a list of students
 
     private List<Classroom> classrooms;
 
     // constructors
+    public School() {}
+
     public School(String name)  {
-        this(name, new LinkedList<Teacher>(), new LinkedList<Student>(), new LinkedList<Classroom>()); // should we use an arraylist or a linkedlist?
-    }                                                                       // what would be better for our application?
+        // should we use an arraylist or a linkedlist?
+        // what would be better for our application?
+        this(name, new LinkedList<Teacher>(), new LinkedList<Student>(), new LinkedList<Classroom>());
+    }
 
     public School(String name, List<Teacher> teachers, List<Student> students, List<Classroom> classrooms) {
         this.name = name;

@@ -1,16 +1,14 @@
 package com.example.jda8301.spellarhyme;
 
-import java.util.List;
-
 public abstract class User {
 
     // field/instance variables
     private String firstName;
     private String lastName;
 
-    // How to add profile picture???
+    // constructors
+    public User() {}
 
-    // constructor
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
