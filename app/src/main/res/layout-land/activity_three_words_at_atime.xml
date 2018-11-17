@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThreeWordsAtATime">
+
+    <Button
+        android:id="@+id/xButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@+id/oButton"
+        app:layout_constraintTop_toBottomOf="@+id/fButton"
+        tools:layout_editor_absoluteX="117dp" />
+
+    <Button
+        android:id="@+id/oButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="o"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="f"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/rButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="r"
+        app:layout_constraintBottom_toTopOf="@+id/mButton"
+        app:layout_constraintTop_toBottomOf="@+id/iButton"
+        tools:layout_editor_absoluteX="177dp" />
+
+    <Button
+        android:id="@+id/aButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="a"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/iButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="i"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/pButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="p"
+        app:layout_constraintBottom_toTopOf="@+id/gButton"
+        app:layout_constraintTop_toBottomOf="@+id/aButton"
+        tools:layout_editor_absoluteX="54dp" />
+
+    <Button
+        android:id="@+id/gButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="g"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <Button
+        android:id="@+id/mButton"
+        android:layout_width="45"
+        android:layout_height="45"
+        android:text="m"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <ImageView
+        android:id="@+id/ram1"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:src="@drawable/ram1"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/ram2"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ram2"
+        app:layout_constraintEnd_toStartOf="@+id/ram3"
+        app:layout_constraintStart_toEndOf="@+id/ram1"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/ram3"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:src="@drawable/ram3"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/pig1"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/pig1"
+        app:layout_constraintEnd_toStartOf="@+id/pig2"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/pig2"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/pig2"
+        app:layout_constraintEnd_toStartOf="@+id/pig3"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/pig3"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:src="@drawable/pig3"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/fox1"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:src="@drawable/fox1"
+        tools:layout_editor_absoluteX="446dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/fox2"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/fox2"
+        app:layout_constraintEnd_toStartOf="@+id/fox3"
+        app:layout_constraintStart_toEndOf="@+id/fox1"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/fox3"
+        android:layout_width="30"
+        android:layout_height="65"
+        android:src="@drawable/fox3"
+        tools:layout_editor_absoluteX="519dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+</android.support.constraint.ConstraintLayout>
