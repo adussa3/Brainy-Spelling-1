@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:onClick="onClickTeacherLogin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/exitButton"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onClickExit"
+            app:srcCompat="@drawable/exit" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/LargeTextWithShadow"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/black"
+            android:text="Who's Playing?"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/midSection"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:id="@+id/profile1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/profilePic1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chimp" />
+
+            <TextView
+                android:id="@+id/name1"
+                style="@style/LargeTextWithShadow"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="@android:color/black"
+                android:text="Bob"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/profilePic2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="onProfile"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dolphin" />
+
+            <TextView
+                android:id="@+id/name2"
+                style="@style/LargeTextWithShadow"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="@android:color/black"
+                android:text="Bob"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/profilePic3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:onClick="onProfile"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lion" />
+
+            <TextView
+                android:id="@+id/name3"
+                style="@style/LargeTextWithShadow"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="@android:color/black"
+                android:text="Bob"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/forward" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/createProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:onClick="onCreateProfile"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/addButton"
+            android:layout_width="63dp"
+            android:layout_height="61dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/add" />
+
+        <TextView
+            android:id="@+id/createProfileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_profile"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>

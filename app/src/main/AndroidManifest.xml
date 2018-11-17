@@ -26,7 +26,7 @@
         <activity android:name=".PlayerLoginActivity" />
         <activity android:name=".CreateTeacherAccountActivity" />
         <activity
-            android:name=".UserProfileSelection"
+            android:name=".UserProfileSelectionActivity"
             android:label="@string/title_activity_user_profile_selection"></activity>
     </application>
 
