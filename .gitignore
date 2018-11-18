@@ -66,3 +66,5 @@ fastlane/readme.md
 
 # Hidden Mac Files
 .DS_Store
+
+\.idea/

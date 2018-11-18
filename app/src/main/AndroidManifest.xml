@@ -26,7 +26,7 @@
         <activity android:name=".PlayerLoginActivity" />
         <activity android:name=".CreateTeacherAccountActivity" />
         <activity android:name=".oneWordListActivity" />
-        <activity android:name=".oneWordLevelsActivity"></activity>
+        <activity android:name=".oneWordLevelsActivity" ></activity>
     </application>
 
 </manifest>
