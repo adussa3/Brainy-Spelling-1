@@ -9,7 +9,11 @@
 **.class
 
 # Generated files
-/app/
+app/.idea/
+app/.settings/
+app/build/
+app/bin/
+**.classpath 
 **.bin
 /gen/
 /out/
@@ -39,6 +43,7 @@ local.properties
 /.idea/
 **/.settings
 
+
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.
 #*.jks
@@ -59,3 +64,4 @@ freeline_project_description.json
 
 # Hidden Mac Files
 **.DS_Store
+.idea/misc.xml
