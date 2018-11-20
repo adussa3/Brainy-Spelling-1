@@ -13,7 +13,7 @@ app/.idea/
 app/.settings/
 app/build/
 app/bin/
-**.classpath 
+**.classpath
 **.bin
 /gen/
 /out/
@@ -37,7 +37,7 @@ local.properties
 # Android Studio captures folder
 /captures/
 
-# IntelliJ 
+# IntelliJ
 **.iml
 **.project
 /.idea/
@@ -64,4 +64,7 @@ freeline_project_description.json
 
 # Hidden Mac Files
 **.DS_Store
-.idea/misc.xml
+
+app/\.DS_Store
+
+\.idea/

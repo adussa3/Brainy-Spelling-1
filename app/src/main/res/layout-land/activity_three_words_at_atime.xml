@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThreeWordsAtATime">
+
+    <Button
+        android:id="@+id/xButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="x"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/oButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="o"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="f"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <Button
+        android:id="@+id/rButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="r"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/aButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="a"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <Button
+        android:id="@+id/iButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="i"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <Button
+        android:id="@+id/pButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="p"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/gButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="g"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <Button
+        android:id="@+id/mButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="m"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <ImageView
+        android:id="@+id/ram1"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ram1"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/ram2"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ram2"
+        app:layout_constraintEnd_toStartOf="@+id/ram3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ram1"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/ram3"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ram3"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/pig1"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:src="@drawable/pig1"
+        app:layout_constraintStart_toEndOf="@+id/ram3"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/pig2"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:src="@drawable/pig2"
+        app:layout_constraintEnd_toStartOf="@+id/pig3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pig1"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/pig3"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:src="@drawable/pig3"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageView
+        android:id="@+id/fox1"
+        android:layout_width="65dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fox1"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <ImageView
+        android:id="@+id/fox2"
+        android:layout_width="65dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fox2"
+        app:layout_constraintEnd_toStartOf="@+id/fox3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fox1"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <ImageView
+        android:id="@+id/fox3"
+        android:layout_width="65dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fox3"
+        tools:layout_editor_absoluteX="450dp"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:text="F"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/fox1"
+        tools:layout_editor_absoluteX="327dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:text="O"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/fox2" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/fox3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fox3"
+        app:layout_constraintTop_toBottomOf="@+id/fox3" />
+
+</android.support.constraint.ConstraintLayout>
