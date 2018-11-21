@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class oneWordListActivity extends AppCompatActivity {
 
     private ImageView exit;
+    private ImageView fox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +24,21 @@ public class oneWordListActivity extends AppCompatActivity {
 
         // Initialize Variables
         exit = (ImageView) findViewById(R.id.exitButton);
+        fox = (ImageView) findViewById(R.id.fox);
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
+        Util.scaleOnTouch(fox);
     }
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), oneWordLevelsActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickFox(View view) {
+        Intent intent = new Intent(getApplicationContext(), oneWordGameActivity.class);
         startActivity(intent);
     }
 }

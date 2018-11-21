@@ -42,7 +42,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickLevel"
                 android:text="@string/level_2" />
 
         </TableRow>
@@ -57,7 +56,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickLevel"
                 android:text="@string/level_3" />
 
             <Button
@@ -65,7 +63,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickLevel"
                 android:text="@string/level_4" />
 
         </TableRow>
@@ -80,7 +77,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickLevel"
                 android:text="@string/level_5" />
 
             <Button
@@ -88,7 +84,6 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickLevel"
                 android:text="@string/level_6" />
 
         </TableRow>
