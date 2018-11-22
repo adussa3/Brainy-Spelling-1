@@ -10,73 +10,105 @@
         android:id="@+id/xButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="x"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintBottom_toTopOf="@+id/oButton"
+        app:layout_constraintEnd_toStartOf="@+id/rButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pButton"
+        app:layout_constraintTop_toBottomOf="@+id/fButton"
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/oButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
         android:text="o"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gButton" />
 
     <Button
         android:id="@+id/fButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="8dp"
         android:text="f"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintEnd_toStartOf="@+id/iButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/aButton"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/rButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="r"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintBottom_toTopOf="@+id/mButton"
+        app:layout_constraintTop_toBottomOf="@+id/iButton"
+        app:layout_constraintVertical_bias="0.333"
+        tools:layout_editor_absoluteX="177dp" />
 
     <Button
         android:id="@+id/aButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="48dp"
         android:text="a"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="152dp" />
 
     <Button
         android:id="@+id/iButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginTop="152dp"
         android:text="i"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="177dp" />
 
     <Button
         android:id="@+id/pButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="p"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintBottom_toTopOf="@+id/gButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aButton"
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/gButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="60dp"
         android:text="g"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/mButton"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginBottom="60dp"
         android:text="m"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="177dp" />
 
     <ImageView
         android:id="@+id/ram1"
@@ -154,13 +186,14 @@
         android:id="@+id/editText2"
         android:layout_width="50dp"
         android:layout_height="40dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:inputType="textCapCharacters"
         android:text="F"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/fox1"
-        tools:layout_editor_absoluteX="334dp" />
+        app:layout_constraintStart_toEndOf="@+id/mButton"
+        app:layout_constraintTop_toBottomOf="@+id/fox1" />
 
     <EditText
         android:id="@+id/editText4"
@@ -168,13 +201,13 @@
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="19dp"
         android:ems="10"
         android:inputType="textCapCharacters"
         android:text="O"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/editText5"
-        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toEndOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/fox2" />
 
@@ -183,11 +216,12 @@
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
         android:ems="10"
         android:inputType="textCapCharacters"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        tools:layout_editor_absoluteX="444dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView7"
