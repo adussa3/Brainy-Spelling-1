@@ -6,110 +6,203 @@
     android:layout_height="match_parent"
     tools:context=".JoinClassActivity">
 
-    <ImageView
-        android:id="@+id/button1"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num1"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="98dp" />
-
-    <ImageView
-        android:id="@+id/button2"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num2"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="98dp" />
-
-    <ImageView
-        android:id="@+id/button3"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num3"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="98dp" />
-
-    <ImageView
-        android:id="@+id/button4"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num4"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="169dp" />
-
-    <ImageView
-        android:id="@+id/button5"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num5"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="169dp" />
-
-    <ImageView
-        android:id="@+id/button6"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num6"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="169dp" />
-
-    <ImageView
-        android:id="@+id/button7"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num7"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="239dp" />
-
-    <ImageView
-        android:id="@+id/button8"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num8"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="239dp" />
-
-    <ImageView
-        android:id="@+id/button9"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num9"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="239dp" />
-
-    <ImageView
-        android:id="@+id/button0"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@drawable/num0"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="309dp" />
-
-    <ImageView
-        android:id="@+id/backspace"
-        android:layout_width="60dp"
-        android:layout_height="70dp"
-        android:src="@android:drawable/ic_input_delete"
-        tools:layout_editor_absoluteX="433dp"
-        tools:layout_editor_absoluteY="28dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="39dp" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="179dp"
-        android:layout_height="42dp"
+        android:layout_width="225dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Enter Passcode:"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/inputBox1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:srcCompat="@drawable/empty_slot"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <ImageView
+            android:id="@+id/inputBox2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/inputBox4"
+            app:layout_constraintStart_toEndOf="@+id/inputBox1"
+            app:srcCompat="@drawable/empty_slot"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <ImageView
+            android:id="@+id/inputBox3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/backspace"
+            app:srcCompat="@drawable/empty_slot"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <ImageView
+            android:id="@+id/inputBox4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/inputBox3"
+            app:srcCompat="@drawable/empty_slot"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <ImageView
+            android:id="@+id/backspace"
+            android:layout_width="56dp"
+            android:layout_height="65dp"
+            android:src="@android:drawable/ic_input_delete"
+            tools:layout_editor_absoluteX="449dp"
+            tools:layout_editor_absoluteY="48dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="65dp">
+
+            <ImageView
+                android:id="@+id/button1"
+                android:layout_width="67dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="15dp"
+                android:src="@drawable/num1" />
+
+            <ImageView
+                android:id="@+id/button2"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:src="@drawable/num2" />
+
+            <ImageView
+                android:id="@+id/button3"
+                android:layout_width="64dp"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="15dp"
+                android:src="@drawable/num3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/button4"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:src="@drawable/num4"
+                tools:layout_editor_absoluteX="190dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <ImageView
+                android:id="@+id/button5"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/num5"
+                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintStart_toEndOf="@+id/button4"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <ImageView
+                android:id="@+id/button6"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:src="@drawable/num6"
+                tools:layout_editor_absoluteX="347dp"
+                tools:layout_editor_absoluteY="189dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/button7"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:src="@drawable/num7"
+                tools:layout_editor_absoluteX="190dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <ImageView
+                android:id="@+id/button8"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/num8"
+                app:layout_constraintEnd_toStartOf="@+id/button9"
+                app:layout_constraintStart_toEndOf="@+id/button7"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <ImageView
+                android:id="@+id/button9"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:src="@drawable/num9"
+                tools:layout_editor_absoluteX="347dp"
+                tools:layout_editor_absoluteY="254dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/button0"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:src="@drawable/num0"
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="319dp" />
+
+            <ImageView
+                android:id="@+id/enterButton"
+                android:layout_width="55dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="22dp"
+                app:layout_constraintStart_toEndOf="@+id/button0"
+                app:layout_constraintTop_toBottomOf="@+id/button9"
+                app:srcCompat="@drawable/continue_button" />
+        </TableRow>
+    </TableLayout>
 
 </android.support.constraint.ConstraintLayout>
