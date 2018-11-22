@@ -111,55 +111,55 @@
         tools:layout_editor_absoluteX="177dp" />
 
     <ImageView
-        android:id="@+id/ram1"
+        android:id="@+id/ram1_grayscale"
         android:layout_width="40dp"
         android:layout_height="75dp"
-        android:src="@drawable/ram1"
+        android:src="@drawable/ram1_grayscale"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
-        android:id="@+id/ram2"
+        android:id="@+id/ram2_grayscale"
         android:layout_width="40dp"
         android:layout_height="75dp"
-        android:src="@drawable/ram2"
-        app:layout_constraintEnd_toStartOf="@+id/ram3"
+        android:src="@drawable/ram2_grayscale"
+        app:layout_constraintEnd_toStartOf="@+id/ram3_grayscale"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ram1"
+        app:layout_constraintStart_toEndOf="@+id/ram1_grayscale"
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
-        android:id="@+id/ram3"
+        android:id="@+id/ram3_grayscale"
         android:layout_width="40dp"
         android:layout_height="75dp"
-        android:src="@drawable/ram3"
+        android:src="@drawable/ram3_grayscale"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
-        android:id="@+id/pig1"
+        android:id="@+id/pig1_grayscale"
         android:layout_width="40dp"
         android:layout_height="75dp"
         android:layout_marginStart="60dp"
-        android:src="@drawable/pig1"
-        app:layout_constraintStart_toEndOf="@+id/ram3"
+        android:src="@drawable/pig1_grayscale"
+        app:layout_constraintStart_toEndOf="@+id/ram3_grayscale"
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
-        android:id="@+id/pig2"
+        android:id="@+id/pig2_grayscale"
         android:layout_width="40dp"
         android:layout_height="75dp"
-        android:src="@drawable/pig2"
-        app:layout_constraintEnd_toStartOf="@+id/pig3"
+        android:src="@drawable/pig2_grayscale"
+        app:layout_constraintEnd_toStartOf="@+id/pig3_grayscale"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/pig1"
+        app:layout_constraintStart_toEndOf="@+id/pig1_grayscale"
         tools:layout_editor_absoluteY="26dp" />
 
     <ImageView
-        android:id="@+id/pig3"
+        android:id="@+id/pig3_grayscale"
         android:layout_width="40dp"
         android:layout_height="75dp"
-        android:src="@drawable/pig3"
+        android:src="@drawable/pig3_grayscale"
         tools:layout_editor_absoluteX="318dp"
         tools:layout_editor_absoluteY="26dp" />
 
