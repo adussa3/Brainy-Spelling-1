@@ -36,8 +36,6 @@ public class oneWordLevelsActivity extends AppCompatActivity {
 
     public void onClickLevel(View view) {
         Intent intent = new Intent(getApplicationContext(), oneWordListActivity.class);
-        String levelID = getResources().getResourceEntryName(view.getId());
-        intent.putExtra("level", levelID);
         startActivity(intent);
     }
 }
