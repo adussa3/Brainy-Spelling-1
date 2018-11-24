@@ -7,15 +7,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class oneWordListActivity extends AppCompatActivity {
+public class LevelsActivity extends AppCompatActivity {
 
     private ImageView exit;
-    private ImageView fox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_word_list);
+        setContentView(R.layout.activity_levels);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
@@ -24,21 +23,19 @@ public class oneWordListActivity extends AppCompatActivity {
 
         // Initialize Variables
         exit = (ImageView) findViewById(R.id.exitButton);
-        fox = (ImageView) findViewById(R.id.fox);
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
-        Util.scaleOnTouch(fox);
     }
 
     // Intents - goes to a different activity when the button is clicked
-    public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), oneWordLevelsActivity.class);
-        startActivity(intent);
-    }
+//    public void onClickExit(View view) {
+//        Intent intent = new Intent(getApplicationContext(), [INSERT ACTIVITY NAME HERE].class);
+//        startActivity(intent);
+//    }
 
-    public void onClickFox(View view) {
-        Intent intent = new Intent(getApplicationContext(), oneWordGameActivity.class);
+    public void onClickLevel(View view) {
+        Intent intent = new Intent(getApplicationContext(), OneWordAtATimeListActivity.class);
         startActivity(intent);
     }
 }

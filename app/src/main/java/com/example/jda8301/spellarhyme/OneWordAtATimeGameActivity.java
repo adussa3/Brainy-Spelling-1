@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class oneWordGameActivity extends AppCompatActivity {
+public class OneWordAtATimeGameActivity extends AppCompatActivity {
 
     private ImageView exit;
     private ImageView help;
@@ -16,7 +16,7 @@ public class oneWordGameActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_word_game);
+        setContentView(R.layout.activity_one_word_at_a_time_game);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
@@ -50,7 +50,7 @@ public class oneWordGameActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), oneWordListActivity.class);
+        Intent intent = new Intent(getApplicationContext(), OneWordAtATimeListActivity.class);
         startActivity(intent);
     }
 }
