@@ -51,8 +51,8 @@ public class TeacherLoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void onClickSignIn(View view) {
-//        Intent intent = new Intent(getApplicationContext(), .class);
-//        startActivity(intent);
-//    }
+    public void onClickSignIn(View view) {
+        Intent intent = new Intent(getApplicationContext(), TeacherHomeActivity.class);
+        startActivity(intent);
+    }
 }

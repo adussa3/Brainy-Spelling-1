@@ -36,8 +36,8 @@ public class CreateTeacherAccountActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void onClickCreateAccount(View view) {
-//        Intent intent = new Intent(getApplicationContext(), TeacherLoginActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickCreateAccount(View view) {
+        Intent intent = new Intent(getApplicationContext(), TeacherLoginActivity.class);
+        startActivity(intent);
+    }
 }
