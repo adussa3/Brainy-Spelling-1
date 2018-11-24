@@ -29,13 +29,18 @@ public class LevelsActivity extends AppCompatActivity {
     }
 
     // Intents - goes to a different activity when the button is clicked
-//    public void onClickExit(View view) {
-//        Intent intent = new Intent(getApplicationContext(), [INSERT ACTIVITY NAME HERE].class);
-//        startActivity(intent);
-//    }
+    public void onClickExit(View view) {
+        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
+        startActivity(intent);
+    }
 
-    public void onClickLevel(View view) {
+    public void onClickLevelOne(View view) {
         Intent intent = new Intent(getApplicationContext(), OneWordAtATimeListActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickLevelTwo(View view) {
+        Intent intent = new Intent(getApplicationContext(), ThreeWordsAtATimeActivity.class);
         startActivity(intent);
     }
 }

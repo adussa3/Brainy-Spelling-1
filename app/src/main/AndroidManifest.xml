@@ -31,9 +31,7 @@
         <activity android:name=".OneWordAtATimeGameActivity" />
         <activity android:name=".TeacherHomeActivity" />
         <activity android:name=".StudentHomeActivity"></activity>
-        <activity
-            android:name=".UserProfileSelectionActivity"
-            android:label="@string/title_activity_user_profile_selection"></activity>
+        <activity android:name=".UserProfileSelectionActivity"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.example.jda8301.spellarhyme;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,9 +15,9 @@ public class UserProfileSelectionActivity extends AppCompatActivity {
     private ImageView backward;
     private ImageView forward;
 
-    private View profile1;
-    private View profile2;
-    private View profile3;
+    private ImageView profile1;
+    private ImageView profile2;
+    private ImageView profile3;
 
     private LinearLayout creatProfile;
 
@@ -32,9 +33,9 @@ public class UserProfileSelectionActivity extends AppCompatActivity {
         backward = (ImageView) findViewById(R.id.backButton);
         forward = (ImageView) findViewById(R.id.forwardButton);
 
-        profile1 = (LinearLayout) findViewById(R.id.profile1);
-        profile2 = (LinearLayout) findViewById(R.id.profile2);
-        profile3 = (LinearLayout) findViewById(R.id.profile3);
+        profile1 = (ImageView) findViewById(R.id.profilePic1);
+        profile2 = (ImageView) findViewById(R.id.profilePic2);
+        profile3 = (ImageView) findViewById(R.id.profilePic3);
 
         creatProfile = (LinearLayout) findViewById(R.id.createProfile);
 
@@ -57,18 +58,14 @@ public class UserProfileSelectionActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void onProfile(View view) {
-//        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickProfile(View view) {
+        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
+        startActivity(intent);
+    }
 
 //    public void onCreateProfile(View view) {
 //        Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
 //        startActivity(intent);
 //    }
-
-
-
-
 
 }

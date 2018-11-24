@@ -34,7 +34,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickLevel"
+                android:onClick="onClickLevelOne"
                 android:text="@string/level_1" />
 
             <Button
@@ -42,6 +42,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="onClickLevelTwo"
                 android:text="@string/level_2" />
 
         </TableRow>

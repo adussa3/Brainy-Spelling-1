@@ -32,10 +32,10 @@ public class StudentHomeActivity extends AppCompatActivity {
     }
 
     // Intents - goes to a different activity when the button is clicked
-//    public void onClickExit(View view) {
-//        Intent intent = new Intent(getApplicationContext(), .class);
-//        startActivity(intent);
-//    }
+    public void onClickExit(View view) {
+        Intent intent = new Intent(getApplicationContext(), UserProfileSelectionActivity.class);
+        startActivity(intent);
+    }
 
     public void onClickSpell(View view) {
         Intent intent = new Intent(getApplicationContext(), LevelsActivity.class);

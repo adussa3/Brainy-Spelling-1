@@ -70,9 +70,11 @@
             <ImageButton
                 android:id="@+id/profilePic1"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/white"
+                android:onClick="onClickProfile"
+                android:padding="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/chimp" />
 
@@ -83,6 +85,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:shadowColor="@android:color/black"
                 android:text="Bob"
                 android:textAlignment="center"
@@ -106,7 +110,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:onClick="onProfile"
+                android:padding="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/dolphin" />
 
@@ -117,6 +121,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:shadowColor="@android:color/black"
                 android:text="Bob"
                 android:textAlignment="center"
@@ -140,7 +146,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:onClick="onProfile"
+                android:padding="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/lion" />
 
@@ -151,6 +157,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
                 android:shadowColor="@android:color/black"
                 android:text="Bob"
                 android:textAlignment="center"
