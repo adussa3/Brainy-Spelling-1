@@ -27,6 +27,11 @@
 
     <!-- Adds text shadow to headers -->
     <style name="LargeTextWithShadow" parent="@android:style/TextAppearance">
+        <!-- Add padding -->
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+
+        <!-- Stylize text -->
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">40sp</item>
         <item name="android:textStyle">bold</item>

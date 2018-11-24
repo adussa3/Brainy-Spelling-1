@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickJoinClass(View view) {
-        Intent intent = new Intent(getApplicationContext(), JoinClassActivity.class);
+        Intent intent = new Intent(getApplicationContext(), EnterClassroomCodeActivity.class);
         startActivity(intent);
     }
 
