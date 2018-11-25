@@ -31,8 +31,10 @@
 
     <!-- One Word At A Time Activity -->
     <string name="one_word_at_a_time">One Word At A Time</string>
+    <string name="one_word_at_a_time_list">Choose A Word To Spell</string>
 
     <!-- Levels -->
+    <string name="levels">Select A Level</string>
     <string name="level_1">Level 1</string>
     <string name="level_2">Level 2</string>
     <string name="level_3">Level 3</string>
