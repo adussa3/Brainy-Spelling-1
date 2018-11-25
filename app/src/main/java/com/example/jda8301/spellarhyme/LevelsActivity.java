@@ -19,7 +19,7 @@ public class LevelsActivity extends AppCompatActivity {
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText(getString(R.string.one_word_at_a_time));
+        actionBarTitle.setText(getString(R.string.levels));
 
         // Initialize Variables
         exit = (ImageView) findViewById(R.id.exitButton);
