@@ -67,3 +67,7 @@ freeline_project_description.json
 app/\.DS_Store
 
 \.idea/
+
+app/app\.iml
+
+Spell-A-Rhyme\.iml
