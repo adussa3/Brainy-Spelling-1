@@ -1,12 +1,12 @@
 package com.example.jda8301.spellarhyme;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class UserProfileSelectionActivity extends AppCompatActivity {
 
@@ -19,13 +19,18 @@ public class UserProfileSelectionActivity extends AppCompatActivity {
     private ImageView profile2;
     private ImageView profile3;
 
-    private LinearLayout creatProfile;
+    private ImageButton createProfile;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile_selection);
+
+        // Change Action Bar Title
+        View actionBar = findViewById(R.id.actionBar);
+        TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
+        actionBarTitle.setText(getString(R.string.who_playing));
 
         // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
@@ -37,7 +42,7 @@ public class UserProfileSelectionActivity extends AppCompatActivity {
         profile2 = (ImageView) findViewById(R.id.profilePic2);
         profile3 = (ImageView) findViewById(R.id.profilePic3);
 
-        creatProfile = (LinearLayout) findViewById(R.id.createProfile);
+        createProfile = (ImageButton) findViewById(R.id.createProfileButton);
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
@@ -49,7 +54,7 @@ public class UserProfileSelectionActivity extends AppCompatActivity {
         Util.scaleOnTouch(profile2);
         Util.scaleOnTouch(profile3);
 
-        Util.scaleOnTouch(creatProfile);
+        Util.scaleOnTouch(createProfile);
     }
 
     // Intents - goes to a different activity when the button is clicked

@@ -28,6 +28,9 @@
     <!-- User Profile Selection Activity -->
     <string name="who_playing">Who\'s Playing</string>
     <string name="create_profile">Create Profile</string>
+    <string name="Bob">Bob</string>
+    <string name="Jill">Jill</string>
+    <string name="Sally">Sally</string>
 
     <!-- One Word At A Time Activity -->
     <string name="one_word_at_a_time">One Word At A Time</string>

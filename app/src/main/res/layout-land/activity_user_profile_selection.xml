@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/topSection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:onClick="onClickTeacherLogin"
-        android:orientation="horizontal">
+    <include android:id="@+id/actionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <ImageView
-            android:id="@+id/exitButton"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:onClick="onClickExit"
-            app:srcCompat="@drawable/exit" />
+    <!--<LinearLayout-->
+    <!--android:id="@+id/topSection"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:gravity="center|end"-->
+    <!--android:onClick="onClickTeacherLogin"-->
+    <!--android:orientation="horizontal">-->
 
-        <TextView
-            android:id="@+id/title"
-            style="@style/LargeTextWithShadow"
+    <!--<ImageView-->
+    <!--android:id="@+id/exitButton"-->
+    <!--android:layout_width="75dp"-->
+    <!--android:layout_height="75dp"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:onClick="onClickExit"-->
+    <!--app:srcCompat="@drawable/exit" />-->
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:shadowColor="@android:color/black"
-            android:text="Who's Playing?"
-            android:textAlignment="center"
-            android:textAllCaps="false" />
+    <!--<TextView-->
+    <!--android:id="@+id/title"-->
+    <!--style="@style/LargeTextWithShadow"-->
 
-    </LinearLayout>
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:shadowColor="@android:color/black"-->
+    <!--android:text="Who's Playing?"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textAllCaps="false" />-->
+
+    <!--</LinearLayout>-->
 
     <LinearLayout
         android:id="@+id/midSection"
@@ -45,7 +50,7 @@
         android:layout_height="0dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_weight="1"
+        android:layout_weight="1.5"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -70,11 +75,9 @@
             <ImageButton
                 android:id="@+id/profilePic1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:onClick="onClickProfile"
-                android:padding="10dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/chimp" />
 
@@ -85,10 +88,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:shadowColor="@android:color/black"
-                android:text="Bob"
+                android:text="@string/Bob"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="28sp" />
@@ -110,7 +111,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:padding="10dp"
+                android:onClick="onProfile"
                 android:scaleType="fitCenter"
                 android:src="@drawable/dolphin" />
 
@@ -121,10 +122,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:shadowColor="@android:color/black"
-                android:text="Bob"
+                android:text="@string/Jill"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="28sp" />
@@ -146,7 +145,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:background="@android:color/white"
-                android:padding="10dp"
+                android:onClick="onProfile"
                 android:scaleType="fitCenter"
                 android:src="@drawable/lion" />
 
@@ -157,10 +156,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:shadowColor="@android:color/black"
-                android:text="Bob"
+                android:text="@string/Sally"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="28sp" />
@@ -177,31 +174,58 @@
             android:src="@drawable/forward" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/createProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:onClick="onCreateProfile"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+    <!--android:id="@+id/createProfile"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:gravity="center"-->
+    <!--android:onClick="onCreateProfile"-->
+    <!--android:orientation="horizontal">-->
 
-        <ImageView
-            android:id="@+id/addButton"
-            android:layout_width="63dp"
-            android:layout_height="61dp"
-            android:background="@android:color/transparent"
-            app:srcCompat="@drawable/add" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_weight="0.1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="4dp">
 
         <TextView
             android:id="@+id/createProfileText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/create_profile"
+            android:layout_width="185dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Create Profile"
             android:textColor="@android:color/white"
             android:textSize="30sp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/createProfileButton"
+            tools:layout_editor_absoluteY="34dp" />
 
-    </LinearLayout>
+        <!--<ImageView-->
+        <!--android:id="@+id/createProfileButton"-->
+        <!--android:layout_width="63dp"-->
+        <!--android:layout_height="61dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:srcCompat="@drawable/add"-->
+        <!--tools:layout_editor_absoluteY="21dp" />-->
+
+        <ImageButton
+            android:id="@+id/createProfileButton"
+            android:layout_width="63dp"
+            android:layout_height="61dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/add"
+            android:scaleType="fitCenter"
+            tools:layout_editor_absoluteY="21dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <!--</LinearLayout>-->
 
 </LinearLayout>
