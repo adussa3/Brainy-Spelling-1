@@ -4,26 +4,24 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CreateTeacherAccountActivity extends AppCompatActivity {
+public class LevelsActivity extends AppCompatActivity {
 
     private ImageView exit;
-    private Button createAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_teacher_account);
+        setContentView(R.layout.activity_levels);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText(getString(R.string.create_teacher_account));
-        
-        // Initialize variables
+        actionBarTitle.setText(getString(R.string.levels));
+
+        // Initialize Variables
         exit = (ImageView) findViewById(R.id.exitButton);
 
         // Add touch animation to buttons
@@ -32,12 +30,17 @@ public class CreateTeacherAccountActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), TeacherLoginActivity.class);
+        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
     }
 
-    public void onClickCreateAccount(View view) {
-        Intent intent = new Intent(getApplicationContext(), TeacherLoginActivity.class);
+    public void onClickLevelOne(View view) {
+        Intent intent = new Intent(getApplicationContext(), OneWordAtATimeListActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickLevelTwo(View view) {
+        Intent intent = new Intent(getApplicationContext(), ThreeWordsAtATimeActivity.class);
         startActivity(intent);
     }
 }

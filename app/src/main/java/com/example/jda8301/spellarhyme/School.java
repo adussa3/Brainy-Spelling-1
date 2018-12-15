@@ -13,17 +13,31 @@ public class School {
 
     // field/instance variables
     private String name;
-    private List<Teacher> teachers;
+
+    private List<Teacher> teachers; // do we need a list of teachers? I'm not sure, maybe the school
+                                    // only needs the classes it has, but what information does it
+                                    // need from teachers?
+
+    private List<Student> students; // do we need a list of students? I don't think we need this
+                                    // because the classrooms already have a list of students
+
     private List<Classroom> classrooms;
 
     // constructors
-    public School(String name)  {
-        this(name, new LinkedList<Teacher>(), new LinkedList<Classroom>()); // should we use an arraylist or a linkedlist?
-    }                                                                       // what would be better for our application?
+    public School() {}
 
-    public School(String name, List<Teacher> teachers, List<Classroom> classrooms) {
+    public School(String name)  {
+        // should we use an arraylist or a linkedlist?
+        // what would be better for our application?
+        this(name, new LinkedList<Teacher>(), new LinkedList<Student>(), new LinkedList<Classroom>());
+    }
+
+    public School(String name, List<Teacher> teachers, List<Student> students, List<Classroom> classrooms) {
         this.name = name;
+
         this.teachers = teachers;
+        this.students = students;
+
         this.classrooms = classrooms;
     }
 
@@ -47,7 +61,7 @@ public class School {
         this.teachers = teachers;
     }
 
-    // or should we do this? (I think this is a more intuvitive way)
+    // or should we do this? (I think this is a more intuitive way)
     public void addTeacher(Teacher teacher) {
         this.teachers.add(teacher);
     }
@@ -67,12 +81,30 @@ public class School {
         this.classrooms = classrooms;
     }
 
-    // or should we do this? (I think this is a more intuvitive way)
+    // or should we do this? (I think this is a more intuitive way)
     public void addClassroom(Classroom classroom) {
         this.classrooms.add(classroom);
     }
 
     public boolean removeClassroom(Classroom classroom) {
         return this.classrooms.remove(classroom);
+    }
+
+    /**********************************************************************/
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    // should we do this? (standard way)
+    public void setStudents(List<Student> students) { this.students = students; }
+
+    // or should we do this? (I think this is a more intuitive way)
+    public void addStudent(Student student) {
+        this.students.add(student);
+    }
+
+    public boolean removeStudent(Classroom student) {
+        return this.students.remove(student);
     }
 }

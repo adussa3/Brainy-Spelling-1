@@ -25,9 +25,13 @@
         <activity android:name=".TeacherLoginActivity" />
         <activity android:name=".PlayerLoginActivity" />
         <activity android:name=".CreateTeacherAccountActivity" />
-        <activity android:name=".ThreeWordsAtATime"></activity>
-        <activity android:name=".oneWordListActivity" />
-        <activity android:name=".oneWordLevelsActivity" ></activity>
+        <activity android:name=".ThreeWordsAtATimeActivity" />
+        <activity android:name=".OneWordAtATimeListActivity" />
+        <activity android:name=".LevelsActivity" />
+        <activity android:name=".OneWordAtATimeGameActivity" />
+        <activity android:name=".TeacherHomeActivity" />
+        <activity android:name=".StudentHomeActivity"></activity>
+        <activity android:name=".UserProfileSelectionActivity"></activity>
     </application>
 
 </manifest>

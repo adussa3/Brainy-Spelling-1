@@ -25,10 +25,19 @@
     <string name="email_address">Email Address</string>
     <string name="create_account">Create Account</string>
 
+    <!-- User Profile Selection Activity -->
+    <string name="who_playing">Who\'s Playing</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="Bob">Bob</string>
+    <string name="Jill">Jill</string>
+    <string name="Sally">Sally</string>
+
     <!-- One Word At A Time Activity -->
     <string name="one_word_at_a_time">One Word At A Time</string>
+    <string name="one_word_at_a_time_list">Choose A Word To Spell</string>
 
     <!-- Levels -->
+    <string name="levels">Select A Level</string>
     <string name="level_1">Level 1</string>
     <string name="level_2">Level 2</string>
     <string name="level_3">Level 3</string>

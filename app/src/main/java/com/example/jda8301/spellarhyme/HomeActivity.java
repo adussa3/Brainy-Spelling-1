@@ -1,11 +1,9 @@
 package com.example.jda8301.spellarhyme;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -38,7 +36,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void onClickPlayerLogin(View view) {
-        Intent intent = new Intent(getApplicationContext(), PlayerLoginActivity.class);
+        Intent intent = new Intent(getApplicationContext(), UserProfileSelectionActivity.class);
         startActivity(intent);
     }
 

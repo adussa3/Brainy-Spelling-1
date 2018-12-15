@@ -5,21 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class oneWordListActivity extends AppCompatActivity {
+public class ThreeWordsAtATimeActivity extends AppCompatActivity {
 
     private ImageView exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_word_list);
-
-        // Change Action Bar Title
-        View actionBar = findViewById(R.id.actionBar);
-        TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText(getString(R.string.one_word_at_a_time));
+        setContentView(R.layout.activity_three_words_at_a_time);
 
         // Initialize Variables
         exit = (ImageView) findViewById(R.id.exitButton);
@@ -30,7 +24,7 @@ public class oneWordListActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), oneWordLevelsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), LevelsActivity.class);
         startActivity(intent);
     }
 }

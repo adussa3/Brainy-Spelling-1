@@ -37,45 +37,34 @@
     <ImageView
         android:id="@+id/spelling"
         android:layout_width="170dp"
-        android:layout_height="250dp"
+        android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="onClickSpell"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/rhymes"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bobView"
         app:layout_constraintVertical_bias="0.69"
         app:srcCompat="@drawable/spelling" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="115dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/rhymes"
-        app:layout_constraintStart_toEndOf="@+id/avatar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.764" />
-
     <ImageView
         android:id="@+id/avatar"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/common_google_signin_btn_text_light_focused"
         app:layout_constraintBottom_toTopOf="@+id/spelling"
-        app:layout_constraintStart_toStartOf="@+id/spelling"
+        app:layout_constraintEnd_toStartOf="@+id/bobView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@tools:sample/avatars[14]" />
+        tools:srcCompat="@drawable/chimp" />
 
     <ImageView
         android:id="@+id/exitButton"
@@ -84,10 +73,26 @@
         android:layout_marginStart="3dp"
         android:layout_marginTop="240dp"
         android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickExit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/avatar"
         app:srcCompat="@drawable/exit" />
+
+    <TextView
+        android:id="@+id/bobView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="398dp"
+        android:text="Bob"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spelling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
