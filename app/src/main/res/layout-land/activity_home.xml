@@ -29,7 +29,7 @@
             android:background="@android:color/transparent"
             android:onClick="onClickJoinClass"
             android:paddingRight="-25dp"
-            app:srcCompat="@drawable/joinaclass" />
+            app:srcCompat="@drawable/home_join_a_class" />
 
         <ImageView
             android:id="@+id/freePlay"
@@ -39,7 +39,7 @@
             android:background="@android:color/transparent"
             android:onClick="onClickPlayerLogin"
             android:paddingLeft="-25dp"
-            app:srcCompat="@drawable/freeplay" />
+            app:srcCompat="@drawable/home_free_play" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,7 +55,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/school" />
+            app:srcCompat="@drawable/button_school" />
 
         <TextView
             android:layout_width="wrap_content"

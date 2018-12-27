@@ -15,7 +15,7 @@
         android:onClick="onClickExit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/exit" />
+        app:srcCompat="@drawable/button_exit" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
                 android:alpha="0.6"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/blue_circle" />
+                app:srcCompat="@drawable/image_blue_circle" />
 
             <ImageButton
                 android:id="@+id/input2"
@@ -56,7 +56,7 @@
                 android:alpha="0.6"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/blue_circle" />
+                app:srcCompat="@drawable/image_blue_circle" />
 
             <ImageButton
                 android:id="@+id/input3"
@@ -66,7 +66,7 @@
                 android:alpha="0.6"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/blue_circle" />
+                app:srcCompat="@drawable/image_blue_circle" />
 
             <ImageButton
                 android:id="@+id/input4"
@@ -76,7 +76,7 @@
                 android:alpha="0.6"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/blue_circle" />
+                app:srcCompat="@drawable/image_blue_circle" />
         </LinearLayout>
 
         <TableLayout
@@ -97,7 +97,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num1" />
+                    app:srcCompat="@drawable/button_1" />
 
                 <ImageView
                     android:id="@+id/num2"
@@ -105,7 +105,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num2" />
+                    app:srcCompat="@drawable/button_2" />
 
                 <ImageView
                     android:id="@+id/num3"
@@ -113,7 +113,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num3" />
+                    app:srcCompat="@drawable/button_3" />
             </TableRow>
 
             <TableRow
@@ -126,7 +126,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num4" />
+                    app:srcCompat="@drawable/button_4" />
 
                 <ImageView
                     android:id="@+id/num5"
@@ -134,7 +134,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num5" />
+                    app:srcCompat="@drawable/button_5" />
 
                 <ImageView
                     android:id="@+id/num6"
@@ -142,7 +142,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num6" />
+                    app:srcCompat="@drawable/button_6" />
             </TableRow>
 
             <TableRow
@@ -155,7 +155,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num7" />
+                    app:srcCompat="@drawable/button_7" />
 
                 <ImageView
                     android:id="@+id/num8"
@@ -163,7 +163,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num8" />
+                    app:srcCompat="@drawable/button_8" />
 
                 <ImageView
                     android:id="@+id/num9"
@@ -171,7 +171,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num9" />
+                    app:srcCompat="@drawable/button_9" />
             </TableRow>
 
             <TableRow
@@ -185,7 +185,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDigitEntered"
-                    app:srcCompat="@drawable/num0" />
+                    app:srcCompat="@drawable/button_0" />
 
                 <ImageView
                     android:id="@+id/deleteButton"
@@ -193,7 +193,7 @@
                     android:layout_height="50dp"
                     android:layout_margin="8dp"
                     android:onClick="onClickDelete"
-                    app:srcCompat="@drawable/cancel" />
+                    app:srcCompat="@drawable/button_cancel" />
             </TableRow>
 
         </TableLayout>

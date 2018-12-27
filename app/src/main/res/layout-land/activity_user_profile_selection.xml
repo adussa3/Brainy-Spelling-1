@@ -29,7 +29,7 @@
     <!--android:layout_height="75dp"-->
     <!--android:background="@android:color/transparent"-->
     <!--android:onClick="onClickExit"-->
-    <!--app:srcCompat="@drawable/exit" />-->
+    <!--app:srcCompat="@drawable/button_exit" />-->
 
     <!--<TextView-->
     <!--android:id="@+id/title"-->
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/back" />
+            android:src="@drawable/button_back" />
 
         <LinearLayout
             android:id="@+id/profile1"
@@ -80,7 +80,7 @@
                 android:background="@android:color/white"
                 android:onClick="onClickProfile"
                 android:scaleType="fitCenter"
-                android:src="@drawable/chimp" />
+                android:src="@drawable/profile_chimp" />
 
             <TextView
                 android:id="@+id/name1"
@@ -114,7 +114,7 @@
                 android:background="@android:color/white"
                 android:onClick="onProfile"
                 android:scaleType="fitCenter"
-                android:src="@drawable/dolphin" />
+                android:src="@drawable/profile_dolphin" />
 
             <TextView
                 android:id="@+id/name2"
@@ -148,7 +148,7 @@
                 android:background="@android:color/white"
                 android:onClick="onProfile"
                 android:scaleType="fitCenter"
-                android:src="@drawable/lion" />
+                android:src="@drawable/profile_lion" />
 
             <TextView
                 android:id="@+id/name3"
@@ -172,7 +172,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/forward" />
+            android:src="@drawable/button_forward" />
     </LinearLayout>
 
     <!--<LinearLayout-->
@@ -211,7 +211,7 @@
         <!--android:layout_weight="1"-->
         <!--android:background="@android:color/transparent"-->
         <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:srcCompat="@drawable/add"-->
+        <!--app:srcCompat="@drawable/button_add"-->
         <!--tools:layout_editor_absoluteY="21dp" />-->
 
         <ImageButton
@@ -222,7 +222,7 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/add"
+            app:srcCompat="@drawable/button_add"
             android:scaleType="fitCenter"
             tools:layout_editor_absoluteY="21dp" />
     </android.support.constraint.ConstraintLayout>

@@ -48,7 +48,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/actionBar"
             app:layout_constraintStart_toStartOf="@+id/actionBar"
             app:layout_constraintTop_toTopOf="@+id/actionBar"
-            app:srcCompat="@drawable/exit" />
+            app:srcCompat="@drawable/button_exit" />
 
         <ScrollView
             android:layout_width="match_parent"
