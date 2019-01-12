@@ -29,9 +29,9 @@
         <activity android:name=".OneWordAtATimeListActivity" />
         <activity android:name=".LevelsActivity" />
         <activity android:name=".OneWordAtATimeGameActivity" />
-        <activity android:name=".TeacherHomeActivity" />
-        <activity android:name=".StudentHomeActivity"></activity>
-        <activity android:name=".UserProfileSelectionActivity"></activity>
+        <activity android:name=".StudentHomeActivity" />
+        <activity android:name=".UserProfileSelectionActivity" />
+        <activity android:name=".TeacherHomeActivity"></activity>
     </application>
 
 </manifest>
