@@ -1,0 +1,65 @@
+[
+  {
+    "displayString": "fox",
+    "completeSound": "fox",
+    "segmentInfo": [
+      {
+          "letter" : "f",
+          "soundFile": "sound-F",
+          "imageFile": "fox1"
+      },
+      {
+          "letter" : "o",
+          "soundFile": "sound-O-short",
+          "imageFile": "fox2"
+      },
+      {
+          "letter" : "x",
+          "soundFile": "sound-X",
+          "imageFile": "fox3"
+      }
+    ]
+  },
+  {
+    "displayString": "ram",
+    "completeSound": "ram",
+    "segmentInfo": [
+      {
+          "letter" : "r",
+          "soundFile": "sound-RUH",
+          "imageFile": "ram1"
+      },
+      {
+          "letter" : "a",
+          "soundFile": "sound-A-ah",
+          "imageFile": "ram2"
+      },
+      {
+          "letter" : "m",
+          "soundFile": "sound-M",
+          "imageFile": "ram3"
+      }
+    ]
+  },
+  {
+    "displayString": "pig",
+    "completeSound": "pig",
+    "segmentInfo": [
+      {
+          "letter" : "p",
+          "soundFile": "sound-P",
+          "imageFile": "pig1"
+      },
+      {
+          "letter" : "i",
+          "soundFile": "sound-I-short",
+          "imageFile": "pig2"
+      },
+      {
+          "letter" : "g",
+          "soundFile": "sound-G",
+          "imageFile": "pig3"
+      }
+    ]
+  }
+]
