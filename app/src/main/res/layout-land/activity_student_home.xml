@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/learnedwords" />
+        app:srcCompat="@drawable/student_home_learned_words" />
 
     <ImageView
         android:id="@+id/rhymes"
@@ -32,7 +32,7 @@
         app:layout_constraintStart_toEndOf="@+id/spelling"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/rhymes" />
+        app:srcCompat="@drawable/student_home_rhymes" />
 
     <ImageView
         android:id="@+id/spelling"
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bobView"
         app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/spelling" />
+        app:srcCompat="@drawable/student_home_spelling" />
 
     <ImageView
         android:id="@+id/avatar"
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@drawable/chimp" />
+        tools:srcCompat="@drawable/profile_chimp" />
 
     <ImageView
         android:id="@+id/exitButton"
@@ -79,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/avatar"
-        app:srcCompat="@drawable/exit" />
+        app:srcCompat="@drawable/button_exit" />
 
     <TextView
         android:id="@+id/bobView"

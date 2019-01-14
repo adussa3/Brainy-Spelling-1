@@ -25,7 +25,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/actionBar"
         app:layout_constraintEnd_toEndOf="@+id/actionBar"
         app:layout_constraintTop_toTopOf="@+id/actionBar"
-        app:srcCompat="@drawable/question" />
+        app:srcCompat="@drawable/button_question" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,13 +57,13 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:onClick="onClickSound1"
-                    app:srcCompat="@drawable/fox1_grayscale" />
+                    app:srcCompat="@drawable/word_fox1_grayscale" />
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:srcCompat="@drawable/empty_slot" />
+                    app:srcCompat="@drawable/image_empty_slot" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,13 +80,13 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:onClick="onClickSound2"
-                    app:srcCompat="@drawable/fox2_grayscale" />
+                    app:srcCompat="@drawable/word_fox2_grayscale" />
 
                 <ImageView
                     android:id="@+id/imageView5"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:srcCompat="@drawable/empty_slot" />
+                    app:srcCompat="@drawable/image_empty_slot" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,13 +101,13 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:onClick="onClickSound3"
-                    app:srcCompat="@drawable/fox3_grayscale" />
+                    app:srcCompat="@drawable/word_fox3_grayscale" />
 
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    app:srcCompat="@drawable/empty_slot" />
+                    app:srcCompat="@drawable/image_empty_slot" />
             </LinearLayout>
         </LinearLayout>
 

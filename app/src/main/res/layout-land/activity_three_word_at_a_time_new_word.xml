@@ -118,7 +118,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ram1_grayscale"
+        android:src="@drawable/word_ram1_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -131,7 +131,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ram2_grayscale"
+        android:src="@drawable/word_ram2_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/fButton"
         app:layout_constraintEnd_toStartOf="@+id/ram3_grayscale"
         app:layout_constraintHorizontal_bias="0.0"
@@ -146,7 +146,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ram3_grayscale"
+        android:src="@drawable/word_ram3_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/fButton"
         app:layout_constraintEnd_toStartOf="@+id/pig1_grayscale"
         app:layout_constraintTop_toTopOf="parent"
@@ -158,7 +158,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/pig1_grayscale"
+        android:src="@drawable/word_pig1_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/iButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -171,7 +171,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/pig2_grayscale"
+        android:src="@drawable/word_pig2_grayscale"
         app:layout_constraintEnd_toStartOf="@+id/pig3_grayscale"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toEndOf="@+id/pig1_grayscale"
@@ -183,7 +183,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="68dp"
-        android:src="@drawable/pig3_grayscale"
+        android:src="@drawable/word_pig3_grayscale"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -198,6 +198,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fox" />
+        app:srcCompat="@drawable/word_fox" />
 
 </android.support.constraint.ConstraintLayout>
