@@ -1,3 +1,38 @@
 [
-        "ape", "face", "whale", "crane", "baby", "cradle", "axe", "bat", "cat", "clam", "taxi", "wagon", "camel", "hamster", "cactus", "statue", "raccoons", "fall", "swan", "ball", "father", "walnuts", "sofa", "afraid", "canoe", "zebra", "gazelle", "hexagon", "see", "tree", "jeep", "sweet", "three", "zebra", "elf", "bed", "net", "sled", "bell", "yellow", "oven", "camel", "kitten", "shovel", "mittens", "squirrel", "five", "slide", "ice", "climb", "bride", "drive", "lion", "spider", "tricycle", "hit", "fish", "sing", "swing", "lizard", "mittens", "window", "rabbit", "pencil", "family", "cardinal", "centipede", "millipede", "clarinet", "old", "mole", "nose", "yo-yo", "sofa", "dozer", "throne", "fox", "hot", "pot", "drop", "moth", "frog", "trolley", "ostrich", "boxer", "love", "glove", "oven", "wagon", "mother", "shovel", "monkey", "blue", "tuba", "flute", "suit", "tissue", "music", "statue", "unicycle", "ambulance", "calculator", "bus", "bug", "cut", "jump", "plum", "plus", "brush", "bucket", "fly", "cry", "sky", "fry", "eye", "unicycle", "baby", "candy", "sleepy", "bunny", "puppy", "kitty", "canary"
+        {
+                "a_1_long": [ {
+                        "ape": {
+                                "stringName" : "ape",
+                                "sound": ["a_1_long", "p_", ""],
+                                "silentLetters": [2],
+                                "vowels": "0",
+                                "targetVowel": "0"
+                        },
+                        "face": {
+                                "stringName" : "face",
+                                "sound": ["f_", "a_1_long", "c_2_soft", ""],
+                                "silentLetters": [3],
+                                "vowels": "1",
+                                "targetVowel": "1"
+                        }
+                }
+                ],
+                "a_2_short": [ {
+                        "axe": {
+                                "stringName" : "axe",
+                                "sound": ["a_2_short", "x_", ""],
+                                "silentLetters": [2],
+                                "vowels": "0",
+                                "targetVowel": "0"
+                        },
+                        "bat": {
+                                "stringName" : "bat",
+                                "sound": ["b_", "a_2_short", "t_"],
+                                "silentLetters": [],
+                                "vowels": "1",
+                                "targetVowel": "1"
+                        }
+                }
+                ]
+        }
 ]
