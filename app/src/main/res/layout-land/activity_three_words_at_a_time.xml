@@ -137,7 +137,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/ram1_grayscale"
+        android:src="@drawable/word_ram1_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintEnd_toStartOf="@+id/ram2_grayscale"
         app:layout_constraintHorizontal_bias="0.5"
@@ -150,7 +150,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/ram2_grayscale"
+        android:src="@drawable/word_ram2_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintEnd_toStartOf="@+id/ram3_grayscale"
         app:layout_constraintHorizontal_bias="0.5"
@@ -164,7 +164,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/ram3_grayscale"
+        android:src="@drawable/word_ram3_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintEnd_toStartOf="@+id/pig1_grayscale"
         app:layout_constraintStart_toEndOf="@+id/ram2_grayscale"
@@ -177,7 +177,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/pig1_grayscale"
+        android:src="@drawable/word_pig1_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintEnd_toStartOf="@+id/pig2_grayscale"
         app:layout_constraintHorizontal_bias="0.5"
@@ -190,7 +190,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/pig2_grayscale"
+        android:src="@drawable/word_pig2_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintEnd_toStartOf="@+id/pig3_grayscale"
         app:layout_constraintHorizontal_bias="0.5"
@@ -204,7 +204,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:src="@drawable/pig3_grayscale"
+        android:src="@drawable/word_pig3_grayscale"
         app:layout_constraintBottom_toTopOf="@+id/aButton"
         app:layout_constraintEnd_toEndOf="@+id/fox1_placeholder"
         app:layout_constraintHorizontal_bias="0.5"
@@ -217,7 +217,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/fox1"
+        android:src="@drawable/word_fox1"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toStartOf="@+id/fox2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -230,7 +230,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/fox2"
+        android:src="@drawable/word_fox2"
         app:layout_constraintBottom_toTopOf="@+id/editText4"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintHorizontal_bias="0.5"
@@ -296,7 +296,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fox2"
         app:layout_constraintTop_toBottomOf="@+id/ram1_grayscale"
-        app:srcCompat="@drawable/fox3_grayscale" />
+        app:srcCompat="@drawable/word_fox3_grayscale" />
 
     <ImageView
         android:id="@+id/exitButton"
@@ -309,7 +309,7 @@
         app:layout_constraintEnd_toStartOf="@id/gButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pButton"
-        app:srcCompat="@drawable/exit" />
+        app:srcCompat="@drawable/button_exit" />
 
     <ImageView
         android:id="@+id/fox1_placeholder"
@@ -323,7 +323,7 @@
         app:layout_constraintStart_toEndOf="@+id/pig3_grayscale"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fox1_grayscale" />
+        app:srcCompat="@drawable/word_fox1_grayscale" />
 
     <ImageView
         android:id="@+id/fox2_placeholder"
@@ -336,7 +336,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fox1_placeholder"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fox2_grayscale" />
+        app:srcCompat="@drawable/word_fox2_grayscale" />
 
     <ImageView
         android:id="@+id/fox3_placeholder"
@@ -350,6 +350,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fox2_placeholder"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fox3_grayscale" />
+        app:srcCompat="@drawable/word_fox3_grayscale" />
 
 </android.support.constraint.ConstraintLayout>
