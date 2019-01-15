@@ -14,9 +14,14 @@ bin/
 gen/
 out/
 
+.settings/
+.classpath
+
 # Gradle files
 .gradle/
 build/
+.project
+
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -63,3 +68,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+gradle/wrapper/gradle-wrapper.properties
+build.gradle
