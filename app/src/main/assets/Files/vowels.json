@@ -14,6 +14,13 @@
                                 "silentLetters": [3],
                                 "vowels": "1",
                                 "targetVowel": "1"
+                        },
+                        "whale": {
+                                "stringName" : "whale",
+                                "sound": ["w", "h", "a-ah", "l", ""],
+                                "silentLetters": [4],
+                                "vowels": "2",
+                                "targetVowel" : "2"
                         }
                 }
                 ],
