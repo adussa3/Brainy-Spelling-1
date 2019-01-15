@@ -38,6 +38,37 @@
                                 "silentLetters": [],
                                 "vowels": "1",
                                 "targetVowel": "1"
+                        },
+                        "cat": {
+                                "stringName" : "cat",
+                                "sound": ["c", "a-ah", "t"],
+                                "silentLetters": [],
+                                "vowels": [1],
+                                "targetVowel": "1"
+                        }
+                }
+                ],
+                "a_3_short": [ {
+                        "fall" : {
+                                "stringName" : "fall",
+                                "sound": ["f", "a", "l", "l"],
+                                "silentLetters" : [],
+                                "vowels": "1",
+                                "targetVowel": "1"
+                        },
+                        "swan" : {
+                                "stringName" : "swan",
+                                "sound": ["s", "w", "a", "n"],
+                                "silentLetters" : [3],
+                                "vowels": "2",
+                                "targetVowel": "2"
+                        },
+                        "ball" : {
+                                "stringName" : "ball",
+                                "sound": ["b", "a-ah", "l", "l"],
+                                "silentLetters" : [],
+                                "vowels": "1",
+                                "targetVowel": "1'"
                         }
                 }
                 ]
