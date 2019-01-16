@@ -6,93 +6,98 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/learnedWords"
-        android:layout_width="170dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/student_home_learned_words" />
-
-    <ImageView
-        android:id="@+id/rhymes"
-        android:layout_width="170dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/learnedWords"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/spelling"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/student_home_rhymes" />
-
-    <ImageView
-        android:id="@+id/spelling"
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="50dp"
-        android:onClick="onClickSpell"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/rhymes"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bobView"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/student_home_spelling" />
-
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="74dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
-        android:background="@color/common_google_signin_btn_text_light_focused"
-        app:layout_constraintBottom_toTopOf="@+id/spelling"
-        app:layout_constraintEnd_toStartOf="@+id/bobView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@drawable/profile_chimp" />
-
-    <ImageView
         android:id="@+id/exitButton"
         android:layout_width="58dp"
         android:layout_height="51dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:onClick="onClickExit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        app:srcCompat="@drawable/button_exit" />
+        app:srcCompat="@drawable/button_exit"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="317dp" />
 
-    <TextView
-        android:id="@+id/bobView"
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="74dp"
+            android:layout_height="70dp"
+            android:background="@color/common_google_signin_btn_text_light_focused"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="14dp"
+            tools:srcCompat="@drawable/profile_chimp" />
+
+        <TextView
+            android:id="@+id/bobView"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="398dp"
+            android:text="Bob"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="576dp"
+        android:layout_height="211dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="90dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="398dp"
-        android:text="Bob"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spelling"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/avatar"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="1"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        tools:layout_editor_absoluteX="432dp"
+        tools:layout_editor_absoluteY="129dp" />
 
 </android.support.constraint.ConstraintLayout>
