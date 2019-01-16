@@ -191,6 +191,30 @@
                                 "targetVowel" : "0"
                         }
                 }
+                ], 
+                "i_2_short" : [ {
+                        "hit" : {
+                                "stringName" : "hit",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }, 
+                        "fish" : {
+                                "stringName" : "fish",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        },
+                        "sing" : {
+                                "stringName" : "sing",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }
+                }
                 ]
         }
 ]
