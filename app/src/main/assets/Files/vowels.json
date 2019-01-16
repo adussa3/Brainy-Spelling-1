@@ -95,6 +95,30 @@
                                 "targetVowel" : "1"
                         }
                 }
+                ],
+                "e_1_long" : [ {
+                        "see" : {
+                                "stringName" : "see",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1,2],
+                                "targetVowel" : "1"
+                        },
+                        "tree" : {
+                                "stringName" : "tree",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [2,3],
+                                "targetVowel" : "2"
+                        },
+                        "jeep" : {
+                                "stringName" : "jeep",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1,2],
+                                "targetVowel" : "1"
+                        }
+                }
                 ]
         }
 ]
