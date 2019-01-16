@@ -119,6 +119,30 @@
                                 "targetVowel" : "1"
                         }
                 }
+                ],
+                "e_1_short" : [ {
+                        "elf" : {
+                                "stringName" : "elf",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [0],
+                                "targetVowel" : "0"
+                        },
+                        "bed" : {
+                                "stringName" : "bed",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        },
+                        "net" : {
+                                "stringName" : "net",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }
+                }
                 ]
         }
 ]
