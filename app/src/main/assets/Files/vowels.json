@@ -68,19 +68,31 @@
                                 "sound": ["b", "a-ah", "l", "l"],
                                 "silentLetters" : [],
                                 "vowels": "1",
-                                "targetVowel": "1'"
+                                "targetVowel": "1"
                         }
                 }
                 ],
                 "a_4_schwa" : [ {
                         "sofa" : {
-
+                                "stringName" : "sofa",
+                                "sound" : ["s_1_s", "o_1_long", "f_", "a_3_short"],
+                                "silentLetters" : [],
+                                "vowels" : [1, 3],
+                                "targetVowel" : "3"
                         },
                         "afraid" : {
-
+                                "stringName" : "afraid",
+                                "sound" : ["a_3_short", "f_", "a_1_long", "", "d_"],
+                                "silentLetters" : [5],
+                                "vowels" : [0, 3, 4],
+                                "targetVowel" : "0"
                         },
                         "canoe" : {
-
+                                "stringName" : "canoe",
+                                "sound" : ["c_1_hard", "a_1_long", "n_", "o_1_long", ""],
+                                "silentLetters" : [3],
+                                "vowels" : [1, 3],
+                                "targetVowel" : "1"
                         }
                 }
                 ]
