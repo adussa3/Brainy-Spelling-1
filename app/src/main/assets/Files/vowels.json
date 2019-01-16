@@ -384,6 +384,30 @@
                                 "targetVowel" : "2"
                         }
                 }
-                ]        
+                ],
+                "y_2_i" : [ {
+                        "fly" : {
+                                "stringName" : "fly",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [2],
+                                "targetVowel" : "2"
+                        }, 
+                        "cry" : {
+                                "stringName" : "cry",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [2],
+                                "targetVowel" : "2"
+                        }, 
+                        "sky" : {
+                                "stringName" : "sky",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [2],
+                                "targetVowel" : "2"
+                        }
+                }
+                ]
         }
 ]
