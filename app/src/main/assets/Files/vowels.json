@@ -360,6 +360,30 @@
                                 "targetVowel" : "2"
                         }
                 }
-                ]
+                ],
+                "u_3_short_schwa" : [ {
+                        "bus" : {
+                                "stringName" : "bus",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }, 
+                        "bug" : {
+                                "stringName" : "bug",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }, 
+                        "plum" : {
+                                "stringName" : "plum",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [2],
+                                "targetVowel" : "2"
+                        }
+                }
+                ]        
         }
 ]
