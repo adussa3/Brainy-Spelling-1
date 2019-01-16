@@ -164,7 +164,7 @@
                                 "sound" : [],
                                 "silentLetters" : [],
                                 "vowels" : [1,4],
-                                "targetVowel" : ""
+                                "targetVowel" : "4"
                         }
                 }
                 ]
