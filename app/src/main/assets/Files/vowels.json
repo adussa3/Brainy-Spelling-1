@@ -263,6 +263,30 @@
                                 "targetVowel" : "1"
                         }
                 }
+                ], 
+                "o_2_short" : [ {
+                        "moth" : {
+                                "stringName" : "moth",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }, 
+                        "hot" : {
+                                "stringName" : "hot",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }, 
+                        "pot" : {
+                                "stringName" : "pot",
+                                "sound" : [],
+                                "silentLetters" : [],
+                                "vowels" : [1],
+                                "targetVowel" : "1"
+                        }
+                }
                 ]
         }
 ]
