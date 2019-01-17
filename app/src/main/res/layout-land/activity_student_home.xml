@@ -5,99 +5,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/exitButton"
-        android:layout_width="58dp"
-        android:layout_height="51dp"
-        android:background="@android:color/transparent"
-        android:onClick="onClickExit"
-        app:srcCompat="@drawable/button_exit"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="317dp" />
-
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="90dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="74dp"
+                android:layout_height="70dp"
+                android:background="@color/common_google_signin_btn_text_light_focused"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="14dp"
+                tools:srcCompat="@drawable/profile_chimp" />
+
+            <TextView
+                android:id="@+id/bobView"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="398dp"
+                android:text="Bob"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/avatar"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="131dp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2"
+                    tools:layout_editor_absoluteX="172dp"
+                    tools:layout_editor_absoluteY="130dp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3"
+                    tools:layout_editor_absoluteX="299dp"
+                    tools:layout_editor_absoluteY="131dp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4"
+                    tools:layout_editor_absoluteX="432dp"
+                    tools:layout_editor_absoluteY="129dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/games"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+            </LinearLayout>
+
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/avatar"
-            android:layout_width="74dp"
-            android:layout_height="70dp"
-            android:background="@color/common_google_signin_btn_text_light_focused"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="14dp"
-            tools:srcCompat="@drawable/profile_chimp" />
+            android:id="@+id/exitButton"
+            android:layout_width="58dp"
+            android:layout_height="51dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClickExit"
+            app:srcCompat="@drawable/button_exit"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="317dp" />
 
-        <TextView
-            android:id="@+id/bobView"
-            android:layout_width="107dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="29dp"
-            android:layout_marginEnd="398dp"
-            android:text="Bob"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/avatar"
-            app:layout_constraintTop_toTopOf="parent" />
+
     </LinearLayout>
 
-    <TableLayout
-        android:layout_width="576dp"
-        android:layout_height="211dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="90dp">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="131dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="130dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3"
-        tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="131dp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4"
-        tools:layout_editor_absoluteX="432dp"
-        tools:layout_editor_absoluteY="129dp" />
 
 </android.support.constraint.ConstraintLayout>
