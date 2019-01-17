@@ -31,7 +31,10 @@
         <activity android:name=".OneWordAtATimeGameActivity" />
         <activity android:name=".StudentHomeActivity" />
         <activity android:name=".UserProfileSelectionActivity" />
-        <activity android:name=".TeacherHomeActivity"></activity>
+        <activity android:name=".TeacherHomeActivity" />
+        <activity
+            android:name=".unit2"
+            android:label="@string/title_activity_unit2"></activity>
     </application>
 
 </manifest>
