@@ -191,9 +191,10 @@
     "words": [
       {
         "stringName": "he",
-        "sound": [  
-          "h_", 
-          "e_1_long"],
+        "sound": [
+          "h_",
+          "e_1_long"
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -203,7 +204,7 @@
       {
         "stringName": "we",
         "sound": [
-          "w_", 
+          "w_",
           "e_1_long"
         ],
         "silentLetters": [],
@@ -230,25 +231,31 @@
     "phoneme": "e_1_short",
     "words": [
       {
-        "stringName" : "elf",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [0],
-        "targetVowel" : "0"
+        "stringName": "elf",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          0
+        ],
+        "targetVowel": "0"
       },
       {
-        "stringName" : "bed",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "bed",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "net",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "net",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       }
     ]
   },
@@ -256,25 +263,34 @@
     "phoneme": "e_3_schwa",
     "words": [
       {
-        "stringName" : "oven",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [0,2],
-        "targetVowel" : "2"
+        "stringName": "oven",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          0,
+          2
+        ],
+        "targetVowel": "2"
       },
       {
-        "stringName" : "camel",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1,3],
-        "targetVowel" : "3"
+        "stringName": "camel",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "3"
       },
       {
-        "stringName" : "kitten",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1,4],
-        "targetVowel" : "4"
+        "stringName": "kitten",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          4
+        ],
+        "targetVowel": "4"
       }
     ]
   },
@@ -282,25 +298,34 @@
     "phoneme": "i_1_long",
     "words": [
       {
-        "stringName" : "five",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1,3],
-        "targetVowel" : "1"
+        "stringName": "five",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "slide",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2,4],
-        "targetVowel" : "2"
+        "stringName": "slide",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2,
+          4
+        ],
+        "targetVowel": "2"
       },
       {
-        "stringName" : "ice",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [0,2],
-        "targetVowel" : "0"
+        "stringName": "ice",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          0,
+          2
+        ],
+        "targetVowel": "0"
       }
     ]
   },
@@ -308,25 +333,31 @@
     "phoneme": "i_2_short",
     "words": [
       {
-        "stringName" : "hit",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "hit",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "fish",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "fish",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "sing",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "sing",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       }
     ]
   },
@@ -334,25 +365,55 @@
     "phoneme": "i_3_schwa",
     "words": [
       {
-        "stringName" : "rabbit",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1,4],
-        "targetVowel" : "4"
+        "stringName": "rabbit",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          4
+        ],
+        "targetVowel": "4"
       },
       {
-        "stringName" : "pencil",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 4],
-        "targetVowel" : "4"
+        "stringName": "centipede",
+        "sound": [
+          "c_2_soft",
+          "e_2_short",
+          "n_",
+          "t_",
+          "i_3_schwa",
+          "p_",
+          "e_1_long",
+          "d_"
+        ],
+        "silentLetters": [
+          8
+        ],
+        "vowels": [
+          1,
+          4,
+          6,
+          8
+        ],
+        "targetVowel": "4"
       },
       {
-        "stringName" : "family",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1,3],
-        "targetVowel" : "3"
+        "stringName": "clarinet",
+        "sound": [
+          "cl-",
+          "ar-2_short",
+          "i_3_schwa",
+          "n_",
+          "e_1_long",
+          "t_"
+        ],
+        "silentLetters": [],
+        "vowels": [
+          2,
+          4,
+          6
+        ],
+        "targetVowel": "4"
       }
     ]
   },
@@ -360,25 +421,33 @@
     "phoneme": "o_1_long",
     "words": [
       {
-        "stringName" : "old",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [0],
-        "targetVowel" : "0"
+        "stringName": "old",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          0
+        ],
+        "targetVowel": "0"
       },
       {
-        "stringName" : "mole",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "1"
+        "stringName": "mole",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "nose",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "1"
+        "stringName": "nose",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "1"
       }
     ]
   },
@@ -386,25 +455,31 @@
     "phoneme": "o_2_short",
     "words": [
       {
-        "stringName" : "moth",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "moth",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "hot",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "hot",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "pot",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "pot",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       }
     ]
   },
@@ -412,25 +487,34 @@
     "phoneme": "o_3_schwa",
     "words": [
       {
-        "stringName" : "love",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "1"
+        "stringName": "love",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "glove",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2, 4],
-        "targetVowel" : "2"
+        "stringName": "glove",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2,
+          4
+        ],
+        "targetVowel": "2"
       },
       {
-        "stringName" : "wagon",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "3"
+        "stringName": "wagon",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "3"
       }
     ]
   },
@@ -438,25 +522,36 @@
     "phoneme": "u_1_long",
     "words": [
       {
-        "stringName" : "blue",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2, 3],
-        "targetVowel" : "2"
+        "stringName": "blue",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2,
+          3
+        ],
+        "targetVowel": "2"
       },
       {
-        "stringName" : "tuba",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "1"
+        "stringName": "tuba",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "flute",
-        "sound" : [],
-        "silentLetters" : [4],
-        "vowels" : [2, 4],
-        "targetVowel" : "2"
+        "stringName": "flute",
+        "sound": [],
+        "silentLetters": [
+          4
+        ],
+        "vowels": [
+          2,
+          4
+        ],
+        "targetVowel": "2"
       }
     ]
   },
@@ -464,25 +559,39 @@
     "phoneme": "u_2_long",
     "words": [
       {
-        "stringName" : "music",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "1"
+        "stringName": "music",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "statue",
-        "sound" : [],
-        "silentLetters" : [5],
-        "vowels" : [2, 4, 5],
-        "targetVowel" : "4"
+        "stringName": "statue",
+        "sound": [],
+        "silentLetters": [
+          5
+        ],
+        "vowels": [
+          2,
+          4,
+          5
+        ],
+        "targetVowel": "4"
       },
       {
-        "stringName" : "unicycle",
-        "sound" : [],
-        "silentLetters" : [7],
-        "vowels" : [2, 7],
-        "targetVowel" : "2"
+        "stringName": "unicycle",
+        "sound": [],
+        "silentLetters": [
+          7
+        ],
+        "vowels": [
+          2,
+          7
+        ],
+        "targetVowel": "2"
       }
     ]
   },
@@ -490,25 +599,31 @@
     "phoneme": "u_3_short_schwa",
     "words": [
       {
-        "stringName" : "bus",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "bus",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "bug",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1],
-        "targetVowel" : "1"
+        "stringName": "bug",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1
+        ],
+        "targetVowel": "1"
       },
       {
-        "stringName" : "plum",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2],
-        "targetVowel" : "2"
+        "stringName": "plum",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2
+        ],
+        "targetVowel": "2"
       }
     ]
   },
@@ -516,25 +631,31 @@
     "phoneme": "y_2_i",
     "words": [
       {
-        "stringName" : "fly",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2],
-        "targetVowel" : "2"
+        "stringName": "fly",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2
+        ],
+        "targetVowel": "2"
       },
       {
-        "stringName" : "cry",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2],
-        "targetVowel" : "2"
+        "stringName": "cry",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2
+        ],
+        "targetVowel": "2"
       },
       {
-        "stringName" : "sky",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2],
-        "targetVowel" : "2"
+        "stringName": "sky",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2
+        ],
+        "targetVowel": "2"
       }
     ]
   },
@@ -542,25 +663,35 @@
     "phoneme": "y_3_e",
     "words": [
       {
-        "stringName" : "baby",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 3],
-        "targetVowel" : "3"
+        "stringName": "baby",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "3"
       },
       {
-        "stringName" : "candy",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [1, 4],
-        "targetVowel" : "4"
+        "stringName": "candy",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          4
+        ],
+        "targetVowel": "4"
       },
       {
-        "stringName" : "sleepy",
-        "sound" : [],
-        "silentLetters" : [],
-        "vowels" : [2, 3, 5],
-        "targetVowel" : "5"
+        "stringName": "sleepy",
+        "sound": [],
+        "silentLetters": [],
+        "vowels": [
+          2,
+          3,
+          5
+        ],
+        "targetVowel": "5"
       }
     ]
   }
