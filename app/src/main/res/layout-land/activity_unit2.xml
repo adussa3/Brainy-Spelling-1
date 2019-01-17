@@ -6,35 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".unit2">
 
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
         android:layout_height="207dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="101dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="c"
                 tools:layout_editor_absoluteX="40dp"
                 tools:layout_editor_absoluteY="91dp" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="t"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="91dp" />
@@ -42,9 +48,10 @@
             <Button
                 android:id="@+id/button4"
                 android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:text="g"
                 app:layout_constraintEnd_toStartOf="@+id/button2"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -52,32 +59,30 @@
                 tools:layout_editor_absoluteY="91dp" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <TableRow android:layout_weight="1">
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="h"
                 tools:layout_editor_absoluteX="40dp"
                 tools:layout_editor_absoluteY="175dp" />
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="n"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="175dp" />
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:text="d"
                 app:layout_constraintEnd_toStartOf="@+id/button7"
                 app:layout_constraintStart_toEndOf="@+id/button6"
@@ -85,30 +90,33 @@
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/button13"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="o"
                 tools:layout_editor_absoluteX="118dp"
                 tools:layout_editor_absoluteY="257dp" />
 
             <Button
                 android:id="@+id/button9"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:text="a"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="257dp" />
 
             <Button
                 android:id="@+id/button14"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text="e" />
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="e"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="91dp" />
 
         </TableRow>
 
@@ -117,14 +125,15 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
             android:id="@+id/topSegments"
@@ -137,7 +146,7 @@
             <ImageView
                 android:id="@+id/catHead"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/Cat-head-bw" />
 
@@ -322,7 +331,6 @@
 
         </LinearLayout>
     </RelativeLayout>
-
 
 
 </android.support.constraint.ConstraintLayout>
