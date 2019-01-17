@@ -7,10 +7,17 @@
     tools:context=".unit2">
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="73dp">
+        android:layout_height="207dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="101dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="wrap_content"
@@ -107,28 +114,58 @@
 
     </TableLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="311dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:id="@+id/topSegments"
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/catHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/Cat-head-bw" />
+
+            <ImageView
+                android:id="@+id/catBod"
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/Cat-middle-bw" />
+
+            <ImageView
+                android:id="@+id/catTail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/Cat-tail-bw" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/topBlanks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/topSegments"
+            android:layout_centerVertical="true"
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/1x1"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -136,7 +173,7 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/1x2"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -146,7 +183,7 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/1x3"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -155,21 +192,44 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/secondSegments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@id/topBlanks"
             android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/henHead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/Hen-head-bw" />
+
+            <ImageView
+                android:id="@+id/henBod"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/Hen-middle-bw" />
+
+            <ImageView
+                android:id="@+id/henTail"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/Hen-Tail-bw" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:id="@+id/secondBlanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondSegments"
+            android:layout_centerVertical="true"
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/2x1"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -177,7 +237,7 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/2x2"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -187,7 +247,7 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/2x3"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -196,18 +256,45 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
-
-        <LinearLayout
+            android:id="@+id/lastSegments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/secondBlanks"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dogHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/Dog-head-bw" />
+
+            <ImageView
+                android:id="@+id/dogBod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/Dog-middle-bw" />
+
+            <ImageView
+                android:id="@+id/dogTail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/Dog-tail-bw" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lastBlanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastSegments"
+            android:layout_centerVertical="true"
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/3x1"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -215,9 +302,10 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/3x2"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/lastBlanks"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
@@ -225,7 +313,7 @@
                 android:inputType="text" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/3x3"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -233,6 +321,8 @@
                 android:inputType="text" />
 
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
