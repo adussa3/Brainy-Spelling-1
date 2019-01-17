@@ -169,20 +169,18 @@
         "targetVowel": "0"
       },
       {
-        "stringName": "canoe",
+        "stringName": "zebra",
         "sound": [
-          "c_1_hard",
-          "a_1_long",
-          "n_",
-          "o_1_long",
+          "z_",
+          "e_1_long",
+          "br-",
+          "a_4_schwa",
           ""
         ],
-        "silentLetters": [
-          3
-        ],
+        "silentLetters": [],
         "vowels": [
           1,
-          3
+          4
         ],
         "targetVowel": "1"
       }
@@ -192,34 +190,39 @@
     "phoneme": "e_1_long",
     "words": [
       {
-        "stringName": "see",
-        "sound": [],
+        "stringName": "he",
+        "sound": [  
+          "h_", 
+          "e_1_long"],
         "silentLetters": [],
         "vowels": [
-          1,
-          2
+          1
         ],
         "targetVowel": "1"
       },
       {
-        "stringName": "tree",
-        "sound": [],
+        "stringName": "we",
+        "sound": [
+          "w_", 
+          "e_1_long"
+        ],
         "silentLetters": [],
         "vowels": [
-          2,
-          3
+          1
+        ],
+        "targetVowel": "1"
+      },
+      {
+        "stringName": "she",
+        "sound": [
+          "sh-",
+          "e_1_long"
+        ],
+        "silentLetters": [],
+        "vowels": [
+          2
         ],
         "targetVowel": "2"
-      },
-      {
-        "stringName": "jeep",
-        "sound": [],
-        "silentLetters": [],
-        "vowels": [
-          1,
-          2
-        ],
-        "targetVowel": "1"
       }
     ]
   },
