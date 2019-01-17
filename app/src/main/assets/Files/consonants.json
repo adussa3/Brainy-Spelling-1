@@ -11,7 +11,7 @@
         ],
         "silentLetters": [],
         "consonants": [],
-        "targetConsonant": "0"
+        "targetConsonant": [0]
       },
       {
         "stringName": "box",
@@ -24,18 +24,14 @@
         "consonants": [
           2
         ],
-        "targetConsonant": "0"
+        "targetConsonant": [0]
       },
       {
-        "stringName": "bat",
-        "sound": [
-          "b_",
-          "a_2_short",
-          "t_"
-        ],
+        "stringName": "bubble",
+        "sound": [],
         "silentLetters": [],
-        "consonants": "2",
-        "targetConsonant": "2"
+        "consonants": [4],
+        "targetConsonant": [0,2,3]
       }
     ]
   },
@@ -43,15 +39,11 @@
     "phoneme": "c_1_hard",
     "words": [
       {
-        "stringName": "cat",
-        "sound": [
-          "c_1_hard",
-          "a_2_short",
-          "t_"
-        ],
+        "stringName": "cow",
+        "sound": [],
         "silentLetters": [],
-        "consonants": "0",
-        "targetConsonant": "0"
+        "consonants": [],
+        "targetConsonant": [0]
       },
       {
         "stringName": "cut",
@@ -61,8 +53,8 @@
           "t_"
         ],
         "silentLetters": [],
-        "consonants": "1",
-        "targetConsonant": "0"
+        "consonants": [],
+        "targetConsonant": [0]
       },
       {
         "stringName": "car",
@@ -75,7 +67,7 @@
         "consonants": [
           1
         ],
-        "targetConsonant": "0"
+        "targetConsonant": [0]
       }
     ]
   },
@@ -83,58 +75,602 @@
     "phoneme": "c_2_soft",
     "words": [
       {
-        "stringName": "ice",
-        "sound": [
-          "i_1_long",
-          "c_2_soft",
-          ""
-        ],
+        "stringName": "balance",
+        "sound": [],
         "silentLetters": [
           2
         ],
-        "vowels": "1",
-        "targetVowel": "1"
+        "consonants": [],
+        "targetConsonant": [5]
       },
       {
-        "stringName": "face",
-        "sound": [
-          "f_",
-          "a_1_long",
-          "c_2_soft"
-        ],
-        "silentLetters": [
-          3
-        ],
-        "vowels": "2",
-        "targetVowel": "2"
-      },
-      {
-        "stringName": "pencil",
-        "sound": [
-          "p_",
-          "e_2_short",
-          "n_",
-          "c_2_soft",
-          "i_2_short",
-          "l_2_voiced"
-        ],
+        "stringName": "saucepan",
+        "sound": [],
         "silentLetters": [],
-        "vowels": "1",
-        "targetVowel": "3'"
+        "consonants": [],
+        "targetConsonant": [3]
+      },
+      {
+        "stringName": "dancer",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3]
       }
     ]
   },
   {
-    "phoneme": "a_4_schwa",
+    "phoneme": "d_",
     "words": [
       {
-        "stringName": "sofa"
+        "stringName": "dog",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
       },
       {
-        "stringName": "afraid"
+        "stringName": "dig",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
       },
       {
-        "stringName": "canoe"
+        "stringName": "dark",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": "1",
+        "targetConsonant": [0]
+      }
+    ]
+  },
+  {
+    "phoneme": "f_",
+    "words": [
+      {
+        "stringName": "fox",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "elf",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [1],
+        "targetConsonant": [2]
+      },
+      {
+        "stringName": "leaf",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [0],
+        "targetConsonant": [3]
+      }
+    ]
+  },
+//  {
+//    "phoneme": "g_1_soft",
+//    "words": [
+//      {
+//        "stringName": "bridge",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      },
+//      {
+//        "stringName": "fridge",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      },
+//      {
+//        "stringName": "fringe",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      }
+//    ]
+//  },
+  {
+    "phoneme": "g_1_hard",
+    "words": [
+      {
+        "stringName": "gold",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2,3],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "girl",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [3],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "goat",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [3],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+  {
+    "phoneme": "h_",
+    "words": [
+      {
+        "stringName": "hat",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "hug",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "hand",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+//  {
+//    "phoneme": "j_",
+//    "words": [
+//      {
+//        "stringName": "jay",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": [0]
+//      },
+//      {
+//        "stringName": "jump",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      },
+//      {
+//        "stringName": "juggler",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      }
+//    ]
+//  },
+
+
+
+//  {
+//    "phoneme": "k_",
+//    "words": [
+//      {
+//        "stringName": "key",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      },
+//      {
+//        "stringName": "king",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      },
+//      {
+//        "stringName": "fork",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": []
+//      }
+//    ]
+//  },
+  {
+    "phoneme": "l_2_voiced",
+    "words": [
+      {
+        "stringName": "wolf",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [0,2],
+        "targetConsonant": [2]
+      },
+      {
+        "stringName": "owl",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [1],
+        "targetConsonant": [2]
+      },
+      {
+        "stringName": "tail",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [0],
+        "targetConsonant": [3]
+      }
+    ]
+  },
+//  {
+//    "phoneme": "l_2_unvoiced",
+//    "words": [
+//      {
+//        "stringName": "lip",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": ""
+//      },
+//      {
+//        "stringName": "lick",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": [0]
+//      },
+//      {
+//        "stringName": "light",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": [0]
+//      }
+//    ]
+//  },
+  {
+    "phoneme": "m_",
+    "words": [
+      {
+        "stringName": "man",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "mouse",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [3],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "mouth",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [3,4],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+  {
+    "phoneme": "n_",
+    "words": [
+      {
+        "stringName": "nuts",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2,3],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "nail",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [3],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "van",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [0],
+        "targetConsonant": [2]
+      }
+    ]
+  },
+  {
+    "phoneme": "p_",
+    "words": [
+      {
+        "stringName": "pig",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "pearl",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [3,4],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "purse",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [2,3],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+//  {
+//    "phoneme": "qu_",
+//    "words": [
+//      {
+//        "stringName": "queen",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": []
+//      },
+//      {
+//        "stringName": "squares",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": []
+//      },
+//      {
+//        "stringName": "quiet",
+//        "sound": [],
+//        "silentLetters": [],
+//        "consonants": [],
+//        "targetConsonant": []
+//      }
+//    ]
+//  },
+  {
+    "phoneme": "r_",
+    "words": [
+      {
+        "stringName": "red",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "rake",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "rainbow",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+  {
+    "phoneme": "s_1_s",
+    "words": [
+      {
+        "stringName": "saw",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "glass",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3,4]
+      },
+      {
+        "stringName": "grass",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3,4]
+      }
+    ]
+  },
+  {
+    "phoneme": "s_1_z",
+    "words": [
+      {
+        "stringName": "bags",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3]
+      },
+      {
+        "stringName": "dogs",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3]
+      },
+      {
+        "stringName": "cars",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3]
+      }
+    ]
+  },
+  {
+    "phoneme": "t_",
+    "words": [
+      {
+        "stringName": "toe",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "tea",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "tie",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+  {
+    "phoneme": "v_",
+    "words": [
+      {
+        "stringName": "volcanoe",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "silver",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3]
+      },
+      {
+        "stringName": "beaver",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [3]
+      }
+    ]
+  },
+  {
+    "phoneme": "w_",
+    "words": [
+      {
+        "stringName": "wig",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "wall",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "wash",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      }
+    ]
+  },
+  {
+    "phoneme": "x_",
+    "words": [
+      {
+        "stringName": "six",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [2]
+      },
+      {
+        "stringName": "taxi",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [2]
+      },
+      {
+        "stringName": "sixteen",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [2]
+      }
+    ]
+  },
+  {
+    "phoneme": "y_1_consonant",
+    "words": [
+      {
+        "stringName": "yellow",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "yawn",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "yo-yo",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0,3]
+      }
+    ]
+  },
+  {
+    "phoneme": "z_",
+    "words": [
+      {
+        "stringName": "zoo",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "zebra",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
+      },
+      {
+        "stringName": "zipper",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [0]
       }
     ]
   }
