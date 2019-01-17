@@ -63,7 +63,10 @@
                 tools:layout_editor_absoluteY="91dp" />
         </TableRow>
 
-        <TableRow android:layout_weight="1">
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/unit2b4"
@@ -166,7 +169,7 @@
 
             <ImageView
                 android:id="@+id/catBod"
-                android:layout_width="18dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:src="@drawable/Cat-middle-bw" />
