@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
+        <activity android:name=".Unit3GameActivity"></activity>
+        <activity android:name=".Unit3WordListActivity" />
+        <activity android:name=".Unit3VowelListActivity" />
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="landscape">
@@ -31,7 +34,7 @@
         <activity android:name=".OneWordAtATimeGameActivity" />
         <activity android:name=".StudentHomeActivity" />
         <activity android:name=".UserProfileSelectionActivity" />
-        <activity android:name=".TeacherHomeActivity"></activity>
+        <activity android:name=".TeacherHomeActivity" />
     </application>
 
 </manifest>
