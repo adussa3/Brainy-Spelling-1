@@ -32,10 +32,9 @@
       {
         "stringName": "whale",
         "sound": [
-          "w",
-          "h",
-          "a-ah",
-          "l",
+          "wh-",
+          "a_1_long",
+          "l_2_voiced",
           ""
         ],
         "silentLetters": [
