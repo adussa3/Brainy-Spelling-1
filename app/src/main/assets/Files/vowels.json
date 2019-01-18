@@ -660,7 +660,13 @@
     "words": [
       {
         "stringName": "music",
-        "sound": [],
+        "sound": [
+          "m_",
+          "u_2_long",
+          "s_2_z",
+          "i_2_short",
+          "c_1_hard"
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -694,7 +700,15 @@
       },
       {
         "stringName": "unicycle",
-        "sound": [],
+        "sound": [
+          "u_2_long",
+          "n_",
+          "i_2_short",
+          "c_2_soft",
+          "y_2_i",
+          "c_1_hard",
+          "le-"
+        ],
         "silentLetters": [
           7
         ],
