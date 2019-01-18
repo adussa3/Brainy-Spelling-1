@@ -13,7 +13,7 @@
           2
         ],
         "vowels": "0",
-        "targetVowel": "0"
+        "targetVowel": 0
       },
       {
         "stringName": "face",
@@ -27,7 +27,7 @@
           3
         ],
         "vowels": "1",
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "whale",
@@ -42,7 +42,7 @@
           4
         ],
         "vowels": "2",
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -60,7 +60,7 @@
           2
         ],
         "vowels": "0",
-        "targetVowel": "0"
+        "targetVowel": 0
       },
       {
         "stringName": "bat",
@@ -71,7 +71,7 @@
         ],
         "silentLetters": [],
         "vowels": "1",
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "cat",
@@ -84,7 +84,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       }
     ]
   },
@@ -101,7 +101,7 @@
         ],
         "silentLetters": [],
         "vowels": "1",
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "swan",
@@ -115,7 +115,7 @@
           3
         ],
         "vowels": "2",
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "ball",
@@ -127,7 +127,7 @@
         ],
         "silentLetters": [],
         "vowels": "1",
-        "targetVowel": "1'"
+        "targetVowel": 1
       }
     ]
   },
@@ -147,7 +147,7 @@
           1,
           3
         ],
-        "targetVowel": "3"
+        "targetVowel": 3
       },
       {
         "stringName": "afraid",
@@ -166,7 +166,7 @@
           3,
           4
         ],
-        "targetVowel": "0"
+        "targetVowel": 0
       },
       {
         "stringName": "zebra",
@@ -182,7 +182,7 @@
           1,
           4
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       }
     ]
   },
@@ -199,7 +199,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "we",
@@ -211,7 +211,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "she",
@@ -223,7 +223,7 @@
         "vowels": [
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -237,7 +237,7 @@
         "vowels": [
           0
         ],
-        "targetVowel": "0"
+        "targetVowel": 0
       },
       {
         "stringName": "bed",
@@ -246,7 +246,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "net",
@@ -255,7 +255,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       }
     ]
   },
@@ -270,7 +270,7 @@
           0,
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "camel",
@@ -280,7 +280,7 @@
           1,
           3
         ],
-        "targetVowel": "3"
+        "targetVowel": 3
       },
       {
         "stringName": "kitten",
@@ -290,7 +290,7 @@
           1,
           4
         ],
-        "targetVowel": "4"
+        "targetVowel": 4
       }
     ]
   },
@@ -305,7 +305,7 @@
           1,
           3
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "slide",
@@ -315,7 +315,7 @@
           2,
           4
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "ice",
@@ -325,7 +325,7 @@
           0,
           2
         ],
-        "targetVowel": "0"
+        "targetVowel": 0
       }
     ]
   },
@@ -339,7 +339,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "fish",
@@ -348,7 +348,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "sing",
@@ -357,7 +357,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       }
     ]
   },
@@ -377,7 +377,7 @@
           1,
           3
         ],
-        "targetVowel": "3"
+        "targetVowel": 3
       },
       {
         "stringName": "yeti",
@@ -392,7 +392,7 @@
           1,
           3
         ],
-        "targetVowel": "3"
+        "targetVowel": 3
       },
       {
         "stringName": "skis",
@@ -405,7 +405,7 @@
         "vowels": [
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -420,7 +420,7 @@
           1,
           4
         ],
-        "targetVowel": "4"
+        "targetVowel": 4
       },
       {
         "stringName": "centipede",
@@ -443,7 +443,7 @@
           6,
           8
         ],
-        "targetVowel": "4"
+        "targetVowel": 4
       },
       {
         "stringName": "clarinet",
@@ -461,7 +461,7 @@
           4,
           6
         ],
-        "targetVowel": "4"
+        "targetVowel": 4
       }
     ]
   },
@@ -475,7 +475,7 @@
         "vowels": [
           0
         ],
-        "targetVowel": "0"
+        "targetVowel": 0
       },
       {
         "stringName": "mole",
@@ -485,7 +485,7 @@
           1,
           3
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "nose",
@@ -495,7 +495,7 @@
           1,
           3
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       }
     ]
   },
@@ -509,7 +509,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "hot",
@@ -518,7 +518,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "pot",
@@ -527,7 +527,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       }
     ]
   },
@@ -542,7 +542,7 @@
           1,
           3
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "glove",
@@ -552,7 +552,7 @@
           2,
           4
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "wagon",
@@ -562,7 +562,7 @@
           1,
           3
         ],
-        "targetVowel": "3"
+        "targetVowel": 3
       }
     ]
   },
@@ -577,7 +577,7 @@
           2,
           3
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "tuba",
@@ -587,7 +587,7 @@
           1,
           3
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "flute",
@@ -599,7 +599,7 @@
           2,
           4
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -614,7 +614,7 @@
           1,
           3
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "statue",
@@ -627,7 +627,7 @@
           4,
           5
         ],
-        "targetVowel": "4"
+        "targetVowel": 4
       },
       {
         "stringName": "unicycle",
@@ -639,7 +639,7 @@
           2,
           7
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -653,7 +653,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "bug",
@@ -662,7 +662,7 @@
         "vowels": [
           1
         ],
-        "targetVowel": "1"
+        "targetVowel": 1
       },
       {
         "stringName": "plum",
@@ -671,7 +671,7 @@
         "vowels": [
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -685,7 +685,7 @@
         "vowels": [
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "cry",
@@ -694,7 +694,7 @@
         "vowels": [
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       },
       {
         "stringName": "sky",
@@ -703,7 +703,7 @@
         "vowels": [
           2
         ],
-        "targetVowel": "2"
+        "targetVowel": 2
       }
     ]
   },
@@ -718,7 +718,7 @@
           1,
           3
         ],
-        "targetVowel": "3"
+        "targetVowel": 3
       },
       {
         "stringName": "candy",
@@ -728,7 +728,7 @@
           1,
           4
         ],
-        "targetVowel": "4"
+        "targetVowel": 4
       },
       {
         "stringName": "sleepy",
@@ -739,7 +739,7 @@
           3,
           5
         ],
-        "targetVowel": "5"
+        "targetVowel": 5
       }
     ]
   }
