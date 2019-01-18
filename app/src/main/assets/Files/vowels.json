@@ -570,14 +570,21 @@
     "phoneme": "u_1_long",
     "words": [
       {
-        "stringName": "blue",
-        "sound": [],
-        "silentLetters": [],
-        "vowels": [
-          2,
-          3
+        "stringName": "suit",
+        "sound": [
+          "s_1_s",
+          "u_1_long",
+          "",
+          "t_"
         ],
-        "targetVowel": 2
+        "silentLetters": [
+          2
+        ],
+        "vowels": [
+          1,
+          2
+        ],
+        "targetVowel": 1
       },
       {
         "stringName": "tuba",
@@ -617,17 +624,28 @@
         "targetVowel": 1
       },
       {
-        "stringName": "statue",
-        "sound": [],
+        "stringName": "ambulance",
+        "sound": [
+          "a_2_short",
+          "m_",
+          "b_",
+          "u_2_long",
+          "l_1_unvoiced",
+          "a_4_schwa",
+          "n_",
+          "c_2_soft",
+          ""
+        ],
         "silentLetters": [
-          5
+          8
         ],
         "vowels": [
-          2,
-          4,
-          5
+          0,
+          3,
+          5,
+          8
         ],
-        "targetVowel": 4
+        "targetVowel": 3
       },
       {
         "stringName": "unicycle",
