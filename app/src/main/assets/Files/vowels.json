@@ -93,10 +93,10 @@
       {
         "stringName": "fall",
         "sound": [
-          "f",
-          "a",
-          "l",
-          "l"
+          "f_",
+          "a_3_short",
+          "l_2_voiced",
+          "l_2_voiced"
         ],
         "silentLetters": [],
         "vowels": "1",
@@ -105,10 +105,9 @@
       {
         "stringName": "swan",
         "sound": [
-          "s",
-          "w",
-          "a",
-          "n"
+          "sw-",
+          "a_3_short",
+          "n_"
         ],
         "silentLetters": [
           3
@@ -119,10 +118,10 @@
       {
         "stringName": "ball",
         "sound": [
-          "b",
-          "a-ah",
-          "l",
-          "l"
+          "b_",
+          "a_3_short",
+          "l_2_voiced",
+          "l_2_voiced"
         ],
         "silentLetters": [],
         "vowels": "1",
