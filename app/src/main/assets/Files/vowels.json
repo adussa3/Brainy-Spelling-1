@@ -324,8 +324,15 @@
     "words": [
       {
         "stringName": "five",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          "f_",
+          "i_1_long",
+          "v_",
+          ""
+        ],
+        "silentLetters": [
+          3
+        ],
         "vowels": [
           1,
           3
@@ -334,8 +341,15 @@
       },
       {
         "stringName": "slide",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          "sl-",
+          "i_1_long",
+          "d_",
+          ""
+        ],
+        "silentLetters": [
+          4
+        ],
         "vowels": [
           2,
           4
@@ -344,8 +358,14 @@
       },
       {
         "stringName": "ice",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          "i_1_long",
+          "c_2_soft",
+          ""
+        ],
+        "silentLetters": [
+          2
+        ],
         "vowels": [
           0,
           2
