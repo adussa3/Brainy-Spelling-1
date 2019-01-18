@@ -362,6 +362,54 @@
     ]
   },
   {
+    "phoneme": "i_2a_e",
+    "words": [
+      {
+        "stringName": "taxi",
+        "sound": [
+          "t_",
+          "a_2_short",
+          "x_",
+          "i_2_short"
+        ],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "3"
+      },
+      {
+        "stringName": "yeti",
+        "sound": [
+          "y_1_consonant",
+          "e_2_short",
+          "t_",
+          "i_2_short"
+        ],
+        "silentLetters": [],
+        "vowels": [
+          1,
+          3
+        ],
+        "targetVowel": "3"
+      },
+      {
+        "stringName": "skis",
+        "sound": [
+          "sk-",
+          "i_2_short",
+          "s_2_z"
+        ],
+        "silentLetters": [],
+        "vowels": [
+          2
+        ],
+        "targetVowel": "2"
+      }
+    ]
+  },
+  {
     "phoneme": "i_3_schwa",
     "words": [
       {
