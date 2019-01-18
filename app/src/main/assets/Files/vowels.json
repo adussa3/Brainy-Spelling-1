@@ -725,7 +725,11 @@
     "words": [
       {
         "stringName": "bus",
-        "sound": [],
+        "sound": [
+          "b_",
+          "u_3_short_schwa",
+          "s_1_s"
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -734,7 +738,11 @@
       },
       {
         "stringName": "bug",
-        "sound": [],
+        "sound": [
+          "b_",
+          "u_3_short_schwa",
+          "g_2_hard"
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -743,7 +751,11 @@
       },
       {
         "stringName": "plum",
-        "sound": [],
+        "sound": [
+          "pl-",
+          "u_3_short_schwa",
+          "m_"
+        ],
         "silentLetters": [],
         "vowels": [
           2
