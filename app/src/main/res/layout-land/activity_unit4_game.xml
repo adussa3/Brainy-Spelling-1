@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Unit3GameActivity">
+    tools:context=".Unit4GameActivity">
 
     <include
         android:id="@+id/actionBar"
@@ -36,7 +36,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="4"
                 android:background="@android:color/transparent"
-                app:srcCompat="@drawable/word_fox1" />
+                app:srcCompat="@drawable/word_fox1_grayscale" />
 
             <EditText
                 android:id="@+id/editText3"
@@ -45,7 +45,6 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="F"
                 android:textAlignment="center" />
 
         </LinearLayout>
@@ -62,7 +61,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="4"
                 android:background="@android:color/transparent"
-                app:srcCompat="@drawable/word_fox2_grayscale" />
+                app:srcCompat="@drawable/word_fox2" />
 
             <EditText
                 android:id="@+id/editText"
@@ -71,6 +70,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:text="O"
                 android:textAlignment="center" />
         </LinearLayout>
 
@@ -117,19 +117,19 @@
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A" />
+                android:text="B" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E" />
+                android:text="D" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I" />
+                android:text="W" />
 
         </TableRow>
 
@@ -141,19 +141,19 @@
                 android:id="@+id/button11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="O" />
+                android:text="F" />
 
             <Button
                 android:id="@+id/button12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="U" />
+                android:text="M" />
 
             <Button
                 android:id="@+id/button13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Y" />
+                android:text="R" />
 
         </TableRow>
 

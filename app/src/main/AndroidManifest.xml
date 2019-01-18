@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
-        <activity android:name=".Unit3GameActivity"></activity>
+        <activity android:name=".Unit4GameActivity"></activity>
+        <activity android:name=".Unit4WordListActivity" />
+        <activity android:name=".Unit4ConsonantListActivity" />
+        <activity android:name=".Unit3GameActivity" />
         <activity android:name=".Unit3WordListActivity" />
         <activity android:name=".Unit3VowelListActivity" />
         <activity
