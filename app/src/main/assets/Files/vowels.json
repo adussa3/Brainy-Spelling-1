@@ -810,7 +810,12 @@
     "words": [
       {
         "stringName": "baby",
-        "sound": [],
+        "sound": [
+          "b_",
+          "a_1_long",
+          "b_",
+          "y_3_e"
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -820,7 +825,13 @@
       },
       {
         "stringName": "candy",
-        "sound": [],
+        "sound": [
+          "c_1_hard",
+          "a_2_short",
+          "n_",
+          "d_",
+          "y_3_e"
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -830,7 +841,12 @@
       },
       {
         "stringName": "sleepy",
-        "sound": [],
+        "sound": [
+          "sl-",
+          "ee-",
+          "p_",
+          "y_3_e"
+        ],
         "silentLetters": [],
         "vowels": [
           2,
