@@ -56,7 +56,10 @@
     "words": [
       {
         "stringName": "cow",
-        "sound": [],
+        "sound": [
+          "c_1_hard",
+          "ow-2_short"
+        ],
         "silentLetters": [],
         "consonants": [],
         "targetConsonant": [
