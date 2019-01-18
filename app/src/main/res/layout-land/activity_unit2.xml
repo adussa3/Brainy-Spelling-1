@@ -14,16 +14,9 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="0dp"
-        android:layout_height="207dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actionBar">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="150dp">
 
         <TableRow
             android:layout_height="wrap_content"
@@ -107,9 +100,9 @@
             <Button
                 android:id="@+id/unit2b7"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:text="o"
                 tools:layout_editor_absoluteX="118dp"
                 tools:layout_editor_absoluteY="257dp" />
@@ -117,9 +110,9 @@
             <Button
                 android:id="@+id/unit2b8"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:text="a"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="257dp" />
@@ -128,9 +121,9 @@
                 android:id="@+id/unit2b9"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:text="e"
                 tools:layout_editor_absoluteX="40dp"
                 tools:layout_editor_absoluteY="91dp" />
@@ -142,10 +135,11 @@
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="wrap_content"
-        android:layout_height="218dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -162,22 +156,22 @@
 
             <ImageView
                 android:id="@+id/catHead"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/cat_head_bw" />
 
             <ImageView
                 android:id="@+id/catBod"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/cat_middle_bw" />
 
             <ImageView
                 android:id="@+id/catTail"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/cat_tail_bw" />
         </LinearLayout>
@@ -226,22 +220,22 @@
 
             <ImageView
                 android:id="@+id/henHead"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/hen_head_bw" />
 
             <ImageView
                 android:id="@+id/henBod"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/hen_middle_bw" />
 
             <ImageView
                 android:id="@+id/henTail"
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/hen_tail_bw" />
         </LinearLayout>
@@ -291,22 +285,22 @@
 
             <ImageView
                 android:id="@+id/dogHead"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/dog_head_bw" />
 
             <ImageView
                 android:id="@+id/dogBod"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/dog_middle_bw" />
 
             <ImageView
                 android:id="@+id/dogTail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/dog_tail_bw" />
         </LinearLayout>
