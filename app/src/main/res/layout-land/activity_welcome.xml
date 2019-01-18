@@ -27,5 +27,5 @@
         android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:onClick="onClickHome"
-        app:srcCompat="@drawable/continue_button" />
+        app:srcCompat="@drawable/button_continue" />
 </LinearLayout>
