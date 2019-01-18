@@ -230,7 +230,11 @@
     "words": [
       {
         "stringName": "elf",
-        "sound": [],
+        "sound": [
+          "e_2_short",
+          "l_2_voiced",
+          "f_"
+        ],
         "silentLetters": [],
         "vowels": [
           0
@@ -238,6 +242,7 @@
         "targetVowel": 0
       },
       {
+        // TODO : bed phonemes are wrong in Walter's doc
         "stringName": "bed",
         "sound": [],
         "silentLetters": [],
@@ -248,7 +253,11 @@
       },
       {
         "stringName": "net",
-        "sound": [],
+        "sound": [
+          "n_",
+          "e_2_short",
+          "t_"
+        ],
         "silentLetters": [],
         "vowels": [
           1
