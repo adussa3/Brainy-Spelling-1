@@ -769,7 +769,10 @@
     "words": [
       {
         "stringName": "fly",
-        "sound": [],
+        "sound": [
+          "fl-",
+          "y_2_i"
+        ],
         "silentLetters": [],
         "vowels": [
           2
@@ -778,7 +781,10 @@
       },
       {
         "stringName": "cry",
-        "sound": [],
+        "sound": [
+          "cr-",
+          "y_2_i"
+        ],
         "silentLetters": [],
         "vowels": [
           2
@@ -787,7 +793,10 @@
       },
       {
         "stringName": "sky",
-        "sound": [],
+        "sound": [
+          "sk-",
+          "y_2_i"
+        ],
         "silentLetters": [],
         "vowels": [
           2
