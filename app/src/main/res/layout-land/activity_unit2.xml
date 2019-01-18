@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".unit2">
+    tools:context=".Unit2Activity">
 
     <include
         android:id="@+id/actionBar"
@@ -15,8 +15,10 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="150dp">
+        android:layout_height="230dp"
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="104dp">
 
         <TableRow
             android:layout_height="wrap_content"
@@ -44,7 +46,7 @@
 
             <Button
                 android:id="@+id/unit2b3"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
@@ -132,27 +134,16 @@
 
     </TableLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/actionBar">
+    <TableLayout
+        android:layout_width="241dp"
+        android:layout_height="303dp"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="335dp"
+        tools:layout_editor_absoluteY="75dp">
 
-        <LinearLayout
-            android:id="@+id/topSegments"
-            android:layout_width="240dp"
-            android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/catHead"
@@ -172,17 +163,13 @@
                 android:id="@+id/catTail"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_weight="1"
                 android:src="@drawable/cat_tail_bw" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/topBlanks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/topSegments"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/unit2t1"
@@ -209,18 +196,16 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="text" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/secondSegments"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/topBlanks"
-            android:orientation="horizontal">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/henHead"
-                android:layout_width="50dp"
+                android:layout_width="30dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/hen_head_bw" />
@@ -238,15 +223,12 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/hen_tail_bw" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/secondBlanks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/secondSegments"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/unit2t4"
@@ -273,15 +255,13 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="text" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/lastSegments"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/secondBlanks"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/dogRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/dogHead"
@@ -303,15 +283,14 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/dog_tail_bw" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/lastBlanks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lastSegments"
-            android:layout_centerVertical="true"
-            android:orientation="horizontal">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="38dp">
 
             <EditText
                 android:id="@+id/unit2t7"
@@ -339,9 +318,10 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="text" />
+        </TableRow>
 
-        </LinearLayout>
-    </RelativeLayout>
+    </TableLayout>
+
 
 
 </android.support.constraint.ConstraintLayout>
