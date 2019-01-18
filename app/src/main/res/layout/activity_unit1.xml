@@ -11,10 +11,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <include
+            android:id="@+id/actionBar"
+            layout="@layout/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -23,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/imageViewTop0"
@@ -54,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/imageViewTop3"
@@ -84,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal"
-                android:padding="20dp">
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/imageViewTop6"
@@ -112,7 +118,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <TableLayout
@@ -214,7 +220,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -253,7 +260,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_weight="3"
                     android:orientation="horizontal"
-                    android:padding="5dp">
+                    android:padding="0dp">
 
                     <EditText
                         android:id="@+id/editLetter1"

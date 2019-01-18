@@ -9,5 +9,8 @@ public class Unit1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit1);
+        View actionBar = findViewById(R.id.actionBar);
+        TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
+        actionBarTitle.setText("Unit 1");
     }
 }
