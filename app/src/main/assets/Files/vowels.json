@@ -5,9 +5,9 @@
       {
         "stringName": "ape",
         "sound": [
-          "a_1_long",
-          "p_",
-          ""
+          1,
+          79,
+          -1
         ],
         "silentLetters": [
           2
@@ -18,10 +18,10 @@
       {
         "stringName": "face",
         "sound": [
-          "f_",
-          "a_1_long",
-          "c_2_soft",
-          ""
+          36,
+          1,
+          17,
+          -1
         ],
         "silentLetters": [
           3
@@ -32,10 +32,10 @@
       {
         "stringName": "whale",
         "sound": [
-          "wh-",
-          "a_1_long",
-          "l_2_voiced",
-          ""
+          108,
+          1,
+          58,
+          -1
         ],
         "silentLetters": [
           4
@@ -51,9 +51,9 @@
       {
         "stringName": "axe",
         "sound": [
-          "a_2_short",
-          "x_",
-          ""
+          2,
+          109,
+          -1
         ],
         "silentLetters": [
           2
@@ -64,9 +64,9 @@
       {
         "stringName": "bat",
         "sound": [
-          "b_",
-          "a_2_short",
-          "t_"
+          13,
+          2,
+          96
         ],
         "silentLetters": [],
         "vowels": "1",
@@ -75,9 +75,9 @@
       {
         "stringName": "cat",
         "sound": [
-          "c_1_hard",
-          "a_2_short",
-          "t_"
+          16,
+          2,
+          96
         ],
         "silentLetters": [],
         "vowels": [
@@ -93,10 +93,10 @@
       {
         "stringName": "fall",
         "sound": [
-          "f_",
-          "a_3_short",
-          "l_2_voiced",
-          "l_2_voiced"
+          36,
+          3,
+          58,
+          58
         ],
         "silentLetters": [],
         "vowels": "1",
@@ -105,9 +105,10 @@
       {
         "stringName": "swan",
         "sound": [
-          "sw-",
-          "a_3_short",
-          "n_"
+          95,
+          95,
+          3,
+          61
         ],
         "silentLetters": [
           3
@@ -118,10 +119,10 @@
       {
         "stringName": "ball",
         "sound": [
-          "b_",
-          "a_3_short",
-          "l_2_voiced",
-          "l_2_voiced"
+          13,
+          3,
+          58,
+          58
         ],
         "silentLetters": [],
         "vowels": "1",
@@ -135,10 +136,10 @@
       {
         "stringName": "sofa",
         "sound": [
-          "s_1_s",
-          "o_1_long",
-          "f_",
-          "a_3_short"
+          84,
+          65,
+          36,
+          4
         ],
         "silentLetters": [],
         "vowels": [
@@ -150,11 +151,10 @@
       {
         "stringName": "afraid",
         "sound": [
-          "a_3_short",
-          "f_",
-          "a_1_long",
-          "",
-          "d_"
+          4,
+          38,
+          5,
+          22
         ],
         "silentLetters": [
           5
@@ -169,11 +169,10 @@
       {
         "stringName": "zebra",
         "sound": [
-          "z_",
-          "e_1_long",
-          "br-",
-          "a_4_schwa",
-          ""
+          113,
+          24,
+          15,
+          4
         ],
         "silentLetters": [],
         "vowels": [
@@ -190,8 +189,8 @@
       {
         "stringName": "he",
         "sound": [
-          "h_",
-          "e_1_long"
+          43,
+          24
         ],
         "silentLetters": [],
         "vowels": [
@@ -202,8 +201,8 @@
       {
         "stringName": "we",
         "sound": [
-          "w_",
-          "e_1_long"
+          107,
+          24
         ],
         "silentLetters": [],
         "vowels": [
@@ -214,8 +213,9 @@
       {
         "stringName": "she",
         "sound": [
-          "sh-",
-          "e_1_long"
+          87,
+          87,
+          24
         ],
         "silentLetters": [],
         "vowels": [
@@ -231,9 +231,9 @@
       {
         "stringName": "elf",
         "sound": [
-          "e_2_short",
-          "l_2_voiced",
-          "f_"
+          25,
+          58,
+          36
         ],
         "silentLetters": [],
         "vowels": [
@@ -254,9 +254,9 @@
       {
         "stringName": "net",
         "sound": [
-          "n_",
-          "e_2_short",
-          "t_"
+          61,
+          25,
+          96
         ],
         "silentLetters": [],
         "vowels": [
@@ -272,10 +272,7 @@
       {
         // TODO oven phonemes are also wrong
         "stringName": "oven",
-        "sound": [
-          "o_3_schwa",
-          "v_"
-        ],
+        "sound": [],
         "silentLetters": [],
         "vowels": [
           0,
@@ -286,11 +283,7 @@
       {
         // TODO camel phonemes are also wrong 
         "stringName": "camel",
-        "sound": [
-          "c_1_hard",
-          "a_2_short",
-          "m_"
-        ],
+        "sound": [],
         "silentLetters": [],
         "vowels": [
           1,
@@ -301,12 +294,12 @@
       {
         "stringName": "kitten",
         "sound": [
-          "k_",
-          "i_2_short",
-          "t_",
-          "t_",
-          "",
-          "n_"
+          56,
+          45,
+          96,
+          96,
+          -1,
+          61
         ],
         "silentLetters": [
           4
@@ -325,10 +318,10 @@
       {
         "stringName": "five",
         "sound": [
-          "f_",
-          "i_1_long",
-          "v_",
-          ""
+          36,
+          44,
+          106,
+          -1
         ],
         "silentLetters": [
           3
@@ -342,10 +335,11 @@
       {
         "stringName": "slide",
         "sound": [
-          "sl-",
-          "i_1_long",
-          "d_",
-          ""
+          89,
+          89,
+          44,
+          22,
+          -1
         ],
         "silentLetters": [
           4
@@ -359,9 +353,9 @@
       {
         "stringName": "ice",
         "sound": [
-          "i_1_long",
-          "c_2_soft",
-          ""
+          44,
+          17,
+          -1
         ],
         "silentLetters": [
           2
@@ -379,7 +373,11 @@
     "words": [
       {
         "stringName": "hit",
-        "sound": [],
+        "sound": [
+          43,
+          45,
+          96
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -388,7 +386,11 @@
       },
       {
         "stringName": "fish",
-        "sound": [],
+        "sound": [
+          36,
+          45,
+          87
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -397,7 +399,11 @@
       },
       {
         "stringName": "sing",
-        "sound": [],
+        "sound": [
+          84,
+          45,
+          63
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -412,10 +418,10 @@
       {
         "stringName": "taxi",
         "sound": [
-          "t_",
-          "a_2_short",
-          "x_",
-          "i_2_short"
+          96,
+          2,
+          109,
+          45
         ],
         "silentLetters": [],
         "vowels": [
@@ -427,10 +433,10 @@
       {
         "stringName": "yeti",
         "sound": [
-          "y_1_consonant",
-          "e_2_short",
-          "t_",
-          "i_2_short"
+          110,
+          25,
+          96,
+          45
         ],
         "silentLetters": [],
         "vowels": [
@@ -442,9 +448,9 @@
       {
         "stringName": "skis",
         "sound": [
-          "sk-",
-          "i_2_short",
-          "s_2_z"
+          88,
+          45,
+          85
         ],
         "silentLetters": [],
         "vowels": [
@@ -459,7 +465,14 @@
     "words": [
       {
         "stringName": "rabbit",
-        "sound": [],
+        "sound": [
+          83,
+          2,
+          13,
+          13,
+          46,
+          96
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -470,14 +483,15 @@
       {
         "stringName": "centipede",
         "sound": [
-          "c_2_soft",
-          "e_2_short",
-          "n_",
-          "t_",
-          "i_3_schwa",
-          "p_",
-          "e_1_long",
-          "d_"
+          17,
+          25,
+          61,
+          96,
+          46,
+          79,
+          24,
+          22,
+          -1
         ],
         "silentLetters": [
           8
@@ -491,14 +505,15 @@
         "targetVowel": 4
       },
       {
+        // TODO : something seems suspicious about these phonemes
         "stringName": "clarinet",
         "sound": [
-          "cl-",
-          "ar-2_short",
-          "i_3_schwa",
-          "n_",
-          "e_1_long",
-          "t_"
+          20,
+          9,
+          46,
+          61,
+          25,
+          96
         ],
         "silentLetters": [],
         "vowels": [
@@ -515,7 +530,11 @@
     "words": [
       {
         "stringName": "old",
-        "sound": [],
+        "sound": [
+          65,
+          58,
+          22
+        ],
         "silentLetters": [],
         "vowels": [
           0
@@ -524,8 +543,15 @@
       },
       {
         "stringName": "mole",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          60,
+          66,
+          97,
+          -1
+        ],
+        "silentLetters": [
+          3
+        ],
         "vowels": [
           1,
           3
@@ -534,8 +560,15 @@
       },
       {
         "stringName": "nose",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          61,
+          65,
+          85,
+          -1
+        ],
+        "silentLetters": [
+          3
+        ],
         "vowels": [
           1,
           3
@@ -549,7 +582,11 @@
     "words": [
       {
         "stringName": "moth",
-        "sound": [],
+        "sound": [
+          60,
+          66,
+          97
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -558,7 +595,11 @@
       },
       {
         "stringName": "hot",
-        "sound": [],
+        "sound": [
+          43,
+          66,
+          96
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -567,7 +608,11 @@
       },
       {
         "stringName": "pot",
-        "sound": [],
+        "sound": [
+          79,
+          66,
+          96
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -581,8 +626,15 @@
     "words": [
       {
         "stringName": "love",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          58,
+          67,
+          106,
+          -1
+        ],
+        "silentLetters": [
+          3
+        ],
         "vowels": [
           1,
           3
@@ -591,8 +643,16 @@
       },
       {
         "stringName": "glove",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          41,
+          41,
+          67,
+          106,
+          -1
+        ],
+        "silentLetters": [
+          4
+        ],
         "vowels": [
           2,
           4
@@ -601,7 +661,13 @@
       },
       {
         "stringName": "wagon",
-        "sound": [],
+        "sound": [
+          107,
+          2,
+          40,
+          67,
+          61
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -617,10 +683,10 @@
       {
         "stringName": "suit",
         "sound": [
-          "s_1_s",
-          "u_1_long",
-          "",
-          "t_"
+          84,
+          101,
+          -1,
+          96
         ],
         "silentLetters": [
           2
@@ -633,7 +699,12 @@
       },
       {
         "stringName": "tuba",
-        "sound": [],
+        "sound": [
+          96,
+          101,
+          13,
+          4
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -643,7 +714,13 @@
       },
       {
         "stringName": "flute",
-        "sound": [],
+        "sound": [
+          37,
+          37,
+          101,
+          96,
+          -1
+        ],
         "silentLetters": [
           4
         ],
@@ -661,11 +738,11 @@
       {
         "stringName": "music",
         "sound": [
-          "m_",
-          "u_2_long",
-          "s_2_z",
-          "i_2_short",
-          "c_1_hard"
+          60,
+          102,
+          85,
+          45,
+          16
         ],
         "silentLetters": [],
         "vowels": [
@@ -677,15 +754,15 @@
       {
         "stringName": "ambulance",
         "sound": [
-          "a_2_short",
-          "m_",
-          "b_",
-          "u_2_long",
-          "l_1_unvoiced",
-          "a_4_schwa",
-          "n_",
-          "c_2_soft",
-          ""
+          2,
+          60,
+          13,
+          102,
+          58,
+          4,
+          61,
+          17,
+          -1
         ],
         "silentLetters": [
           8
@@ -701,13 +778,14 @@
       {
         "stringName": "unicycle",
         "sound": [
-          "u_2_long",
-          "n_",
-          "i_2_short",
-          "c_2_soft",
-          "y_2_i",
-          "c_1_hard",
-          "le-"
+          102,
+          61,
+          45,
+          17,
+          111,
+          16,
+          59,
+          59
         ],
         "silentLetters": [
           7
@@ -726,9 +804,9 @@
       {
         "stringName": "bus",
         "sound": [
-          "b_",
-          "u_3_short_schwa",
-          "s_1_s"
+          13,
+          103,
+          84
         ],
         "silentLetters": [],
         "vowels": [
@@ -739,9 +817,9 @@
       {
         "stringName": "bug",
         "sound": [
-          "b_",
-          "u_3_short_schwa",
-          "g_2_hard"
+          13,
+          103,
+          40
         ],
         "silentLetters": [],
         "vowels": [
@@ -752,9 +830,10 @@
       {
         "stringName": "plum",
         "sound": [
-          "pl-",
-          "u_3_short_schwa",
-          "m_"
+          80,
+          80,
+          103,
+          60
         ],
         "silentLetters": [],
         "vowels": [
@@ -770,8 +849,9 @@
       {
         "stringName": "fly",
         "sound": [
-          "fl-",
-          "y_2_i"
+          37,
+          37,
+          111
         ],
         "silentLetters": [],
         "vowels": [
@@ -782,8 +862,9 @@
       {
         "stringName": "cry",
         "sound": [
-          "cr-",
-          "y_2_i"
+          21,
+          21,
+          111
         ],
         "silentLetters": [],
         "vowels": [
@@ -794,8 +875,9 @@
       {
         "stringName": "sky",
         "sound": [
-          "sk-",
-          "y_2_i"
+          88,
+          88,
+          111
         ],
         "silentLetters": [],
         "vowels": [
@@ -811,10 +893,10 @@
       {
         "stringName": "baby",
         "sound": [
-          "b_",
-          "a_1_long",
-          "b_",
-          "y_3_e"
+          13,
+          1,
+          13,
+          112
         ],
         "silentLetters": [],
         "vowels": [
@@ -826,11 +908,11 @@
       {
         "stringName": "candy",
         "sound": [
-          "c_1_hard",
-          "a_2_short",
-          "n_",
-          "d_",
-          "y_3_e"
+          16,
+          2,
+          61,
+          22,
+          112
         ],
         "silentLetters": [],
         "vowels": [
@@ -842,10 +924,12 @@
       {
         "stringName": "sleepy",
         "sound": [
-          "sl-",
-          "ee-",
-          "p_",
-          "y_3_e"
+          89,
+          89,
+          29,
+          29,
+          79,
+          112
         ],
         "silentLetters": [],
         "vowels": [
