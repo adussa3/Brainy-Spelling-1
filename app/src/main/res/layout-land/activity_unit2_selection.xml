@@ -24,42 +24,44 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_marginStart="65dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="50dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
 
+                android:scaleType="centerCrop"
                 android:src="@drawable/spf_01" />
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="50dp"
-                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
 
+                android:scaleType="centerCrop"
                 android:src="@drawable/spf_03" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="100dp">
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/spf_04"
+                tools:scaleType="centerCrop" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="50dp"
-                android:layout_height="100dp"
-                android:src="@drawable/spf_04" />
-
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="50dp"
-                android:layout_height="100dp"
+                android:id="@+id/imageButton2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
                 android:src="@drawable/spf_06" />
+
         </LinearLayout>
+
     </HorizontalScrollView>
 
 
