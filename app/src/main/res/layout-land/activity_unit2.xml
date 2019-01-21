@@ -142,7 +142,7 @@
 
     <TableLayout
         android:id="@+id/tableLayout2"
-        android:layout_width="241dp"
+        android:layout_width="260dp"
         android:layout_height="303dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="30dp"
@@ -157,7 +157,29 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/catHead"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat_head_bw" />
+
+            <ImageView
+                android:id="@+id/catBod"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat_middle_bw" />
+
+            <ImageView
+                android:id="@+id/catTail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cat_tail_bw" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -197,7 +219,7 @@
 
             <ImageView
                 android:id="@+id/henHead"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
@@ -205,7 +227,7 @@
 
             <ImageView
                 android:id="@+id/henBod"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
@@ -214,7 +236,7 @@
 
             <ImageView
                 android:id="@+id/henTail"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
