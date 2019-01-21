@@ -157,9 +157,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </TableRow>
+            android:layout_height="match_parent"/>
 
         <TableRow
             android:layout_width="match_parent"
@@ -202,8 +200,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/hen_head_bw" />
 
             <ImageView
@@ -212,7 +209,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/hen_middle_bw" />
 
             <ImageView
@@ -221,7 +218,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/hen_tail_bw" />
 
         </TableRow>
@@ -268,6 +265,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:scaleType="centerCrop"
                 android:src="@drawable/dog_head_bw" />
 
             <ImageView
@@ -275,6 +273,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:scaleType="centerCrop"
                 android:src="@drawable/dog_middle_bw" />
 
             <ImageView
@@ -282,6 +281,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
+                android:scaleType="centerCrop"
                 android:src="@drawable/dog_tail_bw" />
 
         </TableRow>
