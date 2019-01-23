@@ -1185,7 +1185,7 @@
     "phoneme": "v_",
     "words": [
       {
-        "stringName": "volcanoe",
+        "stringName": "volcano",
         "sound": [
           106,
           66,
@@ -1193,12 +1193,9 @@
           16,
           1,
           61,
-          65,
-          0
+          65
         ],
-        "silentLetters": [
-          7
-        ],
+        "silentLetters": [],
         "consonants": [
           0,
           2,
