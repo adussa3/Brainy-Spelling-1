@@ -242,9 +242,12 @@
         "targetVowel": 0
       },
       {
-        // TODO : bed phonemes are wrong in Walter's doc
         "stringName": "bed",
-        "sound": [],
+        "sound": [
+          13,
+          25,
+          22
+        ],
         "silentLetters": [],
         "vowels": [
           1
@@ -270,9 +273,13 @@
     "phoneme": "e_3_schwa",
     "words": [
       {
-        // TODO oven phonemes are also wrong
         "stringName": "oven",
-        "sound": [],
+        "sound": [
+          67,
+          106,
+          26,
+          61
+        ],
         "silentLetters": [],
         "vowels": [
           0,
@@ -281,9 +288,14 @@
         "targetVowel": 2
       },
       {
-        // TODO camel phonemes are also wrong 
         "stringName": "camel",
-        "sound": [],
+        "sound": [
+          16,
+          2,
+          60,
+          26,
+          58
+        ],
         "silentLetters": [],
         "vowels": [
           1,
@@ -505,7 +517,6 @@
         "targetVowel": 4
       },
       {
-        // TODO : something seems suspicious about these phonemes
         "stringName": "clarinet",
         "sound": [
           20,
