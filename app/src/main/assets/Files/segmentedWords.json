@@ -1,0 +1,339 @@
+[
+  [
+    {
+      "displayString": "dog",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 22,
+            "imageFile": "Dog-head"
+        },
+        {
+            "soundFile": 66,
+            "imageFile": "Dog-middle"
+        },
+        {
+            "soundFile": 40,
+            "imageFile": "Dog-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "cat",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 16,
+            "imageFile": "Cat-head"
+        },
+        {
+            "soundFile": 2,
+            "imageFile": "Cat-middle"
+        },
+        {
+            "soundFile": 96,
+            "imageFile": "Cat-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "hen",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 43,
+            "imageFile": "Hen-head"
+        },
+        {
+            "soundFile": 25,
+            "imageFile": "Hen-middle"
+        },
+        {
+            "soundFile": 61,
+            "imageFile": "Hen-tail"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "displayString": "fox",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 36,
+            "imageFile": "Fox-head"
+        },
+        {
+            "soundFile": 66,
+            "imageFile": "Fox-middle"
+        },
+        {
+            "soundFile": 109,
+            "imageFile": "Fox-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "ram",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 83,
+            "imageFile": "Ram-head"
+        },
+        {
+            "soundFile": 2,
+            "imageFile": "Ram-middle"
+        },
+        {
+            "soundFile": 60,
+            "imageFile": "Ram-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "cub",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 16,
+            "imageFile": "Cub-head"
+        },
+        {
+            "soundFile": 103,
+            "imageFile": "Cub-middle"
+        },
+        {
+            "soundFile": 13,
+            "imageFile": "Cub-tail"
+        }
+      ]
+    }
+  ],
+  
+  [
+    {
+      "displayString": "pig",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 79,
+            "imageFile": "Pig-head"
+        },
+        {
+            "soundFile": 45,
+            "imageFile": "Pig-middle"
+        },
+        {
+            "soundFile": 40,
+            "imageFile": "Pig-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "bat",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 13,
+            "imageFile": "Bat-head"
+        },
+        {
+            "soundFile": 2,
+            "imageFile": "Bat-middle"
+        },
+        {
+            "soundFile": 96,
+            "imageFile": "Bat-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "elk",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 25,
+            "imageFile": "Elk-head"
+        },
+        {
+            "soundFile": 58,
+            "imageFile": "Elk-middle"
+        },
+        {
+            "soundFile": 56,
+            "imageFile": "Elk-tail"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "displayString": "ant",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": null,
+            "imageFile": "Ant-head"
+        },
+        {
+            "soundFile": null,
+            "imageFile": "Ant-middle"
+        },
+        {
+            "soundFile": null,
+            "imageFile": "Ant-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "bug",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 13,
+            "imageFile": "Bug-head"
+        },
+        {
+            "soundFile": 103,
+            "imageFile": "Bug-middle"
+        },
+        {
+            "soundFile": 40,
+            "imageFile": "Bug-tail"
+        }
+      ]
+    },
+    {
+      "displayString": "fly",
+      "landscape": true,
+      "segmentInfo": [
+        {
+            "soundFile": 37,
+            "imageFile": "Fly-head"
+        },
+        {
+            "soundFile": 111,
+            "imageFile": "Fly-middle"
+        },
+        {
+            "soundFile": null,
+            "imageFile": "Fly-tail"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "displayString": "cop",
+      "landscape": false,
+      "segmentInfo": [
+        {
+            "soundFile": 16,
+            "imageFile": "Cop-head"
+        },
+        {
+            "soundFile": 66,
+            "imageFile": "Cop-middle"
+        },
+        {
+            "soundFile": 79,
+            "imageFile": "Cop-bottom"
+        }
+      ]
+    },
+    {
+      "displayString": "elf",
+      "landscape": false,
+      "segmentInfo": [
+        {
+            "soundFile": 25,
+            "imageFile": "Elf-head"
+        },
+        {
+            "soundFile": 58,
+            "imageFile": "Elf-middle"
+        },
+        {
+            "soundFile": 36,
+            "imageFile": "Elf-bottom"
+        }
+      ]
+    },
+    {
+      "displayString": "kid",
+      "landscape": false,
+      "segmentInfo": [
+        {
+            "soundFile": 56,
+            "imageFile": "Kid-head"
+        },
+        {
+            "soundFile": 45,
+            "imageFile": "Kid-middle"
+        },
+        {
+            "soundFile": 22,
+            "imageFile": "Kid-bottom"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "displayString": "gal",
+      "landscape": false,
+      "segmentInfo": [
+        {
+            "soundFile": 40,
+            "imageFile": "Gal-head"
+        },
+        {
+            "soundFile": 3,
+            "imageFile": "Gal-middle"
+        },
+        {
+            "soundFile": 58,
+            "imageFile": "Gal-bottom"
+        }
+      ]
+    },
+    {
+      "displayString": "doc",
+      "landscape": false,
+      "segmentInfo": [
+        {
+            "soundFile": 22,
+            "imageFile": "Doc-head"
+        },
+        {
+            "soundFile": 66,
+            "imageFile": "Doc-middle"
+        },
+        {
+            "soundFile": 16,
+            "imageFile": "Doc-bottom"
+        }
+      ]
+    },
+    {
+      "displayString": "ref",
+      "landscape": false,
+      "segmentInfo": [
+        {
+            "soundFile": 83,
+            "imageFile": "Ref-head"
+        },
+        {
+            "soundFile": 25,
+            "imageFile": "Ref-middle"
+        },
+        {
+            "soundFile": 36,
+            "imageFile": "Ref-bottom"
+        }
+      ]
+    }
+  ]
+]
