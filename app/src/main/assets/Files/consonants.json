@@ -368,32 +368,53 @@
       }
     ]
   },
-  //  {
-  //    "phoneme": "j_",
-  //    "words": [
-  //      {
-  //        "stringName": "jay",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": [0]
-  //      },
-  //      {
-  //        "stringName": "jump",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      },
-  //      {
-  //        "stringName": "juggler",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      }
-  //    ]
-  //  },
+  {
+    "phoneme": "j_",
+    "words": [
+      {
+        "stringName": "jay",
+        "sound": [],
+        "silentLetters": [],
+        "consonants": [],
+        "targetConsonant": [
+          0
+        ]
+      },
+      {
+        "stringName": "jump",
+        "sound": [
+          55,
+          103,
+          60,
+          79
+        ],
+        "silentLetters": [],
+        "consonants": [
+          3
+        ],
+        "targetConsonant": [
+          0
+        ]
+      },
+      {
+        "stringName": "juggler",
+        "sound": [
+          55,
+          103,
+          40,
+          58,
+          31
+        ],
+        "silentLetters": [],
+        "consonants": [
+          5
+        ],
+        "targetConsonant": [
+          0
+        ]
+      }
+    ]
+  },
   //  {
   //    "phoneme": "k_",
   //    "words": [
