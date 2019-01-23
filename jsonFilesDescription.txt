@@ -1,0 +1,16 @@
+JSON backend for word and phoneme encoding: 5 JSON files
+
+1. segmentedWords.json
+List of lists. The outer list is a list of sets of three. The inner lists are an individual set of 3 words (e.g. cat, dog, hen)
+
+2. allPhonemes.json
+list with indices 0-114. The index corresponds to the phoneme number
+
+3. similarPhonemes.json
+list of lists where each sublist contains similar sounding phonemes. (e.g. index 1 corresponds to a list of phoneme numbers that sound similar to 'a')
+
+4. vowels
+list of dictionaries. each dictionary has a vowel value. then there is a "words" key with a list value containing the words that contain that vowel
+
+5. consonants
+list of dictionaries. each dictionary has a consonant value. then there i a "words" key with a list value containing the words that contain that consonant
