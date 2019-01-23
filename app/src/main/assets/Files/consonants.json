@@ -1395,27 +1395,55 @@
     "words": [
       {
         "stringName": "zoo",
-        "sound": [],
+        "sound": [
+          113,
+          72,
+          72
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "zebra",
-        "sound": [],
+        "sound": [
+          113,
+          24,
+          15,
+          15,
+          4
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "zipper",
-        "sound": [],
+        "sound": [
+          113,
+          45,
+          79,
+          79,
+          31,
+          31
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3,
+          5
+        ],
         "targetConsonant": [
           0
         ]
