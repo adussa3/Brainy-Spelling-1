@@ -12,7 +12,7 @@
         "silentLetters": [
           2
         ],
-        "vowels": "0",
+        "vowels": [],
         "targetVowel": 0
       },
       {
@@ -26,7 +26,7 @@
         "silentLetters": [
           3
         ],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -40,7 +40,7 @@
         "silentLetters": [
           4
         ],
-        "vowels": "2",
+        "vowels": [],
         "targetVowel": 2
       }
     ]
@@ -58,7 +58,7 @@
         "silentLetters": [
           2
         ],
-        "vowels": "0",
+        "vowels": [],
         "targetVowel": 0
       },
       {
@@ -69,7 +69,7 @@
           96
         ],
         "silentLetters": [],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -80,9 +80,7 @@
           96
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       }
     ]
@@ -99,7 +97,7 @@
           58
         ],
         "silentLetters": [],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -113,7 +111,7 @@
         "silentLetters": [
           3
         ],
-        "vowels": "2",
+        "vowels": [],
         "targetVowel": 2
       },
       {
@@ -125,7 +123,7 @@
           58
         ],
         "silentLetters": [],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       }
     ]
@@ -143,8 +141,7 @@
         ],
         "silentLetters": [],
         "vowels": [
-          1,
-          3
+          1
         ],
         "targetVowel": 3
       },
@@ -160,7 +157,6 @@
           5
         ],
         "vowels": [
-          0,
           3,
           4
         ],
@@ -176,7 +172,6 @@
         ],
         "silentLetters": [],
         "vowels": [
-          1,
           4
         ],
         "targetVowel": 1
@@ -193,9 +188,7 @@
           24
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -205,9 +198,7 @@
           24
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -218,9 +209,7 @@
           24
         ],
         "silentLetters": [],
-        "vowels": [
-          2
-        ],
+        "vowels": [],
         "targetVowel": 2
       }
     ]
@@ -236,9 +225,7 @@
           36
         ],
         "silentLetters": [],
-        "vowels": [
-          0
-        ],
+        "vowels": [],
         "targetVowel": 0
       },
       {
@@ -249,9 +236,7 @@
           22
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -262,9 +247,7 @@
           96
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       }
     ]
@@ -283,8 +266,7 @@
         "silentLetters": [],
         "vowels": [
           0,
-          2
-        ],
+          ],
         "targetVowel": 2
       },
       {
@@ -299,7 +281,6 @@
         "silentLetters": [],
         "vowels": [
           1,
-          3
         ],
         "targetVowel": 3
       },
@@ -307,18 +288,17 @@
         "stringName": "kitten",
         "sound": [
           56,
-          45,
+          114,
           96,
           96,
-          0,
+          61,
           61
         ],
         "silentLetters": [
           4
         ],
         "vowels": [
-          1,
-          4
+          1
         ],
         "targetVowel": 4
       }
