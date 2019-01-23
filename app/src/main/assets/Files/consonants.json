@@ -267,32 +267,72 @@
       }
     ]
   },
-  //  {
-  //    "phoneme": "g_1_soft",
-  //    "words": [
-  //      {
-  //        "stringName": "bridge",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      },
-  //      {
-  //        "stringName": "fridge",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      },
-  //      {
-  //        "stringName": "fringe",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      }
-  //    ]
-  //  },
+  {
+    "phoneme": "g_1_soft",
+    "words": [
+      {
+        "stringName": "bridge",
+        "sound": [
+          15,
+          15,
+          45,
+          0,
+          40,
+          0
+        ],
+        "silentLetters": [
+          3,
+          5
+        ],
+        "consonants": [
+          4
+        ],
+        "targetConsonant": [
+          4
+        ]
+      },
+      {
+        "stringName": "fridge",
+        "sound": [
+          38,
+          38,
+          45,
+          61,
+          40,
+          0
+        ],
+        "silentLetters": [
+          5
+        ],
+        "consonants": [
+          4
+        ],
+        "targetConsonant": [
+          4
+        ]
+      },
+      {
+        "stringName": "fringe",
+        "sound": [
+          38,
+          38,
+          45,
+          61,
+          39,
+          0
+        ],
+        "silentLetters": [
+          5
+        ],
+        "consonants": [
+          4
+        ],
+        "targetConsonant": [
+          4
+        ]
+      }
+    ]
+  },
   {
     "phoneme": "g_1_hard",
     "words": [
