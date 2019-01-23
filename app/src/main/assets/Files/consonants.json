@@ -1224,27 +1224,52 @@
     "words": [
       {
         "stringName": "wig",
-        "sound": [],
+        "sound": [
+          107,
+          45,
+          40
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "wall",
-        "sound": [],
+        "sound": [
+          107,
+          3,
+          58,
+          58
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "wash",
-        "sound": [],
+        "sound": [
+          107,
+          3,
+          87,
+          87
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           0
         ]
