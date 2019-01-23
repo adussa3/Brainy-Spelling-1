@@ -919,27 +919,57 @@
     "words": [
       {
         "stringName": "red",
-        "sound": [],
+        "sound": [
+          83,
+          25,
+          22
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "rake",
-        "sound": [],
-        "silentLetters": [],
-        "consonants": [],
+        "sound": [
+          83,
+          1,
+          56,
+          0
+        ],
+        "silentLetters": [
+          3
+        ],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "rainbow",
-        "sound": [],
+        "sound": [
+          83,
+          5,
+          5,
+          61,
+          13,
+          76,
+          76
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          3,
+          4,
+          6
+        ],
         "targetConsonant": [
           0
         ]
