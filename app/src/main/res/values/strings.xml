@@ -44,6 +44,11 @@
     <string name="level_4">Level 4</string>
     <string name="level_5">Level 5</string>
     <string name="level_6">Level 6</string>
+<<<<<<< HEAD
     <string name="avatar">avatar</string>
+=======
+    <string name="title_activity_unit2">unit2</string>
+    <string name="title_activity_unit2_selection">Unit2SelectionActivity</string>
+>>>>>>> unit2
 
 </resources>
