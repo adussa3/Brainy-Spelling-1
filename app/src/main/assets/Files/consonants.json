@@ -1341,18 +1341,39 @@
     "words": [
       {
         "stringName": "yellow",
-        "sound": [],
+        "sound": [
+          110,
+          25,
+          58,
+          58,
+          76,
+          76
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3,
+          5
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "yawn",
-        "sound": [],
+        "sound": [
+          110,
+          11,
+          11,
+          61
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           0
         ]
