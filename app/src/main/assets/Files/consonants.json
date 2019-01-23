@@ -1044,27 +1044,54 @@
     "words": [
       {
         "stringName": "bags",
-        "sound": [],
+        "sound": [
+          13,
+          2,
+          40,
+          85
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           3
         ]
       },
       {
         "stringName": "dogs",
-        "sound": [],
+        "sound": [
+          22,
+          66,
+          40,
+          85
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           3
         ]
       },
       {
         "stringName": "cars",
-        "sound": [],
+        "sound": [
+          16,
+          8,
+          8,
+          85
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           3
         ]
