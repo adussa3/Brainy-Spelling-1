@@ -44,5 +44,6 @@
     <string name="level_4">Level 4</string>
     <string name="level_5">Level 5</string>
     <string name="level_6">Level 6</string>
+    <string name="avatar">avatar</string>
 
 </resources>
