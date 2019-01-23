@@ -427,9 +427,14 @@
     "words": [
       {
         "stringName": "hat",
-        "sound": [],
+        "sound": [
+          43,
+          2,
+          96
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           2
         ],
         "targetConsonant": [
@@ -438,9 +443,14 @@
       },
       {
         "stringName": "hug",
-        "sound": [],
+        "sound": [
+          43,
+          103,
+          40
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           2
         ],
         "targetConsonant": [
@@ -449,9 +459,18 @@
       },
       {
         "stringName": "hand",
-        "sound": [],
+        "sound": [
+          43,
+          7,
+          7,
+          22
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
         "targetConsonant": [
           0
         ]
@@ -463,9 +482,16 @@
     "words": [
       {
         "stringName": "jay",
-        "sound": [],
+        "sound": [
+          55,
+          12,
+          12
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           0
         ]
@@ -480,6 +506,8 @@
         ],
         "silentLetters": [],
         "consonants": [
+          0,
+          2,
           3
         ],
         "targetConsonant": [
@@ -493,11 +521,16 @@
           103,
           40,
           58,
+          31,
           31
         ],
         "silentLetters": [],
         "consonants": [
-          5
+          0,
+          2,
+          3,
+          4,
+          6
         ],
         "targetConsonant": [
           0
