@@ -679,9 +679,14 @@
     "words": [
       {
         "stringName": "man",
-        "sound": [],
+        "sound": [
+          60,
+          7,
+          7
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           2
         ],
         "targetConsonant": [
@@ -690,9 +695,18 @@
       },
       {
         "stringName": "mouse",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          60,
+          75,
+          75,
+          84,
+          0
+        ],
+        "silentLetters": [
+          4
+        ],
         "consonants": [
+          0,
           3
         ],
         "targetConsonant": [
@@ -701,9 +715,16 @@
       },
       {
         "stringName": "mouth",
-        "sound": [],
+        "sound": [
+          60,
+          75,
+          75,
+          98,
+          98
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           3,
           4
         ],
