@@ -5,12 +5,14 @@
       {
         "stringName": "boy",
         "sound": [
-          "b_",
-          "o_1_long",
-          "y_1_consonant"
+          13,
+          78,
+          78
         ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          1
+        ],
         "targetConsonant": [
           0
         ]
@@ -18,9 +20,9 @@
       {
         "stringName": "box",
         "sound": [
-          "b_",
-          "o_2_short",
-          "x_"
+          13,
+          66,
+          109
         ],
         "silentLetters": [],
         "consonants": [
@@ -33,11 +35,12 @@
       {
         "stringName": "bubble",
         "sound": [
-          "b_",
-          "u_3_short_schwa",
-          "b_",
-          "b_",
-          "le-"
+          13,
+          103,
+          13,
+          13,
+          59,
+          59
         ],
         "silentLetters": [],
         "consonants": [
@@ -57,11 +60,14 @@
       {
         "stringName": "cow",
         "sound": [
-          "c_1_hard",
-          "ow-2_short"
+          16,
+          77,
+          77
         ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          2
+        ],
         "targetConsonant": [
           0
         ]
@@ -69,12 +75,14 @@
       {
         "stringName": "cut",
         "sound": [
-          "c_1_hard",
-          "u_3_schwa",
-          "t_"
+          16,
+          103,
+          96
         ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          2
+        ],
         "targetConsonant": [
           0
         ]
@@ -82,13 +90,13 @@
       {
         "stringName": "car",
         "sound": [
-          "c_1_hard",
-          "a_3_short",
-          "r_"
+          16,
+          08,
+          08
         ],
         "silentLetters": [],
         "consonants": [
-          1
+          2
         ],
         "targetConsonant": [
           0
@@ -101,29 +109,58 @@
     "words": [
       {
         "stringName": "balance",
-        "sound": [],
-        "silentLetters": [
-          2
+        "sound": [
+          13,
+          2,
+          58,
+          4,
+          61,
+          17,
+          0
         ],
-        "consonants": [],
+        "silentLetters": [
+          6
+        ],
+        "consonants": [
+          4
+        ],
         "targetConsonant": [
           5
         ]
       },
       {
         "stringName": "saucepan",
-        "sound": [],
-        "silentLetters": [],
-        "consonants": [],
+        "sound": [
+          84,
+          10,
+          17,
+          0,
+          79,
+          7
+        ],
+        "silentLetters": [
+          4
+        ],
+        "consonants": [
+          4
+        ],
         "targetConsonant": [
           3
         ]
       },
       {
         "stringName": "dancer",
-        "sound": [],
+        "sound": [
+          22,
+          2,
+          61,
+          17,
+          31
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          4
+        ],
         "targetConsonant": [
           3
         ]
