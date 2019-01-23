@@ -799,9 +799,14 @@
     "words": [
       {
         "stringName": "pig",
-        "sound": [],
+        "sound": [
+          79,
+          45,
+          40
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           2
         ],
         "targetConsonant": [
@@ -822,9 +827,18 @@
       },
       {
         "stringName": "purse",
-        "sound": [],
-        "silentLetters": [],
+        "sound": [
+          79,
+          105,
+          105,
+          84,
+          0
+        ],
+        "silentLetters": [
+          4
+        ],
         "consonants": [
+          0,
           2,
           3
         ],
