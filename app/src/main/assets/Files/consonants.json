@@ -1281,27 +1281,55 @@
     "words": [
       {
         "stringName": "six",
-        "sound": [],
+        "sound": [
+          84,
+          45,
+          109
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           2
         ]
       },
       {
         "stringName": "taxi",
-        "sound": [],
+        "sound": [
+          96,
+          2,
+          109,
+          45
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           2
         ]
       },
       {
         "stringName": "sixteen",
-        "sound": [],
+        "sound": [
+          84,
+          45,
+          109,
+          96,
+          29,
+          29,
+          61
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3,
+          6
+        ],
         "targetConsonant": [
           2
         ]
