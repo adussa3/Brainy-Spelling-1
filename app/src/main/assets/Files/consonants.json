@@ -848,32 +848,72 @@
       }
     ]
   },
-  //  {
-  //    "phoneme": "qu_",
-  //    "words": [
-  //      {
-  //        "stringName": "queen",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": []
-  //      },
-  //      {
-  //        "stringName": "squares",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": []
-  //      },
-  //      {
-  //        "stringName": "quiet",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": []
-  //      }
-  //    ]
-  //  },
+  {
+    "phoneme": "qu_",
+    "words": [
+      {
+        "stringName": "queen",
+        "sound": [
+          82,
+          82,
+          29,
+          29,
+          61
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          4
+        ],
+        "targetConsonant": [
+          0,
+          1
+        ]
+      },
+      {
+        "stringName": "squares",
+        "sound": [
+          84,
+          82,
+          82,
+          9,
+          9,
+          0,
+          85
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "targetConsonant": [
+          1,
+          2
+        ]
+      },
+      {
+        "stringName": "quiet",
+        "sound": [
+          82,
+          82,
+          44,
+          33,
+          33
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          4
+        ],
+        "targetConsonant": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
   {
     "phoneme": "r_",
     "words": [
