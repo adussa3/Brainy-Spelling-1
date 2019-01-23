@@ -433,7 +433,7 @@
           96,
           2,
           109,
-          45
+          114
         ],
         "silentLetters": [],
         "vowels": [
@@ -448,7 +448,7 @@
           110,
           25,
           96,
-          45
+          114
         ],
         "silentLetters": [],
         "vowels": [
@@ -461,7 +461,8 @@
         "stringName": "skis",
         "sound": [
           88,
-          45,
+          88,
+          114,
           85
         ],
         "silentLetters": [],
