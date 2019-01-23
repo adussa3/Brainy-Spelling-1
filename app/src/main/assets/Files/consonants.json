@@ -91,8 +91,8 @@
         "stringName": "car",
         "sound": [
           16,
-          08,
-          08
+          8,
+          8
         ],
         "silentLetters": [],
         "consonants": [
@@ -172,7 +172,11 @@
     "words": [
       {
         "stringName": "dog",
-        "sound": [],
+        "sound": [
+          22,
+          66,
+          40
+        ],
         "silentLetters": [],
         "consonants": [
           2
@@ -183,7 +187,11 @@
       },
       {
         "stringName": "dig",
-        "sound": [],
+        "sound": [
+          22,
+          45,
+          40
+        ],
         "silentLetters": [],
         "consonants": [
           2
@@ -194,7 +202,12 @@
       },
       {
         "stringName": "dark",
-        "sound": [],
+        "sound": [
+          22,
+          8,
+          8,
+          56
+        ],
         "silentLetters": [],
         "consonants": "1",
         "targetConsonant": [
@@ -208,7 +221,11 @@
     "words": [
       {
         "stringName": "fox",
-        "sound": [],
+        "sound": [
+          36,
+          66,
+          109
+        ],
         "silentLetters": [],
         "consonants": [
           2
@@ -219,10 +236,14 @@
       },
       {
         "stringName": "elf",
-        "sound": [],
+        "sound": [
+          25,
+          58,
+          36
+        ],
         "silentLetters": [],
         "consonants": [
-          1
+          2
         ],
         "targetConsonant": [
           2
@@ -230,10 +251,15 @@
       },
       {
         "stringName": "leaf",
-        "sound": [],
+        "sound": [
+          58,
+          27,
+          27,
+          36
+        ],
         "silentLetters": [],
         "consonants": [
-          0
+          2
         ],
         "targetConsonant": [
           3
