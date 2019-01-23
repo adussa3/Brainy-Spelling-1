@@ -648,32 +648,65 @@
       }
     ]
   },
-  //  {
-  //    "phoneme": "l_2_unvoiced",
-  //    "words": [
-  //      {
-  //        "stringName": "lip",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      },
-  //      {
-  //        "stringName": "lick",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": [0]
-  //      },
-  //      {
-  //        "stringName": "light",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": [0]
-  //      }
-  //    ]
-  //  },
+  {
+    "phoneme": "l_2_unvoiced",
+    "words": [
+      {
+        "stringName": "lip",
+        "sound": [
+          57,
+          45,
+          79
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          2
+        ],
+        "targetConsonant": [
+          0
+        ]
+      },
+      {
+        "stringName": "lick",
+        "sound": [
+          57,
+          45,
+          19,
+          19
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
+        "targetConsonant": [
+          0
+        ]
+      },
+      {
+        "stringName": "light",
+        "sound": [
+          47,
+          49,
+          49,
+          49,
+          96
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "targetConsonant": [
+          0
+        ]
+      }
+    ]
+  },
   {
     "phoneme": "m_",
     "words": [
