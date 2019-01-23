@@ -1103,27 +1103,45 @@
     "words": [
       {
         "stringName": "toe",
-        "sound": [],
+        "sound": [
+          96,
+          69,
+          69
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "tea",
-        "sound": [],
+        "sound": [
+          96,
+          27,
+          27
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "tie",
-        "sound": [],
+        "sound": [
+          96,
+          48,
+          48
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0
+        ],
         "targetConsonant": [
           0
         ]
@@ -1135,27 +1153,66 @@
     "words": [
       {
         "stringName": "volcanoe",
-        "sound": [],
-        "silentLetters": [],
-        "consonants": [],
+        "sound": [
+          106,
+          66,
+          58,
+          16,
+          1,
+          61,
+          65,
+          0
+        ],
+        "silentLetters": [
+          7
+        ],
+        "consonants": [
+          0,
+          2,
+          3,
+          5
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "silver",
-        "sound": [],
+        "sound": [
+          84,
+          45,
+          58,
+          106,
+          31,
+          31
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2,
+          3,
+          5
+        ],
         "targetConsonant": [
           3
         ]
       },
       {
         "stringName": "beaver",
-        "sound": [],
+        "sound": [
+          13,
+          27,
+          27,
+          106,
+          31,
+          31
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          3,
+          5
+        ],
         "targetConsonant": [
           3
         ]
