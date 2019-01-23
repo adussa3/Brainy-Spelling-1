@@ -370,9 +370,15 @@
     "words": [
       {
         "stringName": "gold",
-        "sound": [],
+        "sound": [
+          39,
+          65,
+          58,
+          22
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           2,
           3
         ],
@@ -382,9 +388,15 @@
       },
       {
         "stringName": "girl",
-        "sound": [],
+        "sound": [
+          39,
+          54,
+          58
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
+          2,
           3
         ],
         "targetConsonant": [
@@ -393,9 +405,15 @@
       },
       {
         "stringName": "goat",
-        "sound": [],
+        "sound": [
+          39,
+          68,
+          68,
+          96
+        ],
         "silentLetters": [],
         "consonants": [
+          0,
           3
         ],
         "targetConsonant": [
