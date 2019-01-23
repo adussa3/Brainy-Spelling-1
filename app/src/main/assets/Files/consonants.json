@@ -538,42 +538,77 @@
       }
     ]
   },
-  //  {
-  //    "phoneme": "k_",
-  //    "words": [
-  //      {
-  //        "stringName": "key",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      },
-  //      {
-  //        "stringName": "king",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": ""
-  //      },
-  //      {
-  //        "stringName": "fork",
-  //        "sound": [],
-  //        "silentLetters": [],
-  //        "consonants": [],
-  //        "targetConsonant": []
-  //      }
-  //    ]
-  //  },
+  {
+    "phoneme": "k_",
+    "words": [
+      {
+        "stringName": "key",
+        "sound": [
+          56,
+          35,
+          35
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          2
+        ],
+        "targetConsonant": ""
+      },
+      {
+        "stringName": "king",
+        "sound": [
+          56,
+          45,
+          63,
+          63
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
+        "targetConsonant": [
+          0
+        ]
+      },
+      {
+        "stringName": "fork",
+        "sound": [
+          36,
+          73,
+          73,
+          56
+        ],
+        "silentLetters": [],
+        "consonants": [
+          0,
+          2,
+          3
+        ],
+        "targetConsonant": [
+          0
+        ]
+      }
+    ]
+  },
   {
     "phoneme": "l_2_voiced",
     "words": [
       {
         "stringName": "wolf",
-        "sound": [],
+        "sound": [
+          107,
+          67,
+          58,
+          36
+        ],
         "silentLetters": [],
         "consonants": [
           0,
-          2
+          2,
+          3
         ],
         "targetConsonant": [
           2
@@ -581,10 +616,15 @@
       },
       {
         "stringName": "owl",
-        "sound": [],
+        "sound": [
+          77,
+          77,
+          58
+        ],
         "silentLetters": [],
         "consonants": [
-          1
+          1,
+          2
         ],
         "targetConsonant": [
           2
@@ -592,10 +632,15 @@
       },
       {
         "stringName": "tail",
-        "sound": [],
+        "sound": [
+          96,
+          5,
+          58
+        ],
         "silentLetters": [],
         "consonants": [
-          0
+          0,
+          3
         ],
         "targetConsonant": [
           3
