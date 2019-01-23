@@ -981,18 +981,36 @@
     "words": [
       {
         "stringName": "saw",
-        "sound": [],
+        "sound": [
+          84,
+          11,
+          11
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          2
+        ],
         "targetConsonant": [
           0
         ]
       },
       {
         "stringName": "glass",
-        "sound": [],
+        "sound": [
+          41,
+          41,
+          2,
+          84,
+          84
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          1,
+          4,
+          5
+        ],
         "targetConsonant": [
           3,
           4
@@ -1000,9 +1018,20 @@
       },
       {
         "stringName": "grass",
-        "sound": [],
+        "sound": [
+          42,
+          42,
+          2,
+          84,
+          84
+        ],
         "silentLetters": [],
-        "consonants": [],
+        "consonants": [
+          0,
+          1,
+          3,
+          4
+        ],
         "targetConsonant": [
           3,
           4
