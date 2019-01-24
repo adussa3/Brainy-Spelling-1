@@ -12,7 +12,7 @@
         "silentLetters": [
           2
         ],
-        "vowels": "0",
+        "vowels": [],
         "targetVowel": 0
       },
       {
@@ -26,7 +26,7 @@
         "silentLetters": [
           3
         ],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -40,7 +40,7 @@
         "silentLetters": [
           4
         ],
-        "vowels": "2",
+        "vowels": [],
         "targetVowel": 2
       }
     ]
@@ -58,7 +58,7 @@
         "silentLetters": [
           2
         ],
-        "vowels": "0",
+        "vowels": [],
         "targetVowel": 0
       },
       {
@@ -69,7 +69,7 @@
           96
         ],
         "silentLetters": [],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -80,9 +80,7 @@
           96
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       }
     ]
@@ -99,7 +97,7 @@
           58
         ],
         "silentLetters": [],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -113,7 +111,7 @@
         "silentLetters": [
           3
         ],
-        "vowels": "2",
+        "vowels": [],
         "targetVowel": 2
       },
       {
@@ -125,7 +123,7 @@
           58
         ],
         "silentLetters": [],
-        "vowels": "1",
+        "vowels": [],
         "targetVowel": 1
       }
     ]
@@ -143,8 +141,7 @@
         ],
         "silentLetters": [],
         "vowels": [
-          1,
-          3
+          1
         ],
         "targetVowel": 3
       },
@@ -160,7 +157,6 @@
           5
         ],
         "vowels": [
-          0,
           3,
           4
         ],
@@ -176,7 +172,6 @@
         ],
         "silentLetters": [],
         "vowels": [
-          1,
           4
         ],
         "targetVowel": 1
@@ -193,9 +188,7 @@
           24
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -205,9 +198,7 @@
           24
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -218,9 +209,7 @@
           24
         ],
         "silentLetters": [],
-        "vowels": [
-          2
-        ],
+        "vowels": [],
         "targetVowel": 2
       }
     ]
@@ -236,19 +225,18 @@
           36
         ],
         "silentLetters": [],
-        "vowels": [
-          0
-        ],
+        "vowels": [],
         "targetVowel": 0
       },
       {
-        // TODO : bed phonemes are wrong in Walter's doc
         "stringName": "bed",
-        "sound": [],
-        "silentLetters": [],
-        "vowels": [
-          1
+        "sound": [
+          13,
+          25,
+          22
         ],
+        "silentLetters": [],
+        "vowels": [],
         "targetVowel": 1
       },
       {
@@ -259,9 +247,7 @@
           96
         ],
         "silentLetters": [],
-        "vowels": [
-          1
-        ],
+        "vowels": [],
         "targetVowel": 1
       }
     ]
@@ -270,24 +256,31 @@
     "phoneme": "e_3_schwa",
     "words": [
       {
-        // TODO oven phonemes are also wrong
         "stringName": "oven",
-        "sound": [],
+        "sound": [
+          67,
+          106,
+          26,
+          61
+        ],
         "silentLetters": [],
         "vowels": [
           0,
-          2
-        ],
+          ],
         "targetVowel": 2
       },
       {
-        // TODO camel phonemes are also wrong 
         "stringName": "camel",
-        "sound": [],
+        "sound": [
+          16,
+          2,
+          60,
+          26,
+          58
+        ],
         "silentLetters": [],
         "vowels": [
           1,
-          3
         ],
         "targetVowel": 3
       },
@@ -295,18 +288,17 @@
         "stringName": "kitten",
         "sound": [
           56,
-          45,
+          114,
           96,
           96,
-          0,
+          61,
           61
         ],
         "silentLetters": [
           4
         ],
         "vowels": [
-          1,
-          4
+          1
         ],
         "targetVowel": 4
       }
@@ -421,7 +413,7 @@
           96,
           2,
           109,
-          45
+          114
         ],
         "silentLetters": [],
         "vowels": [
@@ -436,7 +428,7 @@
           110,
           25,
           96,
-          45
+          114
         ],
         "silentLetters": [],
         "vowels": [
@@ -449,7 +441,8 @@
         "stringName": "skis",
         "sound": [
           88,
-          45,
+          88,
+          114,
           85
         ],
         "silentLetters": [],
@@ -505,7 +498,6 @@
         "targetVowel": 4
       },
       {
-        // TODO : something seems suspicious about these phonemes
         "stringName": "clarinet",
         "sound": [
           20,
@@ -664,7 +656,7 @@
         "sound": [
           107,
           2,
-          40,
+          39,
           67,
           61
         ],
@@ -819,7 +811,7 @@
         "sound": [
           13,
           103,
-          40
+          39
         ],
         "silentLetters": [],
         "vowels": [
