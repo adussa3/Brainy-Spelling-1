@@ -8,6 +8,6 @@ public class VowelWord {
     private String stringName;
     private int[] soundID;
     private int[] silentLetters;
-    private int[] vowels[];
-    private int[] targetVowel[];
+    private int[] vowels;
+    private int targetVowel;
 }
