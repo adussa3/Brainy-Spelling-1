@@ -20,99 +20,101 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/topAnimal0"
+            <FrameLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/imageViewTop0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/word_pig1_grayscale" />
+                    android:layout_gravity="bottom|left"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat_head_bw" />
 
                 <ImageView
                     android:id="@+id/imageViewTop1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/word_pig2_grayscale" />
+                    android:layout_gravity="bottom|left"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat_middle_bw" />
 
                 <ImageView
                     android:id="@+id/imageViewTop2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/word_pig3_grayscale" />
+                    android:layout_gravity="left|center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat_tail_bw" />
 
-            </LinearLayout>
+            </FrameLayout>
 
-            <LinearLayout
-                android:id="@+id/topAnimal1"
+            <FrameLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/imageViewTop3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/word_fox1_grayscale" />
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dog_head_bw" />
 
                 <ImageView
                     android:id="@+id/imageViewTop4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/word_fox2_grayscale" />
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dog_middle_bw" />
 
                 <ImageView
                     android:id="@+id/imageViewTop5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/word_fox3_grayscale" />
-            </LinearLayout>
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dog_tail_bw" />
+            </FrameLayout>
 
-            <LinearLayout
-                android:id="@+id/topAnimal2"
+            <FrameLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="10dp">
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
                 <ImageView
                     android:id="@+id/imageViewTop6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/word_ram1_grayscale" />
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/hen_head_bw" />
 
                 <ImageView
                     android:id="@+id/imageViewTop7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/word_ram2_grayscale" />
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/hen_middle_bw" />
 
                 <ImageView
                     android:id="@+id/imageViewTop8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:src="@drawable/word_ram3_grayscale" />
-            </LinearLayout>
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/hen_tail_bw" />
+
+            </FrameLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -223,34 +225,35 @@
                 android:orientation="vertical"
                 android:padding="10dp">
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/imageView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/word_fox1" />
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/dog_head" />
 
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/word_fox2" />
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/dog_middle" />
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/word_fox3" />
-                </LinearLayout>
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/dog_tail" />
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
