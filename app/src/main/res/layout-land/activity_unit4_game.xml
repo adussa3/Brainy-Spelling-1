@@ -14,90 +14,80 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="201dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:baselineAligned="false"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <FrameLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
             <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="70dp"
-                android:layout_height="0dp"
-                android:layout_weight="4"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
                 android:background="@android:color/transparent"
-                app:srcCompat="@drawable/word_fox1_grayscale" />
+                app:srcCompat="@drawable/cat_head_bw" />
 
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textAlignment="center" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/cat_middle_bw" />
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/cat_tail_bw" />
+        </FrameLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="70dp"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:background="@android:color/transparent"
-                app:srcCompat="@drawable/word_fox2" />
+            android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editText"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:id="@+id/editText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="O"
+                android:text="Name"
                 android:textAlignment="center" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="70dp"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:background="@android:color/transparent"
-                app:srcCompat="@drawable/word_fox3" />
 
             <EditText
-                android:id="@+id/editText6"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:id="@+id/editText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="X"
+                android:text="Name"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
                 android:textAlignment="center" />
         </LinearLayout>
+
     </LinearLayout>
 
     <TableLayout
@@ -129,7 +119,7 @@
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="W" />
+                android:text="C" />
 
         </TableRow>
 

@@ -9,9 +9,6 @@ import android.widget.ImageView;
 public class StudentHomeActivity extends AppCompatActivity {
 
     private ImageView exit;
-    private ImageView spell;
-    private ImageView rhyme;
-    private ImageView learnedWords;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +17,9 @@ public class StudentHomeActivity extends AppCompatActivity {
 
         // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
-        spell = (ImageView) findViewById(R.id.spelling);
-        rhyme = (ImageView) findViewById(R.id.rhymes);
-        learnedWords = (ImageView) findViewById(R.id.learnedWords);
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
-        Util.scaleOnTouch(spell);
-        Util.scaleOnTouch(rhyme);
-        Util.scaleOnTouch(learnedWords);
     }
 
     // Intents - goes to a different activity when the button is clicked
@@ -37,8 +28,28 @@ public class StudentHomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickSpell(View view) {
-        Intent intent = new Intent(getApplicationContext(), LevelsActivity.class);
+    public void onClickUnit1(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit1Activity.class);
+        startActivity(intent);
+    }
+
+    public void onClickUnit2(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit2SelectionActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickUnit3(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit3WordListActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickUnit4(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit4WordListActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), BankActivity.class);
         startActivity(intent);
     }
 }

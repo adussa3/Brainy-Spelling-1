@@ -31,12 +31,11 @@
         <activity android:name=".TeacherLoginActivity" />
         <activity android:name=".PlayerLoginActivity" />
         <activity android:name=".CreateTeacherAccountActivity" />
-        <activity android:name=".LevelsActivity" />
         <activity android:name=".StudentHomeActivity" />
         <activity android:name=".UserProfileSelectionActivity" />
         <activity android:name=".TeacherHomeActivity" />
         <activity android:name=".Unit1Activity" />
-        <activity android:name=".Bank"></activity>
+        <activity android:name=".BankActivity"></activity>
         <activity
             android:name=".unit2"
             android:label="@string/title_activity_unit2" />

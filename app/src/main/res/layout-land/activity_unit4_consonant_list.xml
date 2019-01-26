@@ -22,7 +22,8 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -32,6 +33,7 @@
                     android:id="@+id/button10"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="B" />
 
@@ -39,13 +41,16 @@
                     android:id="@+id/button14"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
+                    android:onClick="onClickSelectConsonant"
                     android:text="C" />
 
                 <Button
                     android:id="@+id/button15"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="D" />
             </TableRow>
@@ -58,6 +63,7 @@
                     android:id="@+id/button16"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="F" />
 
@@ -65,6 +71,7 @@
                     android:id="@+id/button17"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="G" />
 
@@ -72,6 +79,7 @@
                     android:id="@+id/button18"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="H" />
             </TableRow>
@@ -84,6 +92,7 @@
                     android:id="@+id/button19"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="J" />
 
@@ -91,6 +100,7 @@
                     android:id="@+id/button20"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="K" />
 
@@ -98,6 +108,7 @@
                     android:id="@+id/button21"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="L" />
             </TableRow>
@@ -110,6 +121,7 @@
                     android:id="@+id/button25"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="M" />
 
@@ -117,6 +129,7 @@
                     android:id="@+id/button26"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="N" />
 
@@ -124,6 +137,7 @@
                     android:id="@+id/button27"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="P" />
             </TableRow>
@@ -136,6 +150,7 @@
                     android:id="@+id/button28"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="QU" />
 
@@ -143,6 +158,7 @@
                     android:id="@+id/button29"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="R" />
 
@@ -150,6 +166,7 @@
                     android:id="@+id/button30"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="S" />
             </TableRow>
@@ -162,6 +179,7 @@
                     android:id="@+id/button22"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="T" />
 
@@ -169,6 +187,7 @@
                     android:id="@+id/button23"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="V" />
 
@@ -176,6 +195,7 @@
                     android:id="@+id/button24"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="W" />
             </TableRow>
@@ -188,6 +208,7 @@
                     android:id="@+id/button31"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="X" />
 
@@ -195,6 +216,7 @@
                     android:id="@+id/button32"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="Y" />
 
@@ -202,6 +224,7 @@
                     android:id="@+id/button33"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
+                    android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:text="Z" />
             </TableRow>
