@@ -5,94 +5,140 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/learnedWords"
-        android:layout_width="170dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/student_home_learned_words" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/rhymes"
-        android:layout_width="170dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/learnedWords"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/spelling"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/student_home_rhymes" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/spelling"
-        android:layout_width="170dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="50dp"
-        android:onClick="onClickSpell"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/rhymes"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bobView"
-        app:layout_constraintVertical_bias="0.69"
-        app:srcCompat="@drawable/student_home_spelling" />
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="74dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/common_google_signin_btn_text_light_focused"
+                android:contentDescription="@string/avatar"
+                tools:srcCompat="@drawable/profile_chimp" />
 
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="74dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
-        android:background="@color/common_google_signin_btn_text_light_focused"
-        app:layout_constraintBottom_toTopOf="@+id/spelling"
-        app:layout_constraintEnd_toStartOf="@+id/bobView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:srcCompat="@drawable/profile_chimp" />
+            <TextView
+                android:id="@+id/bobView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="398dp"
+                android:text="Bob"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/avatar" />
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/exitButton"
-        android:layout_width="58dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/transparent"
-        android:onClick="onClickExit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.024"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/avatar"
-        app:srcCompat="@drawable/button_exit" />
+        <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/bobView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="398dp"
-        android:text="Bob"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spelling"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/avatar"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/unit1Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onClickUnit1"
+                    android:text="1"
+                    android:textSize="30sp"
+                    tools:layout_editor_absoluteX="34dp"
+                    tools:layout_editor_absoluteY="131dp" />
+
+                <Button
+                    android:id="@+id/unit2Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickUnit2"
+                    android:text="2"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/unit3Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickUnit3"
+                    android:text="3"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/unit4Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="onClickUnit4"
+                    android:text="4"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/games"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bankButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickBank"
+                    android:text="Bank"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/templatesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Templates"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/exitButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="exitButton"
+            android:onClick="onClickExit"
+            app:srcCompat="@drawable/button_exit" />
+
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
