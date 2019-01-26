@@ -10,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
+        <activity android:name=".Unit4GameActivity"></activity>
+        <activity android:name=".Unit4WordListActivity" />
+        <activity android:name=".Unit4ConsonantListActivity" />
+        <activity android:name=".Unit3GameActivity" />
+        <activity android:name=".Unit3WordListActivity" />
+        <activity android:name=".Unit3VowelListActivity" />
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="landscape">
@@ -26,13 +32,17 @@
         <activity android:name=".TeacherLoginActivity" />
         <activity android:name=".PlayerLoginActivity" />
         <activity android:name=".CreateTeacherAccountActivity" />
-        <activity android:name=".ThreeWordsAtATimeActivity" />
-        <activity android:name=".OneWordAtATimeListActivity" />
-        <activity android:name=".LevelsActivity" />
-        <activity android:name=".OneWordAtATimeGameActivity" />
         <activity android:name=".StudentHomeActivity" />
         <activity android:name=".UserProfileSelectionActivity" />
-        <activity android:name=".TeacherHomeActivity"></activity>
+        <activity android:name=".TeacherHomeActivity" />
+        <activity android:name=".Unit1Activity" />
+        <activity android:name=".BankActivity"></activity>
+        <activity
+            android:name=".unit2"
+            android:label="@string/title_activity_unit2" />
+        <activity
+            android:name=".Unit2SelectionActivity"
+            android:label="@string/title_activity_unit2_selection"></activity>
     </application>
 
 </manifest>
