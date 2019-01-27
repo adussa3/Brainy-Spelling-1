@@ -1,7 +1,7 @@
 [
   [
     {
-      "displayString": "dog",
+      "stringName" : "dog",
       "landscape": true,
       "segmentInfo": [
         {
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "displayString": "cat",
+      "stringName" : "cat",
       "landscape": true,
       "segmentInfo": [
         {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "displayString": "hen",
+      "stringName" : "hen",
       "landscape": true,
       "segmentInfo": [
         {
@@ -57,7 +57,7 @@
   ],
   [
     {
-      "displayString": "fox",
+      "stringName" : "fox",
       "landscape": true,
       "segmentInfo": [
         {
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "displayString": "ram",
+      "stringName" : "ram",
       "landscape": true,
       "segmentInfo": [
         {
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "displayString": "cub",
+      "stringName" : "cub",
       "landscape": true,
       "segmentInfo": [
         {
@@ -114,7 +114,7 @@
   
   [
     {
-      "displayString": "pig",
+      "stringName" : "pig",
       "landscape": true,
       "segmentInfo": [
         {
@@ -132,7 +132,7 @@
       ]
     },
     {
-      "displayString": "bat",
+      "stringName" : "bat",
       "landscape": true,
       "segmentInfo": [
         {
@@ -150,7 +150,7 @@
       ]
     },
     {
-      "displayString": "elk",
+      "stringName" : "elk",
       "landscape": true,
       "segmentInfo": [
         {
@@ -170,7 +170,7 @@
   ],
   [
     {
-      "displayString": "ant",
+      "stringName" : "ant",
       "landscape": true,
       "segmentInfo": [
         {
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "displayString": "bug",
+      "stringName" : "bug",
       "landscape": true,
       "segmentInfo": [
         {
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "displayString": "fly",
+      "stringName" : "fly",
       "landscape": true,
       "segmentInfo": [
         {
@@ -226,7 +226,7 @@
   ],
   [
     {
-      "displayString": "cop",
+      "stringName" : "cop",
       "landscape": false,
       "segmentInfo": [
         {
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "displayString": "elf",
+      "stringName" : "elf",
       "landscape": false,
       "segmentInfo": [
         {
@@ -262,7 +262,7 @@
       ]
     },
     {
-      "displayString": "kid",
+      "stringName" : "kid",
       "landscape": false,
       "segmentInfo": [
         {
@@ -282,7 +282,7 @@
   ],
   [
     {
-      "displayString": "gal",
+      "stringName" : "gal",
       "landscape": false,
       "segmentInfo": [
         {
@@ -300,7 +300,7 @@
       ]
     },
     {
-      "displayString": "doc",
+      "stringName" : "doc",
       "landscape": false,
       "segmentInfo": [
         {
@@ -318,7 +318,7 @@
       ]
     },
     {
-      "displayString": "ref",
+      "stringName" : "ref",
       "landscape": false,
       "segmentInfo": [
         {
