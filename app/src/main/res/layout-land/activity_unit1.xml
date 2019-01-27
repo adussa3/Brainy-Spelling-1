@@ -272,7 +272,6 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textCapCharacters"
-                        android:text="Name"
                         android:textAlignment="center" />
 
                     <EditText
@@ -282,7 +281,6 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textCapCharacters"
-                        android:text="Name"
                         android:textAlignment="center" />
 
                     <EditText
@@ -292,7 +290,6 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textCapCharacters"
-                        android:text="Name"
                         android:textAlignment="center" />
                 </LinearLayout>
             </LinearLayout>
