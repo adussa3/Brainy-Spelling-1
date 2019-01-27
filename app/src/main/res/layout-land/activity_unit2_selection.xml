@@ -25,9 +25,10 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="600dp"
             android:layout_height="match_parent"
             android:layout_marginStart="65dp"
+            android:layout_marginEnd="65dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -38,7 +39,7 @@
 
                 android:onClick="onClickSelectWord"
                 android:scaleType="centerCrop"
-                android:src="@drawable/spf_01" />
+                android:src="@drawable/cat_dog_hen" />
 
             <ImageButton
                 android:id="@+id/imageButton7"
