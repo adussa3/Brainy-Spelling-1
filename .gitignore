@@ -14,9 +14,14 @@ bin/
 gen/
 out/
 
+.settings/
+.classpath
+
 # Gradle files
 .gradle/
 build/
+.project
+
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -64,5 +69,5 @@ fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
 
-# DS_Store
-.DS_Store
+# vscode 
+.vscode/settings.json
