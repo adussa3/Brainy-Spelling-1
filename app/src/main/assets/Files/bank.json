@@ -1,6 +1,6 @@
 [
     {
-        "level": "one",
+        "level": "segmentedWords",
         "words": [
             {
                 "stringName": "dog",
@@ -75,10 +75,6 @@
                 "spellCount": 0
             }
         ]
-    },
-    {
-        "level": "two",
-        "words": []
     },
     {
         "level": "vowels",
