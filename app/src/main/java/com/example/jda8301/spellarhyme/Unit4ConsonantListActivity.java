@@ -30,7 +30,7 @@ public class Unit4ConsonantListActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit4WordListActivity.class);
+        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
     }
 
