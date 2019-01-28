@@ -35,7 +35,7 @@ public class Unit3VowelListActivity extends AppCompatActivity {
     }
 
     public void onClickSelectVowel(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit3GameActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Unit3WordListActivity.class);
         startActivity(intent);
     }
 }
