@@ -39,12 +39,12 @@ public class StudentHomeActivity extends AppCompatActivity {
     }
 
     public void onClickUnit3(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit3WordListActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Unit3VowelListActivity.class);
         startActivity(intent);
     }
 
     public void onClickUnit4(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit4WordListActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Unit4ConsonantListActivity.class);
         startActivity(intent);
     }
 
