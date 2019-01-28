@@ -1,26 +1,25 @@
 package com.example.jda8301.spellarhyme;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Unit2Activity extends AppCompatActivity {
+public class Unit3WordListActivity extends AppCompatActivity {
 
     private ImageView exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_unit2);
+        setContentView(R.layout.activity_unit3_word_list);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("Unit 2");
+        actionBarTitle.setText("Unit 3 Word List");
 
         // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
@@ -31,7 +30,12 @@ public class Unit2Activity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit2SelectionActivity.class);
+        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickSelectWord(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit3VowelListActivity.class);
         startActivity(intent);
     }
 }

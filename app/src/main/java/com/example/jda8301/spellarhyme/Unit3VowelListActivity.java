@@ -7,38 +7,35 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class OneWordAtATimeListActivity extends AppCompatActivity {
+public class Unit3VowelListActivity extends AppCompatActivity {
 
     private ImageView exit;
-    private ImageView fox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_word_at_a_time_list);
+        setContentView(R.layout.activity_unit3_vowel_list);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
-        TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText(getString(R.string.one_word_at_a_time_list));
+        TextView actionBarTitle = actionBar.findViewById(R.id.actionBarTitle);
+        actionBarTitle.setText("Unit 3 Vowel List");
 
-        // Initialize Variables
+        // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
-        fox = (ImageView) findViewById(R.id.fox);
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
-        Util.scaleOnTouch(fox);
     }
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), LevelsActivity.class);
+        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
     }
 
-    public void onClickFox(View view) {
-        Intent intent = new Intent(getApplicationContext(), OneWordAtATimeGameActivity.class);
+    public void onClickSelectVowel(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit3GameActivity.class);
         startActivity(intent);
     }
 }
