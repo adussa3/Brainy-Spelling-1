@@ -1,6 +1,7 @@
 package com.example.jda8301.spellarhyme.data;
 
 import com.example.jda8301.spellarhyme.MyApplication;
+import com.example.jda8301.spellarhyme.model.BankWord;
 import com.example.jda8301.spellarhyme.model.ConsonantWord;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
 import com.example.jda8301.spellarhyme.model.VowelWord;
@@ -61,7 +62,7 @@ public class AppPreferencesHelper {
 
             Map<String, List<VowelWord>> map = new HashMap<>();
 
-            Type listType = listType = new TypeToken<List<VowelWord>>() {
+            Type listType = new TypeToken<List<VowelWord>>() {
             }.getType();
 
             for(int i = 0; i < jsonArray.size(); i++) {
@@ -95,7 +96,7 @@ public class AppPreferencesHelper {
 
             Map<String, List<ConsonantWord>> map = new HashMap<>();
 
-            Type listType = listType = new TypeToken<List<VowelWord>>() {
+            Type listType = new TypeToken<List<VowelWord>>() {
             }.getType();
 
             for (int i = 0; i < jsonArray.size(); i++) {
@@ -104,6 +105,39 @@ public class AppPreferencesHelper {
                 JsonElement jsonWords = object.get("words");
                 List<ConsonantWord> listWords = mGson.fromJson(jsonWords, listType);
                 map.put(phoneme, listWords);
+            }
+            return map;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public Map<String, List<BankWord>> getBank() {
+        String filename = "Files/bank.json";
+        try {
+            InputStream inputStream = MyApplication.getAppContext().getAssets().open(filename);
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            String jsonLetters = new String(buffer, "UTF-8");
+
+            JsonParser parser = new JsonParser();
+            JsonElement element = parser.parse(jsonLetters);
+            JsonArray jsonArray = element.getAsJsonArray();
+
+            Map<String, List<BankWord>> map = new HashMap<>();
+
+            Type listType = listType = new TypeToken<List<BankWord>>() {
+            }.getType();
+
+            for (int i = 0; i < jsonArray.size(); i++) {
+                JsonObject object = jsonArray.get(i).getAsJsonObject();
+                String level = object.get("level").getAsString();
+                JsonElement jsonWords = object.get("words");
+                List<BankWord> listWords = mGson.fromJson(jsonWords, listType);
+                map.put(level, listWords);
             }
             return map;
         } catch (Exception e) {
