@@ -20,7 +20,7 @@ public class BankActivity extends AppCompatActivity {
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("Bank");
+        actionBarTitle.setText("BankWord");
 
 
         // Initialize variables
