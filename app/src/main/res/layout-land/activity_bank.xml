@@ -25,10 +25,11 @@
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/button_back" />
@@ -65,10 +66,11 @@
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:adjustViewBounds="false"
+                android:background="@android:color/transparent"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/button_forward" />
@@ -82,9 +84,10 @@
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
+                android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/button_back" />
 
@@ -120,9 +123,10 @@
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
+                android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/button_forward" />
         </LinearLayout>
@@ -135,9 +139,10 @@
 
             <ImageButton
                 android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
+                android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/button_back" />
 
@@ -173,9 +178,10 @@
 
             <ImageButton
                 android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
+                android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/button_forward" />
         </LinearLayout>

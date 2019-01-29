@@ -13,4 +13,4 @@ list of lists where each sublist contains similar sounding phonemes. (e.g. index
 list of dictionaries. each dictionary has a vowel value. then there is a "words" key with a list value containing the words that contain that vowel
 
 5. consonants
-list of dictionaries. each dictionary has a consonant value. then there i a "words" key with a list value containing the words that contain that consonant
+list of dictionaries. each dictionary has a consonant value. then there is a "words" key with a list value containing the words that contain that consonant

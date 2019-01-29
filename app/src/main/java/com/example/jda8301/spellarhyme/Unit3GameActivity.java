@@ -29,7 +29,7 @@ public class Unit3GameActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit3VowelListActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Unit3WordListActivity.class);
         startActivity(intent);
     }
 }

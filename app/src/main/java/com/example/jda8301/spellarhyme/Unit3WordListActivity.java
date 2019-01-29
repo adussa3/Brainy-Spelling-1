@@ -30,12 +30,12 @@ public class Unit3WordListActivity extends AppCompatActivity {
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Unit3VowelListActivity.class);
         startActivity(intent);
     }
 
     public void onClickSelectWord(View view) {
-        Intent intent = new Intent(getApplicationContext(), Unit3VowelListActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Unit3GameActivity.class);
         startActivity(intent);
     }
 }
