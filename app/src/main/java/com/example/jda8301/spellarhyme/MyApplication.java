@@ -28,6 +28,19 @@ public class MyApplication extends Application {
             } else {
                 System.out.println("False");
             }
+
+            word.incrementSpellCount("vowels");
+            word.incrementSpellCount("vowels");
+            word.incrementSpellCount("vowels");
+        }
+
+        for (BankWord word : bank.get("vowels")) {
+            System.out.print("Word: ");
+            if (word.isMastered()) {
+                System.out.println("True");
+            } else {
+                System.out.println("False");
+            }
         }
     }
 
