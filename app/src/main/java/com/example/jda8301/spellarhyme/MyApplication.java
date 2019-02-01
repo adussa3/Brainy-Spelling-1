@@ -24,9 +24,9 @@ public class MyApplication extends Application {
         for (BankWord word : bank.get("vowels")) {
             System.out.print("Word: ");
             if (word.isMastered()) {
-                System.out.println("True");
+                System.out.println(word.getStringName() + "\tMastery: True");
             } else {
-                System.out.println("False");
+                System.out.println(word.getStringName() + "\tMastery: False");
             }
 
             word.incrementSpellCount("vowels");
@@ -37,9 +37,9 @@ public class MyApplication extends Application {
         for (BankWord word : bank.get("vowels")) {
             System.out.print("Word: ");
             if (word.isMastered()) {
-                System.out.println("True");
+                System.out.println(word.getStringName() + "\tMastery: True");
             } else {
-                System.out.println("False");
+                System.out.println(word.getStringName() + "\tMastery: False");
             }
         }
     }
