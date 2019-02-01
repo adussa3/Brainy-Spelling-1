@@ -15,6 +15,7 @@ import com.google.gson.reflect.TypeToken;
 
 import java.io.InputStream;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -125,18 +126,21 @@ public class AppPreferencesHelper {
 
             JsonParser parser = new JsonParser();
             JsonElement element = parser.parse(jsonLetters);
-            JsonArray jsonArray = element.getAsJsonArray();
+            JsonObject jsonObj = element.getAsJsonObject();
 
             Map<String, List<BankWord>> map = new HashMap<>();
 
             Type listType = listType = new TypeToken<List<BankWord>>() {
             }.getType();
 
-            for (int i = 0; i < jsonArray.size(); i++) {
-                JsonObject object = jsonArray.get(i).getAsJsonObject();
-                String level = object.get("level").getAsString();
-                JsonElement jsonWords = object.get("words");
-                List<BankWord> listWords = mGson.fromJson(jsonWords, listType);
+            for (String key: jsonObj.keySet()) {
+                String level = key;
+                JsonObject jsonWords = jsonObj.get(level).getAsJsonObject();
+                List<BankWord> listWords = new ArrayList<>();
+                for (String wordKey: jsonWords.keySet()) {
+                    BankWord bankWerd = new BankWord(wordKey, 0);
+                    listWords.add(bankWerd);
+                }
                 map.put(level, listWords);
             }
             return map;

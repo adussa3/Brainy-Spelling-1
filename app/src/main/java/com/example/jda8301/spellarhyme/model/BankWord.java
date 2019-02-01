@@ -13,6 +13,10 @@ public class BankWord {
     private String stringName;
     private int spellCount;
 
+    public BankWord(String name, int count) {
+        stringName = name;
+        spellCount = count;
+    }
 
     public String getStringName() {
         return stringName;

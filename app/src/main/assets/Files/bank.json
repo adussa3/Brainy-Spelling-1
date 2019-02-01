@@ -1,617 +1,158 @@
-[
-    {
-        "level": "segmentedWords",
-        "words": [
-            {
-                "stringName": "dog",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cat",
-                "spellCount": 0
-            },
-            {
-                "stringName": "hen",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fox",
-                "spellCount": 0
-            },
-            {
-                "stringName": "ram",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cub",
-                "spellCount": 0
-            },
-            {
-                "stringName": "pig",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bat",
-                "spellCount": 0
-            },
-            {
-                "stringName": "elk",
-                "spellCount": 0
-            },
-            {
-                "stringName": "ant",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bug",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fly",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cop",
-                "spellCount": 0
-            },
-            {
-                "stringName": "elf",
-                "spellCount": 0
-            },
-            {
-                "stringName": "kid",
-                "spellCount": 0
-            },
-            {
-                "stringName": "gal",
-                "spellCount": 0
-            },
-            {
-                "stringName": "doc",
-                "spellCount": 0
-            },
-            {
-                "stringName": "ref",
-                "spellCount": 0
-            }
-        ]
+{
+    "segmentedWords": {
+        "dog": 0,
+        "cat": 0,
+        "hen": 0,
+        "fox": 0,
+        "ram": 0,
+        "cub": 0,
+        "pig": 0,
+        "bat": 0,
+        "elk": 0,
+        "ant": 0,
+        "bug": 0,
+        "fly": 0,
+        "cop": 0,
+        "elf": 0,
+        "kid": 0,
+        "gal": 0,
+        "doc": 0,
+        "ref": 0
     },
-    {
-        "level": "vowels",
-        "words": [
-            {
-                "stringName": "ape",
-                "spellCount": 0
-            },
-            {
-                "stringName": "face",
-                "spellCount": 0
-            },
-            {
-                "stringName": "whale",
-                "spellCount": 0
-            },
-            {
-                "stringName": "axe",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bat",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cat",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fall",
-                "spellCount": 0
-            },
-            {
-                "stringName": "swan",
-                "spellCount": 0
-            },
-            {
-                "stringName": "ball",
-                "spellCount": 0
-            },
-            {
-                "stringName": "sofa",
-                "spellCount": 0
-            },
-            {
-                "stringName": "afraid",
-                "spellCount": 0
-            },
-            {
-                "stringName": "zebra",
-                "spellCount": 0
-            },
-            {
-                "stringName": "he",
-                "spellCount": 0
-            },
-            {
-                "stringName": "we",
-                "spellCount": 0
-            },
-            {
-                "stringName": "she",
-                "spellCount": 0
-            },
-            {
-                "stringName": "elf",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bed",
-                "spellCount": 0
-            },
-            {
-                "stringName": "net",
-                "spellCount": 0
-            },
-            {
-                "stringName": "oven",
-                "spellCount": 0
-            },
-            {
-                "stringName": "camel",
-                "spellCount": 0
-            },
-            {
-                "stringName": "kitten",
-                "spellCount": 0
-            },
-            {
-                "stringName": "five",
-                "spellCount": 0
-            },
-            {
-                "stringName": "slide",
-                "spellCount": 0
-            },
-            {
-                "stringName": "ice",
-                "spellCount": 0
-            },
-            {
-                "stringName": "hit",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fish",
-                "spellCount": 0
-            },
-            {
-                "stringName": "sing",
-                "spellCount": 0
-            },
-            {
-                "stringName": "taxi",
-                "spellCount": 0
-            },
-            {
-                "stringName": "yeti",
-                "spellCount": 0
-            },
-            {
-                "stringName": "skis",
-                "spellCount": 0
-            },
-            {
-                "stringName": "rabbit",
-                "spellCount": 0
-            },
-            {
-                "stringName": "centipede",
-                "spellCount": 0
-            },
-            {
-                "stringName": "clarinet",
-                "spellCount": 0
-            },
-            {
-                "stringName": "old",
-                "spellCount": 0
-            },
-            {
-                "stringName": "mole",
-                "spellCount": 0
-            },
-            {
-                "stringName": "nose",
-                "spellCount": 0
-            },
-            {
-                "stringName": "moth",
-                "spellCount": 0
-            },
-            {
-                "stringName": "hot",
-                "spellCount": 0
-            },
-            {
-                "stringName": "pot",
-                "spellCount": 0
-            },
-            {
-                "stringName": "love",
-                "spellCount": 0
-            },
-            {
-                "stringName": "glove",
-                "spellCount": 0
-            },
-            {
-                "stringName": "wagon",
-                "spellCount": 0
-            },
-            {
-                "stringName": "suit",
-                "spellCount": 0
-            },
-            {
-                "stringName": "tuba",
-                "spellCount": 0
-            },
-            {
-                "stringName": "flute",
-                "spellCount": 0
-            },
-            {
-                "stringName": "music",
-                "spellCount": 0
-            },
-            {
-                "stringName": "ambulance",
-                "spellCount": 0
-            },
-            {
-                "stringName": "unicycle",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bus",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bug",
-                "spellCount": 0
-            },
-            {
-                "stringName": "plum",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fly",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cry",
-                "spellCount": 0
-            },
-            {
-                "stringName": "sky",
-                "spellCount": 0
-            },
-            {
-                "stringName": "baby",
-                "spellCount": 0
-            },
-            {
-                "stringName": "candy",
-                "spellCount": 0
-            },
-            {
-                "stringName": "sleepy",
-                "spellCount": 0
-            }
-        ]
+    "vowels": {
+        "ape": 0,
+        "face": 0,
+        "whale": 0,
+        "axe": 0,
+        "bat": 0,
+        "cat": 0,
+        "fall": 0,
+        "swan": 0,
+        "ball": 0,
+        "sofa": 0,
+        "afraid": 0,
+        "zebra": 0,
+        "he": 0,
+        "we": 0,
+        "she": 0,
+        "elf": 0,
+        "bed": 0,
+        "net": 0,
+        "oven": 0,
+        "camel": 0,
+        "kitten": 0,
+        "five": 0,
+        "slide": 0,
+        "ice": 0,
+        "hit": 0,
+        "fish": 0,
+        "sing": 0,
+        "taxi": 0,
+        "yeti": 0,
+        "skis": 0,
+        "rabbit": 0,
+        "centipede": 0,
+        "clarinet": 0,
+        "old": 0,
+        "mole": 0,
+        "nose": 0,
+        "moth": 0,
+        "hot": 0,
+        "pot": 0,
+        "love": 0,
+        "glove": 0,
+        "wagon": 0,
+        "suit": 0,
+        "tuba": 0,
+        "flute": 0,
+        "music": 0,
+        "ambulance": 0,
+        "unicycle": 0,
+        "bus": 0,
+        "bug": 0,
+        "plum": 0,
+        "fly": 0,
+        "cry": 0,
+        "sky": 0,
+        "baby": 0,
+        "candy": 0,
+        "sleepy": 0
     },
-    {
-        "level": "consonants",
-        "words": [
-            {
-                "stringName": "boy",
-                "spellCount": 0
-            },
-            {
-                "stringName": "box",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bubble",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cow",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cut",
-                "spellCount": 0
-            },
-            {
-                "stringName": "car",
-                "spellCount": 0
-            },
-            {
-                "stringName": "balance",
-                "spellCount": 0
-            },
-            {
-                "stringName": "saucepan",
-                "spellCount": 0
-            },
-            {
-                "stringName": "dancer",
-                "spellCount": 0
-            },
-            {
-                "stringName": "dog",
-                "spellCount": 0
-            },
-            {
-                "stringName": "dig",
-                "spellCount": 0
-            },
-            {
-                "stringName": "dark",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fox",
-                "spellCount": 0
-            },
-            {
-                "stringName": "elf",
-                "spellCount": 0
-            },
-            {
-                "stringName": "leaf",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bridge",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fridge",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fringe",
-                "spellCount": 0
-            },
-            {
-                "stringName": "gold",
-                "spellCount": 0
-            },
-            {
-                "stringName": "girl",
-                "spellCount": 0
-            },
-            {
-                "stringName": "goat",
-                "spellCount": 0
-            },
-            {
-                "stringName": "hat",
-                "spellCount": 0
-            },
-            {
-                "stringName": "hug",
-                "spellCount": 0
-            },
-            {
-                "stringName": "hand",
-                "spellCount": 0
-            },
-            {
-                "stringName": "jay",
-                "spellCount": 0
-            },
-            {
-                "stringName": "jump",
-                "spellCount": 0
-            },
-            {
-                "stringName": "juggler",
-                "spellCount": 0
-            },
-            {
-                "stringName": "key",
-                "spellCount": 0
-            },
-            {
-                "stringName": "king",
-                "spellCount": 0
-            },
-            {
-                "stringName": "fork",
-                "spellCount": 0
-            },
-            {
-                "stringName": "wolf",
-                "spellCount": 0
-            },
-            {
-                "stringName": "owl",
-                "spellCount": 0
-            },
-            {
-                "stringName": "tail",
-                "spellCount": 0
-            },
-            {
-                "stringName": "lip",
-                "spellCount": 0
-            },
-            {
-                "stringName": "lick",
-                "spellCount": 0
-            },
-            {
-                "stringName": "light",
-                "spellCount": 0
-            },
-            {
-                "stringName": "man",
-                "spellCount": 0
-            },
-            {
-                "stringName": "mouse",
-                "spellCount": 0
-            },
-            {
-                "stringName": "mouth",
-                "spellCount": 0
-            },
-            {
-                "stringName": "nuts",
-                "spellCount": 0
-            },
-            {
-                "stringName": "nail",
-                "spellCount": 0
-            },
-            {
-                "stringName": "clown",
-                "spellCount": 0
-            },
-            {
-                "stringName": "pig",
-                "spellCount": 0
-            },
-            {
-                "stringName": "pearl",
-                "spellCount": 0
-            },
-            {
-                "stringName": "purse",
-                "spellCount": 0
-            },
-            {
-                "stringName": "queen",
-                "spellCount": 0
-            },
-            {
-                "stringName": "squares",
-                "spellCount": 0
-            },
-            {
-                "stringName": "quiet",
-                "spellCount": 0
-            },
-            {
-                "stringName": "red",
-                "spellCount": 0
-            },
-            {
-                "stringName": "rake",
-                "spellCount": 0
-            },
-            {
-                "stringName": "rainbow",
-                "spellCount": 0
-            },
-            {
-                "stringName": "saw",
-                "spellCount": 0
-            },
-            {
-                "stringName": "glass",
-                "spellCount": 0
-            },
-            {
-                "stringName": "grass",
-                "spellCount": 0
-            },
-            {
-                "stringName": "bags",
-                "spellCount": 0
-            },
-            {
-                "stringName": "dogs",
-                "spellCount": 0
-            },
-            {
-                "stringName": "cars",
-                "spellCount": 0
-            },
-            {
-                "stringName": "toe",
-                "spellCount": 0
-            },
-            {
-                "stringName": "tea",
-                "spellCount": 0
-            },
-            {
-                "stringName": "tie",
-                "spellCount": 0
-            },
-            {
-                "stringName": "volcano",
-                "spellCount": 0
-            },
-            {
-                "stringName": "silver",
-                "spellCount": 0
-            },
-            {
-                "stringName": "beaver",
-                "spellCount": 0
-            },
-            {
-                "stringName": "wig",
-                "spellCount": 0
-            },
-            {
-                "stringName": "wall",
-                "spellCount": 0
-            },
-            {
-                "stringName": "wash",
-                "spellCount": 0
-            },
-            {
-                "stringName": "six",
-                "spellCount": 0
-            },
-            {
-                "stringName": "taxi",
-                "spellCount": 0
-            },
-            {
-                "stringName": "sixteen",
-                "spellCount": 0
-            },
-            {
-                "stringName": "yellow",
-                "spellCount": 0
-            },
-            {
-                "stringName": "yawn",
-                "spellCount": 0
-            },
-            {
-                "stringName": "yo-yo",
-                "spellCount": 0
-            },
-            {
-                "stringName": "zoo",
-                "spellCount": 0
-            },
-            {
-                "stringName": "zebra",
-                "spellCount": 0
-            },
-            {
-                "stringName": "zipper",
-                "spellCount": 0
-            }
-        ]
+    "consonants": {
+        "boy": 0,
+        "box": 0,
+        "bubble": 0,
+        "cow": 0,
+        "cut": 0,
+        "car": 0,
+        "balance": 0,
+        "saucepan": 0,
+        "dancer": 0,
+        "dog": 0,
+        "dig": 0,
+        "dark": 0,
+        "fox": 0,
+        "elf": 0,
+        "leaf": 0,
+        "bridge": 0,
+        "fridge": 0,
+        "fringe": 0,
+        "gold": 0,
+        "girl": 0,
+        "goat": 0,
+        "hat": 0,
+        "hug": 0,
+        "hand": 0,
+        "jay": 0,
+        "jump": 0,
+        "juggler": 0,
+        "key": 0,
+        "king": 0,
+        "fork": 0,
+        "wolf": 0,
+        "owl": 0,
+        "tail": 0,
+        "lip": 0,
+        "lick": 0,
+        "light": 0,
+        "man": 0,
+        "mouse": 0,
+        "mouth": 0,
+        "nuts": 0,
+        "nail": 0,
+        "clown": 0,
+        "pig": 0,
+        "pearl": 0,
+        "purse": 0,
+        "queen": 0,
+        "squares": 0,
+        "quiet": 0,
+        "red": 0,
+        "rake": 0,
+        "rainbow": 0,
+        "saw": 0,
+        "glass": 0,
+        "grass": 0,
+        "bags": 0,
+        "dogs": 0,
+        "cars": 0,
+        "toe": 0,
+        "tea": 0,
+        "tie": 0,
+        "volcano": 0,
+        "silver": 0,
+        "beaver": 0,
+        "wig": 0,
+        "wall": 0,
+        "wash": 0,
+        "six": 0,
+        "taxi": 0,
+        "sixteen": 0,
+        "yellow": 0,
+        "yawn": 0,
+        "yo-yo": 0,
+        "zoo": 0,
+        "zebra": 0,
+        "zipper": 0
     }
-]
+}
