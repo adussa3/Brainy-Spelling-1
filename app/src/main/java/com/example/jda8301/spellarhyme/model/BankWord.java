@@ -3,6 +3,8 @@ package com.example.jda8301.spellarhyme.model;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileReader;
+
 /**
  * @Author Harrison Banh
  * @Date January 28, 2019
@@ -38,7 +40,7 @@ public class BankWord {
         this.spellCount++;
         try {
             // Grabs the bank.json as an object then uses the corresponding level to filter words
-            JSONObject bank = new JSONObject("bank.json");
+            JSONObject bank = new JSONObject("{bank.json}");
             // Update the word within the corresponding level
             bank.getJSONObject(level).put(this.stringName, this.spellCount);
         } catch (JSONException e) {
@@ -51,7 +53,7 @@ public class BankWord {
         this.spellCount = 0;
         try {
             // Grabs the bank.json as an object then uses the corresponding level to filter words
-            JSONObject bank = new JSONObject("bank.json");
+            JSONObject bank = new JSONObject("{bank.json}");
             // Update the word within the corresponding level k
             bank.getJSONObject(level).put(this.stringName, this.spellCount);
         } catch (JSONException e) {
