@@ -40,9 +40,9 @@ public class BankWord {
         this.spellCount++;
         try {
             // Grabs the bank.json as an object then uses the corresponding level to filter words
-            JSONObject bank = new JSONObject("{bank.json}");
+            JSONObject bank = new JSONObject("{bank.json:" + level + "}");
             // Update the word within the corresponding level
-            bank.getJSONObject(level).put(this.stringName, this.spellCount);
+            bank.put(this.stringName, this.spellCount);
         } catch (JSONException e) {
             System.out.println("Problem modifying a word's data in the bank");
             e.printStackTrace();
@@ -53,9 +53,9 @@ public class BankWord {
         this.spellCount = 0;
         try {
             // Grabs the bank.json as an object then uses the corresponding level to filter words
-            JSONObject bank = new JSONObject("{bank.json}");
+            JSONObject bank = new JSONObject("{bank.json:" + level + "}");
             // Update the word within the corresponding level k
-            bank.getJSONObject(level).put(this.stringName, this.spellCount);
+            bank.put(this.stringName, this.spellCount);
         } catch (JSONException e) {
             System.out.println("Problem modifying a word's data in the bank");
             e.printStackTrace();
