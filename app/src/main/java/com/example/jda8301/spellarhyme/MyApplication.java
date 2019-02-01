@@ -22,7 +22,6 @@ public class MyApplication extends Application {
         Map<String, List<BankWord>> bank =  appHelper.getBank();
 
         for (BankWord word : bank.get("vowels")) {
-            System.out.print("Word: ");
             if (word.isMastered()) {
                 System.out.println(word.getStringName() + "\tMastery: True");
             } else {
@@ -35,7 +34,6 @@ public class MyApplication extends Application {
         }
 
         for (BankWord word : bank.get("vowels")) {
-            System.out.print("Word: ");
             if (word.isMastered()) {
                 System.out.println(word.getStringName() + "\tMastery: True");
             } else {
