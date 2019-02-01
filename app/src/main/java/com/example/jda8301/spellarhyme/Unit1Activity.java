@@ -6,17 +6,20 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
+import com.example.jda8301.spellarhyme.model.Segment;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
 import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
 import com.example.jda8301.spellarhyme.utils.Config;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Unit1Activity extends AppCompatActivity {
 
@@ -25,6 +28,7 @@ public class Unit1Activity extends AppCompatActivity {
     private ImageView[] word2 = new ImageView[3];
     private ImageView[] word3 = new ImageView[3];
     private ImageView[] selectedWord = new ImageView[3];
+    private Button[] buttons = new Button[9];
 
     // Initializes AppPreferencesHelper to read JSON files
     AppPreferencesHelper helper = new AppPreferencesHelper();
@@ -57,6 +61,37 @@ public class Unit1Activity extends AppCompatActivity {
         selectedWord[0] = (ImageView) findViewById(R.id.imageView1);
         selectedWord[1] = (ImageView) findViewById(R.id.imageView2);
         selectedWord[2] = (ImageView) findViewById(R.id.imageView3);
+
+        buttons[0] = (Button)findViewById(R.id.letter_0);
+        buttons[1] = (Button)findViewById(R.id.letter_1);
+        buttons[2] = (Button)findViewById(R.id.letter_2);
+        buttons[3] = (Button)findViewById(R.id.letter_3);
+        buttons[4] = (Button)findViewById(R.id.letter_4);
+        buttons[5] = (Button)findViewById(R.id.letter_5);
+        buttons[6] = (Button)findViewById(R.id.letter_6);
+        buttons[7] = (Button)findViewById(R.id.letter_7);
+        buttons[8] = (Button)findViewById(R.id.letter_8);
+
+        ArrayList<Integer> phonemeCode = new ArrayList<>();
+
+
+        for (SegmentedWord segmentedWord : segmentedWords.get(0)) {
+            for (Segment segment : segmentedWord.getSegmentInfo()) {
+                phonemeCode.add(segment.getSoundFile());
+            }
+        }
+
+        for (Button button : buttons) {
+            // Get random index for phonemeLetters
+            Random rand = new Random();
+            int randomInt = rand.nextInt(phonemeCode.size());
+
+            button.setText(helper.getPhonemeLetters().get(phonemeCode.get(randomInt)));
+            Util.playSoundOnClick(button,helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+            phonemeCode.remove(randomInt);
+        }
+
+
 
         // Initialize sounds and animation for segments of selected word
         for (int i = 0; i < selectedWord.length; i++) {
