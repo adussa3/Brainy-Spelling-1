@@ -114,8 +114,8 @@ public class AppPreferencesHelper {
         }
     }
 
-    public Map<String, List<BankWord>> getBank() {
-        String filename = "Files/bank.json";
+    public Map<String, List<BankWord>> getBank(String fname) {
+        String filename = fname;
         try {
             InputStream inputStream = MyApplication.getAppContext().getAssets().open(filename);
             int size = inputStream.available();

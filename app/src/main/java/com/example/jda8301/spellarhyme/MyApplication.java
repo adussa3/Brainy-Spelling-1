@@ -19,7 +19,7 @@ public class MyApplication extends Application {
         super.onCreate();
         MyApplication.context = getApplicationContext();
         AppPreferencesHelper appHelper = new AppPreferencesHelper();
-        Map<String, List<BankWord>> bank =  appHelper.getBank();
+        Map<String, List<BankWord>> bank =  appHelper.getBank("Files/bank.json");
 
         for (BankWord word : bank.get("vowels")) {
             if (word.isMastered()) {
@@ -33,9 +33,12 @@ public class MyApplication extends Application {
             word.incrementSpellCount(context, "vowels");
         }
 
+        //System.out.println("------------------------------------------------------------------");
+        //System.out.println("Context Dir: " + context.getFilesDir());
+        bank = appHelper.getBank(context.getFilesDir() + "/bank.json");
         for (BankWord word : bank.get("vowels")) {
             if (word.isMastered()) {
-                System.out.println(word.getStringName() + "\tMastery: True");
+                System.out.println(word.getStringName() + "\tMastery: True \tSpell Count: " + word.getSpellCount());
             } else {
                 System.out.println(word.getStringName() + "\tMastery: False");
             }

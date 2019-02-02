@@ -52,8 +52,8 @@ public class BankWord {
             FileWriter out = new FileWriter(file);
             out.write(bank.toString());
             out.close();
-            System.out.println("Write successful");
-            System.out.println(bank.toString());
+            //System.out.println("Write successful");
+            //System.out.println(bank.toString());
         } catch (JSONException e) {
             System.out.println("Problem modifying a word's data in the bank");
             e.printStackTrace();
@@ -74,7 +74,7 @@ public class BankWord {
             FileWriter out = new FileWriter(file);
             out.write(bank.toString());
             out.close();
-            System.out.println("Write successful");
+            //System.out.println("Write successful");
         } catch (JSONException e) {
             System.out.println("Problem modifying a word's data in the bank");
             e.printStackTrace();
