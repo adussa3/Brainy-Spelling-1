@@ -28,9 +28,9 @@ public class MyApplication extends Application {
                 System.out.println(word.getStringName() + "\tMastery: False");
             }
 
-            word.incrementSpellCount("vowels");
-            word.incrementSpellCount("vowels");
-            word.incrementSpellCount("vowels");
+            word.incrementSpellCount(context, "vowels");
+            word.incrementSpellCount(context, "vowels");
+            word.incrementSpellCount(context, "vowels");
         }
 
         for (BankWord word : bank.get("vowels")) {

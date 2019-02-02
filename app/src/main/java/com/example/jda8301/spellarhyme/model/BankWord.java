@@ -1,9 +1,14 @@
 package com.example.jda8301.spellarhyme.model;
 
+import android.content.Context;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.FileReader;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 /**
  * @Author Harrison Banh
@@ -36,28 +41,45 @@ public class BankWord {
         this.spellCount = spellCount;
     }
 
-    public void incrementSpellCount(String level) {
+    public void incrementSpellCount(Context context, String level) {
         this.spellCount++;
         try {
             // Grabs the bank.json as an object then uses the corresponding level to filter words
             JSONObject bank = new JSONObject("{bank.json:" + level + "}");
             // Update the word within the corresponding level
             bank.put(this.stringName, this.spellCount);
+            File file = new File(context.getFilesDir(), "bank.json");
+            FileWriter out = new FileWriter(file);
+            out.write(bank.toString());
+            out.close();
+            System.out.println("Write successful");
+            System.out.println(bank.toString());
         } catch (JSONException e) {
             System.out.println("Problem modifying a word's data in the bank");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Problem saving the modified data to the bank.");
             e.printStackTrace();
         }
     }
 
-    public void resetSpellCount(String level) {
+    public void resetSpellCount(Context context, String level) {
         this.spellCount = 0;
         try {
             // Grabs the bank.json as an object then uses the corresponding level to filter words
             JSONObject bank = new JSONObject("{bank.json:" + level + "}");
             // Update the word within the corresponding level k
             bank.put(this.stringName, this.spellCount);
+            File file = new File(context.getFilesDir(), "bank.json");
+            FileWriter out = new FileWriter(file);
+            out.write(bank.toString());
+            out.close();
+            System.out.println("Write successful");
         } catch (JSONException e) {
             System.out.println("Problem modifying a word's data in the bank");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("Problem saving the modified data to the bank.");
             e.printStackTrace();
         }
     }
