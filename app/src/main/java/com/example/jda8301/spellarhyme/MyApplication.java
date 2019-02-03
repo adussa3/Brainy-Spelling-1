@@ -19,30 +19,33 @@ public class MyApplication extends Application {
         super.onCreate();
         MyApplication.context = getApplicationContext();
         AppPreferencesHelper appHelper = new AppPreferencesHelper();
-        Map<String, List<BankWord>> bank =  appHelper.getBank("Files/bank.json");
+        Map<String, List<BankWord>> bank =  appHelper.getBank();
 
-        for (BankWord word : bank.get("vowels")) {
-            if (word.isMastered()) {
-                System.out.println(word.getStringName() + "\tMastery: True");
-            } else {
-                System.out.println(word.getStringName() + "\tMastery: False");
+        if (bank != null) {
+            for (BankWord word : bank.get("vowels")) {
+                if (word.isMastered()) {
+                    System.out.println(word.getStringName() + "\tMastery: True");
+                } else {
+                    System.out.println(word.getStringName() + "\tMastery: False");
+                }
+
+                word.incrementSpellCount(context, "vowels");
+                word.incrementSpellCount(context, "vowels");
+                word.incrementSpellCount(context, "vowels");
+                //System.out.println(word.getStringName() + "\tspell count: " + word.getSpellCount());
             }
 
-            word.incrementSpellCount(context, "vowels");
-            word.incrementSpellCount(context, "vowels");
-            word.incrementSpellCount(context, "vowels");
-        }
-
-        //System.out.println("------------------------------------------------------------------");
-        //System.out.println("Context Dir: " + context.getFilesDir());
-        bank = appHelper.getBank(context.getFilesDir() + "/bank.json");
-        for (BankWord word : bank.get("vowels")) {
-            if (word.isMastered()) {
-                System.out.println(word.getStringName() + "\tMastery: True \tSpell Count: " + word.getSpellCount());
-            } else {
-                System.out.println(word.getStringName() + "\tMastery: False");
+            System.out.println("------------------------------------------------------------------");
+            bank = appHelper.getBank();
+            for (BankWord word : bank.get("vowels")) {
+                if (word.isMastered()) {
+                    System.out.println(word.getStringName() + "\tMastery: True \tSpell Count: " + word.getSpellCount());
+                } else {
+                    System.out.println(word.getStringName() + "\tMastery: False");
+                }
             }
         }
+
     }
 
     public static Context getAppContext() {

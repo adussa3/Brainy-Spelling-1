@@ -1,5 +1,7 @@
 package com.example.jda8301.spellarhyme.data;
 
+import android.content.Context;
+
 import com.example.jda8301.spellarhyme.MyApplication;
 import com.example.jda8301.spellarhyme.model.BankWord;
 import com.example.jda8301.spellarhyme.model.ConsonantWord;
@@ -13,7 +15,13 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -114,10 +122,38 @@ public class AppPreferencesHelper {
         }
     }
 
-    public Map<String, List<BankWord>> getBank(String fname) {
-        String filename = fname;
+    public Map<String, List<BankWord>> getBank() {
         try {
-            InputStream inputStream = MyApplication.getAppContext().getAssets().open(filename);
+            // Internal storage of bank.json
+            File file = new File(MyApplication.getAppContext().getFilesDir(), "bank.json");
+            //System.out.println(file.getAbsolutePath());
+            /* Internal storage version of bank.json doesn't not exist -- create it and copy contents
+               from bank.json from the "assets" folder. */
+            if (!file.exists()) {
+                try {
+                    file.createNewFile();
+                    InputStream assetsBank = MyApplication.getAppContext().getAssets().open("Files/bank.json");
+                    OutputStream internalBank = new FileOutputStream(file);
+                    byte[] buffer = new byte[5120];
+                    int length = assetsBank.read(buffer);
+                    while (length > 0) {
+                        internalBank.write(buffer, 0, length);
+                        System.out.println(assetsBank.read(buffer));
+                        length = assetsBank.read(buffer);
+                    }
+                    internalBank.flush();
+                    internalBank.close();
+                    assetsBank.close();
+                } catch (FileNotFoundException e) {
+                    System.out.println("Problem finding the internal storage version of bank.json");
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    System.out.println("Problem copying asset's bank.json to the internal version of"
+                            + "bank.json ");
+                    e.printStackTrace();
+                }
+            }
+            InputStream inputStream = new FileInputStream(file);
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
@@ -149,4 +185,6 @@ public class AppPreferencesHelper {
             return null;
         }
     }
+
+
 }
