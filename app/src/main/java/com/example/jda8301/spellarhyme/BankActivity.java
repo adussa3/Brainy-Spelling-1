@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,7 +14,7 @@ public class BankActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bank);
+        setContentView(R.layout.activity_segmented_word_bank);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
@@ -28,6 +27,30 @@ public class BankActivity extends AppCompatActivity {
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
+
+        //update pictures to display which ones are learned
+        updateLearnedWords();
+    }
+
+    public void onClickSegmentedBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), SegmentedWordBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickVowelsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), VowelsWordBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickConsonantsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ConsonantsWordBankActivity.class);
+        startActivity(intent);
+    }
+
+    private void updateLearnedWords() {
+        //parse through the JSON
+        //if increment >= 3, find the image based on the string name + .png or something
+        //update the corresponding section to include that image
     }
 
     // Intents - goes to a different activity when the button is clicked
