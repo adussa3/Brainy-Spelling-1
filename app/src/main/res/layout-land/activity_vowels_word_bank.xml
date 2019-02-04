@@ -27,33 +27,33 @@
 
             <ImageButton
                 android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                android:src="@drawable/ape_bw" />
 
             <ImageButton
                 android:id="@+id/imageButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                android:src="@drawable/face_bw" />
 
             <ImageButton
                 android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/axe_bw" />
 
         </LinearLayout>
 
@@ -74,33 +74,33 @@
 
             <ImageButton
                 android:id="@+id/imageButton10"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/whale_bw" />
 
             <ImageButton
                 android:id="@+id/imageButton11"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/bat" />
 
             <ImageButton
                 android:id="@+id/imageButton12"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/cat_bw" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
@@ -122,33 +122,33 @@
 
             <ImageButton
                 android:id="@+id/imageButton13"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/fall_bw" />
 
             <ImageButton
                 android:id="@+id/imageButton14"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/swan_bw" />
 
             <ImageButton
                 android:id="@+id/imageButton15"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/profile_chimp" />
+                app:srcCompat="@drawable/ball_bw" />
 
         </LinearLayout>
 

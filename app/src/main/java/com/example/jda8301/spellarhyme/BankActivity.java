@@ -14,12 +14,12 @@ public class BankActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segmented_word_bank);
+        setContentView(R.layout.activity_bank_level_selection);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("BankWord");
+        actionBarTitle.setText("Word Bank Level");
 
 
         // Initialize variables
