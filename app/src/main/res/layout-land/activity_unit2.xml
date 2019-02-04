@@ -7,6 +7,7 @@
     tools:context=".Unit2Activity">
 
     <include
+
         android:id="@+id/actionBar"
         layout="@layout/action_bar"
         android:layout_width="match_parent"

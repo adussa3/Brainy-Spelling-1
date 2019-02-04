@@ -24,6 +24,7 @@ import java.util.Random;
 public class Unit1Activity extends AppCompatActivity {
 
     private ImageView exit;
+
     private ImageView[] word1 = new ImageView[3];
     private ImageView[] word2 = new ImageView[3];
     private ImageView[] word3 = new ImageView[3];
@@ -46,6 +47,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
+
         word1[0] = (ImageView) findViewById(R.id.imageViewTop0);
         word1[1] = (ImageView) findViewById(R.id.imageViewTop1);
         word1[2] = (ImageView) findViewById(R.id.imageViewTop2);
@@ -58,9 +60,9 @@ public class Unit1Activity extends AppCompatActivity {
         word3[1] = (ImageView) findViewById(R.id.imageViewTop7);
         word3[2] = (ImageView) findViewById(R.id.imageViewTop8);
 
-        selectedWord[0] = (ImageView) findViewById(R.id.imageView1);
-        selectedWord[1] = (ImageView) findViewById(R.id.imageView2);
-        selectedWord[2] = (ImageView) findViewById(R.id.imageView3);
+        selectedWord[0] = (ImageView) findViewById(R.id.imageViewTest1);
+        selectedWord[1] = (ImageView) findViewById(R.id.imageViewTest2);
+        selectedWord[2] = (ImageView) findViewById(R.id.imageViewTest3);
 
         buttons[0] = (Button)findViewById(R.id.letter_0);
         buttons[1] = (Button)findViewById(R.id.letter_1);
@@ -74,7 +76,9 @@ public class Unit1Activity extends AppCompatActivity {
 
         ArrayList<Integer> phonemeCode = new ArrayList<>();
 
-
+        // This get the segmented words for unit 1
+        // For each segmented word, we get the sound files for all 3 words
+        // We add those soudn files to the phonemeCode array
         for (SegmentedWord segmentedWord : segmentedWords.get(0)) {
             for (Segment segment : segmentedWord.getSegmentInfo()) {
                 phonemeCode.add(segment.getSoundFile());
@@ -95,7 +99,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         // Initialize sounds and animation for segments of selected word
         for (int i = 0; i < selectedWord.length; i++) {
-            Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(segmentedWords.get(0).get(0).getSegmentInfo()[0].getSoundFile()));
+            Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(segmentedWords.get(0).get(0).getSegmentInfo()[i].getSoundFile()));
             Util.scaleOnTouch(selectedWord[i]);
         }
 

@@ -53,6 +53,8 @@ public class Util {
         });
     }
 
+    /**********************************************************************************************/
+
     public static void playSoundOnClick(View button, final String sound) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +75,4 @@ public class Util {
             }
         });
     }
-
-    /**********************************************************************************************/
 }
