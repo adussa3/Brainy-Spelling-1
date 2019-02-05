@@ -32,6 +32,17 @@ public class Bank {
     }
 
     /**
+     * Increments the spell count of a word using its key of (user + level + word) in
+     * Shared Preferences.
+     * @param key the user + level + word to be incremented
+     */
+    public static void incrementSpellCount(String key) {
+        int oldSpellCount = sharedPref.getInt(key, 0);
+        editor.putInt(key, oldSpellCount + 1);
+        editor.apply();
+    }
+
+    /**
      * Sets the spell count of a specified word to a desired value.
      * @param user : the bank of which user
      * @param level : the level where the word comes from
@@ -40,6 +51,16 @@ public class Bank {
      */
     public static void setSpellCount(String user, String level, String word, int count) {
         String key = user + " " + level + " " + word;
+        setSpellCount(key, count);
+    }
+
+    /**
+     * Sets the spell count of a word using its key of (user + level + word) in Shared Preference
+     * s to the desired count.
+     * @param key the user + level + word to be incremented
+     * @param count the desired count
+     */
+    public static void setSpellCount(String key, int count) {
         editor.putInt(key, count);
         editor.apply();
     }
@@ -52,6 +73,15 @@ public class Bank {
      */
     public static void resetSpellCount(String user, String level, String word) {
         String key = user + " " + level + " " + word;
+        resetSpellCount(key);
+    }
+
+    /**
+     * Sets the spell count of a word using its key of (user + level + word) in Shared Preferences
+     * to 0.
+     * @param key the user + level + word to be incremented
+     */
+    public static void resetSpellCount(String key) {
         editor.putInt(key, 0);
         editor.apply();
     }
@@ -64,9 +94,14 @@ public class Bank {
      */
     public static boolean isMastered(String user, String level, String word) {
         String key = user + " " + level + " " + word;
-        return MASTERY == sharedPref.getInt(key, 0);
+        return isMastered(key);
     }
 
+    /**
+     * Checks if a word using its key of (user + level + word) in Shared Preferences has been
+     * mastered.
+     * @param key the user + level + word to be incremented
+     */
     public static boolean isMastered(String key) {
         return MASTERY == sharedPref.getInt(key, 0);
     }
@@ -98,9 +133,44 @@ public class Bank {
         return (Map<String, Integer>) sharedPref.getAll();
     }
 
+    /**
+     * Breaks up a shared preferences key into the user, level, and word name parts.
+     * @param key the shared preferences key to be parsed
+     * @return [user, level, word]
+     */
+    public static String[] parseKey(String key) {
+        String[] keySegments = key.split("\\s+");
+        return keySegments;
+    }
+
+    /**
+     * Returns the user part of a shared preferences key
+     * @param key the shared preferences key to be parsed
+     * @return the username portion of the key
+     */
+    public static String parseUser(String key) {
+        String[] keySegments = key.split("\\s+");
+        return keySegments[0];
+    }
+
+    /**
+     * Returns the level portion of a shared preferences key
+     * @param key the shared preferences key to be parsed
+     * @return the level portion of the key
+     */
+    public static String parseLevel(String key) {
+        String[] keySegments = key.split("\\s+");
+        return keySegments[1];
+    }
+
+    /**
+     * Returns the word of a shared preferences key
+     * @param key the shared preferences key to be parsed
+     * @return the word portion of the key
+     */
     public static String parseWord(String key) {
-        String[] keySegements = key.split("\\s+");
-        return keySegements[2];
+        String[] keySegments = key.split("\\s+");
+        return keySegments[2];
     }
 }
 
