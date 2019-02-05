@@ -74,6 +74,36 @@ public class Bank {
     }
 
     /**
+     * Removes all stored words from the bank pertaining to a specified user
+     * @param user the user who's data is to be removed
+     */
+    public static void removeUser(String user) {
+        Map<String, Integer> bank = getBank();
+        for (String key : bank.keySet()) {
+            if (parseUser(key).equals(user)) {
+                editor.remove(key);
+            }
+        }
+        editor.apply();
+    }
+
+    /**
+     * Removes all stored words in the bank pertaining to a specified user and level
+     * @param user the user who's data is to be removed
+     * @param level the level of interest
+     */
+    public static void removeUserLevelWords(String user, String level) {
+        Map<String, Integer> bank = getBank();
+        for (String key : bank.keySet()) {
+            String[] keySegments = parseKey(key);
+            if (keySegments[0].equals(user) && keySegments[1].equals(level)) {
+                editor.remove(key);
+            }
+        }
+        editor.apply();
+    }
+
+    /**
      * Removes a specified word under a specific user and level from the bank
      * @param user : the bank of which user
      * @param level : the level where the word comes from
