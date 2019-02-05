@@ -2,12 +2,16 @@ package com.example.jda8301.spellarhyme;
 
 import android.app.Application;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,8 +38,10 @@ public class Unit1Activity extends AppCompatActivity {
     private ImageView[] word3 = new ImageView[3];
     private ImageView[] selectedWord = new ImageView[3];
     private Button[] buttons = new Button[9];
+    private EditText[] fields = new EditText[3];
 
     private ObservableInteger selectedWordState = new ObservableInteger(0);
+    private ObservableInteger currentField = new ObservableInteger(0);
 
     // Initializes AppPreferencesHelper to read JSON files
     AppPreferencesHelper helper = new AppPreferencesHelper();
@@ -83,7 +89,12 @@ public class Unit1Activity extends AppCompatActivity {
         selectedWord[1] = (ImageView) findViewById(R.id.imageViewTest2);
         selectedWord[2] = (ImageView) findViewById(R.id.imageViewTest3);
 
-        for (int i = 0; i < 3; i++){
+        fields[0] = (EditText) findViewById(R.id.editLetter1);
+        fields[1] = (EditText) findViewById(R.id.editLetter2);
+        fields[2] = (EditText) findViewById(R.id.editLetter3);
+
+        // Set correct images based on JSON
+        for (int i = 0; i < 3; i++) {
             word1[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(wordList.get(0).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word2[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(wordList.get(1).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word3[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(wordList.get(2).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
@@ -91,15 +102,16 @@ public class Unit1Activity extends AppCompatActivity {
         }
 
 
-        buttons[0] = (Button)findViewById(R.id.letter_0);
-        buttons[1] = (Button)findViewById(R.id.letter_1);
-        buttons[2] = (Button)findViewById(R.id.letter_2);
-        buttons[3] = (Button)findViewById(R.id.letter_3);
-        buttons[4] = (Button)findViewById(R.id.letter_4);
-        buttons[5] = (Button)findViewById(R.id.letter_5);
-        buttons[6] = (Button)findViewById(R.id.letter_6);
-        buttons[7] = (Button)findViewById(R.id.letter_7);
-        buttons[8] = (Button)findViewById(R.id.letter_8);
+        // Initialize buttons
+        buttons[0] = (Button) findViewById(R.id.letter_0);
+        buttons[1] = (Button) findViewById(R.id.letter_1);
+        buttons[2] = (Button) findViewById(R.id.letter_2);
+        buttons[3] = (Button) findViewById(R.id.letter_3);
+        buttons[4] = (Button) findViewById(R.id.letter_4);
+        buttons[5] = (Button) findViewById(R.id.letter_5);
+        buttons[6] = (Button) findViewById(R.id.letter_6);
+        buttons[7] = (Button) findViewById(R.id.letter_7);
+        buttons[8] = (Button) findViewById(R.id.letter_8);
 
         for (Button button : buttons) {
             // Get random index for phonemeLetters
@@ -107,7 +119,8 @@ public class Unit1Activity extends AppCompatActivity {
             int randomInt = rand.nextInt(phonemeCode.size());
 
             button.setText(helper.getPhonemeLetters().get(phonemeCode.get(randomInt)));
-            Util.playSoundOnClick(button,helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+
             phonemeCode.remove(randomInt);
         }
 
@@ -138,6 +151,62 @@ public class Unit1Activity extends AppCompatActivity {
             });
         }
 
+        for (int i = 0; i < fields.length; i++) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) { // API 21
+                fields[i].setShowSoftInputOnFocus(false);
+            } else { // API 11-20
+                fields[i].setTextIsSelectable(true);
+            }
+        }
+
+        // Play sound when new EditText is selected, set variable to current selected field
+        fields[0].setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    currentField.setValue(0);
+                    AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + helper.getSoundFiles().get(wordList.get(selectedWordState.getValue()).getSegmentInfo()[0].getSoundFile()));
+                }
+            }
+        });
+        fields[1].setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    currentField.setValue(1);
+                    AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + helper.getSoundFiles().get(wordList.get(selectedWordState.getValue()).getSegmentInfo()[1].getSoundFile()));
+                }
+            }
+        });
+        fields[2].setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    currentField.setValue(2);
+                    AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + helper.getSoundFiles().get(wordList.get(selectedWordState.getValue()).getSegmentInfo()[2].getSoundFile()));
+                }
+            }
+        });
+
+
+        // Update EditText when correct letter button is pressed
+        for (Button button: buttons) {
+            final Button thisButton = button;
+            button.setOnTouchListener(new View.OnTouchListener() {
+                public boolean onTouch (View v, MotionEvent event) {
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        Log.e("thisButton", thisButton.getText().toString());
+                        Log.e("thisButton", Character.toString(wordList.get(selectedWordState.getValue()).getDisplayString().charAt(currentField.getValue())));
+
+                        if (thisButton.getText().toString().equals(Character.toString(wordList.get(selectedWordState.getValue()).getDisplayString().charAt(currentField.getValue())))) {
+                            fields[currentField.getValue()].setText(thisButton.getText());
+                            thisButton.setText("");
+                        }
+                    }
+                    return false;
+                }
+            });
+        }
 
 
         // Initialize sounds and animation for segments of selected word
@@ -150,10 +219,10 @@ public class Unit1Activity extends AppCompatActivity {
         Util.scaleOnTouch(exit);
 
 
+        // State machine for currently selected image
         Observer stateChange = new Observer() {
             @Override
             public void update(Observable o, Object newValue) {
-                // State Machine for images
                 if ((int) newValue == 0) {
                     Log.e("State 0", Config.AUDIO_WORDS_PATH + wordList.get(0).getDisplayString());
                     selectedWord[0].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(wordList.get(0).getSegmentInfo()[0].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
@@ -196,6 +265,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         selectedWordState.addObserver(stateChange);
     }
+
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
