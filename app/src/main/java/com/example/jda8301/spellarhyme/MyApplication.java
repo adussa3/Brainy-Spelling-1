@@ -4,10 +4,9 @@ import android.app.Application;
 import android.content.Context;
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
-import com.example.jda8301.spellarhyme.model.BankWord;
+import com.example.jda8301.spellarhyme.model.Bank;
 
-import java.util.HashMap;
-import java.util.List;
+
 import java.util.Map;
 
 
@@ -19,31 +18,14 @@ public class MyApplication extends Application {
         super.onCreate();
         MyApplication.context = getApplicationContext();
         AppPreferencesHelper appHelper = new AppPreferencesHelper();
-        Map<String, List<BankWord>> bank =  appHelper.getBank();
 
-        if (bank != null) {
-            for (BankWord word : bank.get("vowels")) {
-                if (word.isMastered()) {
-                    System.out.println(word.getStringName() + "\tMastery: True");
-                } else {
-                    System.out.println(word.getStringName() + "\tMastery: False");
-                }
+        Bank.incrementSpellCount("default", "vowels", "face");
+        Map<String, Integer> bank = Bank.getBank();
 
-                word.incrementSpellCount(context, "vowels");
-                word.incrementSpellCount(context, "vowels");
-                word.incrementSpellCount(context, "vowels");
-                //System.out.println(word.getStringName() + "\tspell count: " + word.getSpellCount());
-            }
-
-            System.out.println("------------------------------------------------------------------");
-            bank = appHelper.getBank();
-            for (BankWord word : bank.get("vowels")) {
-                if (word.isMastered()) {
-                    System.out.println(word.getStringName() + "\tMastery: True \tSpell Count: " + word.getSpellCount());
-                } else {
-                    System.out.println(word.getStringName() + "\tMastery: False");
-                }
-            }
+        for (String key : bank.keySet()) {
+            System.out.println("Word: " + Bank.parseWord(key)
+                    + " \tSpell Count: " + Bank.getSpellCount(key)
+                    + " \tMastery: " + Bank.isMastered(key));
         }
 
     }

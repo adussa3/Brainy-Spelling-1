@@ -1,9 +1,9 @@
 package com.example.jda8301.spellarhyme.data;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import com.example.jda8301.spellarhyme.MyApplication;
-import com.example.jda8301.spellarhyme.model.BankWord;
 import com.example.jda8301.spellarhyme.model.ConsonantWord;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
 import com.example.jda8301.spellarhyme.model.VowelWord;
@@ -15,15 +15,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -121,70 +114,4 @@ public class AppPreferencesHelper {
             return null;
         }
     }
-
-    public Map<String, List<BankWord>> getBank() {
-        try {
-            // Internal storage of bank.json
-            File file = new File(MyApplication.getAppContext().getFilesDir(), "bank.json");
-            //System.out.println(file.getAbsolutePath());
-            /* Internal storage version of bank.json doesn't not exist -- create it and copy contents
-               from bank.json from the "assets" folder. */
-            if (!file.exists()) {
-                try {
-                    file.createNewFile();
-                    InputStream assetsBank = MyApplication.getAppContext().getAssets().open("Files/bank.json");
-                    OutputStream internalBank = new FileOutputStream(file);
-                    byte[] buffer = new byte[5120];
-                    int length = assetsBank.read(buffer);
-                    while (length > 0) {
-                        internalBank.write(buffer, 0, length);
-                        System.out.println(assetsBank.read(buffer));
-                        length = assetsBank.read(buffer);
-                    }
-                    internalBank.flush();
-                    internalBank.close();
-                    assetsBank.close();
-                } catch (FileNotFoundException e) {
-                    System.out.println("Problem finding the internal storage version of bank.json");
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    System.out.println("Problem copying asset's bank.json to the internal version of"
-                            + "bank.json ");
-                    e.printStackTrace();
-                }
-            }
-            InputStream inputStream = new FileInputStream(file);
-            int size = inputStream.available();
-            byte[] buffer = new byte[size];
-            inputStream.read(buffer);
-            inputStream.close();
-            String jsonLetters = new String(buffer, "UTF-8");
-
-            JsonParser parser = new JsonParser();
-            JsonElement element = parser.parse(jsonLetters);
-            JsonObject jsonObj = element.getAsJsonObject();
-
-            Map<String, List<BankWord>> map = new HashMap<>();
-
-            Type listType = listType = new TypeToken<List<BankWord>>() {
-            }.getType();
-
-            for (String key: jsonObj.keySet()) {
-                String level = key;
-                JsonObject jsonWords = jsonObj.get(level).getAsJsonObject();
-                List<BankWord> listWords = new ArrayList<>();
-                for (String wordKey: jsonWords.keySet()) {
-                    BankWord bankWerd = new BankWord(wordKey, 0);
-                    listWords.add(bankWerd);
-                }
-                map.put(level, listWords);
-            }
-            return map;
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            return null;
-        }
-    }
-
-
 }
