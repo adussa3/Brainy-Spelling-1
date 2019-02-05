@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 import com.example.jda8301.spellarhyme.MyApplication;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -17,6 +18,52 @@ public class Bank {
     private static final int MASTERY = 3;
     private static SharedPreferences sharedPref = MyApplication.getAppContext().getSharedPreferences("bank", Context.MODE_PRIVATE);
     private static SharedPreferences.Editor editor = sharedPref.edit();
+
+    /**
+     * Returns a map of all words from every level and every user along with their spell counts as a
+     * single map.
+     * @return a map of stored words along with their spell counts
+     */
+    public static Map<String, Integer> getBank() {
+        return (Map<String, Integer>) sharedPref.getAll();
+    }
+
+    /**
+     * Returns the list of all spelled/stored words pertaining to the specified user.
+     * @param user the user to filter the bank with
+     * @return a map of all words spelled by the user along with their spell counts
+     */
+    public static Map<String, Integer> getUserBank(String user) {
+        Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
+        Map<String, Integer> userBank = new HashMap<>();
+        for (String key : bank.keySet()) {
+            if (parseUser(key).equals(user)) {
+                userBank.put(key, bank.get(key));
+            }
+        }
+
+        return userBank;
+    }
+
+    /**
+     * Returns all words spelled by a user pertaining to a specified level
+     * @param user the user to filter the bank with
+     * @param level words pertaining to which game mode/level of interest
+     * @return a map of all words spelled by a specific user pertaining to a certain level along
+     * with their spell coutns.
+     */
+    public static Map<String, Integer> getUserLevelBank(String user, String level) {
+        Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
+        Map<String, Integer> userLevelBank = new HashMap<>();
+        for (String key : bank.keySet()) {
+            String[] parsedKey = parseKey(key);
+            if (parsedKey[0].equals(user) && parsedKey[1].equals(level)) {
+                userLevelBank.put(key, bank.get(key));
+            }
+        }
+
+        return userLevelBank;
+    }
 
     /**
      * Increments the spell count of a specified word.
@@ -122,15 +169,6 @@ public class Bank {
 
     public static int getSpellCount(String key) {
         return sharedPref.getInt(key, 0);
-    }
-
-    /**
-     * Returns a map of all words from every level and every user along with their spell counts as a
-     * single map.
-     * @return a map of stored words along with their spell counts
-     */
-    public static Map<String, Integer> getBank() {
-        return (Map<String, Integer>) sharedPref.getAll();
     }
 
     /**
