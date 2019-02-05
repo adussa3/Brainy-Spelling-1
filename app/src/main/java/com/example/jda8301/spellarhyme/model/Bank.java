@@ -20,6 +20,14 @@ public class Bank {
     private static SharedPreferences.Editor editor = sharedPref.edit();
 
     /**
+     * Wipes the bank of all stored words on this current android device for all users and levels.
+     * Note that there is way to recover the wiped data.
+     */
+    public static void resetBank() {
+        editor.clear().apply();
+    }
+
+    /**
      * Returns a map of all words from every level and every user along with their spell counts as a
      * single map.
      * @return a map of stored words along with their spell counts
@@ -50,7 +58,7 @@ public class Bank {
      * @param user the user to filter the bank with
      * @param level words pertaining to which game mode/level of interest
      * @return a map of all words spelled by a specific user pertaining to a certain level along
-     * with their spell coutns.
+     * with their spell counts.
      */
     public static Map<String, Integer> getUserLevelBank(String user, String level) {
         Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
@@ -63,6 +71,25 @@ public class Bank {
         }
 
         return userLevelBank;
+    }
+
+    /**
+     * Removes a specified word under a specific user and level from the bank
+     * @param user : the bank of which user
+     * @param level : the level where the word comes from
+     * @param word : the name of the spelled word.
+     */
+    public static void removeWord(String user, String level, String word) {
+        String key = user + " " + level + "word";
+        removeWord(key);
+    }
+
+    /**
+     * Removes the specified word from the bank
+     * @param key the user + level + word to be removed
+     */
+    public static void removeWord(String key) {
+        editor.remove(key).apply();
     }
 
     /**
