@@ -130,7 +130,7 @@ public class Unit1Activity extends AppCompatActivity {
             word3[i].getDrawable().setColorFilter(filter);
         }
 
-        
+
         for (Button button : buttons) {
             // Get random index for phonemeLetters
             Random rand = new Random();
@@ -218,6 +218,13 @@ public class Unit1Activity extends AppCompatActivity {
 
                         if (thisButton.getText().toString().equals(Character.toString(wordList.get(selectedWordState.getValue()).getDisplayString().charAt(currentField.getValue())))) {
                             fields[currentField.getValue()].setText(thisButton.getText());
+                            if (selectedWordState.getValue() == 0) {
+                                spellingProgress1[currentField.getValue()] = thisButton.getText().toString();
+                            } else if (selectedWordState.getValue() == 1) {
+                                spellingProgress2[currentField.getValue()] = thisButton.getText().toString();
+                            } else if (selectedWordState.getValue() == 2) {
+                                spellingProgress3[currentField.getValue()] = thisButton.getText().toString();
+                            }
                             thisButton.setVisibility(View.INVISIBLE);
                         }
                     }
@@ -251,6 +258,7 @@ public class Unit1Activity extends AppCompatActivity {
 
                     for (int i = 0; i < selectedWord.length; i++) {
                         Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(0).getSegmentInfo()[i].getSoundFile()));
+                        fields[i].setText(spellingProgress1[i]);
                     }
 
 
@@ -264,6 +272,7 @@ public class Unit1Activity extends AppCompatActivity {
 
                     for (int i = 0; i < selectedWord.length; i++) {
                         Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(1).getSegmentInfo()[i].getSoundFile()));
+                        fields[i].setText(spellingProgress2[i]);
                     }
 
                 } else if ((int) newValue == 2) {
@@ -276,6 +285,7 @@ public class Unit1Activity extends AppCompatActivity {
 
                     for (int i = 0; i < selectedWord.length; i++) {
                         Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(2).getSegmentInfo()[i].getSoundFile()));
+                        fields[i].setText(spellingProgress3[i]);
                     }
                 }
             }
