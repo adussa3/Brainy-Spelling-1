@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
-import com.example.jda8301.spellarhyme.model.Bank;
+import com.example.jda8301.spellarhyme.utils.Bank;
 
 
 import java.util.Map;

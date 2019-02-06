@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.jda8301.spellarhyme.model.Bank;
+import com.example.jda8301.spellarhyme.utils.Bank;
 
 public class ConsonantsWordBankActivity extends AppCompatActivity {
 

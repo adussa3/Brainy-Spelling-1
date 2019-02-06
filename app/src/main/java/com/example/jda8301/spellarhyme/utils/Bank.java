@@ -1,4 +1,4 @@
-package com.example.jda8301.spellarhyme.model;
+package com.example.jda8301.spellarhyme.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
