@@ -22,7 +22,7 @@ public class ConsonantsWordBankActivity extends AppCompatActivity {
 
         //update pictures to display which ones are learned
         //TODO: replace with actual user name that isn't hard coded
-        Bank.updateLearnedWords("default", "consonants");
+        Bank.updateLearnedWords("default", "consonants", this);
     }
 
     // Intents - goes to a different activity when the button is clicked

@@ -21,7 +21,7 @@ public class VowelsWordBankActivity extends AppCompatActivity {
 
         //update pictures to display which ones are learned
         //TODO: replace with actual user name that isn't hard coded
-        Bank.updateLearnedWords("default", "vowels");
+        Bank.updateLearnedWords("default", "vowels", this);
 
     }
 

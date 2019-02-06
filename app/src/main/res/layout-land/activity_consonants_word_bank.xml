@@ -32,19 +32,19 @@
                     android:layout_height="50dp">
 
                     <ImageButton
-                        android:id="@+id/imageButton16"
+                        android:id="@+id/boyButton"
                         android:layout_width="100dp"
                         android:layout_height="119dp"
                         app:srcCompat="@drawable/boy_bw" />
 
                     <ImageButton
-                        android:id="@+id/imageButton17"
+                        android:id="@+id/bubbleButton"
                         android:layout_width="100dp"
                         android:layout_height="113dp"
                         app:srcCompat="@drawable/bubble_bw" />
 
                     <ImageButton
-                        android:id="@+id/imageButton18"
+                        android:id="@+id/cowButton"
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/cow_bw" />
@@ -55,19 +55,19 @@
                     android:layout_height="match_parent">
 
                     <ImageButton
-                        android:id="@+id/imageButton19"
+                        android:id="@+id/cutButton"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/cut_bw" />
 
                     <ImageButton
-                        android:id="@+id/imageButton20"
+                        android:id="@+id/balanceButton"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/balance_bw" />
 
                     <ImageButton
-                        android:id="@+id/imageButton21"
+                        android:id="@+id/fridgeButton"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/fridge_bw" />
@@ -78,19 +78,19 @@
                     android:layout_height="match_parent">
 
                     <ImageButton
-                        android:id="@+id/imageButton22"
+                        android:id="@+id/leafButton"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/leaf_bw" />
 
                     <ImageButton
-                        android:id="@+id/imageButton23"
+                        android:id="@+id/kingButton"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/king_bw" />
 
                     <ImageButton
-                        android:id="@+id/imageButton24"
+                        android:id="@+id/volcanoButton"
                         android:layout_width="wrap_content"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/volcano_bw" />

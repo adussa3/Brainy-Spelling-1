@@ -26,7 +26,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/dog"
+                android:id="@+id/dogButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -36,7 +36,7 @@
                 app:srcCompat="@drawable/dog_bw" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/catButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -46,7 +46,7 @@
                 app:srcCompat="@drawable/cat_bw1" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/henButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -73,7 +73,7 @@
                 app:srcCompat="@drawable/button_back" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/galButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -83,7 +83,7 @@
                 app:srcCompat="@drawable/gal_bw" />
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/refButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -93,7 +93,7 @@
                 app:srcCompat="@drawable/ref_bw" />
 
             <ImageButton
-                android:id="@+id/imageButton12"
+                android:id="@+id/elfButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -121,7 +121,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton13"
+                android:id="@+id/foxButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -131,7 +131,7 @@
                 app:srcCompat="@drawable/fox_bw" />
 
             <ImageButton
-                android:id="@+id/imageButton14"
+                android:id="@+id/ramButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -141,7 +141,7 @@
                 app:srcCompat="@drawable/ram_bw" />
 
             <ImageButton
-                android:id="@+id/imageButton15"
+                android:id="@+id/copButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

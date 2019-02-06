@@ -280,10 +280,12 @@ public class Bank {
             if (bankDetails.get(key) >= 3) {
                 //update the corresponding section to include that image
                 String name = parseWord(key);
-                int buttonID = MyApplication.getAppContext().getResources().getIdentifier(name, "id", MyApplication.getAppContext().getPackageName());
+                int buttonID = MyApplication.getAppContext().getResources().getIdentifier(name + "Button", "id", MyApplication.getAppContext().getPackageName());
                 ImageView iv = (ImageView) activity.findViewById(buttonID);
 
                 //change imageview
+                int imageID = MyApplication.getAppContext().getResources().getIdentifier(name, "id", MyApplication.getAppContext().getPackageName());
+                iv.setImageResource(imageID);
             }
         }
 
