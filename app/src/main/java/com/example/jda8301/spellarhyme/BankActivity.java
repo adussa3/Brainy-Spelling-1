@@ -27,9 +27,6 @@ public class BankActivity extends AppCompatActivity {
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
-
-        //update pictures to display which ones are learned
-        updateLearnedWords();
     }
 
     public void onClickSegmentedBank(View view) {
@@ -45,12 +42,6 @@ public class BankActivity extends AppCompatActivity {
     public void onClickConsonantsBank(View view) {
         Intent intent = new Intent(getApplicationContext(), ConsonantsWordBankActivity.class);
         startActivity(intent);
-    }
-
-    private void updateLearnedWords() {
-        //parse through the JSON
-        //if increment >= 3, find the image based on the string name + .png or something
-        //update the corresponding section to include that image
     }
 
     // Intents - goes to a different activity when the button is clicked
