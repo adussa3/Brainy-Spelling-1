@@ -2,6 +2,8 @@ package com.example.jda8301.spellarhyme;
 
 import android.app.Application;
 import android.content.Intent;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,6 +44,11 @@ public class Unit1Activity extends AppCompatActivity {
 
     private ObservableInteger selectedWordState = new ObservableInteger(0);
     private ObservableInteger currentField = new ObservableInteger(0);
+
+    private String[] spellingProgress1 = new String[3];
+    private String[] spellingProgress2 = new String[3];
+    private String[] spellingProgress3 = new String[3];
+
 
     // Initializes AppPreferencesHelper to read JSON files
     AppPreferencesHelper helper = new AppPreferencesHelper();
@@ -113,6 +120,17 @@ public class Unit1Activity extends AppCompatActivity {
         buttons[7] = (Button) findViewById(R.id.letter_7);
         buttons[8] = (Button) findViewById(R.id.letter_8);
 
+        ColorMatrix matrix = new ColorMatrix();
+        matrix.setSaturation(0);
+
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+        for (int i = 0; i < 3; i++) {
+            word1[i].getDrawable().setColorFilter(filter);
+            word2[i].getDrawable().setColorFilter(filter);
+            word3[i].getDrawable().setColorFilter(filter);
+        }
+
+        
         for (Button button : buttons) {
             // Get random index for phonemeLetters
             Random rand = new Random();
@@ -200,7 +218,7 @@ public class Unit1Activity extends AppCompatActivity {
 
                         if (thisButton.getText().toString().equals(Character.toString(wordList.get(selectedWordState.getValue()).getDisplayString().charAt(currentField.getValue())))) {
                             fields[currentField.getValue()].setText(thisButton.getText());
-                            thisButton.setText("");
+                            thisButton.setVisibility(View.INVISIBLE);
                         }
                     }
                     return false;
