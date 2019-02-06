@@ -1,9 +1,12 @@
 package com.example.jda8301.spellarhyme.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.widget.ImageView;
 
 import com.example.jda8301.spellarhyme.MyApplication;
+import com.example.jda8301.spellarhyme.R;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -268,7 +271,7 @@ public class Bank {
         return keySegments[2];
     }
 
-    public static void updateLearnedWords(String user, String level) {
+    public static void updateLearnedWords(String user, String level, Activity activity) {
         //parse through the JSON
         Map<String, Integer> bankDetails = getUserLevelBank(user, level);
 
@@ -276,8 +279,11 @@ public class Bank {
         for (String key : bankDetails.keySet()) {
             if (bankDetails.get(key) >= 3) {
                 //update the corresponding section to include that image
-                String fileName = parseWord(key)+".jpg";
-                //how to get current imageView with the bw version of image? pass in context as param?
+                String name = parseWord(key);
+                int buttonID = MyApplication.getAppContext().getResources().getIdentifier(name, "id", MyApplication.getAppContext().getPackageName());
+                ImageView iv = (ImageView) activity.findViewById(buttonID);
+
+                //change imageview
             }
         }
 

@@ -26,7 +26,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/dog"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
