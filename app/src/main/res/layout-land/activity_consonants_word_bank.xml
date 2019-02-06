@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <include
             android:id="@+id/actionBar"
@@ -17,140 +19,86 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="70dp"
-            android:layout_marginEnd="70dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/boy_bw" />
+            <TableLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/bubble_bw" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
 
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/cow_bw" />
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        android:layout_width="100dp"
+                        android:layout_height="119dp"
+                        app:srcCompat="@drawable/boy_bw" />
 
-        </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/imageButton17"
+                        android:layout_width="100dp"
+                        android:layout_height="113dp"
+                        app:srcCompat="@drawable/bubble_bw" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/imageButton18"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/cow_bw" />
+                </TableRow>
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/button_back" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/imageButton10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/cut_bw" />
+                    <ImageButton
+                        android:id="@+id/imageButton19"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/cut_bw" />
 
-            <ImageButton
-                android:id="@+id/imageButton11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/balance_bw" />
+                    <ImageButton
+                        android:id="@+id/imageButton20"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/balance_bw" />
 
-            <ImageButton
-                android:id="@+id/imageButton12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/fridge_bw" />
+                    <ImageButton
+                        android:id="@+id/imageButton21"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/fridge_bw" />
+                </TableRow>
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/button_forward" />
-        </LinearLayout>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="70dp"
-            android:layout_marginEnd="70dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/imageButton22"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/leaf_bw" />
 
-            <ImageButton
-                android:id="@+id/imageButton13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/leaf_bw" />
+                    <ImageButton
+                        android:id="@+id/imageButton23"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/king_bw" />
 
-            <ImageButton
-                android:id="@+id/imageButton14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/king_bw" />
+                    <ImageButton
+                        android:id="@+id/imageButton24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/volcano_bw" />
+                </TableRow>
 
-            <ImageButton
-                android:id="@+id/imageButton15"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/volcano_bw" />
+            </TableLayout>
+        </HorizontalScrollView>
 
-        </LinearLayout>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

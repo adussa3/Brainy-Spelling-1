@@ -267,5 +267,20 @@ public class Bank {
         String[] keySegments = key.split("\\s+");
         return keySegments[2];
     }
+
+    public static void updateLearnedWords(String user, String level) {
+        //parse through the JSON
+        Map<String, Integer> bankDetails = getUserLevelBank(user, level);
+
+        //if increment >= 3, find the image based on the string name + .png or something
+        for (String key : bankDetails.keySet()) {
+            if (bankDetails.get(key) >= 3) {
+                //update the corresponding section to include that image
+                String fileName = parseWord(key)+".jpg";
+                //how to get current imageView with the bw version of image? pass in context as param?
+            }
+        }
+
+    }
 }
 

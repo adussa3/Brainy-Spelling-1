@@ -43,7 +43,7 @@
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/cat_bw" />
+                app:srcCompat="@drawable/cat_bw1" />
 
             <ImageButton
                 android:id="@+id/imageButton9"
