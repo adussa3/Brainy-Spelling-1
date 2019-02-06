@@ -207,7 +207,7 @@ public class Bank {
      * @param key the user + level + word to be incremented
      */
     public static boolean isMastered(String key) {
-        return MASTERY == sharedPref.getInt(key, 0);
+        return sharedPref.getInt(key, 0) >= MASTERY;
     }
 
     /**
