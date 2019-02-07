@@ -162,14 +162,33 @@ public class Bank {
     }
 
     /**
-     * Sets the spell count of a word using its key of (user + level + word) in Shared Preference
-     * s to the desired count.
+     * Sets the spell count of a word using its key of (user + level + word) in Shared Preferences
+     * to the desired count.
      * @param key the user + level + word to be incremented
      * @param count the desired count
      */
     public static void setSpellCount(String key, int count) {
         editor.putInt(key, count);
         editor.apply();
+    }
+
+    /**
+     * Sets a word in the bank corresponding to a specific user and level to be mastered.
+     * @param user : the bank of which user
+     * @param level : the level where the word comes from
+     * @param word : the name of the spelled word.
+     */
+    public static void setMastered(String user, String level, String word) {
+        String key = user + " " + level + " " + word;
+        setMastered(key);
+    }
+
+    /**
+     * Sets a specific word to be mastered using a shared preferences key
+     * @param key the user + level + word to be incremented
+     */
+    public static void setMastered(String key) {
+        setSpellCount(key, 3);
     }
 
     /**
