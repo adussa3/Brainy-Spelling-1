@@ -270,6 +270,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="textCapCharacters"
                         android:textAlignment="center" />
@@ -279,6 +280,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="textCapCharacters"
                         android:textAlignment="center" />
@@ -288,6 +290,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="textCapCharacters"
                         android:textAlignment="center" />
