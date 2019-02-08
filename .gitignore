@@ -71,3 +71,6 @@ fastlane/readme.md
 
 # vscode 
 .vscode/settings.json
+
+# DS_Store
+*.DS_Store
