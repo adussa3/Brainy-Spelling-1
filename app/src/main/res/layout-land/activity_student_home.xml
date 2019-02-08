@@ -10,40 +10,56 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/avatar"
-                android:layout_width="74dp"
-                android:layout_height="70dp"
-                android:layout_marginEnd="20dp"
-                android:contentDescription="@string/avatar"
-                android:src="@drawable/profile_chimp" />
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/bobView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="398dp"
-                android:text="Bob"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/avatar" />
-        </LinearLayout>
+                <View
+                    android:id="@+id/actionBar"
+                    style="@style/ActionBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/actionBarTitle"
+                    style="@style/LargeTextWithShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    app:layout_constraintBottom_toBottomOf="@+id/actionBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/actionBar" />
+
+                <ImageView
+                    android:id="@+id/exitButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="TODO"
+                    android:onClick="onClickExit"
+                    app:layout_constraintBottom_toTopOf="@+id/actionBar"
+                    app:layout_constraintStart_toStartOf="@+id/actionBar"
+                    app:layout_constraintTop_toBottomOf="@+id/actionBar"
+                    app:srcCompat="@drawable/button_exit" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
 
         <LinearLayout
             android:id="@+id/menu"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -51,15 +67,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="2"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/unit1Button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit1"
                     android:text="1"
                     android:textSize="30sp"
@@ -70,9 +88,11 @@
                     android:id="@+id/unit2Button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit2"
                     android:text="2"
                     android:textSize="30sp" />
@@ -81,8 +101,10 @@
                     android:id="@+id/unit3Button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit3"
                     android:text="3"
                     android:textSize="30sp" />
@@ -91,7 +113,9 @@
                     android:id="@+id/unit4Button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit4"
                     android:text="4"
                     android:textSize="30sp" />
@@ -108,8 +132,10 @@
                     android:id="@+id/bankButton"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
                     android:onClick="onClickBank"
                     android:text="Bank"
                     android:textSize="30sp" />
@@ -118,23 +144,14 @@
                     android:id="@+id/templatesButton"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
                     android:text="Templates"
                     android:textSize="30sp" />
             </LinearLayout>
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/exitButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="exitButton"
-            android:onClick="onClickExit"
-            app:srcCompat="@drawable/button_exit" />
 
 
     </LinearLayout>
