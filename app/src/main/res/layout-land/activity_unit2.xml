@@ -190,6 +190,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -200,6 +201,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -208,6 +210,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -254,6 +257,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -264,6 +268,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -272,6 +277,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -319,6 +325,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -330,6 +337,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
 
@@ -338,6 +346,7 @@
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:cursorVisible="false"
                 android:ems="10"
                 android:inputType="text" />
         </TableRow>
