@@ -50,6 +50,10 @@ public class Unit1Activity extends AppCompatActivity {
     private String[] spellingProgress3 = new String[3];
 
 
+    // Placeholders for if a word is learned:
+    private boolean[] learned = new boolean[3];
+
+
     // Initializes AppPreferencesHelper to read JSON files
     AppPreferencesHelper helper = new AppPreferencesHelper();
     List<List<SegmentedWord>> segmentedWords = helper.getSegmentedWords();
@@ -125,9 +129,15 @@ public class Unit1Activity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            word1[i].getDrawable().setColorFilter(filter);
-            word2[i].getDrawable().setColorFilter(filter);
-            word3[i].getDrawable().setColorFilter(filter);
+            if (!learned[0]) {
+                word1[i].getDrawable().setColorFilter(filter);
+            }
+            if (!learned[1]) {
+                word2[i].getDrawable().setColorFilter(filter);
+            }
+            if (!learned[2]) {
+                word3[i].getDrawable().setColorFilter(filter);
+            }
         }
 
 
@@ -227,6 +237,15 @@ public class Unit1Activity extends AppCompatActivity {
                             }
                             thisButton.setVisibility(View.INVISIBLE);
                         }
+                        ColorMatrix matrix = new ColorMatrix();
+                        matrix.setSaturation(1);
+
+                        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+
+                        selectedWord[currentField.getValue()].getDrawable().setColorFilter(filter);
+
+                        updateLearnedWords();
+
                     }
                     return false;
                 }
@@ -299,5 +318,63 @@ public class Unit1Activity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
+    }
+
+
+    private void updateLearnedWords() {
+        boolean notComplete = false;
+        for (String word : spellingProgress1) {
+            if (word == null) {
+                notComplete = true;
+            }
+        }
+
+        if (!notComplete) {
+            learned[0] = true;
+        }
+
+        notComplete = false;
+        for (String word : spellingProgress2) {
+            if (word == null) {
+                notComplete = true;
+            }
+        }
+
+        if (!notComplete) {
+            learned[1] = true;
+        }
+
+        notComplete = false;
+        for (String word : spellingProgress3) {
+            if (word == null) {
+                notComplete = true;
+            }
+        }
+
+        if (!notComplete) {
+            learned[2] = true;
+        }
+
+        ColorMatrix matrix = new ColorMatrix();
+        matrix.setSaturation(1);
+
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+
+
+        for (int i = 0; i < 3; i++) {
+            if (learned[0]) {
+                word1[i].getDrawable().setColorFilter(filter);
+            }
+
+            if (learned[1]) {
+                word2[i].getDrawable().setColorFilter(filter);
+            }
+
+            if (learned[2]) {
+                word3[i].getDrawable().setColorFilter(filter);
+            }
+
+        }
+
     }
 }
