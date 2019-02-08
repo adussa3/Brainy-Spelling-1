@@ -56,6 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="face"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/face" />
@@ -66,6 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="ape"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ape" />
@@ -76,6 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="axe"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/axe" />
@@ -92,6 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="whale"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/whale" />
@@ -102,6 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="cat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cat" />
@@ -112,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="bat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/bat1" />
@@ -128,6 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="swan"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/swan" />
@@ -138,6 +145,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="ball"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/ball" />
@@ -148,6 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="fall"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/fall" />
