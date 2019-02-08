@@ -63,4 +63,16 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <!-- Design for the scroll buttons -->
+    <style name="ScrollButton">
+        <!-- physical properties -->
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+
+        <!-- margins -->
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
 </resources>
