@@ -4,101 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BankActivity">
+    tools:context=".ConsonantsWordBankActivity">
 
-    <LinearLayout
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="wrap_content" />
 
-        <include
-            android:id="@+id/actionBar"
-            layout="@layout/action_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/imageView6"
+        style="@style/ScrollButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        app:srcCompat="@drawable/button_back" />
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar">
+
+        <TableLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
-            <TableLayout
-                android:layout_width="100dp"
-                android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp">
+                <ImageButton
+                    android:id="@+id/boyButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/boy_bw" />
 
-                    <ImageButton
-                        android:id="@+id/boyButton"
-                        android:layout_width="100dp"
-                        android:layout_height="119dp"
-                        app:srcCompat="@drawable/boy_bw" />
+                <ImageButton
+                    android:id="@+id/bubbleButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bubble_bw" />
 
-                    <ImageButton
-                        android:id="@+id/bubbleButton"
-                        android:layout_width="100dp"
-                        android:layout_height="113dp"
-                        app:srcCompat="@drawable/bubble_bw" />
+                <ImageButton
+                    android:id="@+id/cowButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cow_bw" />
+            </TableRow>
 
-                    <ImageButton
-                        android:id="@+id/cowButton"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/cow_bw" />
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/cutButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cut_bw" />
 
-                    <ImageButton
-                        android:id="@+id/cutButton"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/cut_bw" />
+                <ImageButton
+                    android:id="@+id/balanceButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/balance_bw" />
 
-                    <ImageButton
-                        android:id="@+id/balanceButton"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/balance_bw" />
+                <ImageButton
+                    android:id="@+id/fridgeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/fridge_bw" />
+            </TableRow>
 
-                    <ImageButton
-                        android:id="@+id/fridgeButton"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/fridge_bw" />
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/leafButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/leaf_bw" />
 
-                    <ImageButton
-                        android:id="@+id/leafButton"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/leaf_bw" />
+                <ImageButton
+                    android:id="@+id/kingButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/king_bw" />
 
-                    <ImageButton
-                        android:id="@+id/kingButton"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/king_bw" />
+                <ImageButton
+                    android:id="@+id/volcanoButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/volcano_bw" />
+            </TableRow>
 
-                    <ImageButton
-                        android:id="@+id/volcanoButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="100dp"
-                        app:srcCompat="@drawable/volcano_bw" />
-                </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
 
-            </TableLayout>
-        </HorizontalScrollView>
+    <ImageView
+        android:id="@+id/imageView16"
+        style="@style/ScrollButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        app:srcCompat="@drawable/button_forward" />
 
-
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
