@@ -290,6 +290,12 @@ public class Bank {
         return keySegments[2];
     }
 
+    /**
+     * Adds words from a specific level that are not yet stored in the bank for a specific user.
+     * @param user : the bank of which user
+     * @param level : the level where the word comes from
+     * @param activity : the activity of the current game mode
+     */
     public static void updateLearnedWords(String user, String level, Activity activity) {
         //parse through the JSON
         Map<String, Integer> bankDetails = getUserLevelBank(user, level);

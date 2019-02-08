@@ -20,9 +20,10 @@ public class MyApplication extends Application {
 
         AppPreferencesHelper appHelper = new AppPreferencesHelper();
 
-        Bank.isMastered("default vowels axe");
+        Bank.setMastered("default", "vowels", "axe");
 
         Map<String, Integer> bank = Bank.getBank();
+        System.out.print("Bank Size: " + bank.size());
 
         for (String key : bank.keySet()) {
             System.out.println("Word: " + Bank.parseWord(key)
