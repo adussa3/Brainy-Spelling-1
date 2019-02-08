@@ -68,7 +68,7 @@
 
                 <ImageButton
                     android:id="@+id/cutButton"
-                    android:layout_width="100dp"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cut_bw" />
