@@ -43,6 +43,7 @@
                     android:id="@+id/boyButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="boy"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/boy" />
 
@@ -50,6 +51,7 @@
                     android:id="@+id/bubbleButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="bubble"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/bubble" />
 
@@ -66,6 +68,7 @@
                        android:id="@+id/boxButton/"
                        android:layout_width="200dp"
                        android:layout_height="wrap_content"
+                       android:contentDescription="box"
                        android:scaleType="fitCenter"
                        app:srcCompat="@drawable/box" />-->
 
@@ -73,6 +76,7 @@
                     android:id="@+id/carButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="car"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/car" />
 
@@ -81,6 +85,7 @@
                     android:id="@+id/saucepanButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="saucepan"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/saucepan" />-->
 
@@ -89,6 +94,7 @@
                     android:id="@+id/dancerButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="dancer"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/dancer" />-->
 
@@ -96,6 +102,7 @@
                     android:id="@+id/dogButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="dog"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/dog" />
 
@@ -103,6 +110,7 @@
                     android:id="@+id/digButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="dig"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/dig" />
 
@@ -110,6 +118,7 @@
                     android:id="@+id/darkButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="dark"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/dark" />
 
@@ -117,6 +126,7 @@
                     android:id="@+id/foxButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="fox"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/fox" />
 
@@ -124,27 +134,23 @@
                     android:id="@+id/elfButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="elf"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/elf" />
-
-                <ImageButton
-                    android:id="@+id/learButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/leaf" />
 
                 <ImageButton
                     android:id="@+id/bridgeButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="bridge"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/bride" />
+                    app:srcCompat="@drawable/bridge" />
 
                 <ImageButton
                     android:id="@+id/fringeButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="fringe"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/fringe" />
 
@@ -152,6 +158,7 @@
                     android:id="@+id/goldButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="gold"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/gold" />
 
@@ -166,6 +173,7 @@
                     android:id="@+id/goatButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="goat"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/goat" />
 
@@ -173,6 +181,7 @@
                     android:id="@+id/hatButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="hat"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/hat" />
 
@@ -180,6 +189,7 @@
                     android:id="@+id/hugButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="hug"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/hug" />
 
@@ -187,6 +197,7 @@
                     android:id="@+id/handButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="hand"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/hand" />
 
@@ -194,6 +205,7 @@
                     android:id="@+id/jayButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="jay"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/jay" />
 
@@ -201,6 +213,7 @@
                     android:id="@+id/jumpButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="jump"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/jump" />
 
@@ -208,6 +221,7 @@
                     android:id="@+id/jugglerButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="juggler"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/juggler" />
 
@@ -215,6 +229,7 @@
                     android:id="@+id/keyButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="key"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/key" />
 
@@ -229,6 +244,7 @@
                     android:id="@+id/cutButton"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="cut"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cut" />
 
@@ -236,6 +252,7 @@
                     android:id="@+id/balanceButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="balance"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/balance" />
 
@@ -243,6 +260,7 @@
                     android:id="@+id/fridgeButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="fridge"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/fridge" />
 
@@ -251,6 +269,7 @@
                    android:id="@+id/lipButton"
                    android:layout_width="200dp"
                    android:layout_height="wrap_content"
+                   android:contentDescription="lip"
                    android:scaleType="fitCenter"
                    app:srcCompat="@drawable/lip" />-->
 
@@ -259,6 +278,7 @@
                     android:id="@+id/lickButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="lick"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/lick" />-->
 
@@ -266,6 +286,7 @@
                     android:id="@+id/lightButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="light"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/light" />
 
@@ -273,6 +294,7 @@
                     android:id="@+id/manButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="man"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/man" />
 
@@ -280,6 +302,7 @@
                     android:id="@+id/mouseButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="mouse"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/mouse" />
 
@@ -287,6 +310,7 @@
                     android:id="@+id/mouthButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="mouth"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/mouth" />
 
@@ -294,6 +318,7 @@
                     android:id="@+id/nutsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="nuts"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/nuts" />
 
@@ -301,6 +326,7 @@
                     android:id="@+id/nailButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="nail"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/nail" />
 
@@ -308,6 +334,7 @@
                     android:id="@+id/clownButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="clown"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/clown" />
 
@@ -315,6 +342,7 @@
                     android:id="@+id/pigButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="pig"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/pig" />
 
@@ -322,6 +350,7 @@
                     android:id="@+id/pearlButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="pearl"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/pearl" />
 
@@ -329,6 +358,7 @@
                     android:id="@+id/purseButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="purse"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/purse" />
 
@@ -336,6 +366,7 @@
                     android:id="@+id/queenButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="queen"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/queen" />
 
@@ -344,6 +375,7 @@
                     android:id="@+id/squaresButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="squares"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/squares" />-->
 
@@ -351,6 +383,7 @@
                     android:id="@+id/quietButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="quiet"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/quiet" />
 
@@ -359,6 +392,7 @@
                     android:id="@+id/redButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="red"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/red" />-->
 
@@ -366,6 +400,7 @@
                     android:id="@+id/rakeButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="rake"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/rake" />
 
@@ -373,6 +408,7 @@
                     android:id="@+id/rainbowButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="rainbow"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/rainbow" />
 
@@ -380,6 +416,7 @@
                     android:id="@+id/forkButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="fork"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/fork" />
 
@@ -387,6 +424,7 @@
                     android:id="@+id/wolfButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="wolf"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/wolf" />
 
@@ -394,6 +432,7 @@
                     android:id="@+id/owlButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="owl"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/owl" />
 
@@ -401,6 +440,7 @@
                     android:id="@+id/tailButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="tail"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/tail" />
             </TableRow>
@@ -414,6 +454,7 @@
                     android:id="@+id/leafButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="leaf"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/leaf" />
 
@@ -421,6 +462,7 @@
                     android:id="@+id/kingButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="king"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/king" />
 
@@ -428,6 +470,7 @@
                     android:id="@+id/volcanoButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="volcano"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/volcano" />
 
@@ -435,6 +478,7 @@
                     android:id="@+id/sawButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="saw"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/saw" />
 
@@ -442,6 +486,7 @@
                     android:id="@+id/glassButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="glass"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/glass" />
 
@@ -449,6 +494,7 @@
                     android:id="@+id/grassButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="grass"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/grass" />
 
@@ -457,6 +503,7 @@
                     android:id="@+id/bagsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="bags"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/bags" />-->
 
@@ -464,6 +511,7 @@
                     android:id="@+id/dogsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="dogs"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/dogs" />
 
@@ -472,6 +520,7 @@
                     android:id="@+id/carsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="cars"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cars" />-->
 
@@ -480,6 +529,7 @@
                     android:id="@+id/toeButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="toe"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/toe" />
 
@@ -488,6 +538,7 @@
                     android:id="@+id/teaButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="tea"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/tea" />-->
 
@@ -495,6 +546,7 @@
                     android:id="@+id/tieButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="tie"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/tie" />
 
@@ -503,6 +555,7 @@
                     android:id="@+id/silverButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="silver"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/silver" />
 
@@ -510,6 +563,7 @@
                     android:id="@+id/beaverButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="beaver"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/beaver" />
 
@@ -517,6 +571,7 @@
                     android:id="@+id/wigButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="wig"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/wig" />
 
@@ -524,6 +579,7 @@
                     android:id="@+id/wallButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="wall"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/wall" />
 
@@ -531,6 +587,7 @@
                     android:id="@+id/washButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="wash"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/wash" />
 
@@ -538,6 +595,7 @@
                     android:id="@+id/sixButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="six"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/six" />
 
@@ -552,6 +610,7 @@
                     android:id="@+id/sixteenButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="sixteen"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/sixteen" />
 
@@ -559,6 +618,7 @@
                     android:id="@+id/yellowButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="yellow"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/yellow" />
 
@@ -566,6 +626,7 @@
                     android:id="@+id/yawnButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="yawn"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/yawn" />
 
@@ -574,6 +635,7 @@
                     android:id="@+id/yo-yoButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="yo-yo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/yo-yo" />-->
 
@@ -582,6 +644,7 @@
                     android:id="@+id/zooButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="zoo"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/zoo" />-->
 
@@ -589,6 +652,7 @@
                     android:id="@+id/zebraButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="zebra"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/zebra" />
 
@@ -596,6 +660,7 @@
                     android:id="@+id/zipperButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="zipper"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/zipper" />
 
