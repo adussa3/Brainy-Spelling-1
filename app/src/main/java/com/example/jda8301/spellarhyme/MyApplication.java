@@ -21,6 +21,8 @@ public class MyApplication extends Application {
         AppPreferencesHelper appHelper = new AppPreferencesHelper();
 
         Bank.setMastered("default", "vowels", "axe");
+        Bank.setMastered("default", "segmented", "cat1");
+        Bank.setMastered("default", "consonants", "cow");
 
         Map<String, Integer> bank = Bank.getBank();
         System.out.print("Bank Size: " + bank.size());

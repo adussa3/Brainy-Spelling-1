@@ -41,21 +41,21 @@ public class VowelsWordBankActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private static void findImageViews(ViewGroup viewGroup,ArrayList<ImageButton> views) {
+    private static void findImageButtons(ViewGroup viewGroup,ArrayList<ImageButton> views) {
         for (int i = 0, N = viewGroup.getChildCount(); i < N; i++) {
             View child = viewGroup.getChildAt(i);
             if (child instanceof ViewGroup) {
-                findImageViews((ViewGroup) child, views);
+                findImageButtons((ViewGroup) child, views);
             } else if (child instanceof ImageButton) {
                 views.add((ImageButton) child);
             }
         }
     }
 
-    public ArrayList<ImageButton> getImageViews() {
+    public ArrayList<ImageButton> getImageButtons() {
         ArrayList<ImageButton> buttonViews = new ArrayList<>();
         ViewGroup viewGroup = (ViewGroup) getWindow().getDecorView();
-        findImageViews(viewGroup, buttonViews);
+        findImageButtons(viewGroup, buttonViews);
         return buttonViews;
     }
 
@@ -66,7 +66,7 @@ public class VowelsWordBankActivity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
 
-        List<ImageButton> imageButtons = getImageViews();
+        List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
             if (Bank.getSpellCount("default", "vowels", word) < 3) {

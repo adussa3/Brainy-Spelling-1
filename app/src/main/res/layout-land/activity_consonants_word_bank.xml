@@ -57,6 +57,7 @@
                     android:id="@+id/cowButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:contentDescription="cow"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cow" />
 

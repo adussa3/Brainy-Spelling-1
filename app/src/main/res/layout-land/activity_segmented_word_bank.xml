@@ -49,9 +49,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="hen"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/hen_bw" />
+                    app:srcCompat="@drawable/hen" />
 
                 <ImageButton
                     android:id="@+id/catButton"
@@ -59,9 +60,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="cat1"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cat_bw1" />
+                    app:srcCompat="@drawable/cat1" />
 
                 <ImageButton
                     android:id="@+id/dogButton"
@@ -69,9 +71,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="dog1"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dog_bw" />
+                    app:srcCompat="@drawable/dog1" />
             </TableRow>
 
             <TableRow
@@ -85,9 +88,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="gal"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/gal_bw" />
+                    app:srcCompat="@drawable/gal" />
 
                 <ImageButton
                     android:id="@+id/elfButton"
@@ -95,9 +99,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="elf"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/elf_bw" />
+                    app:srcCompat="@drawable/elf" />
 
                 <ImageButton
                     android:id="@+id/refButton"
@@ -105,9 +110,10 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="ref"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ref_bw" />
+                    app:srcCompat="@drawable/ref" />
             </TableRow>
 
             <TableRow
@@ -121,9 +127,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="ram"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ram_bw" />
+                    app:srcCompat="@drawable/ram" />
 
                 <ImageButton
                     android:id="@+id/foxButton"
@@ -131,9 +138,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="fox"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fox_bw" />
+                    app:srcCompat="@drawable/fox1" />
 
                 <ImageButton
                     android:id="@+id/copButton"
@@ -141,9 +149,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
+                    android:contentDescription="cop"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cop_bw" />
+                    app:srcCompat="@drawable/cop" />
             </TableRow>
 
         </TableLayout>
