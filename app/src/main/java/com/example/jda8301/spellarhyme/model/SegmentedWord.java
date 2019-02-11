@@ -2,22 +2,22 @@ package com.example.jda8301.spellarhyme.model;
 
 
 public class SegmentedWord {
-    private String displayString;
+    private String stringName;
     private boolean landscape;
     private Segment[] segmentInfo;
 
-    public SegmentedWord(String displayString, boolean landscape, Segment[] segmentInfo) {
-        this.displayString = displayString;
+    public SegmentedWord(String stringName, boolean landscape, Segment[] segmentInfo) {
+        this.stringName = stringName;
         this.landscape = landscape;
         this.segmentInfo = segmentInfo;
     }
 
     public String getDisplayString() {
-        return displayString;
+        return stringName;
     }
 
-    public void setDisplayString(String displayString) {
-        this.displayString = displayString;
+    public void setDisplayString(String stringName) {
+        this.stringName = stringName;
     }
 
     public boolean isLandscape() {

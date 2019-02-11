@@ -47,6 +47,63 @@ public class AppPreferencesHelper {
         }
     }
 
+    public List<String> getSoundFiles() {
+        String filename = "Files/allPhonemes.json";
+        try {
+            InputStream inputStream = MyApplication.getAppContext().getAssets().open(filename);
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            String jsonLetters = new String(buffer, "UTF-8");
+            Type listType = new TypeToken<List<String>>() {
+            }.getType();
+            return mGson.fromJson(jsonLetters, listType);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+
+    }
+
+    public List<List<Integer>> getSimilarPhonemes() {
+        String filename = "Files/similarPhonemes.json";
+        try {
+            InputStream inputStream = MyApplication.getAppContext().getAssets().open(filename);
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            String jsonLetters = new String(buffer, "UTF-8");
+            Type listType = new TypeToken<List<List<Integer>>>() {
+            }.getType();
+            return mGson.fromJson(jsonLetters, listType);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+
+    }
+
+    public List<String> getPhonemeLetters() {
+        String filename = "Files/phonemeLetters.json";
+        try {
+            InputStream inputStream = MyApplication.getAppContext().getAssets().open(filename);
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            String jsonLetters = new String(buffer, "UTF-8");
+            Type listType = new TypeToken<List<String>>() {
+            }.getType();
+            return mGson.fromJson(jsonLetters, listType);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+
+    }
+
     public Map<String, List<VowelWord>> getVowels() {
         String filename = "Files/vowels.json";
         try {
