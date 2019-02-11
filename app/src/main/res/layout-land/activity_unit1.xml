@@ -6,19 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Unit1Activity">
 
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <include
-            android:id="@+id/actionBar"
-            layout="@layout/action_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal">
@@ -303,12 +305,13 @@
                         app:srcCompat="@drawable/dog_tail" />
                 </LinearLayout>
 
+                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:orientation="horizontal"
-                    android:padding="0dp">
+                    android:orientation="horizontal">
 
                     <EditText
                         android:id="@+id/editLetter1"
@@ -343,4 +346,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

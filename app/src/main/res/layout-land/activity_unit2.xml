@@ -217,7 +217,7 @@
     <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="260dp"
-        android:layout_height="303dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="10dp"
@@ -235,23 +235,23 @@
 
             <ImageView
                 android:id="@+id/catHead"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:scaleType="fitEnd"
                 android:src="@drawable/cat_head_bw" />
 
             <ImageView
                 android:id="@+id/catBod"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
                 android:src="@drawable/cat_middle_bw" />
 
             <ImageView
                 android:id="@+id/catTail"
                 android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:scaleType="centerCrop"
+                android:layout_height="70dp"
+                android:scaleType="fitStart"
                 android:src="@drawable/cat_tail_bw" />
         </TableRow>
 
@@ -296,28 +296,28 @@
 
             <ImageView
                 android:id="@+id/henHead"
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
+                android:scaleType="fitEnd"
                 android:src="@drawable/hen_head_bw" />
 
             <ImageView
                 android:id="@+id/henBod"
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/hen_middle_bw" />
 
             <ImageView
                 android:id="@+id/henTail"
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
+                android:scaleType="fitStart"
                 android:src="@drawable/hen_tail_bw" />
 
         </TableRow>
@@ -328,7 +328,7 @@
 
             <EditText
                 android:id="@+id/unit2t4"
-                android:layout_width="70dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:cursorVisible="false"
@@ -337,7 +337,7 @@
 
             <EditText
                 android:id="@+id/unit2t5"
-                android:layout_width="70dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
@@ -348,7 +348,7 @@
 
             <EditText
                 android:id="@+id/unit2t6"
-                android:layout_width="70dp"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:cursorVisible="false"
@@ -364,18 +364,18 @@
 
             <ImageView
                 android:id="@+id/dogHead"
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
+                android:scaleType="fitEnd"
                 android:src="@drawable/dog_head_bw" />
 
             <ImageView
                 android:id="@+id/dogBod"
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 android:src="@drawable/dog_middle_bw" />
 
             <ImageView
@@ -383,7 +383,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
+                android:scaleType="fitStart"
                 android:src="@drawable/dog_tail_bw" />
 
         </TableRow>
