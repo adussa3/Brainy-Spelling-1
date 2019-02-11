@@ -124,6 +124,8 @@ public class Unit1Activity extends AppCompatActivity {
         buttons[7] = (Button) findViewById(R.id.letter_7);
         buttons[8] = (Button) findViewById(R.id.letter_8);
 
+
+        // Initialize all colors to greyscale
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(0);
 
@@ -320,7 +322,7 @@ public class Unit1Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    // Update learned words to be colored
     private void updateLearnedWords() {
         boolean notComplete = false;
         for (String word : spellingProgress1) {
