@@ -34,36 +34,16 @@
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:id="@+id/dogButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/dog1"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/dog1" />
-
-                <ImageButton
-                    android:id="@+id/catButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/cat1"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/cat1" />
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/henButton"
@@ -77,6 +57,28 @@
                     android:src="@drawable/hen" />
 
                 <ImageButton
+                    android:id="@+id/ramButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/ram"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ram" />
+
+                <ImageButton
+                    android:id="@+id/catButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/cat1"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cat1" />
+
+                <ImageButton
                     android:id="@+id/foxButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
@@ -88,33 +90,22 @@
                     android:src="@drawable/fox" />
 
                 <ImageButton
-                    android:id="@+id/ramButton"
+                    android:id="@+id/dogButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/ram"
+                    android:contentDescription="@string/dog1"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ram" />
+                    android:src="@drawable/dog1" />
+            </LinearLayout>
 
-               <!-- Image does not exist
-               <ImageButton
-                    android:id="@+id/cubButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="cub"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/cub" />-->
-            </TableRow>
-
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/pigButton"
@@ -128,6 +119,17 @@
                     android:src="@drawable/pig" />
 
                 <ImageButton
+                    android:id="@+id/flyButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/fly"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fly" />
+
+                <ImageButton
                     android:id="@+id/batButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
@@ -137,30 +139,6 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/bat" />
-
-                <!--Image does not exist
-                <ImageButton
-                    android:id="@+id/elkButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="elk"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/elk" />-->
-
-               <!-- Image does not exist
-               <ImageButton
-                    android:id="@+id/antButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="ant"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ant" />-->
 
                 <ImageButton
                     android:id="@+id/bugButton"
@@ -172,34 +150,13 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/bug" />
+            </LinearLayout>
 
-                <ImageButton
-                    android:id="@+id/flyButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/fly"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/fly" />
-            </TableRow>
-
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:id="@+id/copButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/cop"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/cop" />
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/elfButton"
@@ -234,18 +191,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/gal" />
 
-                <!--Image does not exist
-                <ImageButton
-                    android:id="@+id/docButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="doc"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/doc" />-->
-
                 <ImageButton
                     android:id="@+id/refButton"
                     android:layout_width="200dp"
@@ -256,9 +201,19 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ref" />
-            </TableRow>
 
-        </TableLayout>
+                <ImageButton
+                    android:id="@+id/copButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/cop"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cop" />
+            </LinearLayout>
+        </LinearLayout>
     </HorizontalScrollView>
 
     <ImageButton
