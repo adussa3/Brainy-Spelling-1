@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="ape"
+                    android:contentDescription="@string/ape"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ape" />
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="face"
+                    android:contentDescription="@string/face"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/face" />
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="whale"
+                    android:contentDescription="@string/whale"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/whale" />
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="axe"
+                    android:contentDescription="@string/axe"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/axe" />
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="bat"
+                    android:contentDescription="@string/bat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/bat" />
@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="cat"
+                    android:contentDescription="@string/cat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/cat" />
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="fall"
+                    android:contentDescription="@string/fall"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/fall" />
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="swan"
+                    android:contentDescription="@string/swan"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/swan" />
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="ball"
+                    android:contentDescription="@string/ball"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ball" />
@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="sofa"
+                    android:contentDescription="@string/sofa"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sofa" />
@@ -166,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="afraid"
+                    android:contentDescription="@string/afraid"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/afraid" />
@@ -177,7 +177,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="zebra"
+                    android:contentDescription="@string/zebra"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/zebra" />
@@ -224,7 +224,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="elf"
+                    android:contentDescription="@string/elf"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/elf" />
@@ -235,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="bed"
+                    android:contentDescription="@string/bed"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/bed" />
@@ -246,7 +246,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="net"
+                    android:contentDescription="@string/net"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/net" />
@@ -257,7 +257,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="oven"
+                    android:contentDescription="@string/oven"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/oven" />
@@ -275,7 +275,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="camel"
+                    android:contentDescription="@string/camel"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/camel" />
@@ -286,7 +286,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="kitten"
+                    android:contentDescription="@string/kitten"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/kitten" />
@@ -297,7 +297,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="five"
+                    android:contentDescription="@string/five"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/five" />
@@ -308,7 +308,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="slide"
+                    android:contentDescription="@string/slide"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/slide" />
@@ -319,7 +319,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="ice"
+                    android:contentDescription="@string/ice"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ice" />
@@ -330,7 +330,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="hit"
+                    android:contentDescription="@string/hit"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/hit" />
@@ -341,7 +341,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="fish"
+                    android:contentDescription="@string/fish"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/fish" />
@@ -352,7 +352,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="sing"
+                    android:contentDescription="@string/sing"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sing" />
@@ -363,7 +363,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="taxi"
+                    android:contentDescription="@string/taxi"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/taxi" />
@@ -386,7 +386,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="skis"
+                    android:contentDescription="@string/skis"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/skis" />
@@ -397,7 +397,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="rabbit"
+                    android:contentDescription="@string/rabbit"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/rabbit" />
@@ -408,7 +408,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="centipede"
+                    android:contentDescription="@string/centipede"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/centipede" />
@@ -419,7 +419,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="clarinet"
+                    android:contentDescription="@string/clarinet"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/clarinet" />
@@ -430,7 +430,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="old"
+                    android:contentDescription="@string/old"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/old" />
@@ -441,7 +441,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="mole"
+                    android:contentDescription="@string/mole"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/mole" />
@@ -452,7 +452,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="nose"
+                    android:contentDescription="@string/nose"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/nose" />
@@ -463,7 +463,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="moth"
+                    android:contentDescription="@string/moth"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/moth" />
@@ -474,7 +474,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="hot"
+                    android:contentDescription="@string/hot"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/hot" />
@@ -491,7 +491,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="pot"
+                    android:contentDescription="@string/pot"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/pot" />
@@ -502,7 +502,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="love"
+                    android:contentDescription="@string/love"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/love" />
@@ -513,7 +513,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="glove"
+                    android:contentDescription="@string/glove"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/glove" />
@@ -524,7 +524,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="wagon"
+                    android:contentDescription="@string/wagon"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/wagon" />
@@ -535,7 +535,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="suit"
+                    android:contentDescription="@string/suit"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/suit" />
@@ -546,7 +546,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="tuba"
+                    android:contentDescription="@string/tuba"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/tuba" />
@@ -557,7 +557,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="flute"
+                    android:contentDescription="@string/flute"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/flute" />
@@ -568,7 +568,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="music"
+                    android:contentDescription="@string/music"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/music" />
@@ -579,7 +579,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="ambulance"
+                    android:contentDescription="@string/ambulance"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ambulance" />
@@ -590,7 +590,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="unicycle"
+                    android:contentDescription="@string/unicycle"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/unicycle" />
@@ -613,7 +613,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="bug"
+                    android:contentDescription="@string/bug"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/bug" />
@@ -624,7 +624,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="plum"
+                    android:contentDescription="@string/plum"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/plum" />
@@ -635,7 +635,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="fly"
+                    android:contentDescription="@string/fly"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/fly" />
@@ -646,7 +646,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="cry"
+                    android:contentDescription="@string/cry"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/cry" />
@@ -657,7 +657,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="sky"
+                    android:contentDescription="@string/sky"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sky" />
@@ -668,7 +668,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="baby"
+                    android:contentDescription="@string/baby"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/baby" />
@@ -679,7 +679,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="candy"
+                    android:contentDescription="@string/candy"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/candy" />
@@ -690,7 +690,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="sleepy"
+                    android:contentDescription="@string/sleepy"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/sleepy" />
