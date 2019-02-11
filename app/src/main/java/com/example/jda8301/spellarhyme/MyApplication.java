@@ -18,20 +18,20 @@ public class MyApplication extends Application {
         super.onCreate();
         MyApplication.context = getApplicationContext();
 
-        AppPreferencesHelper appHelper = new AppPreferencesHelper();
-
-        Bank.setMastered("default", "vowels", "axe");
-        Bank.setMastered("default", "segmented", "dog1");
-        Bank.setMastered("default", "consonants", "cow");
-
-        Map<String, Integer> bank = Bank.getBank();
-        System.out.print("Bank Size: " + bank.size());
-
-        for (String key : bank.keySet()) {
-            System.out.println("Word: " + Bank.parseWord(key)
-                    + " \tSpell Count: " + Bank.getSpellCount(key)
-                    + " \tMastery: " + Bank.isMastered(key));
-        }
+//        AppPreferencesHelper appHelper = new AppPreferencesHelper();
+//
+//        Bank.setMastered("default", "vowels", "axe");
+//        Bank.setMastered("default", "segmented", "dog1");
+//        Bank.setMastered("default", "consonants", "cow");
+//
+//        Map<String, Integer> bank = Bank.getBank();
+//        System.out.print("Bank Size: " + bank.size());
+//
+//        for (String key : bank.keySet()) {
+//            System.out.println("Word: " + Bank.parseWord(key)
+//                    + " \tSpell Count: " + Bank.getSpellCount(key)
+//                    + " \tMastery: " + Bank.isMastered(key));
+//        }
 
     }
 
