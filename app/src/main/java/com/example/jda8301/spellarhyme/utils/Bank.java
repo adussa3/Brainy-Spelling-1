@@ -19,6 +19,15 @@ import java.util.Map;
  */
 public class Bank {
     private static final int MASTERY = 3;
+
+    // Username
+    public static final String user = "default";
+
+    // Levels
+    public static final String vowels = "vowels";
+    public static final String consonants = "consonants";
+    public static final String segmented = "segmented";
+
     private static SharedPreferences sharedPref = MyApplication.getAppContext().getSharedPreferences("bank", Context.MODE_PRIVATE);
     private static SharedPreferences.Editor editor = sharedPref.edit();
 
