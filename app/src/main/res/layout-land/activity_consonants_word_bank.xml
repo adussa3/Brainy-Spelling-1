@@ -13,8 +13,9 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/arrowButton3"
         style="@style/ScrollButton"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
@@ -26,8 +27,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView16"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/arrowButton4"
+        app:layout_constraintStart_toEndOf="@+id/arrowButton3"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
@@ -56,6 +57,14 @@
                     android:contentDescription="@string/boy"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/boy" />
+
+                   <ImageButton
+                       android:id="@+id/boxButton"
+                       android:layout_width="200dp"
+                       android:layout_height="wrap_content"
+                       android:contentDescription="box"
+                       android:scaleType="fitCenter"
+                       app:srcCompat="@drawable/box" />
 
                 <ImageButton
                     android:id="@+id/handButton"
@@ -232,13 +241,21 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/quiet" />
 
+               <ImageButton
+                   android:id="@+id/lipButton"
+                   android:layout_width="200dp"
+                   android:layout_height="wrap_content"
+                   android:contentDescription="lip"
+                   android:scaleType="fitCenter"
+                   app:srcCompat="@drawable/lip" />
+
                 <ImageButton
                     android:id="@+id/rainbowButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/rainbow"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/rainbow" />
+                    app:srcCompat="@drawable/lick" />
 
                 <ImageButton
                     android:id="@+id/lightButton"
@@ -302,7 +319,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/balance"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/balance" />
+                    app:srcCompat="@drawable/red" />
 
                 <ImageButton
                     android:id="@+id/forkButton"
@@ -421,7 +438,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/yellow"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/yellow" />
+                    app:srcCompat="@drawable/bags" />
 
                 <ImageButton
                     android:id="@+id/beaverButton"
@@ -437,7 +454,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/wig"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/wig" />
+                    app:srcCompat="@drawable/cars" />
 
                 <ImageButton
                     android:id="@+id/yawnButton"
@@ -453,7 +470,7 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/volcano"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/volcano" />
+                    app:srcCompat="@drawable/tea" />
 
                 <ImageButton
                     android:id="@+id/tieButton"
@@ -543,6 +560,23 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/leaf" />
 
+
+                <ImageButton
+                    android:id="@+id/yo-yoButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/yoyo"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/yoyo" />
+
+                <ImageButton
+                    android:id="@+id/zooButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/zoo"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/zoo" />
+
                 <ImageButton
                     android:id="@+id/zebraButton"
                     android:layout_width="200dp"
@@ -563,8 +597,9 @@
     </HorizontalScrollView>
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/arrowButton4"
         style="@style/ScrollButton"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"

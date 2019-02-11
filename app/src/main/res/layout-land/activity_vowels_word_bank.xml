@@ -13,10 +13,11 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/arrowButton5"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
@@ -29,9 +30,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 
@@ -42,7 +43,9 @@
             android:layout_marginBottom="8dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2">
+            app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
+            app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+            app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -169,7 +172,8 @@
                     android:contentDescription="@string/swan"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/swan" />
+                    android:src="@drawable/he"/>
+
 
                 <ImageButton
                     android:id="@+id/fallButton"
@@ -180,10 +184,21 @@
                     android:contentDescription="@string/fall"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fall" />
+                    android:src="@drawable/we"/>
 
                 <ImageButton
-                    android:id="@+id/netButton"
+                     android:id="@+id/sheButton"
+                     android:layout_width="200dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:adjustViewBounds="false"
+                     android:contentDescription="she"
+                     android:cropToPadding="false"
+                     android:scaleType="fitCenter"
+                     android:src="@drawable/she"/>
+
+                <ImageButton
+                    android:id="@+id/elfButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -321,6 +336,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/mole" />
 
+
                 <ImageButton
                     android:id="@+id/singButton"
                     android:layout_width="200dp"
@@ -330,7 +346,7 @@
                     android:contentDescription="@string/sing"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sing" />
+                    android:src="@drawable/yeti"/>
 
                 <ImageButton
                     android:id="@+id/taxiButton"
@@ -548,6 +564,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/suit" />
 
+
                 <ImageButton
                     android:id="@+id/ambulanceButton"
                     android:layout_width="200dp"
@@ -557,7 +574,7 @@
                     android:contentDescription="@string/ambulance"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ambulance" />
+                    android:src="@drawable/bus" />
 
                 <ImageButton
                     android:id="@+id/fluteButton"
@@ -640,10 +657,11 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/arrowButton6"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
