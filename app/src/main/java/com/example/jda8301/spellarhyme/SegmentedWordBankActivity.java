@@ -67,7 +67,7 @@ public class SegmentedWordBankActivity extends AppCompatActivity {
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (Bank.getSpellCount("default", "segmented", word) < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", "segmented", word) < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }

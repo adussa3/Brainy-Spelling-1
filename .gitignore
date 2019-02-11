@@ -73,4 +73,4 @@ fastlane/readme.md
 .vscode/settings.json
 
 # DS_Store
-\.DS_Store
+*.DS_Store

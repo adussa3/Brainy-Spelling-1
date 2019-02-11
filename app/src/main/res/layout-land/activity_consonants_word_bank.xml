@@ -13,8 +13,9 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/arrowButton3"
         style="@style/ScrollButton"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
@@ -26,26 +27,20 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView16"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/arrowButton4"
+        app:layout_constraintStart_toEndOf="@+id/arrowButton3"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TableRow
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:id="@+id/boyButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/boy"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/boy" />
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/bubbleButton"
@@ -56,120 +51,28 @@
                     app:srcCompat="@drawable/bubble" />
 
                 <ImageButton
-                    android:id="@+id/cowButton"
+                    android:id="@+id/boyButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/cow"
+                    android:contentDescription="@string/boy"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cow" />
+                    app:srcCompat="@drawable/boy" />
 
-                <!-- Box picture does not exist
                    <ImageButton
-                       android:id="@+id/boxButton/"
+                       android:id="@+id/boxButton"
                        android:layout_width="200dp"
                        android:layout_height="wrap_content"
                        android:contentDescription="box"
                        android:scaleType="fitCenter"
-                       app:srcCompat="@drawable/box" />-->
+                       app:srcCompat="@drawable/box" />
 
                 <ImageButton
-                    android:id="@+id/carButton"
+                    android:id="@+id/handButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/car"
+                    android:contentDescription="@string/hand"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/car" />
-
-                <!-- Saucepan image does not exist
-                <ImageButton
-                    android:id="@+id/saucepanButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="saucepan"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/saucepan" />-->
-
-                <!-- Dancer image does not exist
-                <ImageButton
-                    android:id="@+id/dancerButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="dancer"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dancer" />-->
-
-                <ImageButton
-                    android:id="@+id/dogButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/dog"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dog" />
-
-                <ImageButton
-                    android:id="@+id/digButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/dig"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dig" />
-
-                <ImageButton
-                    android:id="@+id/darkButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/dark"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dark" />
-
-                <ImageButton
-                    android:id="@+id/foxButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/fox"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fox" />
-
-                <ImageButton
-                    android:id="@+id/elfButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/elf"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/elf" />
-
-                <ImageButton
-                    android:id="@+id/bridgeButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/bridge"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/bridge" />
-
-                <ImageButton
-                    android:id="@+id/fringeButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/fringe"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fringe" />
-
-                <ImageButton
-                    android:id="@+id/goldButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/gold"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/gold" />
-
-                <ImageButton
-                    android:id="@+id/girlButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/girl"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/girl" />
-
+                    app:srcCompat="@drawable/hand" />
 
                 <ImageButton
                     android:id="@+id/goatButton"
@@ -196,28 +99,20 @@
                     app:srcCompat="@drawable/hug" />
 
                 <ImageButton
-                    android:id="@+id/handButton"
+                    android:id="@+id/foxButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/hand"
+                    android:contentDescription="@string/fox"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/hand" />
+                    app:srcCompat="@drawable/fox" />
 
                 <ImageButton
-                    android:id="@+id/jayButton"
+                    android:id="@+id/darkButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/jay"
+                    android:contentDescription="@string/dark"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/jay" />
-
-                <ImageButton
-                    android:id="@+id/jumpButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/jump"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/jump" />
+                    app:srcCompat="@drawable/dark" />
 
                 <ImageButton
                     android:id="@+id/jugglerButton"
@@ -228,6 +123,22 @@
                     app:srcCompat="@drawable/juggler" />
 
                 <ImageButton
+                    android:id="@+id/digButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/dig"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/dig" />
+
+                <ImageButton
+                    android:id="@+id/elfButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/elf"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/elf" />
+
+                <ImageButton
                     android:id="@+id/keyButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
@@ -235,54 +146,116 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/key" />
 
-            </TableRow>
+                <ImageButton
+                    android:id="@+id/girlButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/girl"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/girl" />
 
-            <TableRow
+                <ImageButton
+                    android:id="@+id/carButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/car"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/car" />
+
+                <ImageButton
+                    android:id="@+id/fringeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/fringe"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/fringe" />
+
+                <ImageButton
+                    android:id="@+id/jayButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/jay"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/jay" />
+
+                <ImageButton
+                    android:id="@+id/cowButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/cow"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cow" />
+
+                <ImageButton
+                    android:id="@+id/goldButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gold"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/gold" />
+
+                <ImageButton
+                    android:id="@+id/dogButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/dog"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/dog" />
+
+                <ImageButton
+                    android:id="@+id/bridgeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/bridge"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bridge" />
+
+                <ImageButton
+                    android:id="@+id/jumpButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/jump"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/jump" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/cutButton"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/cut"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cut" />
-
-                <ImageButton
-                    android:id="@+id/balanceButton"
+                    android:id="@+id/tailButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/balance"
+                    android:contentDescription="@string/tail"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/balance" />
+                    app:srcCompat="@drawable/tail" />
 
                 <ImageButton
-                    android:id="@+id/fridgeButton"
+                    android:id="@+id/quietButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/fridge"
+                    android:contentDescription="@string/quiet"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fridge" />
+                    app:srcCompat="@drawable/quiet" />
 
-                <!-- Lip does not have an image/is unvoiced
                <ImageButton
                    android:id="@+id/lipButton"
                    android:layout_width="200dp"
                    android:layout_height="wrap_content"
                    android:contentDescription="lip"
                    android:scaleType="fitCenter"
-                   app:srcCompat="@drawable/lip" />-->
+                   app:srcCompat="@drawable/lip" />
 
-                <!-- Lick does not have an image/is unvoiced
                 <ImageButton
-                    android:id="@+id/lickButton"
+                    android:id="@+id/rainbowButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="lick"
+                    android:contentDescription="@string/rainbow"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/lick" />-->
+                    app:srcCompat="@drawable/lick" />
 
                 <ImageButton
                     android:id="@+id/lightButton"
@@ -293,52 +266,12 @@
                     app:srcCompat="@drawable/light" />
 
                 <ImageButton
-                    android:id="@+id/manButton"
+                    android:id="@+id/pearlButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/man"
+                    android:contentDescription="@string/pearl"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/man" />
-
-                <ImageButton
-                    android:id="@+id/mouseButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/mouse"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouse" />
-
-                <ImageButton
-                    android:id="@+id/mouthButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/mouth"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/mouth" />
-
-                <ImageButton
-                    android:id="@+id/nutsButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/nuts"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/nuts" />
-
-                <ImageButton
-                    android:id="@+id/nailButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/nail"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/nail" />
-
-                <ImageButton
-                    android:id="@+id/clownButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/clown"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/clown" />
+                    app:srcCompat="@drawable/pearl" />
 
                 <ImageButton
                     android:id="@+id/pigButton"
@@ -347,14 +280,6 @@
                     android:contentDescription="@string/pig"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/pig" />
-
-                <ImageButton
-                    android:id="@+id/pearlButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/pearl"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/pearl" />
 
                 <ImageButton
                     android:id="@+id/purseButton"
@@ -372,32 +297,6 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/queen" />
 
-                <!-- Does not have an image
-                <ImageButton
-                    android:id="@+id/squaresButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="squares"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/squares" />-->
-
-                <ImageButton
-                    android:id="@+id/quietButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/quiet"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/quiet" />
-
-                <!-- Does not have an image
-                <ImageButton
-                    android:id="@+id/redButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="red"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/red" />-->
-
                 <ImageButton
                     android:id="@+id/rakeButton"
                     android:layout_width="200dp"
@@ -405,22 +304,6 @@
                     android:contentDescription="@string/rake"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/rake" />
-
-                <ImageButton
-                    android:id="@+id/rainbowButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/rainbow"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/rainbow" />
-
-                <ImageButton
-                    android:id="@+id/forkButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/fork"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fork" />
 
                 <ImageButton
                     android:id="@+id/wolfButton"
@@ -431,6 +314,46 @@
                     app:srcCompat="@drawable/wolf" />
 
                 <ImageButton
+                    android:id="@+id/balanceButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/balance"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/red" />
+
+                <ImageButton
+                    android:id="@+id/forkButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/fork"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/fork" />
+
+                <ImageButton
+                    android:id="@+id/mouseButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/mouse"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mouse" />
+
+                <ImageButton
+                    android:id="@+id/fridgeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/fridge"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/fridge" />
+
+                <ImageButton
+                    android:id="@+id/manButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/man"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/man" />
+
+                <ImageButton
                     android:id="@+id/owlButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
@@ -439,26 +362,59 @@
                     app:srcCompat="@drawable/owl" />
 
                 <ImageButton
-                    android:id="@+id/tailButton"
-                    android:layout_width="200dp"
+                    android:id="@+id/cutButton"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/tail"
+                    android:contentDescription="@string/cut"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/tail" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                    app:srcCompat="@drawable/cut" />
 
                 <ImageButton
-                    android:id="@+id/leafButton"
+                    android:id="@+id/nutsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/leaf"
+                    android:contentDescription="@string/nuts"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/leaf" />
+                    app:srcCompat="@drawable/nuts" />
+
+                <ImageButton
+                    android:id="@+id/clownButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/clown"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/clown" />
+
+                <ImageButton
+                    android:id="@+id/mouthButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/mouth"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mouth" />
+
+                <ImageButton
+                    android:id="@+id/nailButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/nail"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/nail" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/taxiButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/taxi"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/taxi" />
 
                 <ImageButton
                     android:id="@+id/kingButton"
@@ -469,97 +425,20 @@
                     app:srcCompat="@drawable/king" />
 
                 <ImageButton
-                    android:id="@+id/volcanoButton"
+                    android:id="@+id/sixButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/volcano"
+                    android:contentDescription="@string/six"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/volcano" />
+                    app:srcCompat="@drawable/six" />
 
                 <ImageButton
-                    android:id="@+id/sawButton"
+                    android:id="@+id/yellowButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/saw"
+                    android:contentDescription="@string/yellow"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/saw" />
-
-                <ImageButton
-                    android:id="@+id/glassButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/glass"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/glass" />
-
-                <ImageButton
-                    android:id="@+id/grassButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/grass"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/grass" />
-
-                <!-- Does not have an image
-                <ImageButton
-                    android:id="@+id/bagsButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="bags"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/bags" />-->
-
-                <ImageButton
-                    android:id="@+id/dogsButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/dogs"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dogs" />
-
-                <!-- Does not have an image
-                <ImageButton
-                    android:id="@+id/carsButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="cars"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cars" />-->
-
-
-                <ImageButton
-                    android:id="@+id/toeButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/toe"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/toe" />
-
-                <!-- Does not have an image
-                <ImageButton
-                    android:id="@+id/teaButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="tea"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/tea" />-->
-
-                <ImageButton
-                    android:id="@+id/tieButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/tie"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/tie" />
-
-
-                <ImageButton
-                    android:id="@+id/silverButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/silver"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/silver" />
+                    app:srcCompat="@drawable/bags" />
 
                 <ImageButton
                     android:id="@+id/beaverButton"
@@ -575,15 +454,71 @@
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/wig"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/wig" />
+                    app:srcCompat="@drawable/cars" />
 
                 <ImageButton
-                    android:id="@+id/wallButton"
+                    android:id="@+id/yawnButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/wall"
+                    android:contentDescription="@string/yawn"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/wall" />
+                    app:srcCompat="@drawable/yawn" />
+
+                <ImageButton
+                    android:id="@+id/volcanoButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/volcano"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/tea" />
+
+                <ImageButton
+                    android:id="@+id/tieButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/tie"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/tie" />
+
+                <ImageButton
+                    android:id="@+id/silverButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/silver"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/silver" />
+
+                <ImageButton
+                    android:id="@+id/sawButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/saw"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/saw" />
+
+                <ImageButton
+                    android:id="@+id/toeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/toe"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/toe" />
+
+                <ImageButton
+                    android:id="@+id/dogsButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/dogs"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/dogs" />
+
+                <ImageButton
+                    android:id="@+id/grassButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/grass"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/grass" />
 
                 <ImageButton
                     android:id="@+id/washButton"
@@ -594,20 +529,12 @@
                     app:srcCompat="@drawable/wash" />
 
                 <ImageButton
-                    android:id="@+id/sixButton"
+                    android:id="@+id/glassButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/six"
+                    android:contentDescription="@string/glass"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/six" />
-
-                <ImageButton
-                    android:id="@+id/taxiButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/taxi"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/taxi" />
+                    app:srcCompat="@drawable/glass" />
 
                 <ImageButton
                     android:id="@+id/sixteenButton"
@@ -618,38 +545,37 @@
                     app:srcCompat="@drawable/sixteen" />
 
                 <ImageButton
-                    android:id="@+id/yellowButton"
+                    android:id="@+id/zipperButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/yellow"
+                    android:contentDescription="@string/zipper"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/yellow" />
+                    app:srcCompat="@drawable/zipper" />
 
                 <ImageButton
-                    android:id="@+id/yawnButton"
+                    android:id="@+id/leafButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/yawn"
+                    android:contentDescription="@string/leaf"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/yawn" />
+                    app:srcCompat="@drawable/leaf" />
 
-                <!-- An irregular
+
                 <ImageButton
                     android:id="@+id/yo-yoButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="yo-yo"
+                    android:contentDescription="@string/yoyo"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/yo-yo" />-->
+                    app:srcCompat="@drawable/yoyo" />
 
-                <!-- Does not have an image yet
                 <ImageButton
                     android:id="@+id/zooButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="zoo"
+                    android:contentDescription="@string/zoo"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/zoo" />-->
+                    app:srcCompat="@drawable/zoo" />
 
                 <ImageButton
                     android:id="@+id/zebraButton"
@@ -660,21 +586,20 @@
                     app:srcCompat="@drawable/zebra" />
 
                 <ImageButton
-                    android:id="@+id/zipperButton"
+                    android:id="@+id/wallButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/zipper"
+                    android:contentDescription="@string/wall"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/zipper" />
-
-            </TableRow>
-
-        </TableLayout>
+                    app:srcCompat="@drawable/wall" />
+            </LinearLayout>
+        </LinearLayout>
     </HorizontalScrollView>
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/arrowButton4"
         style="@style/ScrollButton"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"

@@ -66,7 +66,7 @@ public class ConsonantsWordBankActivity extends AppCompatActivity {
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (Bank.getSpellCount("default", "consonants", word) < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", "consonants", word) < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }
