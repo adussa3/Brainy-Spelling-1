@@ -79,6 +79,7 @@
     <string name="queen">queen</string>
     <string name="pearl">pearl</string>
     <string name="pig">pig</string>
+    <string name="pig1">pig1</string>
     <string name="clown">clown</string>
     <string name="nail">nail</string>
     <string name="mouth">mouth</string>
@@ -168,5 +169,7 @@
     <string name="candy">candy</string>
     <string name="bat">bat</string>
     <string name="zebra">zebra</string>
+    <string name="yoyo">yoyo</string>
+    <string name="zoo">zoo</string>
 
 </resources>
