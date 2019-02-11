@@ -35,7 +35,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="B" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="B"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button14"
@@ -43,8 +47,12 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
                     android:onClick="onClickSelectConsonant"
-                    android:text="C" />
+                    android:text="C"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button15"
@@ -52,7 +60,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="D" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="D"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -65,7 +77,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="F" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="F"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button17"
@@ -73,7 +89,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="G" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="G"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button18"
@@ -81,7 +101,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="H" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="H"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -94,7 +118,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="J" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="J"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button20"
@@ -102,7 +130,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="K" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="K"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button21"
@@ -110,7 +142,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="L" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="L"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -123,7 +159,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="M" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="M"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button26"
@@ -131,7 +171,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="N" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="N"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button27"
@@ -139,7 +183,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="P" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="P"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -152,7 +200,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="QU" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="QU"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button29"
@@ -160,7 +212,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="R" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="R"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button30"
@@ -168,7 +224,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="S" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="S"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -181,7 +241,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="T" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="T"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button23"
@@ -189,7 +253,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="V" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="V"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button24"
@@ -197,7 +265,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="W" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="W"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
@@ -210,7 +282,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="X" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="X"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button32"
@@ -218,7 +294,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="Y" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="Y"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button33"
@@ -226,7 +306,11 @@
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
-                    android:text="Z" />
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="Z"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
             </TableRow>
         </TableLayout>
     </ScrollView>
