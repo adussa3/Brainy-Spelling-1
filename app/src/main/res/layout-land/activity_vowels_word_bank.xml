@@ -59,7 +59,8 @@
                     android:contentDescription="ape"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ape"/>
+                    android:src="@drawable/ape" />
+
                 <ImageButton
                     android:id="@+id/faceButton"
                     android:layout_width="200dp"
@@ -69,7 +70,8 @@
                     android:contentDescription="face"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/face"/>
+                    android:src="@drawable/face" />
+
                 <ImageButton
                     android:id="@+id/whaleButton"
                     android:layout_width="200dp"
@@ -79,7 +81,8 @@
                     android:contentDescription="whale"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/whale"/>
+                    android:src="@drawable/whale" />
+
                 <ImageButton
                     android:id="@+id/axeButton"
                     android:layout_width="200dp"
@@ -89,7 +92,8 @@
                     android:contentDescription="axe"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/axe"/>
+                    android:src="@drawable/axe" />
+
                 <ImageButton
                     android:id="@+id/batButton"
                     android:layout_width="200dp"
@@ -99,7 +103,8 @@
                     android:contentDescription="bat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bat"/>
+                    android:src="@drawable/bat" />
+
                 <ImageButton
                     android:id="@+id/catButton"
                     android:layout_width="200dp"
@@ -109,7 +114,8 @@
                     android:contentDescription="cat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat"/>
+                    android:src="@drawable/cat" />
+
                 <ImageButton
                     android:id="@+id/fallButton"
                     android:layout_width="200dp"
@@ -119,7 +125,8 @@
                     android:contentDescription="fall"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fall"/>
+                    android:src="@drawable/fall" />
+
                 <ImageButton
                     android:id="@+id/swanButton"
                     android:layout_width="200dp"
@@ -129,7 +136,8 @@
                     android:contentDescription="swan"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/swan"/>
+                    android:src="@drawable/swan" />
+
                 <ImageButton
                     android:id="@+id/ballButton"
                     android:layout_width="200dp"
@@ -139,7 +147,8 @@
                     android:contentDescription="ball"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ball"/>
+                    android:src="@drawable/ball" />
+
                 <ImageButton
                     android:id="@+id/sofaButton"
                     android:layout_width="200dp"
@@ -149,7 +158,8 @@
                     android:contentDescription="sofa"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sofa"/>
+                    android:src="@drawable/sofa" />
+
                 <ImageButton
                     android:id="@+id/afraidButton"
                     android:layout_width="200dp"
@@ -159,7 +169,8 @@
                     android:contentDescription="afraid"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/afraid"/>
+                    android:src="@drawable/afraid" />
+
                 <ImageButton
                     android:id="@+id/zebraButton"
                     android:layout_width="200dp"
@@ -169,7 +180,9 @@
                     android:contentDescription="zebra"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/zebra"/>
+                    android:src="@drawable/zebra" />
+
+                <!--Image does not exist
                 <ImageButton
                     android:id="@+id/heButton"
                     android:layout_width="200dp"
@@ -179,7 +192,9 @@
                     android:contentDescription="he"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/he"/>
+                    android:src="@drawable/he"/>-->
+
+                <!--Image does not exist
                 <ImageButton
                     android:id="@+id/weButton"
                     android:layout_width="200dp"
@@ -189,17 +204,20 @@
                     android:contentDescription="we"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/we"/>
+                    android:src="@drawable/we"/>-->
+
+                <!-- Image does not exist
                 <ImageButton
-                    android:id="@+id/sheButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="she"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/she"/>
+                     android:id="@+id/sheButton"
+                     android:layout_width="200dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:adjustViewBounds="false"
+                     android:contentDescription="she"
+                     android:cropToPadding="false"
+                     android:scaleType="fitCenter"
+                     android:src="@drawable/she"/>-->
+
                 <ImageButton
                     android:id="@+id/elfButton"
                     android:layout_width="200dp"
@@ -209,7 +227,8 @@
                     android:contentDescription="elf"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/elf"/>
+                    android:src="@drawable/elf" />
+
                 <ImageButton
                     android:id="@+id/bedButton"
                     android:layout_width="200dp"
@@ -219,7 +238,8 @@
                     android:contentDescription="bed"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bed"/>
+                    android:src="@drawable/bed" />
+
                 <ImageButton
                     android:id="@+id/netButton"
                     android:layout_width="200dp"
@@ -229,7 +249,8 @@
                     android:contentDescription="net"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/net"/>
+                    android:src="@drawable/net" />
+
                 <ImageButton
                     android:id="@+id/ovenButton"
                     android:layout_width="200dp"
@@ -239,7 +260,8 @@
                     android:contentDescription="oven"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/oven"/>
+                    android:src="@drawable/oven" />
+
             </TableRow>
 
             <TableRow
@@ -256,7 +278,8 @@
                     android:contentDescription="camel"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/camel"/>
+                    android:src="@drawable/camel" />
+
                 <ImageButton
                     android:id="@+id/kittenButton"
                     android:layout_width="200dp"
@@ -266,7 +289,8 @@
                     android:contentDescription="kitten"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/kitten"/>
+                    android:src="@drawable/kitten" />
+
                 <ImageButton
                     android:id="@+id/fiveButton"
                     android:layout_width="200dp"
@@ -276,7 +300,8 @@
                     android:contentDescription="five"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/five"/>
+                    android:src="@drawable/five" />
+
                 <ImageButton
                     android:id="@+id/slideButton"
                     android:layout_width="200dp"
@@ -286,7 +311,8 @@
                     android:contentDescription="slide"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/slide"/>
+                    android:src="@drawable/slide" />
+
                 <ImageButton
                     android:id="@+id/iceButton"
                     android:layout_width="200dp"
@@ -296,7 +322,8 @@
                     android:contentDescription="ice"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ice"/>
+                    android:src="@drawable/ice" />
+
                 <ImageButton
                     android:id="@+id/hitButton"
                     android:layout_width="200dp"
@@ -306,7 +333,8 @@
                     android:contentDescription="hit"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hit"/>
+                    android:src="@drawable/hit" />
+
                 <ImageButton
                     android:id="@+id/fishButton"
                     android:layout_width="200dp"
@@ -316,7 +344,8 @@
                     android:contentDescription="fish"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fish"/>
+                    android:src="@drawable/fish" />
+
                 <ImageButton
                     android:id="@+id/singButton"
                     android:layout_width="200dp"
@@ -326,7 +355,8 @@
                     android:contentDescription="sing"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sing"/>
+                    android:src="@drawable/sing" />
+
                 <ImageButton
                     android:id="@+id/taxiButton"
                     android:layout_width="200dp"
@@ -336,7 +366,9 @@
                     android:contentDescription="taxi"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/taxi"/>
+                    android:src="@drawable/taxi" />
+
+                <!--Image does not exist
                 <ImageButton
                     android:id="@+id/yetiButton"
                     android:layout_width="200dp"
@@ -346,7 +378,8 @@
                     android:contentDescription="yeti"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/yeti"/>
+                    android:src="@drawable/yeti"/>-->
+
                 <ImageButton
                     android:id="@+id/skisButton"
                     android:layout_width="200dp"
@@ -356,7 +389,8 @@
                     android:contentDescription="skis"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/skis"/>
+                    android:src="@drawable/skis" />
+
                 <ImageButton
                     android:id="@+id/rabbitButton"
                     android:layout_width="200dp"
@@ -366,7 +400,8 @@
                     android:contentDescription="rabbit"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/rabbit"/>
+                    android:src="@drawable/rabbit" />
+
                 <ImageButton
                     android:id="@+id/centipedeButton"
                     android:layout_width="200dp"
@@ -376,7 +411,8 @@
                     android:contentDescription="centipede"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/centipede"/>
+                    android:src="@drawable/centipede" />
+
                 <ImageButton
                     android:id="@+id/clarinetButton"
                     android:layout_width="200dp"
@@ -386,7 +422,8 @@
                     android:contentDescription="clarinet"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/clarinet"/>
+                    android:src="@drawable/clarinet" />
+
                 <ImageButton
                     android:id="@+id/oldButton"
                     android:layout_width="200dp"
@@ -396,7 +433,8 @@
                     android:contentDescription="old"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/old"/>
+                    android:src="@drawable/old" />
+
                 <ImageButton
                     android:id="@+id/moleButton"
                     android:layout_width="200dp"
@@ -406,7 +444,8 @@
                     android:contentDescription="mole"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/mole"/>
+                    android:src="@drawable/mole" />
+
                 <ImageButton
                     android:id="@+id/noseButton"
                     android:layout_width="200dp"
@@ -416,7 +455,8 @@
                     android:contentDescription="nose"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/nose"/>
+                    android:src="@drawable/nose" />
+
                 <ImageButton
                     android:id="@+id/mothButton"
                     android:layout_width="200dp"
@@ -426,7 +466,8 @@
                     android:contentDescription="moth"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/moth"/>
+                    android:src="@drawable/moth" />
+
                 <ImageButton
                     android:id="@+id/hotButton"
                     android:layout_width="200dp"
@@ -436,7 +477,7 @@
                     android:contentDescription="hot"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hot"/>
+                    android:src="@drawable/hot" />
             </TableRow>
 
             <TableRow
@@ -453,7 +494,8 @@
                     android:contentDescription="pot"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/pot"/>
+                    android:src="@drawable/pot" />
+
                 <ImageButton
                     android:id="@+id/loveButton"
                     android:layout_width="200dp"
@@ -463,7 +505,8 @@
                     android:contentDescription="love"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/love"/>
+                    android:src="@drawable/love" />
+
                 <ImageButton
                     android:id="@+id/gloveButton"
                     android:layout_width="200dp"
@@ -473,7 +516,8 @@
                     android:contentDescription="glove"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/glove"/>
+                    android:src="@drawable/glove" />
+
                 <ImageButton
                     android:id="@+id/wagonButton"
                     android:layout_width="200dp"
@@ -483,7 +527,8 @@
                     android:contentDescription="wagon"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/wagon"/>
+                    android:src="@drawable/wagon" />
+
                 <ImageButton
                     android:id="@+id/suitButton"
                     android:layout_width="200dp"
@@ -493,7 +538,8 @@
                     android:contentDescription="suit"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/suit"/>
+                    android:src="@drawable/suit" />
+
                 <ImageButton
                     android:id="@+id/tubaButton"
                     android:layout_width="200dp"
@@ -503,7 +549,8 @@
                     android:contentDescription="tuba"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/tuba"/>
+                    android:src="@drawable/tuba" />
+
                 <ImageButton
                     android:id="@+id/fluteButton"
                     android:layout_width="200dp"
@@ -513,7 +560,8 @@
                     android:contentDescription="flute"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/flute"/>
+                    android:src="@drawable/flute" />
+
                 <ImageButton
                     android:id="@+id/musicButton"
                     android:layout_width="200dp"
@@ -523,7 +571,8 @@
                     android:contentDescription="music"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/music"/>
+                    android:src="@drawable/music" />
+
                 <ImageButton
                     android:id="@+id/ambulanceButton"
                     android:layout_width="200dp"
@@ -533,7 +582,8 @@
                     android:contentDescription="ambulance"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ambulance"/>
+                    android:src="@drawable/ambulance" />
+
                 <ImageButton
                     android:id="@+id/unicycleButton"
                     android:layout_width="200dp"
@@ -543,7 +593,9 @@
                     android:contentDescription="unicycle"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/unicycle"/>
+                    android:src="@drawable/unicycle" />
+
+                <!--Image does not exist
                 <ImageButton
                     android:id="@+id/busButton"
                     android:layout_width="200dp"
@@ -553,7 +605,8 @@
                     android:contentDescription="bus"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bus"/>
+                    android:src="@drawable/bus" />-->
+
                 <ImageButton
                     android:id="@+id/bugButton"
                     android:layout_width="200dp"
@@ -563,7 +616,8 @@
                     android:contentDescription="bug"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bug"/>
+                    android:src="@drawable/bug" />
+
                 <ImageButton
                     android:id="@+id/plumButton"
                     android:layout_width="200dp"
@@ -573,7 +627,8 @@
                     android:contentDescription="plum"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/plum"/>
+                    android:src="@drawable/plum" />
+
                 <ImageButton
                     android:id="@+id/flyButton"
                     android:layout_width="200dp"
@@ -583,7 +638,8 @@
                     android:contentDescription="fly"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fly"/>
+                    android:src="@drawable/fly" />
+
                 <ImageButton
                     android:id="@+id/cryButton"
                     android:layout_width="200dp"
@@ -593,7 +649,8 @@
                     android:contentDescription="cry"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cry"/>
+                    android:src="@drawable/cry" />
+
                 <ImageButton
                     android:id="@+id/skyButton"
                     android:layout_width="200dp"
@@ -603,7 +660,8 @@
                     android:contentDescription="sky"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sky"/>
+                    android:src="@drawable/sky" />
+
                 <ImageButton
                     android:id="@+id/babyButton"
                     android:layout_width="200dp"
@@ -613,7 +671,8 @@
                     android:contentDescription="baby"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/baby"/>
+                    android:src="@drawable/baby" />
+
                 <ImageButton
                     android:id="@+id/candyButton"
                     android:layout_width="200dp"
@@ -623,7 +682,8 @@
                     android:contentDescription="candy"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/candy"/>
+                    android:src="@drawable/candy" />
+
                 <ImageButton
                     android:id="@+id/sleepyButton"
                     android:layout_width="200dp"
@@ -633,7 +693,7 @@
                     android:contentDescription="sleepy"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sleepy"/>
+                    android:src="@drawable/sleepy" />
             </TableRow>
 
         </TableLayout>
