@@ -120,103 +120,158 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <TableLayout
-                android:id="@+id/letterGrid"
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textAlignment="center">
+                android:padding="16dp">
 
-                <TableRow
-                    android:id="@+id/letterRow0"
+                <TableLayout
+                    android:id="@+id/letterGrid"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="bottom|center">
+                    android:textAlignment="center">
 
-                    <Button
-                        android:id="@+id/letter_0"
-                        style="@style/Widget.AppCompat.Button.Colored"
+                    <TableRow
+                        android:id="@+id/letterRow0"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="p" />
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
 
-                    <Button
-                        android:id="@+id/letter_1"
-                        style="@style/Widget.AppCompat.Button.Colored"
+                        <Button
+                            android:id="@+id/letter_0"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="p"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/letter_1"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="i"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/letter_2"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="g"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/letterRow1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="i" />
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
 
-                    <Button
-                        android:id="@+id/letter_2"
-                        style="@style/Widget.AppCompat.Button.Colored"
+                        <Button
+                            android:id="@+id/letter_3"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="f"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/letter_4"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="o"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/letter_5"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="x"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/letterRow2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="g" />
-                </TableRow>
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center">
 
-                <TableRow
-                    android:id="@+id/letterRow1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                        <Button
+                            android:id="@+id/letter_6"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="r"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/letter_3"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="f" />
+                        <Button
+                            android:id="@+id/letter_7"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="a"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/letter_4"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="o" />
-
-                    <Button
-                        android:id="@+id/letter_5"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="x" />
-                </TableRow>
-
-                <TableRow
-                    android:id="@+id/letterRow2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="top|center">
-
-                    <Button
-                        android:id="@+id/letter_6"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="r" />
-
-                    <Button
-                        android:id="@+id/letter_7"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="a" />
-
-                    <Button
-                        android:id="@+id/letter_8"
-                        style="@style/Widget.AppCompat.Button.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="m" />
-                </TableRow>
-            </TableLayout>
+                        <Button
+                            android:id="@+id/letter_8"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="12dp"
+                            android:background="@drawable/btn_letters"
+                            android:fontFamily="casual"
+                            android:text="m"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
