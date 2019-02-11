@@ -32,8 +32,12 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@drawable/btn_rounded"
+                android:fontFamily="casual"
                 android:onClick="onClickSelectVowel"
-                android:text="A" />
+                android:text="A"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button2"
@@ -41,7 +45,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="E" />
+                android:background="@drawable/btn_rounded"
+                android:fontFamily="casual"
+                android:text="E"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button3"
@@ -49,7 +57,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="I" />
+                android:background="@drawable/btn_rounded"
+                android:fontFamily="casual"
+                android:text="I"
+                android:textSize="36sp"
+                android:textStyle="bold" />
         </TableRow>
 
         <TableRow
@@ -63,7 +75,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="O" />
+                android:background="@drawable/btn_rounded"
+                android:fontFamily="casual"
+                android:text="O"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button5"
@@ -71,7 +87,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="U" />
+                android:background="@drawable/btn_rounded"
+                android:fontFamily="casual"
+                android:text="U"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button6"
@@ -79,7 +99,11 @@
                 android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:text="Y" />
+                android:background="@drawable/btn_rounded"
+                android:fontFamily="casual"
+                android:text="Y"
+                android:textSize="36sp"
+                android:textStyle="bold" />
         </TableRow>
 
     </TableLayout>
