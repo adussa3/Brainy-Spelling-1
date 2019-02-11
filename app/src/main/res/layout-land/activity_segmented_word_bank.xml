@@ -32,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="0.0">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -44,93 +44,37 @@
                 android:layout_weight="1">
 
                 <ImageButton
-                    android:id="@+id/henButton"
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="hen"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/hen" />
-
-                <ImageButton
-                    android:id="@+id/catButton"
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="cat1"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cat1" />
-
-                <ImageButton
                     android:id="@+id/dogButton"
                     android:layout_width="200dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
                     android:contentDescription="dog1"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/dog1" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                    android:src="@drawable/dog1" />
 
                 <ImageButton
-                    android:id="@+id/galButton"
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="gal"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/gal" />
-
-                <ImageButton
-                    android:id="@+id/elfButton"
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="elf"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/elf" />
-
-                <ImageButton
-                    android:id="@+id/refButton"
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="ref"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ref" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
-
-                <ImageButton
-                    android:id="@+id/ramButton"
+                    android:id="@+id/catButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="ram"
+                    android:contentDescription="cat1"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ram" />
+                    android:src="@drawable/cat1" />
+
+                <ImageButton
+                    android:id="@+id/henButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="hen"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hen" />
 
                 <ImageButton
                     android:id="@+id/foxButton"
@@ -141,7 +85,107 @@
                     android:contentDescription="fox"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/fox1" />
+                    android:src="@drawable/fox" />
+
+                <ImageButton
+                    android:id="@+id/ramButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="ram"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ram" />
+
+                <ImageButton
+                    android:id="@+id/cubButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="cub"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cub" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/pigButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="pig"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pig" />
+
+                <ImageButton
+                    android:id="@+id/batButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="bat"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bat" />
+
+                <ImageButton
+                    android:id="@+id/elkButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="elk"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/elk" />
+
+                <ImageButton
+                    android:id="@+id/antButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="ant"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ant" />
+
+                <ImageButton
+                    android:id="@+id/bugButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="bug"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bug" />
+
+                <ImageButton
+                    android:id="@+id/flyButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="fly"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fly" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <ImageButton
                     android:id="@+id/copButton"
@@ -152,7 +196,62 @@
                     android:contentDescription="cop"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cop" />
+                    android:src="@drawable/cop" />
+
+                <ImageButton
+                    android:id="@+id/elfButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="elf"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/elf" />
+
+                <ImageButton
+                    android:id="@+id/kidButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="kid"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kid" />
+
+                <ImageButton
+                    android:id="@+id/galButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="gal"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gal" />
+
+                <ImageButton
+                    android:id="@+id/docButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="doc"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/doc" />
+
+                <ImageButton
+                    android:id="@+id/refButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="ref"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ref" />
             </TableRow>
 
         </TableLayout>
