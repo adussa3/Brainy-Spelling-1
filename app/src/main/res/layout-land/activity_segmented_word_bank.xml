@@ -125,7 +125,7 @@
                     android:contentDescription="@string/pig"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/pig" />
+                    android:src="@drawable/pig1" />
 
                 <ImageButton
                     android:id="@+id/batButton"

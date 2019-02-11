@@ -63,14 +63,13 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cow" />
 
-                <!-- Box picture does not exist
                    <ImageButton
-                       android:id="@+id/boxButton/"
+                       android:id="@+id/boxButton"
                        android:layout_width="200dp"
                        android:layout_height="wrap_content"
                        android:contentDescription="box"
                        android:scaleType="fitCenter"
-                       app:srcCompat="@drawable/box" />-->
+                       app:srcCompat="@drawable/box" />
 
                 <ImageButton
                     android:id="@+id/carButton"
@@ -266,23 +265,21 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/fridge" />
 
-                <!-- Lip does not have an image/is unvoiced
                <ImageButton
                    android:id="@+id/lipButton"
                    android:layout_width="200dp"
                    android:layout_height="wrap_content"
                    android:contentDescription="lip"
                    android:scaleType="fitCenter"
-                   app:srcCompat="@drawable/lip" />-->
+                   app:srcCompat="@drawable/lip" />
 
-                <!-- Lick does not have an image/is unvoiced
                 <ImageButton
                     android:id="@+id/lickButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="lick"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/lick" />-->
+                    app:srcCompat="@drawable/lick" />
 
                 <ImageButton
                     android:id="@+id/lightButton"
@@ -389,14 +386,13 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/quiet" />
 
-                <!-- Does not have an image
                 <ImageButton
                     android:id="@+id/redButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="red"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/red" />-->
+                    app:srcCompat="@drawable/red" />
 
                 <ImageButton
                     android:id="@+id/rakeButton"
@@ -500,14 +496,13 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/grass" />
 
-                <!-- Does not have an image
                 <ImageButton
                     android:id="@+id/bagsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="bags"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/bags" />-->
+                    app:srcCompat="@drawable/bags" />
 
                 <ImageButton
                     android:id="@+id/dogsButton"
@@ -517,14 +512,13 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/dogs" />
 
-                <!-- Does not have an image
                 <ImageButton
                     android:id="@+id/carsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="cars"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/cars" />-->
+                    app:srcCompat="@drawable/cars" />
 
 
                 <ImageButton
@@ -535,14 +529,13 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/toe" />
 
-                <!-- Does not have an image
                 <ImageButton
                     android:id="@+id/teaButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="tea"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/tea" />-->
+                    app:srcCompat="@drawable/tea" />
 
                 <ImageButton
                     android:id="@+id/tieButton"
@@ -633,23 +626,22 @@
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/yawn" />
 
-                <!-- An irregular
+
                 <ImageButton
                     android:id="@+id/yo-yoButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="yo-yo"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/yo-yo" />-->
+                    app:srcCompat="@drawable/yo-yo" />
 
-                <!-- Does not have an image yet
                 <ImageButton
                     android:id="@+id/zooButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="zoo"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/zoo" />-->
+                    app:srcCompat="@drawable/zoo" />
 
                 <ImageButton
                     android:id="@+id/zebraButton"

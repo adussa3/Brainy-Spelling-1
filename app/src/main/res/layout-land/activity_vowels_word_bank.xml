@@ -182,7 +182,6 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/zebra" />
 
-                <!--Image does not exist
                 <ImageButton
                     android:id="@+id/heButton"
                     android:layout_width="200dp"
@@ -192,9 +191,9 @@
                     android:contentDescription="he"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/he"/>-->
+                    android:src="@drawable/he"/>
 
-                <!--Image does not exist
+
                 <ImageButton
                     android:id="@+id/weButton"
                     android:layout_width="200dp"
@@ -204,9 +203,8 @@
                     android:contentDescription="we"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/we"/>-->
+                    android:src="@drawable/we"/>
 
-                <!-- Image does not exist
                 <ImageButton
                      android:id="@+id/sheButton"
                      android:layout_width="200dp"
@@ -216,7 +214,7 @@
                      android:contentDescription="she"
                      android:cropToPadding="false"
                      android:scaleType="fitCenter"
-                     android:src="@drawable/she"/>-->
+                     android:src="@drawable/she"/>
 
                 <ImageButton
                     android:id="@+id/elfButton"
@@ -368,7 +366,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/taxi" />
 
-                <!--Image does not exist
+
                 <ImageButton
                     android:id="@+id/yetiButton"
                     android:layout_width="200dp"
@@ -378,7 +376,7 @@
                     android:contentDescription="yeti"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/yeti"/>-->
+                    android:src="@drawable/yeti"/>
 
                 <ImageButton
                     android:id="@+id/skisButton"
@@ -595,7 +593,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/unicycle" />
 
-                <!--Image does not exist
+
                 <ImageButton
                     android:id="@+id/busButton"
                     android:layout_width="200dp"
@@ -605,7 +603,7 @@
                     android:contentDescription="bus"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bus" />-->
+                    android:src="@drawable/bus" />
 
                 <ImageButton
                     android:id="@+id/bugButton"
