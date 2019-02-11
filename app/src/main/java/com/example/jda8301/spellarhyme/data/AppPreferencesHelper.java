@@ -1,5 +1,8 @@
 package com.example.jda8301.spellarhyme.data;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import com.example.jda8301.spellarhyme.MyApplication;
 import com.example.jda8301.spellarhyme.model.ConsonantWord;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
@@ -61,7 +64,7 @@ public class AppPreferencesHelper {
 
             Map<String, List<VowelWord>> map = new HashMap<>();
 
-            Type listType = listType = new TypeToken<List<VowelWord>>() {
+            Type listType = new TypeToken<List<VowelWord>>() {
             }.getType();
 
             for(int i = 0; i < jsonArray.size(); i++) {
@@ -95,7 +98,7 @@ public class AppPreferencesHelper {
 
             Map<String, List<ConsonantWord>> map = new HashMap<>();
 
-            Type listType = listType = new TypeToken<List<VowelWord>>() {
+            Type listType = new TypeToken<List<VowelWord>>() {
             }.getType();
 
             for (int i = 0; i < jsonArray.size(); i++) {
