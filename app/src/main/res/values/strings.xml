@@ -53,7 +53,6 @@
     <string name="goat">goat</string>
     <string name="girl">girl</string>
     <string name="zipper">zipper</string>
-    <string name="zebra">zebra</string>
     <string name="yawn">yawn</string>
     <string name="yellow">yellow</string>
     <string name="sixteen">sixteen</string>
@@ -99,9 +98,7 @@
     <string name="hug">hug</string>
     <string name="bridge">bridge</string>
     <string name="gold">gold</string>
-    <string name="elf">elf</string>
     <string name="fringe">fringe</string>
-    <string name="fox">fox</string>
     <string name="purse">purse</string>
     <string name="dig">dig</string>
     <string name="dog">dog</string>
@@ -110,10 +107,7 @@
     <string name="car">car</string>
     <string name="bubble">bubble</string>
     <string name="boy">boy</string>
-    <string name="taxi">taxi</string>
-    <string name="fly">fly</string>
     <string name="cop">cop</string>
-    <string name="elf">elf</string>
     <string name="kid">kid</string>
     <string name="gal">gal</string>
     <string name="ref">ref</string>
@@ -122,22 +116,17 @@
     <string name="hen">hen</string>
     <string name="fox">fox</string>
     <string name="ram">ram</string>
-    <string name="pig">pig</string>
-    <string name="bat">bat</string>
-    <string name="bug">bug</string>
     <string name="sleepy">sleepy</string>
     <string name="ape">ape</string>
     <string name="face">face</string>
     <string name="whale">whale</string>
     <string name="axe">axe</string>
-    <string name="bat">bat</string>
     <string name="cat">cat</string>
     <string name="fall">fall</string>
     <string name="swan">swan</string>
     <string name="ball">ball</string>
     <string name="sofa">sofa</string>
     <string name="afraid">afraid</string>
-    <string name="zebra">zebra</string>
     <string name="elf">elf</string>
     <string name="bed">bed</string>
     <string name="net">net</string>
@@ -177,5 +166,7 @@
     <string name="sky">sky</string>
     <string name="baby">baby</string>
     <string name="candy">candy</string>
+    <string name="bat">bat</string>
+    <string name="zebra">zebra</string>
 
 </resources>
