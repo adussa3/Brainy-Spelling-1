@@ -150,19 +150,19 @@ public class Unit2Activity extends AppCompatActivity {
         }
 
 
-        // Initialize all colors to greyscale
+        // Initialize all colors depending on if mastered or not
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(0);
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            if (!learned[0]) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())) {
                 word1[i].getDrawable().setColorFilter(filter);
             }
-            if (!learned[1]) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())) {
                 word2[i].getDrawable().setColorFilter(filter);
             }
-            if (!learned[2]) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())) {
                 word3[i].getDrawable().setColorFilter(filter);
             }
         }
@@ -322,7 +322,10 @@ public class Unit2Activity extends AppCompatActivity {
         if (!notComplete) {
             learned[0] = true;
             Log.e("word1", selectedWordSet.get(0).getDisplayString());
-             Bank.setMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString()) >= 3) {
+                Bank.setMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            }
         }
 
         notComplete = false;
@@ -334,7 +337,10 @@ public class Unit2Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[1] = true;
-            Bank.setMastered(selectedWordSet.get(1).getDisplayString());
+            Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString()) >= 3) {
+                Bank.setMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            }
         }
 
         notComplete = false;
@@ -346,7 +352,10 @@ public class Unit2Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[2] = true;
-            Bank.setMastered(selectedWordSet.get(2).getDisplayString());
+            Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString()) >= 3) {
+                Bank.setMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString());
+            }
         }
 
         ColorMatrix matrix = new ColorMatrix();
