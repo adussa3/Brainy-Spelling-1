@@ -234,21 +234,21 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/catHead"
+                android:id="@+id/firstWord1"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:scaleType="fitEnd"
                 android:src="@drawable/cat_head_bw" />
 
             <ImageView
-                android:id="@+id/catBod"
+                android:id="@+id/firstWord2"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/cat_middle_bw" />
 
             <ImageView
-                android:id="@+id/catTail"
+                android:id="@+id/firstWord3"
                 android:layout_width="50dp"
                 android:layout_height="70dp"
                 android:scaleType="fitStart"
@@ -295,7 +295,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/henHead"
+                android:id="@+id/secondWord1"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -303,7 +303,7 @@
                 android:src="@drawable/hen_head_bw" />
 
             <ImageView
-                android:id="@+id/henBod"
+                android:id="@+id/secondWord2"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -312,7 +312,7 @@
                 android:src="@drawable/hen_middle_bw" />
 
             <ImageView
-                android:id="@+id/henTail"
+                android:id="@+id/secondWord3"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -363,7 +363,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/dogHead"
+                android:id="@+id/thirdWord1"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -371,7 +371,7 @@
                 android:src="@drawable/dog_head_bw" />
 
             <ImageView
-                android:id="@+id/dogBod"
+                android:id="@+id/thirdWord2"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -379,7 +379,7 @@
                 android:src="@drawable/dog_middle_bw" />
 
             <ImageView
-                android:id="@+id/dogTail"
+                android:id="@+id/thirdWord3"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
