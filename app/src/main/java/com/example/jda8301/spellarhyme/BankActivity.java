@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,12 +14,12 @@ public class BankActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bank);
+        setContentView(R.layout.activity_bank_level_selection);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("Bank");
+        actionBarTitle.setText("Word Bank Level");
 
 
         // Initialize variables
@@ -28,6 +27,21 @@ public class BankActivity extends AppCompatActivity {
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
+    }
+
+    public void onClickSegmentedBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), SegmentedWordBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickVowelsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), VowelsWordBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickConsonantsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ConsonantsWordBankActivity.class);
+        startActivity(intent);
     }
 
     // Intents - goes to a different activity when the button is clicked

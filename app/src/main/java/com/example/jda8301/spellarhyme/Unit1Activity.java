@@ -23,10 +23,12 @@ import com.example.jda8301.spellarhyme.data.ObservableInteger;
 import com.example.jda8301.spellarhyme.model.Segment;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
 import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
+import com.example.jda8301.spellarhyme.utils.Bank;
 import com.example.jda8301.spellarhyme.utils.Config;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.Random;
@@ -53,6 +55,9 @@ public class Unit1Activity extends AppCompatActivity {
     // Placeholders for if a word is learned:
     private boolean[] learned = new boolean[3];
 
+    private ArrayList<SegmentedWord> wordList = new ArrayList<>();
+
+
 
     // Initializes AppPreferencesHelper to read JSON files
     AppPreferencesHelper helper = new AppPreferencesHelper();
@@ -72,14 +77,19 @@ public class Unit1Activity extends AppCompatActivity {
         // For each segmented word, we get the sound files for all 3 words
         // We add those soudn files to the phonemeCode array
         ArrayList<Integer> phonemeCode = new ArrayList<>();
-        final ArrayList<SegmentedWord> wordList = new ArrayList<>();
+
+//        Map<String, Integer> segmentedWordsBank = Bank.getUserLevelBank("default", Bank.segmented);
+
 
         for (SegmentedWord segmentedWord : segmentedWords.get(0)) {
             wordList.add(segmentedWord);
+
             for (Segment segment : segmentedWord.getSegmentInfo()) {
                 phonemeCode.add(segment.getSoundFile());
             }
         }
+
+
 
         // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
@@ -123,6 +133,12 @@ public class Unit1Activity extends AppCompatActivity {
         buttons[6] = (Button) findViewById(R.id.letter_6);
         buttons[7] = (Button) findViewById(R.id.letter_7);
         buttons[8] = (Button) findViewById(R.id.letter_8);
+
+        for (int i = 0; i < 3; i++) {
+            if (Bank.isMastered("default", Bank.segmented, wordList.get(i).getDisplayString())) {
+                learned[i] = true;
+            }
+        }
 
 
         // Initialize all colors to greyscale
@@ -238,13 +254,16 @@ public class Unit1Activity extends AppCompatActivity {
                                 spellingProgress3[currentField.getValue()] = thisButton.getText().toString();
                             }
                             thisButton.setVisibility(View.INVISIBLE);
+                            ColorMatrix matrix = new ColorMatrix();
+                            matrix.setSaturation(1);
+                            ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+                            selectedWord[currentField.getValue()].getDrawable().setColorFilter(filter);
+
                         }
-                        ColorMatrix matrix = new ColorMatrix();
-                        matrix.setSaturation(1);
 
-                        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
 
-                        selectedWord[currentField.getValue()].getDrawable().setColorFilter(filter);
+
+
 
                         updateLearnedWords();
 
@@ -333,6 +352,8 @@ public class Unit1Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[0] = true;
+            Log.e("word1", wordList.get(0).getDisplayString());
+            Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString());
         }
 
         notComplete = false;
@@ -344,6 +365,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[1] = true;
+            Bank.setMastered(wordList.get(1).getDisplayString());
         }
 
         notComplete = false;
@@ -355,6 +377,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[2] = true;
+            Bank.setMastered(wordList.get(2).getDisplayString());
         }
 
         ColorMatrix matrix = new ColorMatrix();
