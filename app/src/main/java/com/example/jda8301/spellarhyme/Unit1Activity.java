@@ -254,13 +254,16 @@ public class Unit1Activity extends AppCompatActivity {
                                 spellingProgress3[currentField.getValue()] = thisButton.getText().toString();
                             }
                             thisButton.setVisibility(View.INVISIBLE);
+                            ColorMatrix matrix = new ColorMatrix();
+                            matrix.setSaturation(1);
+                            ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+                            selectedWord[currentField.getValue()].getDrawable().setColorFilter(filter);
+
                         }
-                        ColorMatrix matrix = new ColorMatrix();
-                        matrix.setSaturation(1);
 
-                        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
 
-                        selectedWord[currentField.getValue()].getDrawable().setColorFilter(filter);
+
+
 
                         updateLearnedWords();
 
