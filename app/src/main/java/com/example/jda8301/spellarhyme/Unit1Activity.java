@@ -352,7 +352,6 @@ public class Unit1Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[0] = true;
-            Log.e("word1", wordList.get(0).getDisplayString());
             Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString());
         }
 
@@ -365,7 +364,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[1] = true;
-            Bank.setMastered(wordList.get(1).getDisplayString());
+            Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString());
         }
 
         notComplete = false;
@@ -377,7 +376,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         if (!notComplete) {
             learned[2] = true;
-            Bank.setMastered(wordList.get(2).getDisplayString());
+            Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString());
         }
 
         ColorMatrix matrix = new ColorMatrix();
