@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -289,5 +290,11 @@ public class Unit2Activity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), Unit2SelectionActivity.class);
         startActivity(intent);
+    }
+
+    // Highlights the edit text when a segment is selected
+    public static void onClickSelectSegment(View view) {
+        EditText et = (EditText) ((ViewGroup) view).getChildAt(1);
+        et.requestFocus();
     }
 }
