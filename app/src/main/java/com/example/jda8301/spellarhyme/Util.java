@@ -5,7 +5,10 @@ import android.animation.ObjectAnimator;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
 import com.example.jda8301.spellarhyme.utils.Config;
@@ -15,7 +18,7 @@ import com.example.jda8301.spellarhyme.utils.Config;
  */
 public class Util {
 
-    /**********************************************************************************************/
+    /******************************************************************************************/
 
     // https://stackoverflow.com/questions/33916287/android-scale-image-view-with-animation
 
@@ -53,7 +56,7 @@ public class Util {
         });
     }
 
-    /**********************************************************************************************/
+    /******************************************************************************************/
 
     public static void playSoundOnClick(View button, final String sound) {
         button.setOnClickListener(new View.OnClickListener() {
@@ -75,4 +78,5 @@ public class Util {
             }
         });
     }
+    
 }
