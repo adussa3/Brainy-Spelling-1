@@ -1,5 +1,6 @@
 package com.example.jda8301.spellarhyme;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
@@ -25,7 +26,6 @@ import com.example.jda8301.spellarhyme.utils.Config;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
 
 public class Unit2Activity extends AppCompatActivity {
 
@@ -234,6 +234,20 @@ public class Unit2Activity extends AppCompatActivity {
                     Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
                 }
             }
+        }
+
+        boolean allSpelled = true;
+        for (int i = 0; i < learned.length; i++) {
+            if (!learned[i]) {
+                allSpelled = false;
+            }
+        }
+
+        if (allSpelled) {
+            for(EditText field: fields) {
+                field.setText("");
+            }
+            this.recreate();
         }
     }
 
