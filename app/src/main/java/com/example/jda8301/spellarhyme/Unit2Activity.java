@@ -140,6 +140,11 @@ public class Unit2Activity extends AppCompatActivity {
             }
         }
 
+        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())));
+        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())));
+        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())));
+
+
         // Update EditText when correct letter button is pressed
         for (Button button: buttons) {
             final Button thisButton = button;
@@ -226,7 +231,7 @@ public class Unit2Activity extends AppCompatActivity {
                 }
             }
 
-            if (!notComplete) {
+            if (!notComplete && !learned[i]) {
                 learned[i] = true;
                 wordImage[i].getDrawable().setColorFilter(filter);
                 Log.e("word" + (i + 1), selectedWordSet.get(i).getDisplayString());
