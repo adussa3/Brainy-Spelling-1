@@ -239,7 +239,7 @@
                     android:contentDescription="@string/cat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat" />
+                    android:src="@drawable/cat1" />
             </LinearLayout>
 
             <LinearLayout

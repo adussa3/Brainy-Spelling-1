@@ -74,10 +74,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/cat1"
+                    android:contentDescription="@string/cat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat1" />
+                    android:src="@drawable/cat" />
 
                 <ImageButton
                     android:id="@+id/foxButton"
@@ -96,10 +96,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/dog1"
+                    android:contentDescription="@string/dog"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/dog1" />
+                    android:src="@drawable/dog" />
             </LinearLayout>
 
             <LinearLayout
