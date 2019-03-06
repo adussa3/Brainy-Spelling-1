@@ -79,7 +79,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit1"
-                    android:text="1"
+                    android:text="Unit 1"
                     android:textSize="30sp"
                     tools:layout_editor_absoluteX="34dp"
                     tools:layout_editor_absoluteY="131dp" />
@@ -94,7 +94,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit2"
-                    android:text="2"
+                    android:text="Unit 2"
                     android:textSize="30sp" />
 
                 <Button
@@ -106,7 +106,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit3"
-                    android:text="3"
+                    android:text="Unit 3"
                     android:textSize="30sp" />
 
                 <Button
@@ -117,7 +117,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
                     android:onClick="onClickUnit4"
-                    android:text="4"
+                    android:text="Unit 4"
                     android:textSize="30sp" />
             </LinearLayout>
 

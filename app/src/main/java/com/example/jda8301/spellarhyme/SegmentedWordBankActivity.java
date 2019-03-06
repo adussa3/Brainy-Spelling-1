@@ -26,7 +26,7 @@ public class SegmentedWordBankActivity extends AppCompatActivity {
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("Segmented Words Word Bank");
+        actionBarTitle.setText("Segmented Word Bank");
 
         //update pictures to display which ones are learned
         //TODO: replace with actual user name that isn't hard coded
