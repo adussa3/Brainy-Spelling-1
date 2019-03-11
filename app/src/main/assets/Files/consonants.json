@@ -4,6 +4,7 @@
     "words": [
       {
         "stringName": "boy",
+        "category": "people",
         "sound": [
           13,
           78,
@@ -19,6 +20,7 @@
       },
       {
         "stringName": "box",
+        "category": "things",
         "sound": [
           13,
           66,
@@ -34,6 +36,7 @@
       },
       {
         "stringName": "bubble",
+        "category": "things",
         "sound": [
           13,
           103,
@@ -59,6 +62,7 @@
     "words": [
       {
         "stringName": "cow",
+        "category": "animals",
         "sound": [
           16,
           77,
@@ -74,6 +78,7 @@
       },
       {
         "stringName": "cut",
+        "category": "doing",
         "sound": [
           16,
           103,
@@ -89,6 +94,7 @@
       },
       {
         "stringName": "car",
+        "category": "toys",
         "sound": [
           16,
           8,
@@ -109,6 +115,7 @@
     "words": [
       {
         "stringName": "balance",
+        "category": "doing",
         "sound": [
           13,
           2,
@@ -132,6 +139,7 @@
       },
       {
         "stringName": "saucepan",
+        "category": "house stuff",
         "sound": [
           84,
           10,
@@ -153,7 +161,9 @@
         ]
       },
       {
+
         "stringName": "dancer",
+        "category": "people",
         "sound": [
           22,
           2,
@@ -178,6 +188,7 @@
     "words": [
       {
         "stringName": "dog",
+        "category": "animals",
         "sound": [
           22,
           66,
@@ -193,6 +204,7 @@
       },
       {
         "stringName": "dig",
+        "category": "doing",
         "sound": [
           22,
           45,
@@ -208,6 +220,7 @@
       },
       {
         "stringName": "dark",
+        "category": "describe",
         "sound": [
           22,
           8,
@@ -230,6 +243,7 @@
     "words": [
       {
         "stringName": "fox",
+        "category": "animals",
         "sound": [
           36,
           66,
@@ -245,6 +259,7 @@
       },
       {
         "stringName": "elf",
+        "category": "pretend",
         "sound": [
           25,
           58,
@@ -260,6 +275,7 @@
       },
       {
         "stringName": "leaf",
+        "category": "outdoors",
         "sound": [
           58,
           27,
@@ -281,6 +297,7 @@
     "words": [
       {
         "stringName": "bridge",
+        "category": "places",
         "sound": [
           15,
           15,
@@ -303,6 +320,7 @@
       },
       {
         "stringName": "fridge",
+        "category": "things",
         "sound": [
           38,
           38,
@@ -325,6 +343,7 @@
       },
       {
         "stringName": "fringe",
+        "category": "things",
         "sound": [
           38,
           38,
@@ -352,6 +371,7 @@
     "words": [
       {
         "stringName": "gold",
+        "category": "colors",
         "sound": [
           39,
           65,
@@ -369,6 +389,7 @@
       },
       {
         "stringName": "girl",
+        "category": "people",
         "sound": [
           39,
           54,
@@ -385,6 +406,7 @@
       },
       {
         "stringName": "goat",
+        "category": "animals",
         "sound": [
           39,
           68,
@@ -406,6 +428,7 @@
     "words": [
       {
         "stringName": "hat",
+
         "sound": [
           43,
           2,
@@ -421,6 +444,7 @@
       },
       {
         "stringName": "hug",
+        "category": "doing",
         "sound": [
           43,
           103,
@@ -436,6 +460,7 @@
       },
       {
         "stringName": "hand",
+        "category": "body parts",
         "sound": [
           43,
           7,
@@ -458,6 +483,7 @@
     "words": [
       {
         "stringName": "jay",
+        "category": "birds",
         "sound": [
           55,
           12,
@@ -473,6 +499,7 @@
       },
       {
         "stringName": "jump",
+        "category": "doing",
         "sound": [
           55,
           103,
@@ -490,6 +517,7 @@
       },
       {
         "stringName": "juggler",
+        "category": "people",
         "sound": [
           55,
           103,
@@ -516,6 +544,7 @@
     "words": [
       {
         "stringName": "key",
+        "category": "house stuff",
         "sound": [
           56,
           35,
@@ -531,6 +560,7 @@
       },
       {
         "stringName": "king",
+        "category": "people",
         "sound": [
           56,
           45,
@@ -548,6 +578,7 @@
       },
       {
         "stringName": "fork",
+        "category": "things",
         "sound": [
           36,
           73,
@@ -570,6 +601,7 @@
     "words": [
       {
         "stringName": "wolf",
+        "category": "animals",
         "sound": [
           107,
           67,
@@ -587,6 +619,7 @@
       },
       {
         "stringName": "owl",
+        "category": "animals",
         "sound": [
           77,
           77,
@@ -602,6 +635,7 @@
       },
       {
         "stringName": "tail",
+        "category": "animals",
         "sound": [
           96,
           5,
@@ -622,6 +656,7 @@
     "words": [
       {
         "stringName": "lip",
+        "category": "body parts",
         "sound": [
           57,
           45,
@@ -637,6 +672,7 @@
       },
       {
         "stringName": "lick",
+        "category": "doing",
         "sound": [
           57,
           45,
@@ -654,6 +690,7 @@
       },
       {
         "stringName": "light",
+        "category": "house stuff",
         "sound": [
           47,
           49,
@@ -678,6 +715,7 @@
     "words": [
       {
         "stringName": "man",
+        "category": "people",
         "sound": [
           60,
           7,
@@ -693,6 +731,7 @@
       },
       {
         "stringName": "mouse",
+        "category": "animals",
         "sound": [
           60,
           75,
@@ -712,6 +751,7 @@
       },
       {
         "stringName": "mouth",
+        "category": "body parts",
         "sound": [
           60,
           75,
@@ -735,6 +775,7 @@
     "words": [
       {
         "stringName": "nuts",
+        "category": "food",
         "sound": [
           61,
           103,
@@ -752,6 +793,7 @@
       },
       {
         "stringName": "nail",
+        "category": "tools",
         "sound": [
           61,
           5,
@@ -768,6 +810,7 @@
       },
       {
         "stringName": "clown",
+        "category": "people",
         "sound": [
           20,
           20,
@@ -793,6 +836,7 @@
     "words": [
       {
         "stringName": "pig",
+        "category": "animals",
         "sound": [
           79,
           45,
@@ -808,6 +852,7 @@
       },
       {
         "stringName": "pearl",
+        "category": "things",
         "sound": [],
         "silentLetters": [],
         "consonants": [
@@ -820,6 +865,7 @@
       },
       {
         "stringName": "purse",
+        "category": "clothes",
         "sound": [
           79,
           105,
@@ -845,6 +891,7 @@
     "words": [
       {
         "stringName": "queen",
+        "category": "people",
         "sound": [
           82,
           82,
@@ -863,6 +910,7 @@
       },
       {
         "stringName": "squares",
+        "category": "house stuff",
         "sound": [
           84,
           82,
@@ -885,6 +933,7 @@
       },
       {
         "stringName": "quiet",
+        "category": "describe",
         "sound": [
           82,
           82,
@@ -908,6 +957,7 @@
     "words": [
       {
         "stringName": "red",
+        "category": "colors",
         "sound": [
           83,
           25,
@@ -923,6 +973,7 @@
       },
       {
         "stringName": "rake",
+        "category": "tools",
         "sound": [
           83,
           1,
@@ -941,6 +992,7 @@
       },
       {
         "stringName": "rainbow",
+        "category": "outdoors",
         "sound": [
           83,
           5,
@@ -967,6 +1019,7 @@
     "words": [
       {
         "stringName": "saw",
+        "category": "tools",
         "sound": [
           84,
           11,
@@ -982,6 +1035,7 @@
       },
       {
         "stringName": "glass",
+        "category": "things",
         "sound": [
           41,
           41,
@@ -1002,6 +1056,7 @@
       },
       {
         "stringName": "grass",
+        "category": "outdoors",
         "sound": [
           42,
           42,
@@ -1026,6 +1081,7 @@
     "words": [
       {
         "stringName": "bags",
+        "category": "things",
         "sound": [
           13,
           2,
@@ -1043,6 +1099,7 @@
       },
       {
         "stringName": "dogs",
+        "category": "animals",
         "sound": [
           22,
           66,
@@ -1060,6 +1117,7 @@
       },
       {
         "stringName": "cars",
+        "category": "vehicles",
         "sound": [
           16,
           8,
@@ -1082,6 +1140,7 @@
     "words": [
       {
         "stringName": "toe",
+        "category": "body parts",
         "sound": [
           96,
           69,
@@ -1095,6 +1154,7 @@
       },
       {
         "stringName": "tea",
+        "category": "food",
         "sound": [
           96,
           27,
@@ -1108,6 +1168,7 @@
       },
       {
         "stringName": "tie",
+        "category": "clothes",
         "sound": [
           96,
           48,
@@ -1126,6 +1187,7 @@
     "words": [
       {
         "stringName": "volcano",
+        "category": "places",
         "sound": [
           106,
           66,
@@ -1147,6 +1209,7 @@
       },
       {
         "stringName": "silver",
+        "category": "colors",
         "sound": [
           84,
           45,
@@ -1167,6 +1230,7 @@
       },
       {
         "stringName": "beaver",
+        "category": "animals",
         "sound": [
           13,
           27,
@@ -1191,6 +1255,7 @@
     "words": [
       {
         "stringName": "wig",
+        "category": "clothes",
         "sound": [
           107,
           45,
@@ -1206,6 +1271,7 @@
       },
       {
         "stringName": "wall",
+        "category": "outdoors",
         "sound": [
           107,
           3,
@@ -1223,6 +1289,7 @@
       },
       {
         "stringName": "wash",
+        "category": "doing",
         "sound": [
           107,
           3,
@@ -1245,6 +1312,7 @@
     "words": [
       {
         "stringName": "six",
+        "category": "describe",
         "sound": [
           84,
           45,
@@ -1260,6 +1328,7 @@
       },
       {
         "stringName": "taxi",
+        "category": "vehicles",
         "sound": [
           96,
           2,
@@ -1276,6 +1345,7 @@
       },
       {
         "stringName": "sixteen",
+        "category": "describe",
         "sound": [
           84,
           45,
@@ -1302,6 +1372,7 @@
     "words": [
       {
         "stringName": "yellow",
+        "category": "colors",
         "sound": [
           110,
           25,
@@ -1322,6 +1393,7 @@
       },
       {
         "stringName": "yawn",
+        "category": "doing",
         "sound": [
           110,
           11,
@@ -1338,7 +1410,8 @@
         ]
       },
       {
-        "stringName": "yo-yo",
+        "stringName": "yoyo",
+        "category": "toys",
         "sound": [],
         "silentLetters": [],
         "consonants": [],
@@ -1354,6 +1427,7 @@
     "words": [
       {
         "stringName": "zoo",
+        "category": "places",
         "sound": [
           113,
           72,
@@ -1367,6 +1441,7 @@
       },
       {
         "stringName": "zebra",
+        "category": "animals",
         "sound": [
           113,
           24,
@@ -1385,6 +1460,7 @@
       },
       {
         "stringName": "zipper",
+        "category": "house stuff",
         "sound": [
           113,
           45,

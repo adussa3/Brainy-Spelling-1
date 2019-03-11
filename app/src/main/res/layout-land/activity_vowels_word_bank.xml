@@ -228,7 +228,7 @@
                     android:contentDescription="@string/bat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bat" />
+                    android:src="@drawable/bat1" />
 
                 <ImageButton
                     android:id="@+id/catButton"
