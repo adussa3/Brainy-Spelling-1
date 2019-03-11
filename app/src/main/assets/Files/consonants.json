@@ -139,7 +139,7 @@
       },
       {
         "stringName": "saucepan",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           84,
           10,
@@ -458,7 +458,7 @@
       },
       {
         "stringName": "hand",
-        "category": "body parts",
+        "category": "body_parts",
         "sound": [
           43,
           7,
@@ -542,7 +542,7 @@
     "words": [
       {
         "stringName": "key",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           56,
           35,
@@ -654,7 +654,7 @@
     "words": [
       {
         "stringName": "lip",
-        "category": "body parts",
+        "category": "body_parts",
         "sound": [
           57,
           45,
@@ -688,7 +688,7 @@
       },
       {
         "stringName": "light",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           47,
           49,
@@ -749,7 +749,7 @@
       },
       {
         "stringName": "mouth",
-        "category": "body parts",
+        "category": "body_parts",
         "sound": [
           60,
           75,
@@ -908,7 +908,7 @@
       },
       {
         "stringName": "squares",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           84,
           82,
@@ -1138,7 +1138,7 @@
     "words": [
       {
         "stringName": "toe",
-        "category": "body parts",
+        "category": "body_parts",
         "sound": [
           96,
           69,
@@ -1228,7 +1228,7 @@
       },
       {
         "stringName": "beaver",
-        "category": "animals",
+        "category": "water_animals",
         "sound": [
           13,
           27,
@@ -1463,7 +1463,7 @@
       },
       {
         "stringName": "zipper",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           113,
           45,

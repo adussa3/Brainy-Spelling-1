@@ -18,7 +18,7 @@
       },
       {
         "stringName": "face",
-        "category": "body parts",
+        "category": "body_parts",
         "sound": [
           36,
           1,
@@ -142,7 +142,7 @@
     "words": [
       {
         "stringName": "sofa",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           84,
           65,
@@ -258,7 +258,7 @@
       },
       {
         "stringName": "net",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           61,
           25,
@@ -275,7 +275,7 @@
     "words": [
       {
         "stringName": "oven",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           67,
           106,
@@ -451,7 +451,7 @@
       },
       {
         "stringName": "skis",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           88,
           88,
@@ -559,7 +559,7 @@
       },
       {
         "stringName": "nose",
-        "category": "body parts",
+        "category": "body_parts",
         "sound": [
           61,
           65,
@@ -603,7 +603,7 @@
       },
       {
         "stringName": "pot",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           79,
           66,
@@ -687,7 +687,7 @@
       },
       {
         "stringName": "tuba",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           96,
           101,
@@ -723,7 +723,7 @@
     "words": [
       {
         "stringName": "music",
-        "category": "house stuff",
+        "category": "house_stuff",
         "sound": [
           60,
           102,
