@@ -171,5 +171,10 @@
     <string name="zebra">zebra</string>
     <string name="yoyo">yoyo</string>
     <string name="zoo">zoo</string>
+    <string name="cub">cub</string>
+    <string name="elk">elk</string>
+    <string name="ant">ant</string>
+    <string name="goat">goat</string>
+    <string name="title_activity_animal_bank">AnimalBankActivity</string>
 
 </resources>

@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
-        <activity android:name=".Unit4GameActivity"></activity>
+        <activity
+            android:name=".AnimalBankActivity"
+            android:label="@string/title_activity_animal_bank"></activity>
+        <activity android:name=".Unit4GameActivity" />
         <activity android:name=".Unit4WordListActivity" />
         <activity android:name=".Unit4ConsonantListActivity" />
         <activity android:name=".Unit3GameActivity" />
@@ -39,13 +42,13 @@
         <activity android:name=".VowelsWordBankActivity" />
         <activity android:name=".SegmentedWordBankActivity" />
         <activity android:name=".Unit1Activity" />
-        <activity android:name=".BankActivity"></activity>
+        <activity android:name=".BankActivity" />
         <activity
             android:name=".Unit2Activity"
             android:label="@string/title_activity_unit2" />
         <activity
             android:name=".Unit2SelectionActivity"
-            android:label="@string/title_activity_unit2_selection"></activity>
+            android:label="@string/title_activity_unit2_selection" />
     </application>
 
 </manifest>
