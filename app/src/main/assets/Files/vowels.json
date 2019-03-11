@@ -4,6 +4,7 @@
     "words": [
       {
         "stringName": "ape",
+        "category": "animals",
         "sound": [
           1,
           79,
@@ -17,6 +18,7 @@
       },
       {
         "stringName": "face",
+        "category": "body parts",
         "sound": [
           36,
           1,
