@@ -108,6 +108,47 @@ public class Bank {
     }
 
     /**
+     * Returns all words spelled by a user pertaining to a specified category
+     * @param user the user to filter the bank with
+     * @param category words pertaining to which game category of interest
+     * @return a map of all words spelled by a specific user pertaining to a certain category along
+     * with their spell counts.
+     */
+    public static Map<String, Integer> getUserCategoryBank(String user, String category) {
+        Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
+        Map<String, Integer> userCategoryBank = new HashMap<>();
+        for (String key : bank.keySet()) {
+            String[] parsedKey = parseKey(key);
+            if (parsedKey[0].equals(user) && parsedKey[3].equals(category)) {
+                userCategoryBank.put(key, bank.get(key));
+            }
+        }
+
+        return userCategoryBank;
+    }
+
+    /**
+     * Returns all words spelled by a user pertaining to a specified level and category
+     * @param user the user to filter the bank with
+     * @param level words pertaining to which game mode/level of interest
+     * @param category words pertaining to which game category of interest
+     * @return a map of all words spelled by a specific user pertaining to a certain level and
+     * category along with their spell counts.
+     */
+    public static Map<String, Integer> getUserLevelCategory(String user, String level, String category) {
+        Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
+        Map<String, Integer> userLevelCategoryBank = new HashMap<>();
+        for (String key : bank.keySet()) {
+            String[] parsedKey = parseKey(key);
+            if (parsedKey[0].equals(user) && parsedKey[1].equals(user) && parsedKey.equals(category)) {
+                userLevelCategoryBank.put(key, bank.get(key));
+            }
+        }
+
+        return userLevelCategoryBank;
+    }
+
+    /**
      * Removes all stored words from the bank pertaining to a specified user
      * @param user the user who's data is to be removed
      */
