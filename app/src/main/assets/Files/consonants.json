@@ -161,7 +161,6 @@
         ]
       },
       {
-
         "stringName": "dancer",
         "category": "people",
         "sound": [
@@ -428,7 +427,6 @@
     "words": [
       {
         "stringName": "hat",
-
         "sound": [
           43,
           2,
@@ -1412,7 +1410,12 @@
       {
         "stringName": "yoyo",
         "category": "toys",
-        "sound": [],
+        "sound": [
+          110,
+          65,
+          110,
+          65
+        ],
         "silentLetters": [],
         "consonants": [],
         "targetConsonant": [
