@@ -33,6 +33,7 @@
       },
       {
         "stringName": "whale",
+        "category": "animals",
         "sound": [
           108,
           1,
@@ -52,6 +53,7 @@
     "words": [
       {
         "stringName": "axe",
+        "category": "tools",
         "sound": [
           2,
           109,
@@ -65,6 +67,7 @@
       },
       {
         "stringName": "bat",
+        "category": "animals",
         "sound": [
           13,
           2,
@@ -76,6 +79,7 @@
       },
       {
         "stringName": "cat",
+        "category": "animals",
         "sound": [
           16,
           2,
@@ -92,6 +96,7 @@
     "words": [
       {
         "stringName": "fall",
+        "category": "doing",
         "sound": [
           36,
           3,
@@ -104,6 +109,7 @@
       },
       {
         "stringName": "swan",
+        "category": "birds",
         "sound": [
           95,
           95,
@@ -118,6 +124,7 @@
       },
       {
         "stringName": "ball",
+        "category": "toys",
         "sound": [
           13,
           3,
@@ -135,6 +142,7 @@
     "words": [
       {
         "stringName": "sofa",
+        "category": "house stuff",
         "sound": [
           84,
           65,
@@ -149,6 +157,7 @@
       },
       {
         "stringName": "afraid",
+        "category": "describe",
         "sound": [
           4,
           38,
@@ -166,6 +175,7 @@
       },
       {
         "stringName": "zebra",
+        "category": "animals",
         "sound": [
           113,
           24,
@@ -185,6 +195,7 @@
     "words": [
       {
         "stringName": "he",
+        "category":
         "sound": [
           43,
           24
@@ -221,6 +232,7 @@
     "words": [
       {
         "stringName": "elf",
+        "category": "pretend",
         "sound": [
           25,
           58,
@@ -232,6 +244,7 @@
       },
       {
         "stringName": "bed",
+        "category": "things",
         "sound": [
           13,
           25,
@@ -243,6 +256,7 @@
       },
       {
         "stringName": "net",
+        "category": "house stuff",
         "sound": [
           61,
           25,
@@ -259,6 +273,7 @@
     "words": [
       {
         "stringName": "oven",
+        "category": "house stuff",
         "sound": [
           67,
           106,
@@ -273,6 +288,7 @@
       },
       {
         "stringName": "camel",
+        "category": "animals",
         "sound": [
           16,
           2,
@@ -288,6 +304,7 @@
       },
       {
         "stringName": "kitten",
+        "category": "animals",
         "sound": [
           56,
           114,
@@ -311,6 +328,7 @@
     "words": [
       {
         "stringName": "five",
+        "category": "describe",
         "sound": [
           36,
           44,
@@ -325,6 +343,7 @@
       },
       {
         "stringName": "slide",
+        "category": "toys",
         "sound": [
           89,
           89,
@@ -340,6 +359,7 @@
       },
       {
         "stringName": "ice",
+        "category": "outdoors",
         "sound": [
           44,
           17,
@@ -358,6 +378,7 @@
     "words": [
       {
         "stringName": "hit",
+        "category": "doing",
         "sound": [
           43,
           45,
@@ -369,6 +390,7 @@
       },
       {
         "stringName": "fish",
+        "category": "doing",
         "sound": [
           36,
           45,
@@ -380,6 +402,7 @@
       },
       {
         "stringName": "sing",
+        "category": "doing",
         "sound": [
           84,
           45,
@@ -396,6 +419,7 @@
     "words": [
       {
         "stringName": "taxi",
+        "category": "vehicles",
         "sound": [
           96,
           2,
@@ -410,6 +434,7 @@
       },
       {
         "stringName": "yeti",
+        "category": "pretend",
         "sound": [
           110,
           25,
@@ -424,6 +449,7 @@
       },
       {
         "stringName": "skis",
+        "category": "house stuff",
         "sound": [
           88,
           88,
@@ -441,6 +467,7 @@
     "words": [
       {
         "stringName": "rabbit",
+        "category": "animals",
         "sound": [
           83,
           2,
@@ -457,6 +484,7 @@
       },
       {
         "stringName": "centipede",
+        "category": "animals",
         "sound": [
           17,
           25,
@@ -479,6 +507,7 @@
       },
       {
         "stringName": "clarinet",
+        "category": "things",
         "sound": [
           20,
           9,
@@ -501,6 +530,7 @@
     "words": [
       {
         "stringName": "old",
+        "category": "describe",
         "sound": [
           65,
           58,
@@ -512,6 +542,7 @@
       },
       {
         "stringName": "mole",
+        "category": "animals",
         "sound": [
           60,
           66,
@@ -526,6 +557,7 @@
       },
       {
         "stringName": "nose",
+        "category": "body parts",
         "sound": [
           61,
           65,
@@ -545,6 +577,7 @@
     "words": [
       {
         "stringName": "moth",
+        "category": "animals",
         "sound": [
           60,
           66,
@@ -556,6 +589,7 @@
       },
       {
         "stringName": "hot",
+        "category": "describe",
         "sound": [
           43,
           66,
@@ -567,6 +601,7 @@
       },
       {
         "stringName": "pot",
+        "category": "house stuff",
         "sound": [
           79,
           66,
@@ -583,6 +618,7 @@
     "words": [
       {
         "stringName": "love",
+        "category": "doing",
         "sound": [
           58,
           67,
@@ -597,6 +633,7 @@
       },
       {
         "stringName": "glove",
+        "category": "clothes",
         "sound": [
           41,
           41,
@@ -612,6 +649,7 @@
       },
       {
         "stringName": "wagon",
+        "category": "toys",
         "sound": [
           107,
           2,
@@ -632,6 +670,7 @@
     "words": [
       {
         "stringName": "suit",
+        "category": "clothes",
         "sound": [
           84,
           101,
@@ -646,6 +685,7 @@
       },
       {
         "stringName": "tuba",
+        "category": "house stuff",
         "sound": [
           96,
           101,
@@ -660,6 +700,7 @@
       },
       {
         "stringName": "flute",
+        "category": "things",
         "sound": [
           37,
           37,
@@ -680,6 +721,7 @@
     "words": [
       {
         "stringName": "music",
+        "category": "house stuff",
         "sound": [
           60,
           102,
@@ -695,6 +737,7 @@
       },
       {
         "stringName": "ambulance",
+        "category": "vehicles",
         "sound": [
           2,
           60,
@@ -717,6 +760,7 @@
       },
       {
         "stringName": "unicycle",
+        "category": "toys",
         "sound": [
           102,
           61,
@@ -740,6 +784,7 @@
     "words": [
       {
         "stringName": "bus",
+        "category": "vehicles",
         "sound": [
           13,
           103,
@@ -751,6 +796,7 @@
       },
       {
         "stringName": "bug",
+        "category": "vehicles",
         "sound": [
           13,
           103,
@@ -762,6 +808,7 @@
       },
       {
         "stringName": "plum",
+        "category": "food",
         "sound": [
           80,
           80,
@@ -779,6 +826,7 @@
     "words": [
       {
         "stringName": "fly",
+        "category": "doing",
         "sound": [
           37,
           37,
@@ -790,6 +838,7 @@
       },
       {
         "stringName": "cry",
+        "category": "doing",
         "sound": [
           21,
           21,
@@ -801,6 +850,7 @@
       },
       {
         "stringName": "sky",
+        "category": "outdoors",
         "sound": [
           88,
           88,
@@ -817,6 +867,7 @@
     "words": [
       {
         "stringName": "baby",
+        "category": "people",
         "sound": [
           13,
           1,
@@ -831,6 +882,7 @@
       },
       {
         "stringName": "candy",
+        "category": "food",
         "sound": [
           16,
           2,
@@ -846,6 +898,7 @@
       },
       {
         "stringName": "sleepy",
+        "category": "describe",
         "sound": [
           89,
           89,
