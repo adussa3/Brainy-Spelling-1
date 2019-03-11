@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.ImageView;
-
 import com.example.jda8301.spellarhyme.MyApplication;
 import com.example.jda8301.spellarhyme.R;
 
