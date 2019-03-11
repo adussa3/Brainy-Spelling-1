@@ -195,7 +195,7 @@
     "words": [
       {
         "stringName": "he",
-        "category":
+        "category": "people",
         "sound": [
           43,
           24
@@ -206,6 +206,7 @@
       },
       {
         "stringName": "we",
+        "category": "people",
         "sound": [
           107,
           24
@@ -216,6 +217,7 @@
       },
       {
         "stringName": "she",
+        "category": "people",
         "sound": [
           87,
           87,

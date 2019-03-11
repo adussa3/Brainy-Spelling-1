@@ -180,6 +180,7 @@
   [
     {
       "stringName" : "ant",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -238,6 +239,7 @@
   [
     {
       "stringName" : "cop",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -275,6 +277,7 @@
     },
     {
       "stringName" : "kid",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -295,6 +298,7 @@
   [
     {
       "stringName" : "gal",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -313,6 +317,7 @@
     },
     {
       "stringName" : "doc",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -331,6 +336,7 @@
     },
     {
       "stringName" : "ref",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {

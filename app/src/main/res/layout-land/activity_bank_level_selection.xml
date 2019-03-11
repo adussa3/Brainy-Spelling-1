@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".BankActivity">
 
     <include
         android:id="@+id/actionBar"
@@ -11,46 +12,200 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <LinearLayout
+    <ImageButton
+        android:id="@+id/arrowButton5"
+        style="@style/ScrollButton"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"
+        android:contentDescription="arrowButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        app:srcCompat="@drawable/button_back" />
+
+    <HorizontalScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
-        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button34"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="animals" />
+
+                <Button
+                    android:id="@+id/button35"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="people" />
+
+                <Button
+                    android:id="@+id/button36"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="friends" />
+
+                <Button
+                    android:id="@+id/button37"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="pretend" />
+
+                <Button
+                    android:id="@+id/button38"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="body parts" />
+
+                <Button
+                    android:id="@+id/button40"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="water animals" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button41"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="birds" />
+
+                <Button
+                    android:id="@+id/button42"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="things" />
+
+                <Button
+                    android:id="@+id/button43"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="house stuff" />
+
+                <Button
+                    android:id="@+id/button44"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="toys" />
+
+                <Button
+                    android:id="@+id/button45"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="tools" />
+
+                <Button
+                    android:id="@+id/button53"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="colors" />
+
+                <Button
+                    android:id="@+id/button46"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="clothes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button47"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="vehicles" />
+
+                <Button
+                    android:id="@+id/button48"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="food" />
+
+                <Button
+                    android:id="@+id/button49"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="places" />
+
+                <Button
+                    android:id="@+id/button50"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="outdoors" />
+
+                <Button
+                    android:id="@+id/button51"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="doing" />
+
+                <Button
+                    android:id="@+id/button52"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:text="describe" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/arrowButton6"
+        style="@style/ScrollButton"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"
+        android:contentDescription="arrowButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actionBar">
-
-        <Button
-            android:id="@+id/button34"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickSegmentedBank"
-            android:text="Segmented Words"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="128dp" />
-
-        <Button
-            android:id="@+id/button36"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickVowelsBank"
-            android:text="Vowels"
-            tools:layout_editor_absoluteX="301dp"
-            tools:layout_editor_absoluteY="128dp" />
-
-        <Button
-            android:id="@+id/button37"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickConsonantsBank"
-            android:text="Consonants"
-            tools:layout_editor_absoluteX="410dp"
-            tools:layout_editor_absoluteY="128dp" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        app:srcCompat="@drawable/button_forward" />
 
 </android.support.constraint.ConstraintLayout>
