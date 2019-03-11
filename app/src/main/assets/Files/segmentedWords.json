@@ -2,6 +2,7 @@
   [
     {
       "stringName" : "dog",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -20,6 +21,7 @@
     },
     {
       "stringName" : "cat",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -38,6 +40,7 @@
     },
     {
       "stringName" : "hen",
+      "category": "birds",
       "landscape": true,
       "segmentInfo": [
         {
@@ -58,6 +61,7 @@
   [
     {
       "stringName" : "fox",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -76,6 +80,7 @@
     },
     {
       "stringName" : "ram",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -94,6 +99,7 @@
     },
     {
       "stringName" : "cub",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -115,6 +121,7 @@
   [
     {
       "stringName" : "pig",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -133,6 +140,7 @@
     },
     {
       "stringName" : "bat",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -151,6 +159,7 @@
     },
     {
       "stringName" : "elk",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -189,6 +198,7 @@
     },
     {
       "stringName" : "bug",
+      "category": "vehicles",
       "landscape": true,
       "segmentInfo": [
         {
@@ -207,6 +217,7 @@
     },
     {
       "stringName" : "fly",
+      "category": "doing",
       "landscape": true,
       "segmentInfo": [
         {
@@ -245,6 +256,7 @@
     },
     {
       "stringName" : "elf",
+      "category": "pretend",
       "landscape": false,
       "segmentInfo": [
         {
