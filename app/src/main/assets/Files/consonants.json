@@ -427,6 +427,7 @@
     "words": [
       {
         "stringName": "hat",
+        "category": "clothes",
         "sound": [
           43,
           2,
