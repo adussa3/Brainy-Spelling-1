@@ -100,6 +100,39 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/dog" />
+
+                <ImageButton
+                    android:id="@+id/dogsButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/dogs"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/dogs" />
+
+                <ImageButton
+                    android:id="@+id/whaleButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/whale"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/whale" />
+
+                <ImageButton
+                    android:id="@+id/rabbitButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/rabbit"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rabbit" />
             </LinearLayout>
 
             <LinearLayout
@@ -151,6 +184,61 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/wolf" />
+
+                <ImageButton
+                    android:id="@+id/owlButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/owl"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/owl" />
+
+                <ImageButton
+                    android:id="@+id/zebraButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/zebra"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/zebra" />
+
+                <ImageButton
+                    android:id="@+id/camelButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/camel"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/camel" />
+
+                <ImageButton
+                    android:id="@+id/centipedeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/centipede"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/centipede" />
+
+                <ImageButton
+                    android:id="@+id/mothButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/moth"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/moth" />
             </LinearLayout>
 
             <LinearLayout
@@ -160,15 +248,15 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/elfButton"
+                    android:id="@+id/mouseButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/elf"
+                    android:contentDescription="@string/mouse"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/elf" />
+                    android:src="@drawable/mouse" />
 
                 <ImageButton
                     android:id="@+id/elkButton"
@@ -213,6 +301,39 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/cow" />
+
+                <ImageButton
+                    android:id="@+id/apeButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/ape"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ape" />
+
+                <ImageButton
+                    android:id="@+id/kittenButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/kitten"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kitten" />
+
+                <ImageButton
+                    android:id="@+id/moleButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/mole"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mole" />
             </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
