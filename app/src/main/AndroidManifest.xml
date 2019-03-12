@@ -11,8 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
         <activity
+            android:name=".ColorsBankActivity"
+            android:label="@string/title_activity_colors_bank"></activity>
+        <activity
             android:name=".PlacesBankActivity"
-            android:label="@string/title_activity_places_bank"></activity>
+            android:label="@string/title_activity_places_bank" />
         <activity
             android:name=".PretendBankActivity"
             android:label="@string/title_activity_pretend_bank" />
