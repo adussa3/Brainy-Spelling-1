@@ -44,7 +44,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal"></LinearLayout>
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -53,37 +56,59 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/henButton"
+                    android:id="@+id/bugButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="hen"
+                    android:contentDescription="bug"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hen" />
+                    android:src="@drawable/bug" />
 
                 <ImageButton
-                    android:id="@+id/jayButton"
+                    android:id="@+id/carsButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="jay"
+                    android:contentDescription="cars"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/jay" />
+                    android:src="@drawable/cars" />
 
                 <ImageButton
-                    android:id="@+id/swanButton"
+                    android:id="@+id/taxiButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="swan"
+                    android:contentDescription="taxi"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/swan" />
+                    android:src="@drawable/taxi" />
+
+                <ImageButton
+                    android:id="@+id/ambulanceButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="ambulance"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ambulance" />
+
+                <ImageButton
+                    android:id="@+id/busButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="bus"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bus" />
 
             </LinearLayout>
 
@@ -91,7 +116,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal"></LinearLayout>
+                android:orientation="horizontal">
+
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 

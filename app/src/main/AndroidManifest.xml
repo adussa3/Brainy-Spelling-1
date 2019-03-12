@@ -11,8 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
         <activity
+            android:name=".VehiclesBankActivity"
+            android:label="@string/title_activity_vehicles_bank"></activity>
+        <activity
+            android:name=".BirdsBankActivity"
+            android:label="@string/title_activity_birds_bank" />
+        <activity
             android:name=".AnimalBankActivity"
-            android:label="@string/title_activity_animal_bank"></activity>
+            android:label="@string/title_activity_animal_bank" />
         <activity android:name=".Unit4GameActivity" />
         <activity android:name=".Unit4WordListActivity" />
         <activity android:name=".Unit4ConsonantListActivity" />

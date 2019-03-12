@@ -50,7 +50,6 @@
     <string name="title_activity_unit2_selection">Unit2SelectionActivity</string>
     <string name="wash">wash</string>
     <string name="cow">cow</string>
-    <string name="goat">goat</string>
     <string name="girl">girl</string>
     <string name="zipper">zipper</string>
     <string name="yawn">yawn</string>
@@ -176,5 +175,7 @@
     <string name="ant">ant</string>
     <string name="goat">goat</string>
     <string name="title_activity_animal_bank">AnimalBankActivity</string>
+    <string name="title_activity_birds_bank">BirdsBankActivity</string>
+    <string name="title_activity_vehicles_bank">VehiclesBankActivity</string>
 
 </resources>
