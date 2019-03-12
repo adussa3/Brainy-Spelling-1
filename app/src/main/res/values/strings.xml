@@ -178,5 +178,6 @@
     <string name="title_activity_birds_bank">BirdsBankActivity</string>
     <string name="title_activity_vehicles_bank">VehiclesBankActivity</string>
     <string name="title_activity_pretend_bank">PretendBankActivity</string>
+    <string name="title_activity_places_bank">PlacesBankActivity</string>
 
 </resources>
