@@ -11,8 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
         <activity
+            android:name=".DescribeBankActivity"
+            android:label="@string/title_activity_describe_bank"></activity>
+        <activity
             android:name=".OutdoorsBankActivity"
-            android:label="@string/title_activity_outdoors_bank"></activity>
+            android:label="@string/title_activity_outdoors_bank" />
         <activity
             android:name=".ColorsBankActivity"
             android:label="@string/title_activity_colors_bank" />
