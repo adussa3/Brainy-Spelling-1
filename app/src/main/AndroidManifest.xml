@@ -11,8 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
         <activity
+            android:name=".ThingsBankActivity"
+            android:label="@string/title_activity_things_bank"></activity>
+        <activity
             android:name=".ToysBankActivity"
-            android:label="@string/title_activity_toys_bank"></activity>
+            android:label="@string/title_activity_toys_bank" />
         <activity
             android:name=".WaterAnimalsBankActivity"
             android:label="@string/title_activity_water_animals_bank" />
@@ -21,7 +24,7 @@
             android:label="@string/title_activity_clothes_bank" />
         <activity
             android:name=".DoingBankActivity"
-            android:label="@string/title_activity_doing_bank"></activity>
+            android:label="@string/title_activity_doing_bank" />
         <activity
             android:name=".ToolsBankActivity"
             android:label="@string/title_activity_tools_bank" />
