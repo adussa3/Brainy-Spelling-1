@@ -60,7 +60,7 @@ public class Unit3GameActivity extends AppCompatActivity {
         buttons[5] = (Button) findViewById(R.id.button5);
 
 
-        fieldLayout = (LinearLayout) findViewByID(R.id.fieldLayout);
+        fieldLayout = (LinearLayout) findViewById(R.id.fieldLayout);
 
 
 
