@@ -163,32 +163,39 @@ public class Unit2Activity extends AppCompatActivity {
                         Log.e("thisButton", thisButton.getText().toString());
                         Log.e("thisButton", Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)));
 
-                        if (thisButton.getText().toString().equals(Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)))) {
-                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
-                            fields[currentField.getValue()].setText(thisButton.getText());
-                            if (selectedWordState.getValue() == 0) {
-                                spellingProgress1[index] = thisButton.getText().toString();
-                            } else if (selectedWordState.getValue() == 1) {
-                                spellingProgress2[index] = thisButton.getText().toString();
-                            } else if (selectedWordState.getValue() == 2) {
-                                spellingProgress3[index] = thisButton.getText().toString();
-                            }
-                            thisButton.setVisibility(View.INVISIBLE);
-                        } else {
-                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
-                        }
                         ColorMatrix matrix = new ColorMatrix();
                         matrix.setSaturation(1);
 
                         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
 
-                        if (selectedWordState.getValue() == 0) {
-                            word1[index].getDrawable().setColorFilter(filter);
-                        } else if (selectedWordState.getValue() == 1) {
-                            word2[index].getDrawable().setColorFilter(filter);
+
+                        if (thisButton.getText().toString().equals(Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)))) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
+                            fields[currentField.getValue()].setText(thisButton.getText());
+                            if (selectedWordState.getValue() == 0) {
+                                spellingProgress1[index] = thisButton.getText().toString();
+                                word1[index].getDrawable().setColorFilter(filter);
+                            } else if (selectedWordState.getValue() == 1) {
+                                spellingProgress2[index] = thisButton.getText().toString();
+                                word2[index].getDrawable().setColorFilter(filter);
+                            } else if (selectedWordState.getValue() == 2) {
+                                spellingProgress3[index] = thisButton.getText().toString();
+                                word3[index].getDrawable().setColorFilter(filter);
+                            }
+                            thisButton.setVisibility(View.INVISIBLE);
                         } else {
-                            word3[index].getDrawable().setColorFilter(filter);
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
                         }
+
+//
+//                        if (selectedWordState.getValue() == 0) {
+//                            word1[index].getDrawable().setColorFilter(filter);
+//                        } else if (selectedWordState.getValue() == 1) {
+//                            word2[index].getDrawable().setColorFilter(filter);
+//                        } else {
+//                            word3[index].getDrawable().setColorFilter(filter);
+//                        }
+
                         updateLearnedWords();
 
                     }
