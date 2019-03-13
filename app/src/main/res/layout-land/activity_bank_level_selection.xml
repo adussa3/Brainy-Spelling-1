@@ -51,6 +51,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickAnimalsBank"
                     android:text="animals" />
 
                 <Button
@@ -58,20 +59,15 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickPeopleBank"
                     android:text="people" />
-
-                <Button
-                    android:id="@+id/button36"
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="friends" />
 
                 <Button
                     android:id="@+id/button37"
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickPretendBank"
                     android:text="pretend" />
 
                 <Button
@@ -79,6 +75,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickBodyPartsBank"
                     android:text="body parts" />
 
                 <Button
@@ -86,6 +83,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickWaterAnimalsBank"
                     android:text="water animals" />
 
             </LinearLayout>
@@ -101,6 +99,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickBirdsBank"
                     android:text="birds" />
 
                 <Button
@@ -108,6 +107,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickThingsBank"
                     android:text="things" />
 
                 <Button
@@ -115,6 +115,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickHouseStuffBank"
                     android:text="house stuff" />
 
                 <Button
@@ -122,6 +123,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickToysBank"
                     android:text="toys" />
 
                 <Button
@@ -129,6 +131,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickToolsBank"
                     android:text="tools" />
 
                 <Button
@@ -136,6 +139,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickColorsBank"
                     android:text="colors" />
 
                 <Button
@@ -143,6 +147,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickClothesBank"
                     android:text="clothes" />
             </LinearLayout>
 
@@ -157,6 +162,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickVehiclesBank"
                     android:text="vehicles" />
 
                 <Button
@@ -164,6 +170,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickFoodBank"
                     android:text="food" />
 
                 <Button
@@ -171,6 +178,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickPlacesBank"
                     android:text="places" />
 
                 <Button
@@ -178,6 +186,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickOutdoorsBank"
                     android:text="outdoors" />
 
                 <Button
@@ -185,6 +194,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickDoingBank"
                     android:text="doing" />
 
                 <Button
@@ -192,6 +202,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
+                    android:onClick="onClickDescribeBank"
                     android:text="describe" />
             </LinearLayout>
         </LinearLayout>
