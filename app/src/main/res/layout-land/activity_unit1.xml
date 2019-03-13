@@ -171,8 +171,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="p"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
 
@@ -183,8 +184,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="i"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
 
@@ -195,8 +197,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="g"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
                     </TableRow>
@@ -216,8 +219,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="f"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
 
@@ -228,8 +232,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="o"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
 
@@ -240,8 +245,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="x"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
                     </TableRow>
@@ -261,8 +267,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="r"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
 
@@ -273,8 +280,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="a"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
 
@@ -285,8 +293,9 @@
                             android:layout_height="60dp"
                             android:layout_margin="12dp"
                             android:background="@drawable/btn_letters"
-                            android:fontFamily="casual"
+                            android:fontFamily="@font/ComicNeue_Regular"
                             android:text="m"
+                            android:textAllCaps="false"
                             android:textSize="36sp"
                             android:textStyle="bold" />
                     </TableRow>
