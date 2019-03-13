@@ -11,8 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
         <activity
+            android:name=".FoodBankActivity"
+            android:label="@string/title_activity_food_bank"></activity>
+        <activity
             android:name=".BodyPartsActivity"
-            android:label="@string/title_activity_body_parts"></activity>
+            android:label="@string/title_activity_body_parts" />
         <activity
             android:name=".DescribeBankActivity"
             android:label="@string/title_activity_describe_bank" />

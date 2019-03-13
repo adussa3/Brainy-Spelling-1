@@ -183,5 +183,6 @@
     <string name="title_activity_outdoors_bank">OutdoorsBank</string>
     <string name="title_activity_describe_bank">DescribeBankActivity</string>
     <string name="title_activity_body_parts">BodyPartsActivity</string>
+    <string name="title_activity_food_bank">FoodBankActivity</string>
 
 </resources>
