@@ -184,5 +184,6 @@
     <string name="title_activity_describe_bank">DescribeBankActivity</string>
     <string name="title_activity_body_parts">BodyPartsActivity</string>
     <string name="title_activity_food_bank">FoodBankActivity</string>
+    <string name="title_activity_tools_bank">ToolsBankActivity</string>
 
 </resources>
