@@ -13,6 +13,7 @@
         android:layout_height="wrap_content" />
 
     <TableLayout
+        android:id="@+id/allRows"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="8dp"

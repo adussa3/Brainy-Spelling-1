@@ -1,6 +1,6 @@
 [
   {
-    "phoneme": "a_1_long",
+    "phoneme": "a",
     "words": [
       {
         "stringName": "ape",
@@ -42,12 +42,7 @@
         ],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "a_2_short",
-    "words": [
+      },
       {
         "stringName": "axe",
         "sound": [
@@ -82,12 +77,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "a_3_short",
-    "words": [
+      },
       {
         "stringName": "fall",
         "sound": [
@@ -125,12 +115,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "a_4_schwa",
-    "words": [
+      },
       {
         "stringName": "sofa",
         "sound": [
@@ -179,7 +164,7 @@
     ]
   },
   {
-    "phoneme": "e_1_long",
+    "phoneme": "e",
     "words": [
       {
         "stringName": "he",
@@ -211,12 +196,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "e_1_short",
-    "words": [
+      },
       {
         "stringName": "elf",
         "sound": [
@@ -249,12 +229,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "e_3_schwa",
-    "words": [
+      },
       {
         "stringName": "oven",
         "sound": [
@@ -305,7 +280,7 @@
     ]
   },
   {
-    "phoneme": "i_1_long",
+    "phoneme": "i",
     "words": [
       {
         "stringName": "five",
@@ -348,12 +323,7 @@
         ],
         "vowels": [],
         "targetVowel": 0
-      }
-    ]
-  },
-  {
-    "phoneme": "i_2_short",
-    "words": [
+      },
       {
         "stringName": "hit",
         "sound": [
@@ -386,12 +356,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "i_2a_e",
-    "words": [
+      },
       {
         "stringName": "taxi",
         "sound": [
@@ -431,12 +396,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "i_3_schwa",
-    "words": [
+      },
       {
         "stringName": "rabbit",
         "sound": [
@@ -495,7 +455,7 @@
     ]
   },
   {
-    "phoneme": "o_1_long",
+    "phoneme": "o",
     "words": [
       {
         "stringName": "old",
@@ -535,12 +495,7 @@
         ],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "o_2_short",
-    "words": [
+      },
       {
         "stringName": "moth",
         "sound": [
@@ -573,12 +528,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "o_3_schwa",
-    "words": [
+      },
       {
         "stringName": "love",
         "sound": [
@@ -626,7 +576,7 @@
     ]
   },
   {
-    "phoneme": "u_1_long",
+    "phoneme": "u",
     "words": [
       {
         "stringName": "suit",
@@ -670,12 +620,7 @@
         ],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "u_2_long",
-    "words": [
+      },
       {
         "stringName": "music",
         "sound": [
@@ -730,12 +675,7 @@
         ],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "u_3_short_schwa",
-    "words": [
+      },
       {
         "stringName": "bus",
         "sound": [
@@ -773,7 +713,7 @@
     ]
   },
   {
-    "phoneme": "y_2_i",
+    "phoneme": "y",
     "words": [
       {
         "stringName": "fly",
@@ -807,12 +747,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "y_3_e",
-    "words": [
+      },
       {
         "stringName": "baby",
         "sound": [

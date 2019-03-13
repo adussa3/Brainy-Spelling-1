@@ -5,11 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 public class Unit3VowelListActivity extends AppCompatActivity {
 
     private ImageView exit;
+
+    private TableLayout allRows;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,16 @@ public class Unit3VowelListActivity extends AppCompatActivity {
 
         // Initialize variables
         exit = (ImageView) findViewById(R.id.exitButton);
+        allRows = (TableLayout) findViewById(R.id.allRows);
+
+        for (int i = 0; i < allRows.getChildCount(); i++) {
+
+            View subView = allRows.getChildAt(i);
+            if (subView instanceof ImageView) {
+                //manipulate the imageView
+            }
+        }
+
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
