@@ -176,7 +176,8 @@ public class Unit1Activity extends AppCompatActivity {
             int randomInt = rand.nextInt(phonemeCode.size());
 
             button.setText(helper.getPhonemeLetters().get(phonemeCode.get(randomInt)));
-            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+            button.setPrivateImeOptions(helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+//            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
 
             phonemeCode.remove(randomInt);
         }
@@ -250,14 +251,21 @@ public class Unit1Activity extends AppCompatActivity {
 
 
         // Update Activity when correct letter button is selected for the selected word based on EditText selected
-        for (Button button: buttons) {
+        for (final Button button: buttons) {
             final Button thisButton = button;
             button.setOnTouchListener(new View.OnTouchListener() {
                 public boolean onTouch (View v, MotionEvent event) {
                     if (event.getAction() == MotionEvent.ACTION_UP) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + button.getPrivateImeOptions());
+                        try {
+                            Thread.sleep(1000);
+                        } catch(InterruptedException ex) {
+                            Thread.currentThread().interrupt();
+                        }
 
                         // Check to see if the button text equals the phoneme text of the currently selected segment
                         if (thisButton.getText().toString().equals(Character.toString(wordList.get(selectedWordState.getValue()).getDisplayString().charAt(currentField.getValue())))) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
                             fields[currentField.getValue()].setText(thisButton.getText());
                             if (selectedWordState.getValue() == 0) {
                                 spellingProgress1[currentField.getValue()] = thisButton.getText().toString();
@@ -276,6 +284,8 @@ public class Unit1Activity extends AppCompatActivity {
                             ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
                             selectedWord[currentField.getValue()].getDrawable().setColorFilter(filter);
 
+                        } else {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
                         }
 
                         // Helper method for updating the learned words

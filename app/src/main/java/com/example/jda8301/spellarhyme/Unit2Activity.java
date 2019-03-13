@@ -103,7 +103,8 @@ public class Unit2Activity extends AppCompatActivity {
             Random rand = new Random();
             int randomInt = rand.nextInt(phonemeCode.size());
             button.setText(helper.getPhonemeLetters().get(phonemeCode.get(randomInt)));
-            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+            button.setPrivateImeOptions(helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+//            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
             phonemeCode.remove(randomInt);
         }
 
@@ -146,17 +147,24 @@ public class Unit2Activity extends AppCompatActivity {
 
 
         // Update EditText when correct letter button is pressed
-        for (Button button: buttons) {
+        for (final Button button: buttons) {
             final Button thisButton = button;
             button.setOnTouchListener(new View.OnTouchListener() {
                 public boolean onTouch (View v, MotionEvent event) {
                     if (event.getAction() == MotionEvent.ACTION_UP) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + button.getPrivateImeOptions());
+                        try {
+                            Thread.sleep(1000);
+                        } catch(InterruptedException ex) {
+                            Thread.currentThread().interrupt();
+                        }
                         int index = currentField.getValue() % 3;
 
                         Log.e("thisButton", thisButton.getText().toString());
                         Log.e("thisButton", Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)));
 
                         if (thisButton.getText().toString().equals(Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)))) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
                             fields[currentField.getValue()].setText(thisButton.getText());
                             if (selectedWordState.getValue() == 0) {
                                 spellingProgress1[index] = thisButton.getText().toString();
@@ -166,6 +174,8 @@ public class Unit2Activity extends AppCompatActivity {
                                 spellingProgress3[index] = thisButton.getText().toString();
                             }
                             thisButton.setVisibility(View.INVISIBLE);
+                        } else {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
                         }
                         ColorMatrix matrix = new ColorMatrix();
                         matrix.setSaturation(1);
