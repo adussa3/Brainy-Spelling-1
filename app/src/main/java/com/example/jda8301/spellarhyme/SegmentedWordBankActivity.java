@@ -30,7 +30,7 @@ public class SegmentedWordBankActivity extends AppCompatActivity {
 
         //update pictures to display which ones are learned
         //TODO: replace with actual user name that isn't hard coded
-        updateImages();
+        //updateImages();
     }
 
     // Intents - goes to a different activity when the button is clicked
@@ -67,7 +67,7 @@ public class SegmentedWordBankActivity extends AppCompatActivity {
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (!word.contains("arrow") && Bank.getSpellCount("default", Bank.segmented, word) < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", Bank.segmented, word, "category") < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }

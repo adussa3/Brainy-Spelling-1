@@ -20,6 +20,9 @@
             android:name=".ClothesBankActivity"
             android:label="@string/title_activity_clothes_bank" />
         <activity
+            android:name=".DoingBankActivity"
+            android:label="@string/title_activity_doing_bank"></activity>
+        <activity
             android:name=".ToolsBankActivity"
             android:label="@string/title_activity_tools_bank" />
         <activity
