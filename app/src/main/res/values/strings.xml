@@ -176,5 +176,6 @@
     <string name="ant">ant</string>
     <string name="goat">goat</string>
     <string name="title_activity_animal_bank">AnimalBankActivity</string>
+    <string name="title_activity_people_bank">PeopleBankActivity</string>
 
 </resources>
