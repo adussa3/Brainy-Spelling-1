@@ -186,5 +186,6 @@
     <string name="title_activity_food_bank">FoodBankActivity</string>
     <string name="title_activity_tools_bank">ToolsBankActivity</string>
     <string name="title_activity_clothes_bank">ClothesBankActivity</string>
+    <string name="title_activity_water_animals_bank">WaterAnimalsBankActivity</string>
 
 </resources>
