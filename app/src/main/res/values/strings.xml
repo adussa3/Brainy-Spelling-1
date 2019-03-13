@@ -182,5 +182,6 @@
     <string name="title_activity_colors_bank">ColorsBankActivity</string>
     <string name="title_activity_outdoors_bank">OutdoorsBank</string>
     <string name="title_activity_describe_bank">DescribeBankActivity</string>
+    <string name="title_activity_body_parts">BodyPartsActivity</string>
 
 </resources>
