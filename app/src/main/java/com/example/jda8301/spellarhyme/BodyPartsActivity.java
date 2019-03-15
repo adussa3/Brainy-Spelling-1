@@ -2,8 +2,9 @@ package com.example.jda8301.spellarhyme;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 
-public class BodyPartsActivity extends Activity {
+public class BodyPartsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,8 +2,9 @@ package com.example.jda8301.spellarhyme;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 
-public class PlacesBankActivity extends Activity {
+public class PlacesBankActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
