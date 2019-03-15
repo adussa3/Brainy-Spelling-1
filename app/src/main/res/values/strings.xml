@@ -46,6 +46,7 @@
     <string name="level_6">Level 6</string>
     <string name="avatar">avatar</string>
 
+    <!-- Words -->
     <string name="title_activity_unit2">unit2</string>
     <string name="title_activity_unit2_selection">Unit2SelectionActivity</string>
     <string name="wash">wash</string>
@@ -181,6 +182,7 @@
     <string name="title_activity_places_bank">PlacesBankActivity</string>
     <string name="title_activity_colors_bank">ColorsBankActivity</string>
 
+    <!-- Bank -->
     <string name="title_activity_outdoors_bank">OutdoorsBank</string>
     <string name="title_activity_describe_bank">DescribeBankActivity</string>
     <string name="title_activity_body_parts">BodyPartsActivity</string>
