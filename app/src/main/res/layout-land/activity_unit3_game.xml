@@ -111,19 +111,28 @@
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A" />
+                android:fontFamily="@font/comicneue_regular"
+                android:text="a"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E" />
+                android:fontFamily="@font/comicneue_regular"
+                android:text="e"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="I" />
+                android:fontFamily="@font/comicneue_regular"
+                android:text="i"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
         </TableRow>
 
@@ -135,19 +144,28 @@
                 android:id="@+id/button11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="O" />
+                android:fontFamily="@font/comicneue_regular"
+                android:text="o"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="U" />
+                android:fontFamily="@font/comicneue_regular"
+                android:text="u"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Y" />
+                android:fontFamily="@font/comicneue_regular"
+                android:text="y"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
         </TableRow>
 

@@ -27,8 +27,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:fontFamily="@font/comicneue_bold"
             android:onClick="onClickSegmentedBank"
             android:text="Segmented Words"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="75dp"
             tools:layout_editor_absoluteY="128dp" />
 
@@ -37,8 +40,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:fontFamily="@font/comicneue_bold"
             android:onClick="onClickVowelsBank"
             android:text="Vowels"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="301dp"
             tools:layout_editor_absoluteY="128dp" />
 
@@ -47,8 +53,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:fontFamily="@font/comicneue_bold"
             android:onClick="onClickConsonantsBank"
             android:text="Consonants"
+            android:textSize="16sp"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="410dp"
             tools:layout_editor_absoluteY="128dp" />
     </LinearLayout>
