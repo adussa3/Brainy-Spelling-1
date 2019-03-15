@@ -237,100 +237,96 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="341dp"
-            tools:layout_editor_absoluteY="0dp">
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/firstWord1"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_height="80dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/cat_head_bw" />
+                    android:src="@drawable/cat_head" />
 
                 <EditText
                     android:id="@+id/unit2t1"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/firstWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_height="80dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat_middle_bw" />
+                    android:src="@drawable/cat_middle" />
 
                 <EditText
                     android:id="@+id/unit2t2"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/firstWord3"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_height="80dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/cat_tail_bw" />
+                    android:src="@drawable/cat_tail" />
 
                 <EditText
                     android:id="@+id/unit2t3"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
-            </LinearLayout>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -339,96 +335,94 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/thirdWord1"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_height="80dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/dog_head_bw" />
+                    android:src="@drawable/dog_head" />
 
                 <EditText
                     android:id="@+id/unit2t7"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/thirdWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_height="80dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/dog_middle_bw" />
+                    android:src="@drawable/dog_middle" />
 
                 <EditText
                     android:id="@+id/unit2t8"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
-                    android:layout_below="@+id/lastBlanks"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
-            </LinearLayout>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            <LinearLayout
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/thirdWord3"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_height="80dp"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/dog_tail_bw" />
+                    android:src="@drawable/dog_tail" />
 
                 <EditText
                     android:id="@+id/unit2t9"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
-            </LinearLayout>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -437,57 +431,58 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/secondWord1"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="80dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/hen_head_bw" />
+                    android:src="@drawable/hen_head" />
 
                 <EditText
                     android:id="@+id/unit2t4"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/secondWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="80dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hen_middle_bw" />
+                    android:src="@drawable/hen_middle" />
 
                 <EditText
                     android:id="@+id/unit2t5"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
@@ -495,37 +490,41 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
-            </LinearLayout>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-            <LinearLayout
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:onClick="onClickSelectSegment"
-                android:orientation="vertical">
+                android:onClick="onClickSelectSegment">
 
                 <ImageView
                     android:id="@+id/secondWord3"
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                    android:layout_height="80dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/hen_tail_bw" />
+                    android:src="@drawable/hen_tail" />
 
                 <EditText
                     android:id="@+id/unit2t6"
                     android:layout_width="70dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
-            </LinearLayout>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
         </LinearLayout>
     </LinearLayout>
 
