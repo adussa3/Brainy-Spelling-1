@@ -19,7 +19,7 @@ public class BankActivity extends AppCompatActivity {
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("Word Bank Level");
+        actionBarTitle.setText("Word Bank Categories");
 
 
         // Initialize variables
@@ -29,8 +29,8 @@ public class BankActivity extends AppCompatActivity {
         Util.scaleOnTouch(exit);
     }
 
-    public void onClickSegmentedBank(View view) {
-        Intent intent = new Intent(getApplicationContext(), SegmentedWordBankActivity.class);
+    public void onClickAnimalsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), AnimalsBankActivity.class);
         startActivity(intent);
     }
 

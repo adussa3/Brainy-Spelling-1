@@ -4,40 +4,28 @@ import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.os.Bundle;
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 import com.example.jda8301.spellarhyme.utils.Bank;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConsonantsWordBankActivity extends AppCompatActivity {
+public class PeopleBankActivity extends AppCompatActivity {
+
+    private static String category = "people";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consonants_word_bank);
+        setContentView(R.layout.activity_people_bank);
 
-        // Change Action Bar Title
-        View actionBar = findViewById(R.id.actionBar);
-        TextView actionBarTitle = actionBar.findViewById(R.id.actionBarTitle);
-        actionBarTitle.setText("Consonants Word Bank");
-
-        //update pictures to display which ones are learned
-        //TODO: replace with actual user name that isn't hard coded
-        updateImages();
+        updateImages(category);
     }
-
-    // Intents - goes to a different activity when the button is clicked
-    public void onClickExit(View view) {
-        Intent intent = new Intent(getApplicationContext(), BankActivity.class);
-        startActivity(intent);
-    }
-
     private static void findImageButtons(ViewGroup viewGroup, ArrayList<ImageButton> views) {
         for (int i = 0, N = viewGroup.getChildCount(); i < N; i++) {
             View child = viewGroup.getChildAt(i);
@@ -70,5 +58,9 @@ public class ConsonantsWordBankActivity extends AppCompatActivity {
                 button.getDrawable().setColorFilter(filter);
             }
         }
+    }
+    public void onClickExit(View view) {
+        Intent intent = new Intent(getApplicationContext(), BankActivity.class);
+        startActivity(intent);
     }
 }
