@@ -78,6 +78,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
+                    android:fontFamily="@font/comicneue_bold"
                     android:onClick="onClickUnit1"
                     android:text="Unit 1"
                     android:textSize="30sp"
@@ -93,6 +94,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
+                    android:fontFamily="@font/comicneue_bold"
                     android:onClick="onClickUnit2"
                     android:text="Unit 2"
                     android:textSize="30sp" />
@@ -105,6 +107,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
+                    android:fontFamily="@font/comicneue_bold"
                     android:onClick="onClickUnit3"
                     android:text="Unit 3"
                     android:textSize="30sp" />
@@ -116,6 +119,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
+                    android:fontFamily="@font/comicneue_bold"
                     android:onClick="onClickUnit4"
                     android:text="Unit 4"
                     android:textSize="30sp" />
@@ -136,6 +140,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
+                    android:fontFamily="@font/comicneue_bold"
                     android:onClick="onClickBank"
                     android:text="Bank"
                     android:textSize="30sp" />
@@ -147,6 +152,7 @@
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/btn_rounded"
+                    android:fontFamily="@font/comicneue_bold"
                     android:text="Templates"
                     android:textSize="30sp" />
             </LinearLayout>

@@ -33,10 +33,11 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_rounded"
-                android:fontFamily="casual"
+                android:fontFamily="@font/comicneue_regular"
                 android:onClick="onClickSelectVowel"
-                android:text="A"
-                android:textSize="36sp"
+                android:text="a"
+                android:textAllCaps="false"
+                android:textSize="60sp"
                 android:textStyle="bold" />
 
             <Button
@@ -46,9 +47,10 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_rounded"
-                android:fontFamily="casual"
-                android:text="E"
-                android:textSize="36sp"
+                android:fontFamily="@font/comicneue_regular"
+                android:text="e"
+                android:textAllCaps="false"
+                android:textSize="60sp"
                 android:textStyle="bold" />
 
             <Button
@@ -58,9 +60,10 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_rounded"
-                android:fontFamily="casual"
-                android:text="I"
-                android:textSize="36sp"
+                android:fontFamily="@font/comicneue_regular"
+                android:text="i"
+                android:textAllCaps="false"
+                android:textSize="60sp"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -76,9 +79,10 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_rounded"
-                android:fontFamily="casual"
-                android:text="O"
-                android:textSize="36sp"
+                android:fontFamily="@font/comicneue_regular"
+                android:text="o"
+                android:textAllCaps="false"
+                android:textSize="60sp"
                 android:textStyle="bold" />
 
             <Button
@@ -88,9 +92,10 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_rounded"
-                android:fontFamily="casual"
-                android:text="U"
-                android:textSize="36sp"
+                android:fontFamily="@font/comicneue_regular"
+                android:text="u"
+                android:textAllCaps="false"
+                android:textSize="60sp"
                 android:textStyle="bold" />
 
             <Button
@@ -100,9 +105,10 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_rounded"
-                android:fontFamily="casual"
-                android:text="Y"
-                android:textSize="36sp"
+                android:fontFamily="@font/comicneue_regular"
+                android:text="y"
+                android:textAllCaps="false"
+                android:textSize="60sp"
                 android:textStyle="bold" />
         </TableRow>
 
