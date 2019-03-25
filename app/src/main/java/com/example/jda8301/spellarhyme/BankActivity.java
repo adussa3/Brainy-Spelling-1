@@ -27,11 +27,12 @@ public class BankActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank_level_selection);
 
-        leftScroll = (ImageButton) findViewById(R.id.bankLevelLA);
-        rightScroll = (ImageButton) findViewById(R.id.bankLevelRA);
+        leftScroll = (ImageButton) findViewById(R.id.leftArrow);
+        rightScroll = (ImageButton) findViewById(R.id.rightArrow);
 
 
-        sv = (HorizontalScrollView) findViewById(R.id.bankLevelHSV);
+        sv = (HorizontalScrollView) findViewById(R.id.horizontalSV);
+
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);

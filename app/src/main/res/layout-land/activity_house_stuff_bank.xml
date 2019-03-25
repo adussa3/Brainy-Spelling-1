@@ -13,7 +13,7 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/bankLevelLA"
+        android:id="@+id/leftArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
@@ -24,14 +24,15 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
+        android:id="@+id/houseStuffHorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bankLevelRA"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/bankLevelLA"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 
@@ -55,7 +56,8 @@
                     android:contentDescription="saucepan"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/saucepan"/>
+                    android:src="@drawable/saucepan" />
+
                 <ImageButton
                     android:id="@+id/keyButton"
                     android:layout_width="200dp"
@@ -65,7 +67,8 @@
                     android:contentDescription="key"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/key"/>
+                    android:src="@drawable/key" />
+
                 <ImageButton
                     android:id="@+id/lightButton"
                     android:layout_width="200dp"
@@ -75,7 +78,8 @@
                     android:contentDescription="light"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/light"/>
+                    android:src="@drawable/light" />
+
                 <ImageButton
                     android:id="@+id/squaresButton"
                     android:layout_width="200dp"
@@ -85,10 +89,11 @@
                     android:contentDescription="squares"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/squares"/>
+                    android:src="@drawable/squares" />
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -104,7 +109,8 @@
                     android:contentDescription="zipper"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/zipper"/>
+                    android:src="@drawable/zipper" />
+
                 <ImageButton
                     android:id="@+id/sofaButton"
                     android:layout_width="200dp"
@@ -114,7 +120,8 @@
                     android:contentDescription="sofa"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/sofa"/>
+                    android:src="@drawable/sofa" />
+
                 <ImageButton
                     android:id="@+id/netButton"
                     android:layout_width="200dp"
@@ -124,7 +131,8 @@
                     android:contentDescription="net"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/net"/>
+                    android:src="@drawable/net" />
+
                 <ImageButton
                     android:id="@+id/ovenButton"
                     android:layout_width="200dp"
@@ -134,7 +142,7 @@
                     android:contentDescription="oven"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/oven"/>
+                    android:src="@drawable/oven" />
             </LinearLayout>
 
             <LinearLayout
@@ -152,7 +160,8 @@
                     android:contentDescription="skis"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/skis"/>
+                    android:src="@drawable/skis" />
+
                 <ImageButton
                     android:id="@+id/potButton"
                     android:layout_width="200dp"
@@ -162,7 +171,8 @@
                     android:contentDescription="pot"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/pot"/>
+                    android:src="@drawable/pot" />
+
                 <ImageButton
                     android:id="@+id/tubaButton"
                     android:layout_width="200dp"
@@ -172,7 +182,8 @@
                     android:contentDescription="tuba"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/tuba"/>
+                    android:src="@drawable/tuba" />
+
                 <ImageButton
                     android:id="@+id/musicButton"
                     android:layout_width="200dp"
@@ -182,7 +193,7 @@
                     android:contentDescription="music"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/music"/>
+                    android:src="@drawable/music" />
 
             </LinearLayout>
 
@@ -190,7 +201,7 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/bankLevelRA"
+        android:id="@+id/rightArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
