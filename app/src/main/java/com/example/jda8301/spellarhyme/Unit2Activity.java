@@ -130,20 +130,20 @@ public class Unit2Activity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word1[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word2[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word3[i].getDrawable().setColorFilter(filter);
             }
         }
 
-        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())));
-        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())));
-        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())));
+        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(),selectedWordSet.get(0).getCategory())));
+        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(),selectedWordSet.get(1).getCategory())));
+        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(2).getCategory())));
 
 
         // Update EditText when correct letter button is pressed
@@ -252,9 +252,9 @@ public class Unit2Activity extends AppCompatActivity {
                 learned[i] = true;
                 wordImage[i].getDrawable().setColorFilter(filter);
                 Log.e("word" + (i + 1), selectedWordSet.get(i).getDisplayString());
-                Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
-                if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString()) >= 3) {
-                    Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
+                Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory());
+                if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory()) >= 3) {
+                    Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory());
                 }
             }
         }

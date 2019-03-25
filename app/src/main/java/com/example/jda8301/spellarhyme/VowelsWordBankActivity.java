@@ -30,7 +30,7 @@ public class VowelsWordBankActivity extends AppCompatActivity {
 
         //update pictures to display which ones are learned--colored
         //TODO: replace with actual user name that isn't hard coded
-        updateImages();
+        //updateImages();
 
 
     }
@@ -69,7 +69,7 @@ public class VowelsWordBankActivity extends AppCompatActivity {
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (!word.contains("arrow") && Bank.getSpellCount("default", "vowels", word) < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", "vowels", word, "vowels") < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }

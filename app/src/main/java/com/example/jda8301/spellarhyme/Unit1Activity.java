@@ -144,7 +144,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         // Check to see if word is mastered and set learned to true if they are learned
         for (int i = 0; i < 3; i++) {
-            if (Bank.isMastered("default", Bank.segmented, wordList.get(i).getDisplayString())) {
+            if (Bank.isMastered("default", Bank.segmented, wordList.get(i).getDisplayString(),  wordList.get(i).getCategory())) {
                 learned[i] = true;
             }
         }
@@ -379,7 +379,7 @@ public class Unit1Activity extends AppCompatActivity {
         // If word1 is mastered, update bank
         if (!notComplete) {
             learned[0] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString());
+            Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString(), wordList.get(0).getCategory());
         }
 
         // Check to see if word2 is mastered
@@ -393,7 +393,7 @@ public class Unit1Activity extends AppCompatActivity {
         // If word2 is mastered, update bank
         if (!notComplete) {
             learned[1] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString());
+            Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString(), wordList.get(1).getCategory());
         }
 
         // Check to see if word3 is mastered
@@ -407,7 +407,7 @@ public class Unit1Activity extends AppCompatActivity {
         // If word3 is mastered, update bank
         if (!notComplete) {
             learned[2] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString());
+            Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString(), wordList.get(2).getCategory());
         }
 
 

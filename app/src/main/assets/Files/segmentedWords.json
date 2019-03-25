@@ -2,55 +2,58 @@
   [
     {
       "stringName" : "dog",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 22,
-            "imageFile": "dog_head"
+          "soundFile": 22,
+          "imageFile": "dog_head"
         },
         {
-            "soundFile": 66,
-            "imageFile": "dog_middle"
+          "soundFile": 66,
+          "imageFile": "dog_middle"
         },
         {
-            "soundFile": 40,
-            "imageFile": "dog_tail"
+          "soundFile": 40,
+          "imageFile": "dog_tail"
         }
       ]
     },
     {
       "stringName" : "cat",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 16,
-            "imageFile": "cat_head"
+          "soundFile": 16,
+          "imageFile": "cat_head"
         },
         {
-            "soundFile": 2,
-            "imageFile": "cat_middle"
+          "soundFile": 2,
+          "imageFile": "cat_middle"
         },
         {
-            "soundFile": 96,
-            "imageFile": "cat_tail"
+          "soundFile": 96,
+          "imageFile": "cat_tail"
         }
       ]
     },
     {
       "stringName" : "hen",
+      "category": "birds",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 43,
-            "imageFile": "hen_head"
+          "soundFile": 43,
+          "imageFile": "hen_head"
         },
         {
-            "soundFile": 25,
-            "imageFile": "hen_middle"
+          "soundFile": 25,
+          "imageFile": "hen_middle"
         },
         {
-            "soundFile": 61,
-            "imageFile": "hen_tail"
+          "soundFile": 61,
+          "imageFile": "hen_tail"
         }
       ]
     }
@@ -58,112 +61,118 @@
   [
     {
       "stringName" : "fox",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 36,
-            "imageFile": "fox_head"
+          "soundFile": 36,
+          "imageFile": "fox_head"
         },
         {
-            "soundFile": 66,
-            "imageFile": "fox_middle"
+          "soundFile": 66,
+          "imageFile": "fox_middle"
         },
         {
-            "soundFile": 109,
-            "imageFile": "fox_tail"
+          "soundFile": 109,
+          "imageFile": "fox_tail"
         }
       ]
     },
     {
       "stringName" : "ram",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 83,
-            "imageFile": "ram_head"
+          "soundFile": 83,
+          "imageFile": "ram_head"
         },
         {
-            "soundFile": 2,
-            "imageFile": "ram_middle"
+          "soundFile": 2,
+          "imageFile": "ram_middle"
         },
         {
-            "soundFile": 60,
-            "imageFile": "ram_tail"
+          "soundFile": 60,
+          "imageFile": "ram_tail"
         }
       ]
     },
     {
       "stringName" : "cub",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 16,
-            "imageFile": "cub_head"
+          "soundFile": 16,
+          "imageFile": "cub_head"
         },
         {
-            "soundFile": 103,
-            "imageFile": "cub_middle"
+          "soundFile": 103,
+          "imageFile": "cub_middle"
         },
         {
-            "soundFile": 13,
-            "imageFile": "cub_tail"
+          "soundFile": 13,
+          "imageFile": "cub_tail"
         }
       ]
     }
   ],
-  
+
   [
     {
       "stringName" : "pig",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 79,
-            "imageFile": "pig_head"
+          "soundFile": 79,
+          "imageFile": "pig_head"
         },
         {
-            "soundFile": 45,
-            "imageFile": "pig_middle"
+          "soundFile": 45,
+          "imageFile": "pig_middle"
         },
         {
-            "soundFile": 40,
-            "imageFile": "pig_tail"
+          "soundFile": 40,
+          "imageFile": "pig_tail"
         }
       ]
     },
     {
       "stringName" : "bat",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 13,
-            "imageFile": "bat_head"
+          "soundFile": 13,
+          "imageFile": "bat_head"
         },
         {
-            "soundFile": 2,
-            "imageFile": "bat_middle"
+          "soundFile": 2,
+          "imageFile": "bat_middle"
         },
         {
-            "soundFile": 96,
-            "imageFile": "bat_tail"
+          "soundFile": 96,
+          "imageFile": "bat_tail"
         }
       ]
     },
     {
       "stringName" : "elk",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 25,
-            "imageFile": "elk_head"
+          "soundFile": 25,
+          "imageFile": "elk_head"
         },
         {
-            "soundFile": 58,
-            "imageFile": "elk_middle"
+          "soundFile": 58,
+          "imageFile": "elk_middle"
         },
         {
-            "soundFile": 56,
-            "imageFile": "elk_tail"
+          "soundFile": 56,
+          "imageFile": "elk_tail"
         }
       ]
     }
@@ -171,55 +180,58 @@
   [
     {
       "stringName" : "ant",
+      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": null,
-            "imageFile": "ant_head"
+          "soundFile": null,
+          "imageFile": "ant_head"
         },
         {
-            "soundFile": null,
-            "imageFile": "ant_middle"
+          "soundFile": null,
+          "imageFile": "ant_middle"
         },
         {
-            "soundFile": null,
-            "imageFile": "ant_tail"
+          "soundFile": null,
+          "imageFile": "ant_tail"
         }
       ]
     },
     {
       "stringName" : "bug",
+      "category": "vehicles",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 13,
-            "imageFile": "bug_head"
+          "soundFile": 13,
+          "imageFile": "bug_head"
         },
         {
-            "soundFile": 103,
-            "imageFile": "bug_middle"
+          "soundFile": 103,
+          "imageFile": "bug_middle"
         },
         {
-            "soundFile": 40,
-            "imageFile": "bug_tail"
+          "soundFile": 40,
+          "imageFile": "bug_tail"
         }
       ]
     },
     {
       "stringName" : "fly",
+      "category": "doing",
       "landscape": true,
       "segmentInfo": [
         {
-            "soundFile": 37,
-            "imageFile": "fly_head"
+          "soundFile": 37,
+          "imageFile": "fly_head"
         },
         {
-            "soundFile": 111,
-            "imageFile": "fly_middle"
+          "soundFile": 111,
+          "imageFile": "fly_middle"
         },
         {
-            "soundFile": null,
-            "imageFile": "fly_tail"
+          "soundFile": null,
+          "imageFile": "fly_tail"
         }
       ]
     }
@@ -227,55 +239,58 @@
   [
     {
       "stringName" : "cop",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
-            "soundFile": 16,
-            "imageFile": "cop_head"
+          "soundFile": 16,
+          "imageFile": "cop_head"
         },
         {
-            "soundFile": 66,
-            "imageFile": "cop_middle"
+          "soundFile": 66,
+          "imageFile": "cop_middle"
         },
         {
-            "soundFile": 79,
-            "imageFile": "cop_bottom"
+          "soundFile": 79,
+          "imageFile": "cop_bottom"
         }
       ]
     },
     {
       "stringName" : "elf",
+      "category": "pretend",
       "landscape": false,
       "segmentInfo": [
         {
-            "soundFile": 25,
-            "imageFile": "elf_head"
+          "soundFile": 25,
+          "imageFile": "elf_head"
         },
         {
-            "soundFile": 58,
-            "imageFile": "elf_middle"
+          "soundFile": 58,
+          "imageFile": "elf_middle"
         },
         {
-            "soundFile": 36,
-            "imageFile": "elf_bottom"
+          "soundFile": 36,
+          "imageFile": "elf_bottom"
         }
       ]
     },
     {
       "stringName" : "kid",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
-            "soundFile": 56,
-            "imageFile": "kid_head"
+          "soundFile": 56,
+          "imageFile": "kid_head"
         },
         {
-            "soundFile": 45,
-            "imageFile": "kid_middle"
+          "soundFile": 45,
+          "imageFile": "kid_middle"
         },
         {
-            "soundFile": 22,
-            "imageFile": "kid_bottom"
+          "soundFile": 22,
+          "imageFile": "kid_bottom"
         }
       ]
     }
@@ -283,55 +298,58 @@
   [
     {
       "stringName" : "gal",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
-            "soundFile": 40,
-            "imageFile": "gal_head"
+          "soundFile": 40,
+          "imageFile": "gal_head"
         },
         {
-            "soundFile": 3,
-            "imageFile": "gal_middle"
+          "soundFile": 3,
+          "imageFile": "gal_middle"
         },
         {
-            "soundFile": 58,
-            "imageFile": "gal_bottom"
+          "soundFile": 58,
+          "imageFile": "gal_bottom"
         }
       ]
     },
     {
       "stringName" : "doc",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
-            "soundFile": 22,
-            "imageFile": "doc_head"
+          "soundFile": 22,
+          "imageFile": "doc_head"
         },
         {
-            "soundFile": 66,
-            "imageFile": "doc_middle"
+          "soundFile": 66,
+          "imageFile": "doc_middle"
         },
         {
-            "soundFile": 16,
-            "imageFile": "doc_bottom"
+          "soundFile": 16,
+          "imageFile": "doc_bottom"
         }
       ]
     },
     {
       "stringName" : "ref",
+      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
-            "soundFile": 83,
-            "imageFile": "ref_head"
+          "soundFile": 83,
+          "imageFile": "ref_head"
         },
         {
-            "soundFile": 25,
-            "imageFile": "ref_middle"
+          "soundFile": 25,
+          "imageFile": "ref_middle"
         },
         {
-            "soundFile": 36,
-            "imageFile": "ref_bottom"
+          "soundFile": 36,
+          "imageFile": "ref_bottom"
         }
       ]
     }
