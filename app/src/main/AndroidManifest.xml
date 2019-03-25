@@ -10,7 +10,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
-        <activity android:name=".Unit4GameActivity"></activity>
+        <activity
+            android:name=".ThingsBankActivity"
+            android:label="@string/title_activity_things_bank"></activity>
+        <activity
+            android:name=".ToysBankActivity"
+            android:label="@string/title_activity_toys_bank" />
+        <activity
+            android:name=".WaterAnimalsBankActivity"
+            android:label="@string/title_activity_water_animals_bank" />
+        <activity
+            android:name=".ClothesBankActivity"
+            android:label="@string/title_activity_clothes_bank" />
+        <activity
+            android:name=".DoingBankActivity"
+            android:label="@string/title_activity_doing_bank" />
+        <activity
+            android:name=".ToolsBankActivity"
+            android:label="@string/title_activity_tools_bank" />
+        <activity
+            android:name=".FoodBankActivity"
+            android:label="@string/title_activity_food_bank" />
+        <activity
+            android:name=".BodyPartsActivity"
+            android:label="@string/title_activity_body_parts" />
+        <activity
+            android:name=".DescribeBankActivity"
+            android:label="@string/title_activity_describe_bank" />
+        <activity
+            android:name=".OutdoorsBankActivity"
+            android:label="@string/title_activity_outdoors_bank" />
+        <activity
+            android:name=".ColorsBankActivity"
+            android:label="@string/title_activity_colors_bank" />
+        <activity
+            android:name=".PlacesBankActivity"
+            android:label="@string/title_activity_places_bank" />
+        <activity
+            android:name=".PretendBankActivity"
+            android:label="@string/title_activity_pretend_bank" />
+        <activity
+            android:name=".VehiclesBankActivity"
+            android:label="@string/title_activity_vehicles_bank" />
+        <activity
+            android:name=".BirdsBankActivity"
+            android:label="@string/title_activity_birds_bank" />
+        <activity
+            android:name=".AnimalsBankActivity"
+            android:label="@string/title_activity_animal_bank" />
+        <activity
+            android:name=".HouseStuffBankActivity"
+            android:label="@string/title_activity_house_stuff_bank" />
+        <activity
+            android:name=".PeopleBankActivity"
+            android:label="@string/title_activity_people_bank" />
+        <activity android:name=".Unit4GameActivity" />
         <activity android:name=".Unit4WordListActivity" />
         <activity android:name=".Unit4ConsonantListActivity" />
         <activity android:name=".Unit3GameActivity" />

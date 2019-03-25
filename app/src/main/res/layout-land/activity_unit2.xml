@@ -38,10 +38,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="c"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -57,10 +56,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="t"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -76,10 +74,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="g"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -104,10 +101,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="h"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -123,10 +119,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="n"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -142,10 +137,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="d"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -168,10 +162,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="o"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -187,17 +180,15 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="a"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 android:typeface="serif"
                 tools:layout_editor_absoluteX="197dp"
                 tools:layout_editor_absoluteY="257dp" />
-            
 
             <Button
                 android:id="@+id/unit2b9"
@@ -207,10 +198,9 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_letters"
-                android:fontFamily="@font/comicneue_regular"
+                android:fontFamily="casual"
                 android:text="e"
                 android:textAlignment="center"
-                android:textAllCaps="false"
                 android:textColor="@color/cardview_light_background"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -237,96 +227,100 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="341dp"
+            tools:layout_editor_absoluteY="0dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/firstWord1"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/cat_head" />
+                    android:src="@drawable/cat_head_bw" />
 
                 <EditText
                     android:id="@+id/unit2t1"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/firstWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat_middle" />
+                    android:src="@drawable/cat_middle_bw" />
 
                 <EditText
                     android:id="@+id/unit2t2"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
+                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/firstWord3"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/cat_tail" />
+                    android:src="@drawable/cat_tail_bw" />
 
                 <EditText
                     android:id="@+id/unit2t3"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -335,94 +329,96 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/thirdWord1"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/dog_head" />
+                    android:src="@drawable/dog_head_bw" />
 
                 <EditText
                     android:id="@+id/unit2t7"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/thirdWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/dog_middle" />
+                    android:src="@drawable/dog_middle_bw" />
 
                 <EditText
                     android:id="@+id/unit2t8"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/lastBlanks"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
+                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-            </RelativeLayout>
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/thirdWord3"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/dog_tail" />
+                    android:src="@drawable/dog_tail_bw" />
 
                 <EditText
                     android:id="@+id/unit2t9"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -431,58 +427,57 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/secondWord1"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/hen_head" />
+                    android:src="@drawable/hen_head_bw" />
 
                 <EditText
                     android:id="@+id/unit2t4"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
 
-            </RelativeLayout>
+            </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/secondWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hen_middle" />
+                    android:src="@drawable/hen_middle_bw" />
 
                 <EditText
                     android:id="@+id/unit2t5"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
@@ -490,41 +485,37 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-            </RelativeLayout>
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onClickSelectSegment">
+                android:gravity="center"
+                android:onClick="onClickSelectSegment"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/secondWord3"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/hen_tail" />
+                    android:src="@drawable/hen_tail_bw" />
 
                 <EditText
                     android:id="@+id/unit2t6"
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
-
+                    android:textSize="14sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
