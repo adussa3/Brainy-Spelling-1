@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.example.jda8301.spellarhyme.utils.Bank;
 
@@ -23,6 +24,11 @@ public class ThingsBankActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_things_bank);
+
+        // Change Action Bar Title
+        View actionBar = findViewById(R.id.actionBar);
+        TextView actionBarTitle = actionBar.findViewById(R.id.actionBarTitle);
+        actionBarTitle.setText("Things Word Bank");
 
         updateImages(category);
     }
