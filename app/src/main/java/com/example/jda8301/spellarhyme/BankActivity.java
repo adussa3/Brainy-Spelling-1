@@ -34,16 +34,90 @@ public class BankActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickVowelsBank(View view) {
-        Intent intent = new Intent(getApplicationContext(), VowelsWordBankActivity.class);
+    public void onClickPeopleBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), PeopleBankActivity.class);
         startActivity(intent);
     }
 
-    public void onClickConsonantsBank(View view) {
-        Intent intent = new Intent(getApplicationContext(), ConsonantsWordBankActivity.class);
+    public void onClickPretendBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), PretendBankActivity.class);
         startActivity(intent);
     }
 
+    public void onClickBodyPartsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), BodyPartsActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickWaterAnimalsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), WaterAnimalsBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickBirdsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), BirdsBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickThingsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ThingsBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickHouseStuffBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), HouseStuffBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickToysBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ToysBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickToolsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ToolsBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickColorsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ColorsBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickClothesBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), ClothesBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickVehiclesBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), VehiclesBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickFoodBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), FoodBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickPlacesBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), PlacesBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickOutdoorsBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), OutdoorsBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickDoingBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), DoingBankActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickDescribeBank(View view) {
+        Intent intent = new Intent(getApplicationContext(), DescribeBankActivity.class);
+        startActivity(intent);
+    }
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
