@@ -68,6 +68,7 @@ public class AnimalsBankActivity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), BankActivity.class);
         startActivity(intent);
+        finish();
     }
 }
 
