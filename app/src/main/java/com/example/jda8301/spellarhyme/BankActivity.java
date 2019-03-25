@@ -3,19 +3,35 @@ package com.example.jda8301.spellarhyme;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class BankActivity extends AppCompatActivity {
 
     private ImageView exit;
+
+    HorizontalScrollView sv;
+
+    ImageButton leftScroll;
+    ImageButton rightScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank_level_selection);
 
+        leftScroll = (ImageButton) findViewById(R.id.bankLevelLA);
+        rightScroll = (ImageButton) findViewById(R.id.bankLevelRA);
+
+
+        sv = (HorizontalScrollView) findViewById(R.id.bankLevelHSV);
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
         TextView actionBarTitle = (TextView) actionBar.findViewById(R.id.actionBarTitle);
@@ -27,6 +43,43 @@ public class BankActivity extends AppCompatActivity {
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
+        leftScroll.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        if(leftScroll.isPressed()) {
+                            sv.setScrollX(sv.getScrollX() - 20);
+                        }
+                        else
+                            timer.cancel();
+                    }
+                },0,10);
+
+                return false;
+            }
+        });
+
+        rightScroll.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        if(rightScroll.isPressed()) {
+                            sv.setScrollX(sv.getScrollX() + 20);
+                        }
+                        else
+                            timer.cancel();
+                    }
+                },0,10);
+
+                return false;
+            }
+        });
     }
 
     public void onClickAnimalsBank(View view) {
