@@ -103,7 +103,8 @@ public class Unit2Activity extends AppCompatActivity {
             Random rand = new Random();
             int randomInt = rand.nextInt(phonemeCode.size());
             button.setText(helper.getPhonemeLetters().get(phonemeCode.get(randomInt)));
-            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+            button.setPrivateImeOptions(helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+//            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
             phonemeCode.remove(randomInt);
         }
 
@@ -129,28 +130,34 @@ public class Unit2Activity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word1[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word2[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word3[i].getDrawable().setColorFilter(filter);
             }
         }
 
-        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())));
-        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())));
-        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())));
+        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(),selectedWordSet.get(0).getCategory())));
+        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(),selectedWordSet.get(1).getCategory())));
+        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(2).getCategory())));
 
 
         // Update EditText when correct letter button is pressed
-        for (Button button: buttons) {
+        for (final Button button: buttons) {
             final Button thisButton = button;
             button.setOnTouchListener(new View.OnTouchListener() {
                 public boolean onTouch (View v, MotionEvent event) {
                     if (event.getAction() == MotionEvent.ACTION_UP) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + button.getPrivateImeOptions());
+                        try {
+                            Thread.sleep(1000);
+                        } catch(InterruptedException ex) {
+                            Thread.currentThread().interrupt();
+                        }
                         int index = currentField.getValue() % 3;
 
                         Log.e("thisButton", thisButton.getText().toString());
@@ -163,6 +170,7 @@ public class Unit2Activity extends AppCompatActivity {
 
 
                         if (thisButton.getText().toString().equals(Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)))) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
                             fields[currentField.getValue()].setText(thisButton.getText());
                             if (selectedWordState.getValue() == 0) {
                                 spellingProgress1[index] = thisButton.getText().toString();
@@ -175,6 +183,8 @@ public class Unit2Activity extends AppCompatActivity {
                                 word3[index].getDrawable().setColorFilter(filter);
                             }
                             thisButton.setVisibility(View.INVISIBLE);
+                        } else {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
                         }
 
 //
@@ -242,9 +252,9 @@ public class Unit2Activity extends AppCompatActivity {
                 learned[i] = true;
                 wordImage[i].getDrawable().setColorFilter(filter);
                 Log.e("word" + (i + 1), selectedWordSet.get(i).getDisplayString());
-                Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
-                if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString()) >= 3) {
-                    Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
+                Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory());
+                if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory()) >= 3) {
+                    Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory());
                 }
             }
         }
