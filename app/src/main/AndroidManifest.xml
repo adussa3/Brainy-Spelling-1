@@ -56,8 +56,14 @@
             android:name=".BirdsBankActivity"
             android:label="@string/title_activity_birds_bank" />
         <activity
-            android:name=".AnimalBankActivity"
+            android:name=".AnimalsBankActivity"
             android:label="@string/title_activity_animal_bank" />
+        <activity
+            android:name=".HouseStuffBankActivity"
+            android:label="@string/title_activity_house_stuff_bank" />
+        <activity
+            android:name=".PeopleBankActivity"
+            android:label="@string/title_activity_people_bank" />
         <activity android:name=".Unit4GameActivity" />
         <activity android:name=".Unit4WordListActivity" />
         <activity android:name=".Unit4ConsonantListActivity" />
@@ -87,13 +93,13 @@
         <activity android:name=".VowelsWordBankActivity" />
         <activity android:name=".SegmentedWordBankActivity" />
         <activity android:name=".Unit1Activity" />
-        <activity android:name=".BankActivity" />
+        <activity android:name=".BankActivity"></activity>
         <activity
             android:name=".Unit2Activity"
             android:label="@string/title_activity_unit2" />
         <activity
             android:name=".Unit2SelectionActivity"
-            android:label="@string/title_activity_unit2_selection" />
+            android:label="@string/title_activity_unit2_selection"></activity>
     </application>
 
 </manifest>

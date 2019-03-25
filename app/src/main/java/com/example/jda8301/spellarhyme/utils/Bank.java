@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.ImageView;
+
 import com.example.jda8301.spellarhyme.MyApplication;
 import com.example.jda8301.spellarhyme.R;
 
@@ -26,28 +27,6 @@ public class Bank {
     public static final String vowels = "vowels";
     public static final String consonants = "consonants";
     public static final String segmented = "segmented";
-
-    // Categories
-    public static final String people = "people";
-    public static final String friends = "friends";
-    public static final String pretend = "pretend";
-    public static final String body_parts = "body_parts";
-    public static final String animals = "animals";
-    public static final String water_animals = "water_animals";
-    public static final String birds = "birds";
-    public static final String things = "things";
-    public static final String house_stuff = "house_stuff";
-    public static final String toys = "toys";
-    public static final String tools = "tools";
-    public static final String clothes = "clothes";
-    public static final String vehicles = "vehicles";
-    public static final String food = "food";
-    public static final String places = "places";
-    public static final String outdoors = "outdoors";
-    public static final String doing = "doing";
-    public static final String describe = "describe";
-    public static final String colors = "colors";
-
 
     private static SharedPreferences sharedPref = MyApplication.getAppContext().getSharedPreferences("bank", Context.MODE_PRIVATE);
     private static SharedPreferences.Editor editor = sharedPref.edit();
@@ -107,47 +86,6 @@ public class Bank {
     }
 
     /**
-     * Returns all words spelled by a user pertaining to a specified category
-     * @param user the user to filter the bank with
-     * @param category words pertaining to which game category of interest
-     * @return a map of all words spelled by a specific user pertaining to a certain category along
-     * with their spell counts.
-     */
-    public static Map<String, Integer> getUserCategoryBank(String user, String category) {
-        Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
-        Map<String, Integer> userCategoryBank = new HashMap<>();
-        for (String key : bank.keySet()) {
-            String[] parsedKey = parseKey(key);
-            if (parsedKey[0].equals(user) && parsedKey[3].equals(category)) {
-                userCategoryBank.put(key, bank.get(key));
-            }
-        }
-
-        return userCategoryBank;
-    }
-
-    /**
-     * Returns all words spelled by a user pertaining to a specified level and category
-     * @param user the user to filter the bank with
-     * @param level words pertaining to which game mode/level of interest
-     * @param category words pertaining to which game category of interest
-     * @return a map of all words spelled by a specific user pertaining to a certain level and
-     * category along with their spell counts.
-     */
-    public static Map<String, Integer> getUserLevelCategory(String user, String level, String category) {
-        Map<String, Integer> bank = (Map<String, Integer>) sharedPref.getAll();
-        Map<String, Integer> userLevelCategoryBank = new HashMap<>();
-        for (String key : bank.keySet()) {
-            String[] parsedKey = parseKey(key);
-            if (parsedKey[0].equals(user) && parsedKey[1].equals(user) && parsedKey.equals(category)) {
-                userLevelCategoryBank.put(key, bank.get(key));
-            }
-        }
-
-        return userLevelCategoryBank;
-    }
-
-    /**
      * Removes all stored words from the bank pertaining to a specified user
      * @param user the user who's data is to be removed
      */
@@ -182,10 +120,9 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      */
-    public static void removeWord(String user, String level, String word, String category) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static void removeWord(String user, String level, String word) {
+        String key = user + " " + level + "word";
         removeWord(key);
     }
 
@@ -202,10 +139,9 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      */
-    public static void incrementSpellCount(String user, String level, String word, String category) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static void incrementSpellCount(String user, String level, String word) {
+        String key = user + " " + level + " " + word;
         int oldSpellCount = sharedPref.getInt(key,0);
         editor.putInt(key, oldSpellCount + 1);
         editor.apply();
@@ -227,11 +163,10 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      * @param count : what value to set the spell count to
      */
-    public static void setSpellCount(String user, String level, String word, String category, int count) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static void setSpellCount(String user, String level, String word, int count) {
+        String key = user + " " + level + " " + word;
         setSpellCount(key, count);
     }
 
@@ -251,10 +186,9 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      */
-    public static void setMastered(String user, String level, String word, String category) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static void setMastered(String user, String level, String word) {
+        String key = user + " " + level + " " + word;
         setMastered(key);
     }
 
@@ -271,10 +205,9 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      */
-    public static void resetSpellCount(String user, String level, String word, String category) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static void resetSpellCount(String user, String level, String word) {
+        String key = user + " " + level + " " + word;
         resetSpellCount(key);
     }
 
@@ -293,10 +226,9 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      */
-    public static boolean isMastered(String user, String level, String word, String category) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static boolean isMastered(String user, String level, String word) {
+        String key = user + " " + level + " " + word;
         return isMastered(key);
     }
 
@@ -315,11 +247,10 @@ public class Bank {
      * @param user : the bank of which user
      * @param level : the level where the word comes from
      * @param word : the name of the spelled word.
-     * @param category : the category of the spelled
      * @return how many times the specified word has been spelled
      */
-    public static int getSpellCount(String user, String level, String word, String category) {
-        String key = user + " " + level + " " + word + " " + category;
+    public static int getSpellCount(String user, String level, String word) {
+        String key = user + " " + level + " " + word;
         return sharedPref.getInt(key, 0);
     }
 
@@ -331,7 +262,7 @@ public class Bank {
     /**
      * Breaks up a shared preferences key into the user, level, and word name parts.
      * @param key the shared preferences key to be parsed
-     * @return [user, level, word, category]
+     * @return [user, level, word]
      */
     public static String[] parseKey(String key) {
         String[] keySegments = key.split("\\s+");
@@ -366,16 +297,6 @@ public class Bank {
     public static String parseWord(String key) {
         String[] keySegments = key.split("\\s+");
         return keySegments[2];
-    }
-
-    /**
-     * Returns the category of a shared preferences key
-     * @param key the shared preferences key to be parsed
-     * @return the category portion of the key
-     */
-    public static String parseCategory(String key) {
-        String[] keySegments = key.split("\\s+");
-        return keySegments[3];
     }
 
     /**

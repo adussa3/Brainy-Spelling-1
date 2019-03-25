@@ -2,7 +2,6 @@
   [
     {
       "stringName" : "dog",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -21,7 +20,6 @@
     },
     {
       "stringName" : "cat",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -40,7 +38,6 @@
     },
     {
       "stringName" : "hen",
-      "category": "birds",
       "landscape": true,
       "segmentInfo": [
         {
@@ -61,7 +58,6 @@
   [
     {
       "stringName" : "fox",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -80,7 +76,6 @@
     },
     {
       "stringName" : "ram",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -99,7 +94,6 @@
     },
     {
       "stringName" : "cub",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -121,7 +115,6 @@
   [
     {
       "stringName" : "pig",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -140,7 +133,6 @@
     },
     {
       "stringName" : "bat",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -159,7 +151,6 @@
     },
     {
       "stringName" : "elk",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -180,7 +171,6 @@
   [
     {
       "stringName" : "ant",
-      "category": "animals",
       "landscape": true,
       "segmentInfo": [
         {
@@ -199,7 +189,6 @@
     },
     {
       "stringName" : "bug",
-      "category": "vehicles",
       "landscape": true,
       "segmentInfo": [
         {
@@ -218,7 +207,6 @@
     },
     {
       "stringName" : "fly",
-      "category": "doing",
       "landscape": true,
       "segmentInfo": [
         {
@@ -239,7 +227,6 @@
   [
     {
       "stringName" : "cop",
-      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -258,7 +245,6 @@
     },
     {
       "stringName" : "elf",
-      "category": "pretend",
       "landscape": false,
       "segmentInfo": [
         {
@@ -277,7 +263,6 @@
     },
     {
       "stringName" : "kid",
-      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -298,7 +283,6 @@
   [
     {
       "stringName" : "gal",
-      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -317,7 +301,6 @@
     },
     {
       "stringName" : "doc",
-      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {
@@ -336,7 +319,6 @@
     },
     {
       "stringName" : "ref",
-      "category": "people",
       "landscape": false,
       "segmentInfo": [
         {

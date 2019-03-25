@@ -29,7 +29,7 @@ public class ConsonantsWordBankActivity extends AppCompatActivity {
 
         //update pictures to display which ones are learned
         //TODO: replace with actual user name that isn't hard coded
-        //updateImages();
+        updateImages();
     }
 
     // Intents - goes to a different activity when the button is clicked
@@ -56,7 +56,7 @@ public class ConsonantsWordBankActivity extends AppCompatActivity {
         return buttonViews;
     }
 
-    public void updateImages() {
+    public void updateImages(String cat) {
 
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(0);
@@ -66,7 +66,7 @@ public class ConsonantsWordBankActivity extends AppCompatActivity {
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (!word.contains("arrow") && Bank.getSpellCount("default", "consonants", word, "category") < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", "consonants", word, cat) < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }

@@ -192,6 +192,7 @@
     <string name="title_activity_house_stuff_bank">HouseStuffBankActivity</string>
     <string name="title_activity_doing_bank">DoingBankActivity</string>
     <string name="title_activity_things_bank">ThingsBankActivity</string>
+    <string name="title_activity_people_bank">PeopleBankActivity</string>
 
 
 </resources>
