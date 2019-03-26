@@ -24,16 +24,6 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/button_back" />
-
-            <ImageButton
                 android:id="@+id/imageButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,15 +53,7 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/profile_chimp" />
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:adjustViewBounds="false"
-                android:cropToPadding="false"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/button_forward" />
+
         </LinearLayout>
 
         <LinearLayout

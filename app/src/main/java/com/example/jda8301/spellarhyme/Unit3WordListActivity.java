@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -28,11 +27,11 @@ public class Unit3WordListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit3_word_list);
 
-        leftScroll = (ImageButton) findViewById(R.id.imageButton);
-        rightScroll = (ImageButton) findViewById(R.id.imageButton2);
+        leftScroll = (ImageButton) findViewById(R.id.leftArrow);
+        rightScroll = (ImageButton) findViewById(R.id.rightArrow);
 
 
-        sv = (HorizontalScrollView) findViewById(R.id.horizontalScrollView2);
+        sv = (HorizontalScrollView) findViewById(R.id.unit4HorizontalSV);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);

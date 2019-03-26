@@ -46,22 +46,7 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/spf_03" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/spf_04"
-                tools:scaleType="centerCrop" />
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/spf_06" />
 
         </LinearLayout>
 

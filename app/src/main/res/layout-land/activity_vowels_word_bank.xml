@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView2"
+        android:id="@+id/unit4HorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -129,17 +129,6 @@
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
                     android:src="@drawable/whale" />
-
-                <ImageButton
-                    android:id="@+id/elfButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/elf"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/elf" />
 
                 <ImageButton
                     android:id="@+id/apeButton"

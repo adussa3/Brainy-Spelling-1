@@ -4,15 +4,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
-import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
-import com.example.jda8301.spellarhyme.utils.Config;
 
 import java.util.List;
 
@@ -46,8 +43,8 @@ public class Unit2SelectionActivity extends AppCompatActivity {
 
         buttons[0] = (ImageButton) findViewById(R.id.imageButton6);
         buttons[1] = (ImageButton) findViewById(R.id.imageButton7);
-        buttons[2] = (ImageButton) findViewById(R.id.imageButton);
-        buttons[3] = (ImageButton) findViewById(R.id.imageButton2);
+        buttons[2] = (ImageButton) findViewById(R.id.leftArrow);
+        buttons[3] = (ImageButton) findViewById(R.id.rightArrow);
 
         int start = 0;
         for (ImageButton button: buttons) {
@@ -70,8 +67,8 @@ public class Unit2SelectionActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void onClickSelectWord(View view) {
-//        Intent intent = new Intent(getApplicationContext(), Unit2Activity.class);
-//        startActivity(intent);
-//    }
+    public void onClickSelectWord(View view) {
+        Intent intent = new Intent(getApplicationContext(), Unit2Activity.class);
+        startActivity(intent);
+    }
 }
