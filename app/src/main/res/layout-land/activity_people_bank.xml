@@ -24,6 +24,7 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
+        android:id="@+id/peopleHorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -55,7 +56,8 @@
                     android:contentDescription="cop"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cop"/>
+                    android:src="@drawable/cop" />
+
                 <ImageButton
                     android:id="@+id/kidButton"
                     android:layout_width="200dp"
@@ -65,7 +67,8 @@
                     android:contentDescription="kid"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/kid"/>
+                    android:src="@drawable/kid" />
+
                 <ImageButton
                     android:id="@+id/galButton"
                     android:layout_width="200dp"
@@ -75,7 +78,8 @@
                     android:contentDescription="gal"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/gal"/>
+                    android:src="@drawable/gal" />
+
                 <ImageButton
                     android:id="@+id/docButton"
                     android:layout_width="200dp"
@@ -85,7 +89,8 @@
                     android:contentDescription="doc"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/doc"/>
+                    android:src="@drawable/doc" />
+
                 <ImageButton
                     android:id="@+id/refButton"
                     android:layout_width="200dp"
@@ -95,7 +100,8 @@
                     android:contentDescription="ref"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ref"/>
+                    android:src="@drawable/ref" />
+
                 <ImageButton
                     android:id="@+id/boyButton"
                     android:layout_width="200dp"
@@ -105,9 +111,10 @@
                     android:contentDescription="boy"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/boy"/>
+                    android:src="@drawable/boy" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -123,7 +130,8 @@
                     android:contentDescription="dancer"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/dancer"/>
+                    android:src="@drawable/dancer" />
+
                 <ImageButton
                     android:id="@+id/girlButton"
                     android:layout_width="200dp"
@@ -133,7 +141,8 @@
                     android:contentDescription="girl"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/girl"/>
+                    android:src="@drawable/girl" />
+
                 <ImageButton
                     android:id="@+id/jugglerButton"
                     android:layout_width="200dp"
@@ -143,7 +152,8 @@
                     android:contentDescription="juggler"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/juggler"/>
+                    android:src="@drawable/juggler" />
+
                 <ImageButton
                     android:id="@+id/kingButton"
                     android:layout_width="200dp"
@@ -153,7 +163,8 @@
                     android:contentDescription="king"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/king"/>
+                    android:src="@drawable/king" />
+
                 <ImageButton
                     android:id="@+id/manButton"
                     android:layout_width="200dp"
@@ -163,7 +174,7 @@
                     android:contentDescription="man"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/man"/>
+                    android:src="@drawable/man" />
 
             </LinearLayout>
 
@@ -182,7 +193,8 @@
                     android:contentDescription="clown"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/clown"/>
+                    android:src="@drawable/clown" />
+
                 <ImageButton
                     android:id="@+id/queenButton"
                     android:layout_width="200dp"
@@ -192,7 +204,8 @@
                     android:contentDescription="queen"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/queen"/>
+                    android:src="@drawable/queen" />
+
                 <ImageButton
                     android:id="@+id/heButton"
                     android:layout_width="200dp"
@@ -202,7 +215,8 @@
                     android:contentDescription="he"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/he"/>
+                    android:src="@drawable/he" />
+
                 <ImageButton
                     android:id="@+id/sheButton"
                     android:layout_width="200dp"
@@ -212,7 +226,8 @@
                     android:contentDescription="she"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/she"/>
+                    android:src="@drawable/she" />
+
                 <ImageButton
                     android:id="@+id/weButton"
                     android:layout_width="200dp"
@@ -222,7 +237,8 @@
                     android:contentDescription="we"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/we"/>
+                    android:src="@drawable/we" />
+
                 <ImageButton
                     android:id="@+id/babyButton"
                     android:layout_width="200dp"
@@ -232,7 +248,7 @@
                     android:contentDescription="baby"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/baby"/>
+                    android:src="@drawable/baby" />
 
             </LinearLayout>
 

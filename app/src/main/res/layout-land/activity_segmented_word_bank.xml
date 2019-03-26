@@ -24,6 +24,7 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
+        android:id="@+id/segmentedHorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
