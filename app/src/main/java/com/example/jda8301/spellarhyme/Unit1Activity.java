@@ -11,6 +11,8 @@ import android.text.InputType;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
@@ -290,7 +292,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         // Initialize sounds and animation for segments of selected word
         for (int i = 0; i < selectedWord.length; i++) {
-            Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(segmentedWords.get(0).get(0).getSegmentInfo()[i].getSoundFile()));
+            this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(segmentedWords.get(0).get(0).getSegmentInfo()[i].getSoundFile()), i);
             Util.scaleOnTouch(selectedWord[i]);
         }
 
@@ -300,6 +302,33 @@ public class Unit1Activity extends AppCompatActivity {
 
         // State machine for currently selected image, changes images and sounds based on chosen word
         Observer stateChange = new Observer() {
+
+
+            public void playSoundOnClick(View button, final String sound, final int i) {
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + sound);
+
+                        EditText et;
+                        switch(i) {
+                            case 0:
+                                et = (EditText) findViewById(R.id.editLetter1);
+                                et.requestFocus();
+                                break;
+                            case 1:
+                                et = (EditText) findViewById(R.id.editLetter2);
+                                et.requestFocus();
+                                break;
+                            case 2:
+                                et = (EditText) findViewById(R.id.editLetter3);
+                                et.requestFocus();
+                                break;
+                        }
+                    }
+                });
+            }
+
             @Override
             public void update(Observable o, Object newValue) {
                 if ((int) newValue == 0) {
@@ -311,7 +340,7 @@ public class Unit1Activity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.AUDIO_WORDS_PATH + wordList.get(0).getDisplayString());
 
                     for (int i = 0; i < selectedWord.length; i++) {
-                        Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(0).getSegmentInfo()[i].getSoundFile()));
+                        this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(0).getSegmentInfo()[i].getSoundFile()), i);
                         fields[i].setText(spellingProgress1[i]);
                     }
 
@@ -325,7 +354,7 @@ public class Unit1Activity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.AUDIO_WORDS_PATH + wordList.get(1).getDisplayString());
 
                     for (int i = 0; i < selectedWord.length; i++) {
-                        Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(1).getSegmentInfo()[i].getSoundFile()));
+                        this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(1).getSegmentInfo()[i].getSoundFile()), i);
                         fields[i].setText(spellingProgress2[i]);
                     }
 
@@ -338,7 +367,7 @@ public class Unit1Activity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.AUDIO_WORDS_PATH + wordList.get(2).getDisplayString());
 
                     for (int i = 0; i < selectedWord.length; i++) {
-                        Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(2).getSegmentInfo()[i].getSoundFile()));
+                        this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(2).getSegmentInfo()[i].getSoundFile()), i);
                         fields[i].setText(spellingProgress3[i]);
                     }
                 }
@@ -420,6 +449,30 @@ public class Unit1Activity extends AppCompatActivity {
             }
 
         }
+    }
 
+    public void playSoundOnClick(View button, final String sound, final int i) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + sound);
+
+                EditText et;
+                switch(i) {
+                    case 0:
+                        et = (EditText) findViewById(R.id.editLetter1);
+                        et.requestFocus();
+                        break;
+                    case 1:
+                        et = (EditText) findViewById(R.id.editLetter2);
+                        et.requestFocus();
+                        break;
+                    case 2:
+                        et = (EditText) findViewById(R.id.editLetter3);
+                        et.requestFocus();
+                        break;
+                }
+            }
+        });
     }
 }

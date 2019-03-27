@@ -297,71 +297,83 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:gravity="end"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/imageViewTest1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/dog_head" />
 
-                    <ImageView
-                        android:id="@+id/imageViewTest2"
+                    <EditText
+                        android:id="@+id/editLetter1"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/dog_middle" />
-
-                    <ImageView
-                        android:id="@+id/imageViewTest3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/dog_tail" />
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:inputType="none"
+                        android:textAlignment="center" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/editLetter1"
+                    <ImageView
+                        android:id="@+id/imageViewTest2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:cursorVisible="false"
-                        android:ems="10"
-                        android:inputType="textCapCharacters"
-                        android:textAlignment="center" />
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/dog_middle" />
 
                     <EditText
                         android:id="@+id/editLetter2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
                         android:cursorVisible="false"
                         android:ems="10"
-                        android:inputType="textCapCharacters"
+                        android:inputType="none"
                         android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewTest3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="start"
+                        android:layout_weight="4"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/dog_tail" />
 
                     <EditText
                         android:id="@+id/editLetter3"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
                         android:cursorVisible="false"
                         android:ems="10"
-                        android:inputType="textCapCharacters"
+                        android:inputType="none"
                         android:textAlignment="center" />
                 </LinearLayout>
 
