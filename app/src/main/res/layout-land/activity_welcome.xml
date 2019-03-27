@@ -14,13 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:fontFamily="@font/comicneue_bold"
         android:shadowColor="@android:color/black"
         android:text="@string/welcome_message"
         android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textAllCaps="false" />
 
     <ImageView
         android:id="@+id/nextButton"
