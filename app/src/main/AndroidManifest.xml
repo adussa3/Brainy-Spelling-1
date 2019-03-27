@@ -89,9 +89,6 @@
         <activity android:name=".StudentHomeActivity" />
         <activity android:name=".UserProfileSelectionActivity" />
         <activity android:name=".TeacherHomeActivity" />
-        <activity android:name=".ConsonantsWordBankActivity" />
-        <activity android:name=".VowelsWordBankActivity" />
-        <activity android:name=".SegmentedWordBankActivity" />
         <activity android:name=".Unit1Activity" />
         <activity android:name=".BankActivity"></activity>
         <activity
