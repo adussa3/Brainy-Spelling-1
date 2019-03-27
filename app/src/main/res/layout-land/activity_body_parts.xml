@@ -13,7 +13,7 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/arrowButton5"
+        android:id="@+id/leftArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
@@ -24,14 +24,15 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
+        android:id="@+id/bodyPartsHorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 
@@ -135,7 +136,7 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/arrowButton6"
+        android:id="@+id/rightArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"

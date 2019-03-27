@@ -13,7 +13,7 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/arrowButton5"
+        android:id="@+id/leftArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
@@ -24,14 +24,15 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
+        android:id="@+id/thingsHorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 
@@ -55,7 +56,8 @@
                     android:contentDescription="box"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/box"/>
+                    android:src="@drawable/box" />
+
                 <ImageButton
                     android:id="@+id/bubbleButton"
                     android:layout_width="200dp"
@@ -65,7 +67,8 @@
                     android:contentDescription="bubble"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bubble"/>
+                    android:src="@drawable/bubble" />
+
                 <ImageButton
                     android:id="@+id/fridgeButton"
                     android:layout_width="200dp"
@@ -75,7 +78,8 @@
                     android:contentDescription="fridge"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fridge"/>
+                    android:src="@drawable/fridge" />
+
                 <ImageButton
                     android:id="@+id/fringeButton"
                     android:layout_width="200dp"
@@ -85,10 +89,11 @@
                     android:contentDescription="fringe"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fringe"/>
+                    android:src="@drawable/fringe" />
 
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -104,7 +109,8 @@
                     android:contentDescription="fork"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fork"/>
+                    android:src="@drawable/fork" />
+
                 <ImageButton
                     android:id="@+id/pearlButton"
                     android:layout_width="200dp"
@@ -114,7 +120,8 @@
                     android:contentDescription="pearl"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/pearl"/>
+                    android:src="@drawable/pearl" />
+
                 <ImageButton
                     android:id="@+id/glassButton"
                     android:layout_width="200dp"
@@ -124,7 +131,7 @@
                     android:contentDescription="glass"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/glass"/>
+                    android:src="@drawable/glass" />
             </LinearLayout>
 
             <LinearLayout
@@ -142,7 +149,8 @@
                     android:contentDescription="bags"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bags"/>
+                    android:src="@drawable/bags" />
+
                 <ImageButton
                     android:id="@+id/bedButton"
                     android:layout_width="200dp"
@@ -152,7 +160,8 @@
                     android:contentDescription="bed"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bed"/>
+                    android:src="@drawable/bed" />
+
                 <ImageButton
                     android:id="@+id/clarinetButton"
                     android:layout_width="200dp"
@@ -162,7 +171,8 @@
                     android:contentDescription="clarinet"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/clarinet"/>
+                    android:src="@drawable/clarinet" />
+
                 <ImageButton
                     android:id="@+id/fluteButton"
                     android:layout_width="200dp"
@@ -172,14 +182,14 @@
                     android:contentDescription="flute"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/flute"/>
+                    android:src="@drawable/flute" />
             </LinearLayout>
 
         </LinearLayout>
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/arrowButton6"
+        android:id="@+id/rightArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"

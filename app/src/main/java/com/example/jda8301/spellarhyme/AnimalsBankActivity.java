@@ -6,8 +6,10 @@ import android.graphics.ColorMatrixColorFilter;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -15,14 +17,27 @@ import com.example.jda8301.spellarhyme.utils.Bank;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class AnimalsBankActivity extends AppCompatActivity {
     private static String category = "animals";
+
+    HorizontalScrollView sv;
+
+    ImageButton leftScroll;
+    ImageButton rightScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animal_bank);
+
+        leftScroll = (ImageButton) findViewById(R.id.leftArrow);
+        rightScroll = (ImageButton) findViewById(R.id.rightArrow);
+
+
+        sv = (HorizontalScrollView) findViewById(R.id.animalsHorizontalSV);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
@@ -30,6 +45,44 @@ public class AnimalsBankActivity extends AppCompatActivity {
         actionBarTitle.setText("Animals Word Bank");
 
         updateImages(category);
+
+        leftScroll.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        if(leftScroll.isPressed()) {
+                            sv.setScrollX(sv.getScrollX() - 20);
+                        }
+                        else
+                            timer.cancel();
+                    }
+                },0,10);
+
+                return false;
+            }
+        });
+
+        rightScroll.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                final Timer timer = new Timer();
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        if(rightScroll.isPressed()) {
+                            sv.setScrollX(sv.getScrollX() + 20);
+                        }
+                        else
+                            timer.cancel();
+                    }
+                },0,10);
+
+                return false;
+            }
+        });
 
     }
     private static void findImageButtons(ViewGroup viewGroup, ArrayList<ImageButton> views) {
