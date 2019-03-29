@@ -399,6 +399,7 @@ public class Unit1Activity extends AppCompatActivity {
     // Update learned words to be colored
     private void updateLearnedWords() {
 
+        //random praise audio
         int randomIndex = rand.nextInt(42);
 
         // Check to see if word1 is mastered

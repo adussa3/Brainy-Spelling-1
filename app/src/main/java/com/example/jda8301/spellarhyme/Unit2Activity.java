@@ -229,6 +229,7 @@ public class Unit2Activity extends AppCompatActivity {
     // Update learned words to be colored, and update spellCounts
     private void updateLearnedWords() {
 
+        //random praise audio
         int randomIndex = rand.nextInt(42);
 
         ColorMatrix matrix = new ColorMatrix();
