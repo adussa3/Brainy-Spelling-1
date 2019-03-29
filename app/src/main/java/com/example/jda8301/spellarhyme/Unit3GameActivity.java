@@ -388,7 +388,7 @@ public class Unit3GameActivity extends AppCompatActivity {
 
                     // If fully spelled, increment spell count and reset activity (for now)
                     if (!incomplete) {
-                        Bank.incrementSpellCount("default",Bank.vowels,currentWord.getStringName());
+                        Bank.incrementSpellCount("default",Bank.vowels,currentWord.getStringName(), currentWord.getCategory());
                         recreateActivity();
                     }
 
@@ -446,7 +446,7 @@ public class Unit3GameActivity extends AppCompatActivity {
         currentWord = wordMap.get(stringName).get(wordIndex);
 
 
-        levelState = Bank.getSpellCount("default", Bank.vowels,currentWord.getStringName());
+        levelState = Bank.getSpellCount("default", Bank.vowels,currentWord.getStringName(), currentWord.getCategory());
 //        Log.e("LEVEL STATE", Integer.toString(levelState));
 
     }

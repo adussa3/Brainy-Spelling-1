@@ -47,10 +47,10 @@ public class Unit3WordListActivity extends AppCompatActivity {
 
         initializeComponents(savedInstanceState);
 
-        leftScroll = (ImageButton) findViewById(R.id.imageButton);
-        rightScroll = (ImageButton) findViewById(R.id.imageButton2);
+        leftScroll = (ImageButton) findViewById(R.id.leftArrow);
+        rightScroll = (ImageButton) findViewById(R.id.rightArrow);
 
-        sv = (HorizontalScrollView) findViewById(R.id.horizontalScrollView2);
+        sv = (HorizontalScrollView) findViewById(R.id.unit4HorizontalSV);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);
@@ -71,7 +71,7 @@ public class Unit3WordListActivity extends AppCompatActivity {
 
             myImage.setImageResource(getResources().getIdentifier(vowel.getStringName(),"drawable", MyApplication.getAppContext().getPackageName()));
 
-            if (Bank.getSpellCount("default",Bank.vowels, vowel.getStringName()) < vowel.getSound().length - vowel.getSilentLetters().length) {
+            if (Bank.getSpellCount("default",Bank.vowels, vowel.getStringName(), vowel.getCategory()) < vowel.getSound().length - vowel.getSilentLetters().length) {
                 // Initialize all colors depending on if mastered or not
                 ColorMatrix matrix = new ColorMatrix();
                 matrix.setSaturation(0);

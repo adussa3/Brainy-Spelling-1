@@ -1,13 +1,12 @@
 package com.example.jda8301.spellarhyme.model;
 
-import android.os.Parcelable;
-
 /**
  * Created by YizraGhebre on 1/23/19.
  */
 
 public class VowelWord {
     private String stringName;
+    private String category;
     private int[] sound;
     private int[] silentLetters;
     private int[] vowels;
@@ -51,6 +50,14 @@ public class VowelWord {
 
     public void setStringName(String stringName) {
         this.stringName = stringName;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public VowelWord(String stringName, int[] sound, int[] silentLetters, int[] vowels, int targetVowel) {
