@@ -72,6 +72,8 @@ public class Unit1Activity extends AppCompatActivity {
     AppPreferencesHelper helper = new AppPreferencesHelper();
     List<List<SegmentedWord>> segmentedWords = helper.getSegmentedWords();
 
+    Random rand = new Random();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -397,6 +399,8 @@ public class Unit1Activity extends AppCompatActivity {
     // Update learned words to be colored
     private void updateLearnedWords() {
 
+        int randomIndex = rand.nextInt(42);
+
         // Check to see if word1 is mastered
         boolean notComplete = false;
         for (String word : spellingProgress1) {
@@ -409,6 +413,8 @@ public class Unit1Activity extends AppCompatActivity {
         if (!notComplete) {
             learned[0] = true;
             Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString(), wordList.get(0).getCategory());
+            String str = Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex];
+            AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
         }
 
         // Check to see if word2 is mastered
@@ -423,6 +429,7 @@ public class Unit1Activity extends AppCompatActivity {
         if (!notComplete) {
             learned[1] = true;
             Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString(), wordList.get(1).getCategory());
+            AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
         }
 
         // Check to see if word3 is mastered
@@ -437,6 +444,7 @@ public class Unit1Activity extends AppCompatActivity {
         if (!notComplete) {
             learned[2] = true;
             Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString(), wordList.get(2).getCategory());
+            AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
         }
 
 

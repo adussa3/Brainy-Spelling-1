@@ -58,6 +58,8 @@ public class Unit2Activity extends AppCompatActivity {
 
     List<SegmentedWord> selectedWordSet;
 
+    Random rand = new Random();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -227,6 +229,8 @@ public class Unit2Activity extends AppCompatActivity {
     // Update learned words to be colored, and update spellCounts
     private void updateLearnedWords() {
 
+        int randomIndex = rand.nextInt(42);
+
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(1);
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
@@ -249,6 +253,7 @@ public class Unit2Activity extends AppCompatActivity {
             }
 
             if (!notComplete && !learned[i]) {
+                AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
                 learned[i] = true;
                 wordImage[i].getDrawable().setColorFilter(filter);
                 Log.e("word" + (i + 1), selectedWordSet.get(i).getDisplayString());
@@ -270,6 +275,11 @@ public class Unit2Activity extends AppCompatActivity {
             for(EditText field: fields) {
                 field.setText("");
             }
+
+            //wait 2 seconds before restarting
+            long start = System.currentTimeMillis();
+            while (System.currentTimeMillis() - start < 2000) {}
+
             this.recreate();
         }
     }
