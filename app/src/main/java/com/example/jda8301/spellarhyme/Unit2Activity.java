@@ -121,6 +121,9 @@ public class Unit2Activity extends AppCompatActivity {
 
         //Set correct images based on JSON
         for (int i = 0; i < 3; i++) {
+            System.out.println(selectedWordSet.get(0).getSegmentInfo()[i].getImageFile());
+            System.out.println(selectedWordSet.get(1).getSegmentInfo()[i].getImageFile());
+            System.out.println(selectedWordSet.get(2).getSegmentInfo()[i].getImageFile());
             word1[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(0).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word2[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(1).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word3[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(2).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));

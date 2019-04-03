@@ -4,12 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
-import android.graphics.Paint;
-import android.graphics.drawable.ScaleDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -19,18 +15,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
-import com.example.jda8301.spellarhyme.model.SegmentedWord;
 import com.example.jda8301.spellarhyme.model.VowelWord;
 import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
 import com.example.jda8301.spellarhyme.utils.Bank;
 import com.example.jda8301.spellarhyme.utils.Config;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class Unit3GameActivity extends AppCompatActivity {
 
@@ -58,6 +52,8 @@ public class Unit3GameActivity extends AppCompatActivity {
     Map<String, List<VowelWord>> wordMap = helper.getVowels();
 
     private int[] buttonSoundID = new int[6];
+
+    Random rand = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -385,10 +381,13 @@ public class Unit3GameActivity extends AppCompatActivity {
                         }
                     }
 
+                    //random praise audio
+                    int randomIndex = rand.nextInt(42);
 
                     // If fully spelled, increment spell count and reset activity (for now)
                     if (!incomplete) {
                         Bank.incrementSpellCount("default",Bank.vowels,currentWord.getStringName(), currentWord.getCategory());
+                        AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
                         recreateActivity();
                     }
 
