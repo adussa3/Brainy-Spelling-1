@@ -29,9 +29,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
+        app:layout_constraintEnd_toStartOf="@+id/rightScroll"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintStart_toEndOf="@+id/leftScroll"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 

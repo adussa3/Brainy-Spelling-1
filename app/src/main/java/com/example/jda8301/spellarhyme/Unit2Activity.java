@@ -6,6 +6,7 @@ import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -93,6 +94,7 @@ public class Unit2Activity extends AppCompatActivity {
 
         for (SegmentedWord segmentedWord : selectedWordSet) {
             wordList.add(segmentedWord);
+
             for (Segment segment : segmentedWord.getSegmentInfo()) {
                 phonemeCode.add(segment.getSoundFile());
             }

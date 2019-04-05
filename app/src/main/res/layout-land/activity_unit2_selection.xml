@@ -18,12 +18,13 @@
         android:layout_height="match_parent"
         android:layout_marginTop="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
-        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintEnd_toStartOf="@+id/rightScroll"
+        app:layout_constraintStart_toEndOf="@+id/leftScroll"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -68,7 +69,7 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/arrowButton5"
+        android:id="@+id/leftScroll"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:background="@android:color/transparent"
@@ -79,7 +80,7 @@
         app:layout_constraintTop_toTopOf="@+id/horizontalScrollView" />
 
     <ImageButton
-        android:id="@+id/arrowButton6"
+        android:id="@+id/rightScroll"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:background="@android:color/transparent"
