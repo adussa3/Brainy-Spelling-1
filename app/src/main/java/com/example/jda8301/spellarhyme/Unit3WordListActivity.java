@@ -109,18 +109,18 @@ public class Unit3WordListActivity extends AppCompatActivity {
         leftScroll.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                final Timer timer = new Timer();
-                timer.schedule(new TimerTask() {
-                    @Override
-                    public void run() {
-                        if(leftScroll.isPressed()) {
-                            sv.setScrollX(sv.getScrollX() - 20);
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    final Timer timer = new Timer();
+                    timer.schedule(new TimerTask() {
+                        @Override
+                        public void run() {
+                            if (leftScroll.isPressed()) {
+                                sv.setScrollX(sv.getScrollX() - 20);
+                            } else
+                                timer.cancel();
                         }
-                        else
-                            timer.cancel();
-                    }
-                },0,10);
-
+                    }, 0, 10);
+                }
                 return false;
             }
         });
@@ -128,18 +128,18 @@ public class Unit3WordListActivity extends AppCompatActivity {
         rightScroll.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                final Timer timer = new Timer();
-                timer.schedule(new TimerTask() {
-                    @Override
-                    public void run() {
-                        if(rightScroll.isPressed()) {
-                            sv.setScrollX(sv.getScrollX() + 20);
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    final Timer timer = new Timer();
+                    timer.schedule(new TimerTask() {
+                        @Override
+                        public void run() {
+                            if (rightScroll.isPressed()) {
+                                sv.setScrollX(sv.getScrollX() + 20);
+                            } else
+                                timer.cancel();
                         }
-                        else
-                            timer.cancel();
-                    }
-                },0,10);
-
+                    }, 0, 10);
+                }
                 return false;
             }
         });
