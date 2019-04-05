@@ -86,7 +86,7 @@
             android:layout_marginRight="8dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/cat_head_bw" />
+            app:srcCompat="@drawable/cat_head" />
 
         <ImageView
             android:id="@+id/imageView1"
@@ -96,7 +96,7 @@
             android:layout_marginRight="8dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/cat_middle_bw" />
+            app:srcCompat="@drawable/cat_middle" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -106,7 +106,7 @@
             android:layout_marginRight="8dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/cat_tail_bw" />
+            app:srcCompat="@drawable/cat_tail" />
 
     </LinearLayout>
 
