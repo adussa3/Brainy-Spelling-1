@@ -34,6 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
+            android:id="@+id/imageLayout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -52,14 +53,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/cat_head_bw" />
+                    app:srcCompat="@drawable/cat_head" />
 
                 <ImageView
                     android:id="@+id/imageView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/cat_middle_bw" />
+                    app:srcCompat="@drawable/cat_middle" />
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -67,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:onClick="onClickSelectWord"
-                    app:srcCompat="@drawable/cat_tail_bw" />
+                    app:srcCompat="@drawable/cat_tail" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,21 +83,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/dog_head_bw" />
+                    app:srcCompat="@drawable/dog_head" />
 
                 <ImageView
                     android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/dog_middle_bw" />
+                    app:srcCompat="@drawable/dog_middle" />
 
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/dog_tail_bw" />
+                    app:srcCompat="@drawable/dog_tail" />
 
             </LinearLayout>
 
@@ -112,21 +113,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/hen_head_bw" />
+                    app:srcCompat="@drawable/hen_head" />
 
                 <ImageView
                     android:id="@+id/imageView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/hen_middle_bw" />
+                    app:srcCompat="@drawable/hen_middle" />
 
                 <ImageView
                     android:id="@+id/imageView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/hen_tail_bw" />
+                    app:srcCompat="@drawable/hen_tail" />
 
             </LinearLayout>
 

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -89,7 +90,7 @@ public class Unit3GameActivity extends AppCompatActivity {
         newPhoto.setScaleType(ImageView.ScaleType.FIT_CENTER);
         newPhoto.setAdjustViewBounds(true);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(2000, 600);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(2000, ViewGroup.LayoutParams.MATCH_PARENT);
         newPhoto.setLayoutParams(layoutParams);
 
         newPhoto.requestLayout();

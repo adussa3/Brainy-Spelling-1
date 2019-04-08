@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/cat_head_bw" />
+                    android:src="@drawable/cat_head" />
 
                 <ImageView
                     android:id="@+id/imageViewTop1"
@@ -52,7 +52,7 @@
                     android:layout_marginRight="4dp"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/cat_middle_bw" />
+                    android:src="@drawable/cat_middle" />
 
                 <ImageView
                     android:id="@+id/imageViewTop2"
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/cat_tail_bw" />
+                    android:src="@drawable/cat_tail" />
             </LinearLayout>
 
             <LinearLayout
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/dog_head_bw" />
+                    android:src="@drawable/dog_head" />
 
                 <ImageView
                     android:id="@+id/imageViewTop4"
@@ -88,7 +88,7 @@
                     android:layout_marginRight="4dp"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/dog_middle_bw" />
+                    android:src="@drawable/dog_middle" />
 
                 <ImageView
                     android:id="@+id/imageViewTop5"
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/dog_tail_bw" />
+                    android:src="@drawable/dog_tail" />
             </LinearLayout>
 
             <LinearLayout
@@ -114,7 +114,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/hen_head_bw" />
+                    android:src="@drawable/hen_head" />
 
                 <ImageView
                     android:id="@+id/imageViewTop7"
@@ -124,7 +124,7 @@
                     android:layout_marginRight="4dp"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/hen_middle_bw" />
+                    android:src="@drawable/hen_middle" />
 
                 <ImageView
                     android:id="@+id/imageViewTop8"
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/hen_tail_bw" />
+                    android:src="@drawable/hen_tail" />
             </LinearLayout>
 
         </LinearLayout>

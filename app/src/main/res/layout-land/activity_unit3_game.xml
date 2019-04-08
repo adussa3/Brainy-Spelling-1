@@ -66,47 +66,48 @@
     <LinearLayout
         android:id="@+id/wordPhoto"
         android:layout_width="wrap_content"
-        android:layout_height="172dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/fieldLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actionBar">
+        app:layout_constraintTop_toBottomOf="@+id/actionBar"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView0"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="144dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/cat_head_bw" />
+            app:srcCompat="@drawable/cat_head" />
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="144dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/cat_middle_bw" />
+            app:srcCompat="@drawable/cat_middle" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginStart="8dp"
+            android:layout_height="144dp"
             android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
-            app:srcCompat="@drawable/cat_tail_bw" />
+            app:srcCompat="@drawable/cat_tail" />
 
     </LinearLayout>
 

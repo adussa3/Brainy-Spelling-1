@@ -1,8 +1,5 @@
 package com.example.jda8301.spellarhyme.data;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 import com.example.jda8301.spellarhyme.MyApplication;
 import com.example.jda8301.spellarhyme.model.ConsonantWord;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
@@ -18,6 +15,7 @@ import com.google.gson.reflect.TypeToken;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -153,9 +151,9 @@ public class AppPreferencesHelper {
             JsonElement element = parser.parse(jsonLetters);
             JsonArray jsonArray = element.getAsJsonArray();
 
-            Map<String, List<ConsonantWord>> map = new HashMap<>();
+            Map<String, List<ConsonantWord>> map = new LinkedHashMap<>();
 
-            Type listType = new TypeToken<List<VowelWord>>() {
+            Type listType = new TypeToken<List<ConsonantWord>>() {
             }.getType();
 
             for (int i = 0; i < jsonArray.size(); i++) {

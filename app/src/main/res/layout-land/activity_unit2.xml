@@ -255,7 +255,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/cat_head_bw" />
+                    android:src="@drawable/cat_head" />
 
                 <EditText
                     android:id="@+id/unit2t1"
@@ -285,7 +285,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat_middle_bw" />
+                    android:src="@drawable/cat_middle" />
 
                 <EditText
                     android:id="@+id/unit2t2"
@@ -317,7 +317,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/cat_tail_bw" />
+                    android:src="@drawable/cat_tail" />
 
                 <EditText
                     android:id="@+id/unit2t3"
@@ -353,7 +353,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/dog_head_bw" />
+                    android:src="@drawable/dog_head" />
 
                 <EditText
                     android:id="@+id/unit2t7"
@@ -383,7 +383,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/dog_middle_bw" />
+                    android:src="@drawable/dog_middle" />
 
                 <EditText
                     android:id="@+id/unit2t8"
@@ -415,7 +415,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/dog_tail_bw" />
+                    android:src="@drawable/dog_tail" />
 
                 <EditText
                     android:id="@+id/unit2t9"
@@ -451,7 +451,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitEnd"
-                    android:src="@drawable/hen_head_bw" />
+                    android:src="@drawable/hen_head" />
 
                 <EditText
                     android:id="@+id/unit2t4"
@@ -481,7 +481,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hen_middle_bw" />
+                    android:src="@drawable/hen_middle" />
 
                 <EditText
                     android:id="@+id/unit2t5"
@@ -512,7 +512,7 @@
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitStart"
-                    android:src="@drawable/hen_tail_bw" />
+                    android:src="@drawable/hen_tail" />
 
                 <EditText
                     android:id="@+id/unit2t6"
