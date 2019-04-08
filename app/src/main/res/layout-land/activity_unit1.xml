@@ -332,6 +332,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
+                    android:focusableInTouchMode="true"
                     android:orientation="horizontal">
 
                     <EditText
@@ -342,7 +343,8 @@
                         android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="textCapCharacters"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:theme="@style/editTextColor" />
 
                     <EditText
                         android:id="@+id/editLetter2"
@@ -352,7 +354,8 @@
                         android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="textCapCharacters"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:theme="@style/editTextColor" />
 
                     <EditText
                         android:id="@+id/editLetter3"
@@ -362,7 +365,8 @@
                         android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="textCapCharacters"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:theme="@style/editTextColor" />
                 </LinearLayout>
 
             </LinearLayout>

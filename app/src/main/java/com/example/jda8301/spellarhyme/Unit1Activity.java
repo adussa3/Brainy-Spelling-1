@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -290,7 +291,7 @@ public class Unit1Activity extends AppCompatActivity {
 
         // Initialize sounds and animation for segments of selected word
         for (int i = 0; i < selectedWord.length; i++) {
-            Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(segmentedWords.get(0).get(0).getSegmentInfo()[i].getSoundFile()));
+            this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(segmentedWords.get(0).get(0).getSegmentInfo()[i].getSoundFile()), i);
             Util.scaleOnTouch(selectedWord[i]);
         }
 
@@ -300,8 +301,34 @@ public class Unit1Activity extends AppCompatActivity {
 
         // State machine for currently selected image, changes images and sounds based on chosen word
         Observer stateChange = new Observer() {
+
+            void playSoundOnClick(View button, final String sound, final int i) {
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + sound);
+                        EditText et = null;
+                        switch (i) {
+                            case 0:
+                                et = (EditText) findViewById(R.id.editLetter1);
+                                break;
+                            case 1:
+                                et = (EditText) findViewById(R.id.editLetter2);
+                                break;
+                            case 2:
+                                et = (EditText) findViewById(R.id.editLetter3);
+                                break;
+                        }
+
+                        et.requestFocus();
+                        Util.blinkEditText(et, getResources(), false);
+                    }
+                });
+            }
+
             @Override
             public void update(Observable o, Object newValue) {
+
                 if ((int) newValue == 0) {
                     Log.e("State 0", Config.AUDIO_WORDS_PATH + wordList.get(0).getDisplayString());
                     selectedWord[0].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(wordList.get(0).getSegmentInfo()[0].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
@@ -311,7 +338,7 @@ public class Unit1Activity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.AUDIO_WORDS_PATH + wordList.get(0).getDisplayString());
 
                     for (int i = 0; i < selectedWord.length; i++) {
-                        Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(0).getSegmentInfo()[i].getSoundFile()));
+                        this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(0).getSegmentInfo()[i].getSoundFile()), i);
                         fields[i].setText(spellingProgress1[i]);
                     }
 
@@ -325,7 +352,7 @@ public class Unit1Activity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.AUDIO_WORDS_PATH + wordList.get(1).getDisplayString());
 
                     for (int i = 0; i < selectedWord.length; i++) {
-                        Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(1).getSegmentInfo()[i].getSoundFile()));
+                        this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(1).getSegmentInfo()[i].getSoundFile()), i);
                         fields[i].setText(spellingProgress2[i]);
                     }
 
@@ -338,13 +365,13 @@ public class Unit1Activity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.AUDIO_WORDS_PATH + wordList.get(2).getDisplayString());
 
                     for (int i = 0; i < selectedWord.length; i++) {
-                        Util.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(2).getSegmentInfo()[i].getSoundFile()));
+                        this.playSoundOnClick(selectedWord[i], helper.getSoundFiles().get(wordList.get(2).getSegmentInfo()[i].getSoundFile()), i);
                         fields[i].setText(spellingProgress3[i]);
                     }
                 }
+                resetEditText();
             }
         };
-
         selectedWordState.addObserver(stateChange);
     }
 
@@ -353,6 +380,7 @@ public class Unit1Activity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
     // Update learned words to be colored
@@ -420,6 +448,42 @@ public class Unit1Activity extends AppCompatActivity {
             }
 
         }
+    }
 
+    final public void playSoundOnClick(View button, final String sound, final int i) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + sound);
+
+                EditText et = null;
+                switch(i) {
+                    case 0:
+                        et = (EditText) findViewById(R.id.editLetter1);
+                        break;
+                    case 1:
+                        et = (EditText) findViewById(R.id.editLetter2);
+                        break;
+                    case 2:
+                        et = (EditText) findViewById(R.id.editLetter3);
+                        break;
+                }
+
+                et.requestFocus();
+                Util.blinkEditText(et, getResources(), false);
+            }
+        });
+    }
+
+    // resets the edit texts according to the word that's being spelled
+    public void resetEditText() {
+        for (EditText field : fields) {
+            if (field.getText().toString().equals("")) {
+                field.getBackground().setColorFilter(getResources().getColor(R.color.edit_text_normal), PorterDuff.Mode.SRC_ATOP);
+            } else {
+                field.getBackground().setColorFilter(getResources().getColor(R.color.edit_text_activated), PorterDuff.Mode.SRC_ATOP);
+            }
+            field.clearFocus();
+        }
     }
 }

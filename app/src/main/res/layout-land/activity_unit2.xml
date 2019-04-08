@@ -217,6 +217,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:focusableInTouchMode="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -257,7 +258,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
 
             </LinearLayout>
 
@@ -289,7 +291,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
 
             </LinearLayout>
 
@@ -319,7 +322,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
             </LinearLayout>
         </LinearLayout>
 
@@ -355,7 +359,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
 
             </LinearLayout>
 
@@ -370,7 +375,7 @@
                 <ImageView
                     android:id="@+id/thirdWord2"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="0dp"
                     android:layout_weight="2"
                     android:background="@android:color/transparent"
                     android:scaleType="fitCenter"
@@ -380,15 +385,13 @@
                     android:id="@+id/unit2t8"
                     android:layout_width="70dp"
                     android:layout_height="0dp"
-                    android:layout_below="@+id/lastBlanks"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
                     android:layout_weight="1"
                     android:cursorVisible="false"
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
             </LinearLayout>
 
             <LinearLayout
@@ -417,7 +420,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
             </LinearLayout>
         </LinearLayout>
 
@@ -453,7 +457,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
 
             </LinearLayout>
 
@@ -485,7 +490,8 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textAlignment="center"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:theme="@style/editTextColor" />
             </LinearLayout>
 
             <LinearLayout
