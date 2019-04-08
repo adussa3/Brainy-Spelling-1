@@ -173,7 +173,7 @@
                     android:contentDescription="@string/bat"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bat1" />
+                    android:src="@drawable/bat" />
 
                 <ImageButton
                     android:id="@+id/wolfButton"
