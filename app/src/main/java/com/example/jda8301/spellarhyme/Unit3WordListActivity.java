@@ -69,6 +69,8 @@ public class Unit3WordListActivity extends AppCompatActivity {
         for (VowelWord vowel : allVowels) {
             ImageView myImage = new ImageView(MyApplication.getAppContext());
 
+            Log.e("WORDSTRING", vowel.getStringName());
+
             myImage.setImageResource(getResources().getIdentifier(vowel.getStringName(),"drawable", MyApplication.getAppContext().getPackageName()));
 
             if (Bank.getSpellCount("default",Bank.vowels, vowel.getStringName(), vowel.getCategory()) < vowel.getSound().length - vowel.getSilentLetters().length) {
