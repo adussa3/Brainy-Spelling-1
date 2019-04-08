@@ -11,7 +11,6 @@ public class ConsonantWord {
     private int[] silentLetters;
     private int[] consonants;
     private int targetConsonant;
-    private String category;
 
     public ConsonantWord(String stringName, int[] sound, int[] silentLetters, int[] consonants, int targetConsonant, String category) {
         this.stringName = stringName;
@@ -69,14 +68,6 @@ public class ConsonantWord {
 
     public void setTargetConsonant(int targetConsonant) {
         this.targetConsonant = targetConsonant;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
     }
 
 }
