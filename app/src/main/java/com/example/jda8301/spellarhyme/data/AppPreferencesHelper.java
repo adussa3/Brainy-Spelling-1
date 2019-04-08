@@ -1,8 +1,5 @@
 package com.example.jda8301.spellarhyme.data;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 import com.example.jda8301.spellarhyme.MyApplication;
 import com.example.jda8301.spellarhyme.model.ConsonantWord;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;

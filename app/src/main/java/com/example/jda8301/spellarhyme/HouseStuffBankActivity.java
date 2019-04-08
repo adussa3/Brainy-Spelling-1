@@ -17,6 +17,7 @@ import com.example.jda8301.spellarhyme.utils.Bank;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -109,10 +110,17 @@ public class HouseStuffBankActivity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
 
+        Map<String, Integer> bank = Bank.getUserBank(Bank.user);
+        String level = "";
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (!word.contains("arrow") && Bank.getSpellCount("default", "consonants", word, cat) < 3) {
+            for (String key : bank.keySet()) {
+                if (key.contains(word)) {
+                    level = Bank.parseLevel(key);
+                }
+            }
+            if (!word.contains("arrow") && Bank.getSpellCount("default", level, word, cat) < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }

@@ -57,7 +57,7 @@ public class Bank {
      * Note that there is way to recover the wiped data.
      */
     public static void resetBank() {
-        editor.clear().apply();
+        editor.clear().commit();
     }
 
     /**
@@ -158,7 +158,7 @@ public class Bank {
                 editor.remove(key);
             }
         }
-        editor.apply();
+        editor.commit();
     }
 
     /**
@@ -174,7 +174,7 @@ public class Bank {
                 editor.remove(key);
             }
         }
-        editor.apply();
+        editor.commit();
     }
 
     /**
@@ -194,7 +194,7 @@ public class Bank {
      * @param key the user + level + word to be removed
      */
     public static void removeWord(String key) {
-        editor.remove(key).apply();
+        editor.remove(key).commit();
     }
 
     /**
@@ -208,7 +208,7 @@ public class Bank {
         String key = user + " " + level + " " + word + " " + category;
         int oldSpellCount = sharedPref.getInt(key,0);
         editor.putInt(key, oldSpellCount + 1);
-        editor.apply();
+        editor.commit();
     }
 
     /**
@@ -219,7 +219,7 @@ public class Bank {
     public static void incrementSpellCount(String key) {
         int oldSpellCount = sharedPref.getInt(key, 0);
         editor.putInt(key, oldSpellCount + 1);
-        editor.apply();
+        editor.commit();
     }
 
     /**
@@ -243,7 +243,7 @@ public class Bank {
      */
     public static void setSpellCount(String key, int count) {
         editor.putInt(key, count);
-        editor.apply();
+        editor.commit();
     }
 
     /**
@@ -285,7 +285,7 @@ public class Bank {
      */
     public static void resetSpellCount(String key) {
         editor.putInt(key, 0);
-        editor.apply();
+        editor.commit();
     }
 
     /**
