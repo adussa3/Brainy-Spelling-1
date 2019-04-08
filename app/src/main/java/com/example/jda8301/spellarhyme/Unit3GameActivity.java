@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -141,8 +142,16 @@ public class Unit3GameActivity extends AppCompatActivity {
             });
             newField.setCursorVisible(false);
 
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) { // API 21
+                newField.setShowSoftInputOnFocus(false);
+            } else { // API 11-20
+                newField.setTextIsSelectable(true);
+            }
+
             fieldLayout.addView(newField);
         }
+
+
 
         for (int silentLetterIndex : currentWord.getSilentLetters()) {
             stringTextFields.get(silentLetterIndex).setText(Character.toString(currentWord.getStringName().charAt(silentLetterIndex)));
