@@ -138,6 +138,7 @@ public class Unit3GameActivity extends AppCompatActivity {
                         currentField = soundTextFields.indexOf(newField);
                         AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + helper.getSoundFiles().get(currentWord.getSound()[currentField]));
                     }
+                    Util.blinkEditText(newField, getResources(), true);
                 }
             });
             newField.setCursorVisible(false);
