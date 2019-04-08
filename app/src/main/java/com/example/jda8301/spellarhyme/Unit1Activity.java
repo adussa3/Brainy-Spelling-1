@@ -186,6 +186,14 @@ public class Unit1Activity extends AppCompatActivity {
             phonemeCode.remove(randomInt);
         }
 
+        AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "right letter right line");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+
+        }
+
 
         // Sets the state for the selected word when one of the three smaller pictures is touched
         for (int i = 0; i < 3; i++) {
@@ -413,9 +421,19 @@ public class Unit1Activity extends AppCompatActivity {
         // If word1 is mastered, update bank
         if (!notComplete) {
             learned[0] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString(), wordList.get(0).getCategory());
-            String str = Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex];
             AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            if (!Bank.isMastered("default", Bank.segmented, wordList.get(0).getDisplayString(), wordList.get(0).getCategory())) {
+                AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "choose another animal");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+            }
+            Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString(), wordList.get(0).getCategory());
         }
 
         // Check to see if word2 is mastered
@@ -429,8 +447,19 @@ public class Unit1Activity extends AppCompatActivity {
         // If word2 is mastered, update bank
         if (!notComplete) {
             learned[1] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString(), wordList.get(1).getCategory());
             AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            if (!Bank.isMastered("default", Bank.segmented, wordList.get(1).getDisplayString(), wordList.get(1).getCategory())) {
+                AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "choose another animal");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+            }
+            Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString(), wordList.get(1).getCategory());
         }
 
         // Check to see if word3 is mastered
@@ -444,8 +473,20 @@ public class Unit1Activity extends AppCompatActivity {
         // If word3 is mastered, update bank
         if (!notComplete) {
             learned[2] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString(), wordList.get(2).getCategory());
             AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            if (!Bank.isMastered("default", Bank.segmented, wordList.get(2).getDisplayString(), wordList.get(2).getCategory())) {
+                AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "choose another animal");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+            }
+            Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString(), wordList.get(2).getCategory());
+
         }
 
 
