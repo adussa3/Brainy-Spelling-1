@@ -233,7 +233,7 @@ public class Unit2Activity extends AppCompatActivity {
     private void updateLearnedWords() {
 
         //random praise audio
-        int randomIndex = rand.nextInt(42);
+        int randomIndex = (int) (Math.random() * 42);
 
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(1);

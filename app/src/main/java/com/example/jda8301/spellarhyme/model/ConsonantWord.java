@@ -6,13 +6,15 @@ package com.example.jda8301.spellarhyme.model;
 
 public class ConsonantWord {
     private String stringName;
+    private String category;
     private int[] sound;
     private int[] silentLetters;
     private int[] consonants;
     private int targetConsonant;
 
-    public ConsonantWord(String stringName, int[] sound, int[] silentLetters, int[] consonants, int targetConsonant) {
+    public ConsonantWord(String stringName, String category, int[] sound, int[] silentLetters, int[] consonants, int targetConsonant) {
         this.stringName = stringName;
+        this.category = category;
         this.sound = sound;
         this.silentLetters = silentLetters;
         this.consonants = consonants;
@@ -25,6 +27,14 @@ public class ConsonantWord {
 
     public void setStringName(String stringName) {
         this.stringName = stringName;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public int[] getSound() {
