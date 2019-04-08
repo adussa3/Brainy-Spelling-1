@@ -6,4 +6,7 @@
 
     <color name="screen_color">#64b5f6</color>
     <color name="action_bar_color">#0077c2</color>
+
+    <color name="edit_text_normal">#2e5371</color>
+    <color name="edit_text_activated">#f69a64</color>
 </resources>
