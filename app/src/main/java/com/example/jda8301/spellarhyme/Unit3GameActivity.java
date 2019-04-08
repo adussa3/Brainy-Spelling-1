@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class Unit3GameActivity extends AppCompatActivity {
 
@@ -52,6 +53,8 @@ public class Unit3GameActivity extends AppCompatActivity {
     Map<String, List<VowelWord>> wordMap = helper.getVowels();
 
     private int[] buttonSoundID = new int[6];
+
+    Random rand = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -379,10 +382,13 @@ public class Unit3GameActivity extends AppCompatActivity {
                         }
                     }
 
+                    //random praise audio
+                    int randomIndex = rand.nextInt(42);
 
                     // If fully spelled, increment spell count and reset activity (for now)
                     if (!incomplete) {
-                        Bank.incrementSpellCount("default",Bank.vowels,currentWord.getStringName());
+                        Bank.incrementSpellCount("default",Bank.vowels,currentWord.getStringName(), currentWord.getCategory());
+                        AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
                         recreateActivity();
                     }
 
@@ -440,7 +446,7 @@ public class Unit3GameActivity extends AppCompatActivity {
         currentWord = wordMap.get(stringName).get(wordIndex);
 
 
-        levelState = Bank.getSpellCount("default", Bank.vowels,currentWord.getStringName());
+        levelState = Bank.getSpellCount("default", Bank.vowels,currentWord.getStringName(), currentWord.getCategory());
 //        Log.e("LEVEL STATE", Integer.toString(levelState));
 
     }

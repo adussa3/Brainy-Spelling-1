@@ -13,7 +13,7 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/arrowButton5"
+        android:id="@+id/leftArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"
@@ -24,14 +24,15 @@
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
+        android:id="@+id/describeHorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toBottomOf="@+id/actionBar"
         app:layout_constraintVertical_bias="0.0">
 
@@ -47,59 +48,79 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/henButton"
+                    android:id="@+id/darkButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/hen"
+                    android:contentDescription="dark"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/hen" />
+                    android:src="@drawable/dark" />
 
                 <ImageButton
-                    android:id="@+id/ramButton"
+                    android:id="@+id/quietButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/ram"
+                    android:contentDescription="quiet"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ram" />
+                    android:src="@drawable/quiet" />
 
                 <ImageButton
-                    android:id="@+id/catButton"
+                    android:id="@+id/sixButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/cat1"
+                    android:contentDescription="six"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cat1" />
+                    android:src="@drawable/six" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
 
                 <ImageButton
-                    android:id="@+id/foxButton"
+                    android:id="@+id/sixteenButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/fox"
+                    android:contentDescription="sixteen"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fox" />
+                    android:src="@drawable/sixteen" />
 
                 <ImageButton
-                    android:id="@+id/dogButton"
+                    android:id="@+id/afraidButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/dog1"
+                    android:contentDescription="afraid"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/dog1" />
+                    android:src="@drawable/afraid" />
+
+                <ImageButton
+                    android:id="@+id/fiveButton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="five"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/five" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -109,116 +130,45 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/pigButton"
+                    android:id="@+id/oldButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/pig1"
+                    android:contentDescription="old"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/pig1" />
+                    android:src="@drawable/old" />
 
                 <ImageButton
-                    android:id="@+id/flyButton"
+                    android:id="@+id/hotButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/fly"
+                    android:contentDescription="hot"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/fly" />
+                    android:src="@drawable/hot" />
 
                 <ImageButton
-                    android:id="@+id/batButton"
+                    android:id="@+id/sleepyButton"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:contentDescription="@string/bat"
+                    android:contentDescription="sleepy"
                     android:cropToPadding="false"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bat" />
+                    android:src="@drawable/sleepy" />
 
-                <ImageButton
-                    android:id="@+id/bugButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/bug"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/bug" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/elfButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/elf"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/elf" />
-
-                <ImageButton
-                    android:id="@+id/kidButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/kid"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/kid" />
-
-                <ImageButton
-                    android:id="@+id/galButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/gal"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/gal" />
-
-                <ImageButton
-                    android:id="@+id/refButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/ref"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ref" />
-
-                <ImageButton
-                    android:id="@+id/copButton"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="false"
-                    android:contentDescription="@string/cop"
-                    android:cropToPadding="false"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/cop" />
             </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/arrowButton6"
+        android:id="@+id/rightArrow"
         style="@style/ScrollButton"
         android:layout_weight="0"
         android:background="@android:color/transparent"

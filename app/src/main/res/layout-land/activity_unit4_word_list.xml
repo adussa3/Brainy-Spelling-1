@@ -13,24 +13,24 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/leftArrow"
         style="@style/ScrollButton"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintTop_toTopOf="@+id/unit4HorizontalSV"
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView2"
+        android:id="@+id/unit4HorizontalSV"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
@@ -135,13 +135,13 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/rightArrow"
         style="@style/ScrollButton"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView2"
+        app:layout_constraintBottom_toBottomOf="@+id/unit4HorizontalSV"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintTop_toTopOf="@+id/unit4HorizontalSV"
         app:srcCompat="@drawable/button_forward" />
 
 </android.support.constraint.ConstraintLayout>

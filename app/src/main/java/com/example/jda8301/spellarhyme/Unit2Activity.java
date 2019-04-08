@@ -59,6 +59,8 @@ public class Unit2Activity extends AppCompatActivity {
 
     List<SegmentedWord> selectedWordSet;
 
+    Random rand = new Random();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,7 +106,8 @@ public class Unit2Activity extends AppCompatActivity {
             Random rand = new Random();
             int randomInt = rand.nextInt(phonemeCode.size());
             button.setText(helper.getPhonemeLetters().get(phonemeCode.get(randomInt)));
-            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+            button.setPrivateImeOptions(helper.getSoundFiles().get(phonemeCode.get(randomInt)));
+//            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
             phonemeCode.remove(randomInt);
         }
 
@@ -120,6 +123,9 @@ public class Unit2Activity extends AppCompatActivity {
 
         //Set correct images based on JSON
         for (int i = 0; i < 3; i++) {
+            System.out.println(selectedWordSet.get(0).getSegmentInfo()[i].getImageFile());
+            System.out.println(selectedWordSet.get(1).getSegmentInfo()[i].getImageFile());
+            System.out.println(selectedWordSet.get(2).getSegmentInfo()[i].getImageFile());
             word1[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(0).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word2[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(1).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word3[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(2).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
@@ -131,28 +137,34 @@ public class Unit2Activity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word1[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word2[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(i).getCategory())) {
                 word3[i].getDrawable().setColorFilter(filter);
             }
         }
 
-        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString())));
-        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString())));
-        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString())));
+        Log.e("Word 1", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(),selectedWordSet.get(0).getCategory())));
+        Log.e("Word 2", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(),selectedWordSet.get(1).getCategory())));
+        Log.e("Word 3", Integer.toString(Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(2).getCategory())));
 
 
         // Update EditText when correct letter button is pressed
-        for (Button button: buttons) {
+        for (final Button button: buttons) {
             final Button thisButton = button;
             button.setOnTouchListener(new View.OnTouchListener() {
                 public boolean onTouch (View v, MotionEvent event) {
                     if (event.getAction() == MotionEvent.ACTION_UP) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + button.getPrivateImeOptions());
+                        try {
+                            Thread.sleep(1000);
+                        } catch(InterruptedException ex) {
+                            Thread.currentThread().interrupt();
+                        }
                         int index = currentField.getValue() % 3;
 
                         Log.e("thisButton", thisButton.getText().toString());
@@ -165,6 +177,7 @@ public class Unit2Activity extends AppCompatActivity {
 
 
                         if (thisButton.getText().toString().equals(Character.toString(selectedWordSet.get(selectedWordState.getValue()).getDisplayString().charAt(index)))) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
                             fields[currentField.getValue()].setText(thisButton.getText());
                             if (selectedWordState.getValue() == 0) {
                                 spellingProgress1[index] = thisButton.getText().toString();
@@ -177,6 +190,8 @@ public class Unit2Activity extends AppCompatActivity {
                                 word3[index].getDrawable().setColorFilter(filter);
                             }
                             thisButton.setVisibility(View.INVISIBLE);
+                        } else {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
                         }
 
 //
@@ -219,6 +234,9 @@ public class Unit2Activity extends AppCompatActivity {
     // Update learned words to be colored, and update spellCounts
     private void updateLearnedWords() {
 
+        //random praise audio
+        int randomIndex = rand.nextInt(42);
+
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(1);
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
@@ -241,12 +259,13 @@ public class Unit2Activity extends AppCompatActivity {
             }
 
             if (!notComplete && !learned[i]) {
+                AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
                 learned[i] = true;
                 wordImage[i].getDrawable().setColorFilter(filter);
                 Log.e("word" + (i + 1), selectedWordSet.get(i).getDisplayString());
-                Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
-                if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString()) >= 3) {
-                    Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString());
+                Bank.incrementSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory());
+                if (Bank.getSpellCount("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory()) >= 3) {
+                    Bank.setMastered("default", Bank.segmented, selectedWordSet.get(i).getDisplayString(), selectedWordSet.get(i).getCategory());
                 }
             }
         }
@@ -262,6 +281,11 @@ public class Unit2Activity extends AppCompatActivity {
             for(EditText field: fields) {
                 field.setText("");
             }
+
+            //wait 2 seconds before restarting
+            long start = System.currentTimeMillis();
+            while (System.currentTimeMillis() - start < 2000) {}
+
             this.recreate();
         }
     }

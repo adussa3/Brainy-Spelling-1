@@ -19,10 +19,9 @@ public class MyApplication extends Application {
         MyApplication.context = getApplicationContext();
 
 //        AppPreferencesHelper appHelper = new AppPreferencesHelper();
-//
+
 //        Bank.setMastered("default", "vowels", "axe");
-//        Bank.setMastered("default", "segmented", "dog1");
-//        Bank.setMastered("default", "consonants", "cow");
+        Bank.setMastered("default", "consonants", "cow", "animals");
 //
 //        Map<String, Integer> bank = Bank.getBank();
 //        System.out.print("Bank Size: " + bank.size());

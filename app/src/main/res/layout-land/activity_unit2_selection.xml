@@ -18,8 +18,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/arrowButton6"
-        app:layout_constraintStart_toEndOf="@+id/arrowButton5"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
@@ -46,29 +46,14 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/spf_03" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/spf_04"
-                tools:scaleType="centerCrop" />
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/spf_06" />
 
         </LinearLayout>
 
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/arrowButton5"
+        android:id="@+id/leftArrow"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:background="@android:color/transparent"
@@ -79,7 +64,7 @@
         app:layout_constraintTop_toTopOf="@+id/horizontalScrollView" />
 
     <ImageButton
-        android:id="@+id/arrowButton6"
+        android:id="@+id/rightArrow"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:background="@android:color/transparent"
