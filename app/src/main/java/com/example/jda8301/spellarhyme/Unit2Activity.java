@@ -137,13 +137,13 @@ public class Unit2Activity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(i).getCategory())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(0).getCategory())) {
                 word1[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(i).getCategory())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(1).getCategory())) {
                 word2[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(i).getCategory())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(2).getCategory())) {
                 word3[i].getDrawable().setColorFilter(filter);
             }
         }
