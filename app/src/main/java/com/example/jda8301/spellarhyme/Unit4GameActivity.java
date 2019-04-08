@@ -6,6 +6,7 @@ import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Paint;
 import android.graphics.drawable.ScaleDrawable;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Layout;
@@ -145,6 +146,12 @@ public class Unit4GameActivity extends AppCompatActivity {
                 }
             });
             newField.setCursorVisible(false);
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) { // API 21
+                newField.setShowSoftInputOnFocus(false);
+            } else { // API 11-20
+                newField.setTextIsSelectable(true);
+            }
 
             fieldLayout.addView(newField);
         }
