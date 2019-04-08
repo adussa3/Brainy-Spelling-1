@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -117,6 +118,7 @@ public class Unit2Activity extends AppCompatActivity {
             } else { // API 11-20
                 fields[i].setTextIsSelectable(true);
             }
+            fields[i].getBackground().setColorFilter(getResources().getColor(R.color.edit_text_normal), PorterDuff.Mode.SRC_ATOP);
         }
 
         //Set correct images based on JSON
@@ -233,7 +235,7 @@ public class Unit2Activity extends AppCompatActivity {
     private void updateLearnedWords() {
 
         //random praise audio
-        int randomIndex = rand.nextInt(42);
+        int randomIndex = (int) (Math.random() * 42);
 
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(1);
@@ -326,11 +328,13 @@ public class Unit2Activity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), Unit2SelectionActivity.class);
         startActivity(intent);
+        finish();
     }
 
     // Highlights the edit text when a segment is selected
-    public static void onClickSelectSegment(View view) {
-        EditText et = (EditText) ((ViewGroup) view).getChildAt(1);
+    public void onClickSelectSegment(View view) {
+        final EditText et = (EditText) ((ViewGroup) view).getChildAt(1);
         et.requestFocus();
+        Util.blinkEditText(et, getResources(), true);
     }
 }

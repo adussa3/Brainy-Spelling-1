@@ -2,13 +2,12 @@ package com.example.jda8301.spellarhyme;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.util.Log;
+import android.content.res.Resources;
+import android.graphics.PorterDuff;
+import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
 import com.example.jda8301.spellarhyme.utils.Config;
@@ -77,5 +76,45 @@ public class Util {
                 return false;
             }
         });
+    }
+
+    // Makes the edit texts blink when on focus
+    public static void blinkEditText(final EditText et, final Resources activity, final boolean isVisible) {
+        final Handler handler = new Handler();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                int timeToBlink = 500;
+
+                try {
+                    Thread.sleep(timeToBlink);
+                } catch (Exception e) {
+
+                }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        if (et.getText().toString().equals("")) {
+                            if (et.hasFocus()) {
+                                if (isVisible) {
+                                    et.getBackground().setColorFilter(activity.getColor(R.color.screen_color), PorterDuff.Mode.SRC_ATOP);
+                                    blinkEditText(et, activity, false);
+                                } else {
+                                    et.getBackground().setColorFilter(activity.getColor(R.color.edit_text_activated), PorterDuff.Mode.SRC_ATOP);
+                                    blinkEditText(et, activity, true);
+                                }
+                            } else {
+                                et.getBackground().setColorFilter(activity.getColor(R.color.edit_text_normal), PorterDuff.Mode.SRC_ATOP);
+                            }
+                        } else {
+                            et.getBackground().setColorFilter(activity.getColor(R.color.edit_text_activated), PorterDuff.Mode.SRC_ATOP);
+                        }
+                    }
+                });
+            }
+        }).start();
     }
 }

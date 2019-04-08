@@ -75,4 +75,9 @@
         <item name="android:layout_marginEnd">8dp</item>
     </style>
 
+    <!-- Design for the edit text fields -->
+    <style name="editTextColor" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/edit_text_activated</item>
+    </style>
+
 </resources>

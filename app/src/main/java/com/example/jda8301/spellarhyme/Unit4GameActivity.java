@@ -335,6 +335,11 @@ public class Unit4GameActivity extends AppCompatActivity {
                     AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + helper.getSoundFiles().get(buttonSoundID[buttons.indexOf(currButton)]));
 
                     if (currButton.getText().toString().equals(helper.getPhonemeLetters().get(currentWord.getSound()[currentField]))) {
+                        AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "correct");
+                        try {
+                            Thread.sleep(2000);
+                        } catch (InterruptedException e) {
+                        }
                         soundTextFields.get(currentField).setText(helper.getPhonemeLetters().get(currentWord.getSound()[currentField]));
                         currButton.setText("");
 
@@ -376,6 +381,12 @@ public class Unit4GameActivity extends AppCompatActivity {
 
                         }
 
+                    } else {
+                        AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
+                        try {
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e) {
+                        }
                     }
 
 
@@ -387,10 +398,28 @@ public class Unit4GameActivity extends AppCompatActivity {
                         }
                     }
 
+                    //random praise audio
+                    int randomIndex = (int) (Math.random() * 42);
 
                     // If fully spelled, increment spell count and reset activity (for now)
                     if (!incomplete) {
-                        Bank.incrementSpellCount("default",Bank.consonants,currentWord.getStringName(), currentWord.getCategory());
+                        Bank.incrementSpellCount("default",Bank.consonants,currentWord.getStringName(),currentWord.getCategory());
+                        if (levelState + currentWord.getSilentLetters().length == currentWord.getSound().length) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+                            try {
+                                Thread.sleep(3000);
+                            } catch (InterruptedException e) {
+                            }
+                        }
+                        if (Bank.getSpellCount("default",Bank.consonants,currentWord.getStringName(),currentWord.getCategory()) == 1) {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "spell letters missing full");
+                        } else {
+                            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "do it again 1");
+                        }
+                        try {
+                            Thread.sleep(3000);
+                        } catch (InterruptedException e) {
+                        }
                         recreateActivity();
                     }
 
@@ -461,7 +490,7 @@ public class Unit4GameActivity extends AppCompatActivity {
 
 
 
-        levelState = Bank.getSpellCount("default", Bank.consonants,currentWord.getStringName(), currentWord.getCategory());
+        levelState = Bank.getSpellCount("default", Bank.consonants,currentWord.getStringName(),currentWord.getCategory());
 //        Log.e("LEVEL STATE", Integer.toString(levelState));
 
     }
