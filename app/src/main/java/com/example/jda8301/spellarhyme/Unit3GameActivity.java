@@ -4,14 +4,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
-import android.graphics.Paint;
-import android.graphics.drawable.ScaleDrawable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -19,15 +16,12 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
-import com.example.jda8301.spellarhyme.model.SegmentedWord;
 import com.example.jda8301.spellarhyme.model.VowelWord;
 import com.example.jda8301.spellarhyme.service.AudioPlayerHelper;
 import com.example.jda8301.spellarhyme.utils.Bank;
 import com.example.jda8301.spellarhyme.utils.Config;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -93,7 +87,7 @@ public class Unit3GameActivity extends AppCompatActivity {
         newPhoto.setScaleType(ImageView.ScaleType.FIT_CENTER);
         newPhoto.setAdjustViewBounds(true);
 
-        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(2000, 600);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(2000, ViewGroup.LayoutParams.MATCH_PARENT);
         newPhoto.setLayoutParams(layoutParams);
 
         newPhoto.requestLayout();
