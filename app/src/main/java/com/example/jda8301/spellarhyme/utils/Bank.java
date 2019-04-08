@@ -403,5 +403,14 @@ public class Bank {
         }
 
     }
+    public static String getLevel(String word) {
+        Map<String, Integer> bank = Bank.getUserBank(Bank.user);
+        for (String key : bank.keySet()) {
+            if (key.contains(word)) {
+                return Bank.parseLevel(key);
+            }
+        }
+        return null;
+    }
 }
 

@@ -112,7 +112,7 @@ public class PeopleBankActivity extends AppCompatActivity {
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            if (!word.contains("arrow") && Bank.getSpellCount("default", "consonants", word, cat) < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", Bank.getLevel(word), word, cat) < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }
