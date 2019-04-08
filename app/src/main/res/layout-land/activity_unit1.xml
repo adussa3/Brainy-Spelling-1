@@ -306,6 +306,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:focusableInTouchMode="true"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -331,7 +332,8 @@
                         android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="none"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:theme="@style/editTextColor" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -357,7 +359,8 @@
                         android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="none"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:theme="@style/editTextColor" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -383,7 +386,8 @@
                         android:cursorVisible="false"
                         android:ems="10"
                         android:inputType="none"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:theme="@style/editTextColor" />
                 </LinearLayout>
 
             </LinearLayout>
