@@ -6,16 +6,13 @@
         "stringName": "boy",
         "sound": [
           13,
-          78,
           78
         ],
         "silentLetters": [],
         "consonants": [
-          3
+          2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "box",
@@ -28,9 +25,7 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "bubble",
@@ -39,18 +34,15 @@
           103,
           13,
           13,
-          59,
           59
         ],
         "silentLetters": [],
         "consonants": [
+          2,
+          3,
           4
         ],
-        "targetConsonant": [
-          0,
-          2,
-          3
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -61,16 +53,13 @@
         "stringName": "cow",
         "sound": [
           16,
-          77,
           77
         ],
         "silentLetters": [],
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "cut",
@@ -83,24 +72,19 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "car",
         "sound": [
           16,
-          8,
           8
         ],
         "silentLetters": [],
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -126,9 +110,7 @@
           2,
           4
         ],
-        "targetConsonant": [
-          5
-        ]
+        "targetConsonant": 5
       },
       {
         "stringName": "saucepan",
@@ -148,9 +130,7 @@
           5,
           7
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       },
       {
         "stringName": "dancer",
@@ -167,9 +147,7 @@
           2,
           5
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       }
     ]
   },
@@ -187,9 +165,7 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "dig",
@@ -202,15 +178,12 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "dark",
         "sound": [
           22,
-          8,
           8,
           56
         ],
@@ -219,9 +192,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -239,9 +210,7 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "elf",
@@ -252,17 +221,14 @@
         ],
         "silentLetters": [],
         "consonants": [
-          0
+          1
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       },
       {
         "stringName": "leaf",
         "sound": [
           58,
-          27,
           27,
           36
         ],
@@ -270,9 +236,7 @@
         "consonants": [
           0
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       }
     ]
   },
@@ -282,7 +246,6 @@
       {
         "stringName": "bridge",
         "sound": [
-          15,
           15,
           45,
           0,
@@ -297,14 +260,11 @@
           0,
           1
         ],
-        "targetConsonant": [
-          4
-        ]
+        "targetConsonant": 4
       },
       {
         "stringName": "fridge",
         "sound": [
-          38,
           38,
           45,
           61,
@@ -312,21 +272,18 @@
           0
         ],
         "silentLetters": [
+          3,
           5
         ],
         "consonants": [
           0,
-          1,
-          3
+          1
         ],
-        "targetConsonant": [
-          4
-        ]
+        "targetConsonant": 4
       },
       {
         "stringName": "fringe",
         "sound": [
-          38,
           38,
           45,
           61,
@@ -341,9 +298,7 @@
           1,
           3
         ],
-        "targetConsonant": [
-          4
-        ]
+        "targetConsonant": 4
       }
     ]
   },
@@ -363,9 +318,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "girl",
@@ -379,15 +332,12 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "goat",
         "sound": [
           39,
-          68,
           68,
           96
         ],
@@ -395,9 +345,7 @@
         "consonants": [
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -415,9 +363,7 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "hug",
@@ -430,15 +376,12 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "hand",
         "sound": [
           43,
-          7,
           7,
           22
         ],
@@ -447,9 +390,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -460,16 +401,13 @@
         "stringName": "jay",
         "sound": [
           55,
-          12,
           12
         ],
         "silentLetters": [],
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "jump",
@@ -484,9 +422,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "juggler",
@@ -495,7 +431,6 @@
           103,
           40,
           58,
-          31,
           31
         ],
         "silentLetters": [],
@@ -505,9 +440,7 @@
           4,
           6
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -518,23 +451,19 @@
         "stringName": "key",
         "sound": [
           56,
-          35,
           35
         ],
         "silentLetters": [],
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "king",
         "sound": [
           56,
           45,
-          63,
           63
         ],
         "silentLetters": [],
@@ -542,15 +471,12 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "fork",
         "sound": [
           36,
-          73,
           73,
           56
         ],
@@ -559,9 +485,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -581,14 +505,11 @@
           0,
           3
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       },
       {
         "stringName": "owl",
         "sound": [
-          77,
           77,
           58
         ],
@@ -596,9 +517,7 @@
         "consonants": [
           1
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       },
       {
         "stringName": "tail",
@@ -611,9 +530,7 @@
         "consonants": [
           0
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       }
     ]
   },
@@ -631,16 +548,13 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "lick",
         "sound": [
           57,
           45,
-          19,
           19
         ],
         "silentLetters": [],
@@ -648,16 +562,12 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "light",
         "sound": [
           47,
-          49,
-          49,
           49,
           96
         ],
@@ -667,9 +577,7 @@
           3,
           4
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -680,22 +588,18 @@
         "stringName": "man",
         "sound": [
           60,
-          7,
           7
         ],
         "silentLetters": [],
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "mouse",
         "sound": [
           60,
-          75,
           75,
           84,
           0
@@ -706,17 +610,13 @@
         "consonants": [
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "mouth",
         "sound": [
           60,
           75,
-          75,
-          98,
           98
         ],
         "silentLetters": [],
@@ -724,9 +624,7 @@
           3,
           4
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -746,15 +644,12 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "nail",
         "sound": [
           61,
-          5,
           5,
           58
         ],
@@ -762,16 +657,12 @@
         "consonants": [
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "clown",
         "sound": [
           20,
-          20,
-          77,
           77,
           61
         ],
@@ -782,9 +673,7 @@
           3,
           4
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       }
     ]
   },
@@ -802,9 +691,7 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "pearl",
@@ -814,15 +701,12 @@
           3,
           4
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "purse",
         "sound": [
           79,
-          105,
           105,
           84,
           0
@@ -834,9 +718,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -847,8 +729,6 @@
         "stringName": "queen",
         "sound": [
           82,
-          82,
-          29,
           29,
           61
         ],
@@ -856,18 +736,13 @@
         "consonants": [
           4
         ],
-        "targetConsonant": [
-          0,
-          1
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "squares",
         "sound": [
           84,
           82,
-          82,
-          9,
           9,
           0,
           85
@@ -878,28 +753,20 @@
           4,
           6
         ],
-        "targetConsonant": [
-          1,
-          2
-        ]
+        "targetConsonant": 1
       },
       {
         "stringName": "quiet",
         "sound": [
           82,
-          82,
           44,
-          33,
           33
         ],
         "silentLetters": [],
         "consonants": [
           4
         ],
-        "targetConsonant": [
-          0,
-          1
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -917,9 +784,7 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "rake",
@@ -935,19 +800,15 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "rainbow",
         "sound": [
           83,
           5,
-          5,
           61,
           13,
-          76,
           76
         ],
         "silentLetters": [],
@@ -956,9 +817,7 @@
           4,
           6
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -969,24 +828,19 @@
         "stringName": "saw",
         "sound": [
           84,
-          11,
           11
         ],
         "silentLetters": [],
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "glass",
         "sound": [
           41,
-          41,
           2,
-          84,
           84
         ],
         "silentLetters": [],
@@ -995,18 +849,13 @@
           1,
           5
         ],
-        "targetConsonant": [
-          3,
-          4
-        ]
+        "targetConsonant": 3
       },
       {
         "stringName": "grass",
         "sound": [
           42,
-          42,
           2,
-          84,
           84
         ],
         "silentLetters": [],
@@ -1014,10 +863,7 @@
           0,
           1
         ],
-        "targetConsonant": [
-          3,
-          4
-        ]
+        "targetConsonant": 3
       }
     ]
   },
@@ -1037,9 +883,7 @@
           0,
           2
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       },
       {
         "stringName": "dogs",
@@ -1054,15 +898,12 @@
           0,
           2
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       },
       {
         "stringName": "cars",
         "sound": [
           16,
-          8,
           8,
           85
         ],
@@ -1071,9 +912,7 @@
           0,
           2
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       }
     ]
   },
@@ -1084,40 +923,31 @@
         "stringName": "toe",
         "sound": [
           96,
-          69,
           69
         ],
         "silentLetters": [],
         "consonants": [],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "tea",
         "sound": [
           96,
-          27,
           27
         ],
         "silentLetters": [],
         "consonants": [],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "tie",
         "sound": [
           96,
-          48,
           48
         ],
         "silentLetters": [],
         "consonants": [],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -1141,9 +971,7 @@
           3,
           5
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "silver",
@@ -1152,7 +980,6 @@
           45,
           58,
           106,
-          31,
           31
         ],
         "silentLetters": [],
@@ -1161,18 +988,14 @@
           2,
           5
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       },
       {
         "stringName": "beaver",
         "sound": [
           13,
           27,
-          27,
           106,
-          31,
           31
         ],
         "silentLetters": [],
@@ -1180,9 +1003,7 @@
           0,
           5
         ],
-        "targetConsonant": [
-          3
-        ]
+        "targetConsonant": 3
       }
     ]
   },
@@ -1200,16 +1021,13 @@
         "consonants": [
           2
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "wall",
         "sound": [
           107,
           3,
-          58,
           58
         ],
         "silentLetters": [],
@@ -1217,16 +1035,13 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "wash",
         "sound": [
           107,
           3,
-          87,
           87
         ],
         "silentLetters": [],
@@ -1234,9 +1049,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -1254,9 +1067,7 @@
         "consonants": [
           0
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       },
       {
         "stringName": "taxi",
@@ -1270,9 +1081,7 @@
         "consonants": [
           0
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       },
       {
         "stringName": "sixteen",
@@ -1282,7 +1091,6 @@
           109,
           96,
           29,
-          29,
           61
         ],
         "silentLetters": [],
@@ -1291,9 +1099,7 @@
           3,
           6
         ],
-        "targetConsonant": [
-          2
-        ]
+        "targetConsonant": 2
       }
     ]
   },
@@ -1306,8 +1112,6 @@
           110,
           25,
           58,
-          58,
-          76,
           76
         ],
         "silentLetters": [],
@@ -1316,15 +1120,12 @@
           3,
           5
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "yawn",
         "sound": [
           110,
-          11,
           11,
           61
         ],
@@ -1333,19 +1134,14 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "yo-yo",
         "sound": [],
         "silentLetters": [],
         "consonants": [],
-        "targetConsonant": [
-          0,
-          3
-        ]
+        "targetConsonant": 0
       }
     ]
   },
@@ -1356,21 +1152,17 @@
         "stringName": "zoo",
         "sound": [
           113,
-          72,
           72
         ],
         "silentLetters": [],
         "consonants": [],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "zebra",
         "sound": [
           113,
           24,
-          15,
           15,
           4
         ],
@@ -1379,9 +1171,7 @@
           2,
           3
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       },
       {
         "stringName": "zipper",
@@ -1389,8 +1179,6 @@
           113,
           45,
           79,
-          79,
-          31,
           31
         ],
         "silentLetters": [],
@@ -1399,9 +1187,7 @@
           3,
           5
         ],
-        "targetConsonant": [
-          0
-        ]
+        "targetConsonant": 0
       }
     ]
   }
