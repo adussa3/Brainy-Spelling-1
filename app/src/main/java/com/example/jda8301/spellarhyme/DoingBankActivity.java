@@ -110,17 +110,10 @@ public class DoingBankActivity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
 
-        Map<String, Integer> bank = Bank.getUserBank(Bank.user);
-        String level = "";
         List<ImageButton> imageButtons = getImageButtons();
         for (ImageButton button : imageButtons) {
             String word = (String) button.getContentDescription();
-            for (String key : bank.keySet()) {
-                if (key.contains(word)) {
-                    level = Bank.parseLevel(key);
-                }
-            }
-            if (!word.contains("arrow") && Bank.getSpellCount("default", level, word, cat) < 3) {
+            if (!word.contains("arrow") && Bank.getSpellCount("default", Bank.getLevel(word), word, cat) < 3) {
                 button.getDrawable().setColorFilter(filter);
             }
         }
