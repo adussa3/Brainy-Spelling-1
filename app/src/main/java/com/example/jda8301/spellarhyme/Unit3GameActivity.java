@@ -149,6 +149,7 @@ public class Unit3GameActivity extends AppCompatActivity {
                 newField.setTextIsSelectable(true);
             }
 
+            Util.blinkEditText(newField, getResources(), true);
             fieldLayout.addView(newField);
         }
 
