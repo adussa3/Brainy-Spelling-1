@@ -57,7 +57,7 @@ public class Bank {
      * Note that there is way to recover the wiped data.
      */
     public static void resetBank() {
-        editor.clear().commit();
+        editor.clear().apply();
     }
 
     /**
@@ -158,7 +158,7 @@ public class Bank {
                 editor.remove(key);
             }
         }
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -174,7 +174,7 @@ public class Bank {
                 editor.remove(key);
             }
         }
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -194,7 +194,7 @@ public class Bank {
      * @param key the user + level + word to be removed
      */
     public static void removeWord(String key) {
-        editor.remove(key).commit();
+        editor.remove(key).apply();
     }
 
     /**
@@ -208,7 +208,7 @@ public class Bank {
         String key = user + " " + level + " " + word + " " + category;
         int oldSpellCount = sharedPref.getInt(key,0);
         editor.putInt(key, oldSpellCount + 1);
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -219,7 +219,7 @@ public class Bank {
     public static void incrementSpellCount(String key) {
         int oldSpellCount = sharedPref.getInt(key, 0);
         editor.putInt(key, oldSpellCount + 1);
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -243,7 +243,7 @@ public class Bank {
      */
     public static void setSpellCount(String key, int count) {
         editor.putInt(key, count);
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -285,7 +285,7 @@ public class Bank {
      */
     public static void resetSpellCount(String key) {
         editor.putInt(key, 0);
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -401,7 +401,16 @@ public class Bank {
                 iv.setImageResource(imageID);
             }
         }
+    }
 
+    public static String getLevel(String word) {
+        Map<String, Integer> bank = Bank.getUserBank(Bank.user);
+        for (String key : bank.keySet()) {
+            if (key.contains(word)) {
+                return Bank.parseLevel(key);
+            }
+        }
+        return null;
     }
 }
 

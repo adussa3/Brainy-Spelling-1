@@ -9,67 +9,92 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:screenOrientation="landscape"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen.ScreenColor">
         <activity
             android:name=".ThingsBankActivity"
-            android:label="@string/title_activity_things_bank"></activity>
+            android:label="@string/title_activity_things_bank"
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".ToysBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_toys_bank" />
         <activity
             android:name=".WaterAnimalsBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_water_animals_bank" />
         <activity
             android:name=".ClothesBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_clothes_bank" />
         <activity
             android:name=".DoingBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_doing_bank" />
         <activity
             android:name=".ToolsBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_tools_bank" />
         <activity
             android:name=".FoodBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_food_bank" />
         <activity
             android:name=".BodyPartsActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_body_parts" />
         <activity
             android:name=".DescribeBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_describe_bank" />
         <activity
             android:name=".OutdoorsBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_outdoors_bank" />
         <activity
             android:name=".ColorsBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_colors_bank" />
         <activity
             android:name=".PlacesBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_places_bank" />
         <activity
             android:name=".PretendBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_pretend_bank" />
         <activity
             android:name=".VehiclesBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_vehicles_bank" />
         <activity
             android:name=".BirdsBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_birds_bank" />
         <activity
             android:name=".AnimalsBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_animal_bank" />
         <activity
             android:name=".HouseStuffBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_house_stuff_bank" />
         <activity
             android:name=".PeopleBankActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_people_bank" />
-        <activity android:name=".Unit4GameActivity" />
-        <activity android:name=".Unit4WordListActivity" />
-        <activity android:name=".Unit4ConsonantListActivity" />
-        <activity android:name=".Unit3GameActivity" />
-        <activity android:name=".Unit3WordListActivity" />
-        <activity android:name=".Unit3VowelListActivity" />
+        <activity android:name=".Unit4GameActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Unit4WordListActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Unit4ConsonantListActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Unit3GameActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Unit3WordListActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Unit3VowelListActivity"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="landscape">
@@ -82,20 +107,31 @@
         <activity
             android:name=".HomeActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".JoinClassActivity" />
-        <activity android:name=".TeacherLoginActivity" />
-        <activity android:name=".PlayerLoginActivity" />
-        <activity android:name=".CreateTeacherAccountActivity" />
-        <activity android:name=".StudentHomeActivity" />
-        <activity android:name=".UserProfileSelectionActivity" />
-        <activity android:name=".TeacherHomeActivity" />
-        <activity android:name=".Unit1Activity" />
-        <activity android:name=".BankActivity"></activity>
+        <activity android:name=".JoinClassActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".TeacherLoginActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".PlayerLoginActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".CreateTeacherAccountActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".StudentHomeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".UserProfileSelectionActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".TeacherHomeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Unit1Activity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".BankActivity"
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".Unit2Activity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_unit2" />
         <activity
             android:name=".Unit2SelectionActivity"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_unit2_selection"></activity>
     </application>
 

@@ -1,6 +1,6 @@
 [
   {
-    "phoneme": "a_1_long",
+    "phoneme": "a",
     "words": [
       {
         "stringName": "ape",
@@ -45,12 +45,7 @@
         ],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "a_2_short",
-    "words": [
+      },
       {
         "stringName": "axe",
         "category": "tools",
@@ -88,12 +83,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "a_3_short",
-    "words": [
+      },
       {
         "stringName": "fall",
         "category": "doing",
@@ -112,12 +102,11 @@
         "category": "birds",
         "sound": [
           95,
-          95,
           3,
           61
         ],
         "silentLetters": [
-          3
+
         ],
         "vowels": [],
         "targetVowel": 2
@@ -134,12 +123,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "a_4_schwa",
-    "words": [
+      },
       {
         "stringName": "sofa",
         "category": "house_stuff",
@@ -165,7 +149,7 @@
           22
         ],
         "silentLetters": [
-          5
+
         ],
         "vowels": [
           3,
@@ -184,14 +168,14 @@
         ],
         "silentLetters": [],
         "vowels": [
-          4
+          1
         ],
-        "targetVowel": 1
+        "targetVowel": 4
       }
     ]
   },
   {
-    "phoneme": "e_1_long",
+    "phoneme": "e",
     "words": [
       {
         "stringName": "he",
@@ -220,18 +204,12 @@
         "category": "people",
         "sound": [
           87,
-          87,
           24
         ],
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "e_1_short",
-    "words": [
+      },
       {
         "stringName": "elf",
         "category": "pretend",
@@ -267,12 +245,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "e_3_schwa",
-    "words": [
+      },
       {
         "stringName": "oven",
         "category": "house_stuff",
@@ -312,7 +285,7 @@
           114,
           96,
           96,
-          61,
+          26,
           61
         ],
         "silentLetters": [
@@ -326,7 +299,7 @@
     ]
   },
   {
-    "phoneme": "i_1_long",
+    "phoneme": "i",
     "words": [
       {
         "stringName": "five",
@@ -347,7 +320,6 @@
         "stringName": "slide",
         "category": "toys",
         "sound": [
-          89,
           89,
           44,
           22,
@@ -372,12 +344,7 @@
         ],
         "vowels": [],
         "targetVowel": 0
-      }
-    ]
-  },
-  {
-    "phoneme": "i_2_short",
-    "words": [
+      },
       {
         "stringName": "hit",
         "category": "doing",
@@ -413,12 +380,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "i_2a_e",
-    "words": [
+      },
       {
         "stringName": "taxi",
         "category": "vehicles",
@@ -461,12 +423,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "i_3_schwa",
-    "words": [
+      },
       {
         "stringName": "rabbit",
         "category": "animals",
@@ -528,7 +485,7 @@
     ]
   },
   {
-    "phoneme": "o_1_long",
+    "phoneme": "o",
     "words": [
       {
         "stringName": "old",
@@ -548,7 +505,7 @@
         "sound": [
           60,
           66,
-          97,
+          58,
           0
         ],
         "silentLetters": [
@@ -571,12 +528,7 @@
         ],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "o_2_short",
-    "words": [
+      },
       {
         "stringName": "moth",
         "category": "animals",
@@ -612,12 +564,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 1
-      }
-    ]
-  },
-  {
-    "phoneme": "o_3_schwa",
-    "words": [
+      },
       {
         "stringName": "love",
         "category": "doing",
@@ -668,7 +615,7 @@
     ]
   },
   {
-    "phoneme": "u_1_long",
+    "phoneme": "u",
     "words": [
       {
         "stringName": "suit",
@@ -715,12 +662,7 @@
         ],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "u_2_long",
-    "words": [
+      },
       {
         "stringName": "music",
         "category": "house_stuff",
@@ -778,12 +720,7 @@
         ],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "u_3_short_schwa",
-    "words": [
+      },
       {
         "stringName": "bus",
         "category": "vehicles",
@@ -813,7 +750,6 @@
         "category": "food",
         "sound": [
           80,
-          80,
           103,
           60
         ],
@@ -824,7 +760,7 @@
     ]
   },
   {
-    "phoneme": "y_2_i",
+    "phoneme": "y",
     "words": [
       {
         "stringName": "fly",
@@ -861,12 +797,7 @@
         "silentLetters": [],
         "vowels": [],
         "targetVowel": 2
-      }
-    ]
-  },
-  {
-    "phoneme": "y_3_e",
-    "words": [
+      },
       {
         "stringName": "baby",
         "category": "people",
@@ -903,8 +834,6 @@
         "category": "describe",
         "sound": [
           89,
-          89,
-          29,
           29,
           79,
           112

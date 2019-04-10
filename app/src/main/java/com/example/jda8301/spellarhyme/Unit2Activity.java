@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -57,6 +58,8 @@ public class Unit2Activity extends AppCompatActivity {
     int index = 0;
 
     List<SegmentedWord> selectedWordSet;
+
+    Random rand = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -115,10 +118,14 @@ public class Unit2Activity extends AppCompatActivity {
             } else { // API 11-20
                 fields[i].setTextIsSelectable(true);
             }
+            fields[i].getBackground().setColorFilter(getResources().getColor(R.color.edit_text_normal), PorterDuff.Mode.SRC_ATOP);
         }
 
         //Set correct images based on JSON
         for (int i = 0; i < 3; i++) {
+            System.out.println(selectedWordSet.get(0).getSegmentInfo()[i].getImageFile());
+            System.out.println(selectedWordSet.get(1).getSegmentInfo()[i].getImageFile());
+            System.out.println(selectedWordSet.get(2).getSegmentInfo()[i].getImageFile());
             word1[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(0).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word2[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(1).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
             word3[i].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(selectedWordSet.get(2).getSegmentInfo()[i].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
@@ -130,13 +137,13 @@ public class Unit2Activity extends AppCompatActivity {
 
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
         for (int i = 0; i < 3; i++) {
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(i).getCategory())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(0).getDisplayString(), selectedWordSet.get(0).getCategory())) {
                 word1[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(i).getCategory())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(1).getDisplayString(), selectedWordSet.get(1).getCategory())) {
                 word2[i].getDrawable().setColorFilter(filter);
             }
-            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(i).getCategory())) {
+            if (!Bank.isMastered("default", Bank.segmented, selectedWordSet.get(2).getDisplayString(), selectedWordSet.get(2).getCategory())) {
                 word3[i].getDrawable().setColorFilter(filter);
             }
         }
@@ -227,6 +234,9 @@ public class Unit2Activity extends AppCompatActivity {
     // Update learned words to be colored, and update spellCounts
     private void updateLearnedWords() {
 
+        //random praise audio
+        int randomIndex = (int) (Math.random() * 42);
+
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(1);
         ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
@@ -249,6 +259,7 @@ public class Unit2Activity extends AppCompatActivity {
             }
 
             if (!notComplete && !learned[i]) {
+                AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
                 learned[i] = true;
                 wordImage[i].getDrawable().setColorFilter(filter);
                 Log.e("word" + (i + 1), selectedWordSet.get(i).getDisplayString());
@@ -270,6 +281,11 @@ public class Unit2Activity extends AppCompatActivity {
             for(EditText field: fields) {
                 field.setText("");
             }
+
+            //wait 2 seconds before restarting
+            long start = System.currentTimeMillis();
+            while (System.currentTimeMillis() - start < 2000) {}
+
             this.recreate();
         }
     }
@@ -312,11 +328,13 @@ public class Unit2Activity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), Unit2SelectionActivity.class);
         startActivity(intent);
+        finish();
     }
 
     // Highlights the edit text when a segment is selected
-    public static void onClickSelectSegment(View view) {
-        EditText et = (EditText) ((ViewGroup) view).getChildAt(1);
+    public void onClickSelectSegment(View view) {
+        final EditText et = (EditText) ((ViewGroup) view).getChildAt(1);
         et.requestFocus();
+        Util.blinkEditText(et, getResources(), true);
     }
 }

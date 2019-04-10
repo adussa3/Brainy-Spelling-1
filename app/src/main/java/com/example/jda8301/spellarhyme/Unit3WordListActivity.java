@@ -1,15 +1,26 @@
 package com.example.jda8301.spellarhyme;
 
 import android.content.Intent;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
+import com.example.jda8301.spellarhyme.model.VowelWord;
+import com.example.jda8301.spellarhyme.utils.Bank;
+
+import java.util.List;
+import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -22,14 +33,22 @@ public class Unit3WordListActivity extends AppCompatActivity {
     ImageButton leftScroll;
     ImageButton rightScroll;
 
+    String stringName;
+
+    LinearLayout imageLayout;
+
+    AppPreferencesHelper helper = new AppPreferencesHelper();
+    Map<String, List<VowelWord>> wordMap = helper.getVowels();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit3_word_list);
 
+        initializeComponents(savedInstanceState);
+
         leftScroll = (ImageButton) findViewById(R.id.leftArrow);
         rightScroll = (ImageButton) findViewById(R.id.rightArrow);
-
 
         sv = (HorizontalScrollView) findViewById(R.id.unit4HorizontalSV);
 
@@ -38,8 +57,53 @@ public class Unit3WordListActivity extends AppCompatActivity {
         TextView actionBarTitle = actionBar.findViewById(R.id.actionBarTitle);
         actionBarTitle.setText("Unit 3 Word List");
 
-        // Initialize variables
-        exit = (ImageView) findViewById(R.id.exitButton);
+
+        Log.e("stringName", stringName);
+
+        imageLayout.removeAllViews();
+
+
+        List<VowelWord> allVowels = wordMap.get(stringName);
+        int index = 0;
+
+        for (VowelWord vowel : allVowels) {
+            ImageView myImage = new ImageView(MyApplication.getAppContext());
+
+            Log.e("WORDSTRING", vowel.getStringName());
+
+            myImage.setImageResource(getResources().getIdentifier(vowel.getStringName(),"drawable", MyApplication.getAppContext().getPackageName()));
+
+            if (Bank.getSpellCount("default",Bank.vowels, vowel.getStringName(), vowel.getCategory()) < vowel.getSound().length - vowel.getSilentLetters().length) {
+                // Initialize all colors depending on if mastered or not
+                ColorMatrix matrix = new ColorMatrix();
+                matrix.setSaturation(0);
+                ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+
+                myImage.getDrawable().setColorFilter(filter);
+            }
+
+            imageLayout.addView(myImage);
+
+            final int extraIndex = index;
+
+            myImage.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getApplicationContext(), Unit3GameActivity.class);
+
+                    intent.putExtra("stringName", stringName);
+                    intent.putExtra("wordIndex", extraIndex);
+
+                    startActivity(intent);
+                }
+            });
+
+            index++;
+
+        }
+
+
+
 
         // Add touch animation to buttons
         Util.scaleOnTouch(exit);
@@ -93,5 +157,25 @@ public class Unit3WordListActivity extends AppCompatActivity {
     public void onClickSelectWord(View view) {
         Intent intent = new Intent(getApplicationContext(), Unit3GameActivity.class);
         startActivity(intent);
+    }
+
+    private void initializeComponents(Bundle savedInstanceState) {
+        // Initialize variables
+        exit = (ImageView) findViewById(R.id.exitButton);
+
+        if (savedInstanceState == null) {
+            Bundle extras = getIntent().getExtras();
+            if(extras == null) {
+                stringName = null;
+            } else {
+                stringName = extras.getString("stringName");
+            }
+        } else {
+            stringName = (String) savedInstanceState.getSerializable("stringName");
+        }
+
+
+        imageLayout = (LinearLayout) findViewById(R.id.imageLayout);
+
     }
 }

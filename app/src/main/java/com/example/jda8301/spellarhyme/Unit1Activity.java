@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Intent;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -71,6 +72,10 @@ public class Unit1Activity extends AppCompatActivity {
     // Initializes AppPreferencesHelper to read JSON files
     AppPreferencesHelper helper = new AppPreferencesHelper();
     List<List<SegmentedWord>> segmentedWords = helper.getSegmentedWords();
+
+    Random rand = new Random();
+
+    int numWordsSpelled = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,11 +150,11 @@ public class Unit1Activity extends AppCompatActivity {
 
 
         // Check to see if word is mastered and set learned to true if they are learned
-        for (int i = 0; i < 3; i++) {
-            if (Bank.isMastered("default", Bank.segmented, wordList.get(i).getDisplayString(),  wordList.get(i).getCategory())) {
-                learned[i] = true;
-            }
-        }
+//        for (int i = 0; i < 3; i++) {
+//            if (Bank.isMastered("default", Bank.segmented, wordList.get(i).getDisplayString(),  wordList.get(i).getCategory())) {
+//                learned[i] = true;
+//            }
+//        }
 
 
         // Initialize all colors to grayscale
@@ -182,6 +187,14 @@ public class Unit1Activity extends AppCompatActivity {
 //            Util.playSoundOnClick(button, helper.getSoundFiles().get(phonemeCode.get(randomInt)));
 
             phonemeCode.remove(randomInt);
+        }
+
+        AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "right letter right line");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+
         }
 
 
@@ -313,34 +326,33 @@ public class Unit1Activity extends AppCompatActivity {
         // State machine for currently selected image, changes images and sounds based on chosen word
         Observer stateChange = new Observer() {
 
-
-            public void playSoundOnClick(View button, final String sound, final int i) {
+            void playSoundOnClick(View button, final String sound, final int i) {
                 button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + sound);
-
-                        EditText et;
-                        switch(i) {
+                        EditText et = null;
+                        switch (i) {
                             case 0:
                                 et = (EditText) findViewById(R.id.editLetter1);
-                                et.requestFocus();
                                 break;
                             case 1:
                                 et = (EditText) findViewById(R.id.editLetter2);
-                                et.requestFocus();
                                 break;
                             case 2:
                                 et = (EditText) findViewById(R.id.editLetter3);
-                                et.requestFocus();
                                 break;
                         }
+
+                        et.requestFocus();
+                        Util.blinkEditText(et, getResources(), false);
                     }
                 });
             }
 
             @Override
             public void update(Observable o, Object newValue) {
+
                 if ((int) newValue == 0) {
                     Log.e("State 0", Config.AUDIO_WORDS_PATH + wordList.get(0).getDisplayString());
                     selectedWord[0].setImageResource(MyApplication.getAppContext().getResources().getIdentifier(wordList.get(0).getSegmentInfo()[0].getImageFile(), "drawable", MyApplication.getAppContext().getPackageName()));
@@ -381,9 +393,9 @@ public class Unit1Activity extends AppCompatActivity {
                         fields[i].setText(spellingProgress3[i]);
                     }
                 }
+                resetEditText();
             }
         };
-
         selectedWordState.addObserver(stateChange);
     }
 
@@ -392,10 +404,14 @@ public class Unit1Activity extends AppCompatActivity {
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
     // Update learned words to be colored
     private void updateLearnedWords() {
+
+        //random praise audio
+        int randomIndex = rand.nextInt(42);
 
         // Check to see if word1 is mastered
         boolean notComplete = false;
@@ -407,8 +423,22 @@ public class Unit1Activity extends AppCompatActivity {
 
         // If word1 is mastered, update bank
         if (!notComplete) {
+            if (selectedWordState.getValue() == 0) {
+                AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+                numWordsSpelled++;
+            }
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            if (numWordsSpelled != 3 && !learned[0]) {
+                AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "choose another animal");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+            }
             learned[0] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(0).getDisplayString(), wordList.get(0).getCategory());
         }
 
         // Check to see if word2 is mastered
@@ -421,8 +451,24 @@ public class Unit1Activity extends AppCompatActivity {
 
         // If word2 is mastered, update bank
         if (!notComplete) {
+            if (selectedWordState.getValue() == 1) {
+                AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+                numWordsSpelled++;
+            }
+            //delay by 2 seconds
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            if (numWordsSpelled != 3 && !learned[1]) {
+                AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "choose another animal");
+                //delay by 2 seconds
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+            }
             learned[1] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(1).getDisplayString(), wordList.get(1).getCategory());
         }
 
         // Check to see if word3 is mastered
@@ -435,8 +481,22 @@ public class Unit1Activity extends AppCompatActivity {
 
         // If word3 is mastered, update bank
         if (!notComplete) {
+            if (selectedWordState.getValue() == 2) {
+                AudioPlayerHelper.getInstance().playAudio(Config.PRAISE_AUDIO_PATH + Config.praiseAudios[randomIndex]);
+                numWordsSpelled++;
+            }
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            if (numWordsSpelled != 3 && !learned[2]) {
+                AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "choose another animal");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                }
+            }
             learned[2] = true;
-            Bank.setMastered("default", Bank.segmented, wordList.get(2).getDisplayString(), wordList.get(2).getCategory());
         }
 
 
@@ -459,30 +519,59 @@ public class Unit1Activity extends AppCompatActivity {
             }
 
         }
+
+        boolean allSpelled = true;
+        for (int i = 0; i < learned.length; i++) {
+            if (learned[i] == false) {
+                allSpelled = false;
+            }
+        }
+        //if all words spelled, move to unit 2 activity
+        if (allSpelled) {
+            Intent intent = new Intent(getApplicationContext(), Unit2Activity.class);
+            AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "do it again 1");
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
+            startActivity(intent);
+        }
     }
 
-    public void playSoundOnClick(View button, final String sound, final int i) {
+    final public void playSoundOnClick(View button, final String sound, final int i) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AudioPlayerHelper.getInstance().playAudio(Config.SOUND_PATH + sound);
 
-                EditText et;
+                EditText et = null;
                 switch(i) {
                     case 0:
                         et = (EditText) findViewById(R.id.editLetter1);
-                        et.requestFocus();
                         break;
                     case 1:
                         et = (EditText) findViewById(R.id.editLetter2);
-                        et.requestFocus();
                         break;
                     case 2:
                         et = (EditText) findViewById(R.id.editLetter3);
-                        et.requestFocus();
                         break;
                 }
+
+                et.requestFocus();
+                Util.blinkEditText(et, getResources(), false);
             }
         });
+    }
+
+    // resets the edit texts according to the word that's being spelled
+    public void resetEditText() {
+        for (EditText field : fields) {
+            if (field.getText().toString().equals("")) {
+                field.getBackground().setColorFilter(getResources().getColor(R.color.edit_text_normal), PorterDuff.Mode.SRC_ATOP);
+            } else {
+                field.getBackground().setColorFilter(getResources().getColor(R.color.edit_text_activated), PorterDuff.Mode.SRC_ATOP);
+            }
+            field.clearFocus();
+        }
     }
 }

@@ -13,27 +13,28 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/leftArrow"
+        android:id="@+id/imageButton"
         style="@style/ScrollButton"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/unit4HorizontalSV"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2"
         app:srcCompat="@drawable/button_back" />
 
     <HorizontalScrollView
-        android:id="@+id/unit4HorizontalSV"
+        android:id="@+id/horizontalScrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
-        app:layout_constraintStart_toEndOf="@+id/leftArrow"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
+            android:id="@+id/imageLayout"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -52,14 +53,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/cat_head_bw" />
+                    app:srcCompat="@drawable/cat_head" />
 
                 <ImageView
                     android:id="@+id/imageView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/cat_middle_bw" />
+                    app:srcCompat="@drawable/cat_middle" />
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -67,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:onClick="onClickSelectWord"
-                    app:srcCompat="@drawable/cat_tail_bw" />
+                    app:srcCompat="@drawable/cat_tail" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,21 +83,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/dog_head_bw" />
+                    app:srcCompat="@drawable/dog_head" />
 
                 <ImageView
                     android:id="@+id/imageView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/dog_middle_bw" />
+                    app:srcCompat="@drawable/dog_middle" />
 
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/dog_tail_bw" />
+                    app:srcCompat="@drawable/dog_tail" />
 
             </LinearLayout>
 
@@ -112,21 +113,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/hen_head_bw" />
+                    app:srcCompat="@drawable/hen_head" />
 
                 <ImageView
                     android:id="@+id/imageView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/hen_middle_bw" />
+                    app:srcCompat="@drawable/hen_middle" />
 
                 <ImageView
                     android:id="@+id/imageView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/hen_tail_bw" />
+                    app:srcCompat="@drawable/hen_tail" />
 
             </LinearLayout>
 
@@ -134,13 +135,13 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/rightArrow"
+        android:id="@+id/imageButton2"
         style="@style/ScrollButton"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/unit4HorizontalSV"
+        app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/unit4HorizontalSV"
+        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView2"
         app:srcCompat="@drawable/button_forward" />
 
 </android.support.constraint.ConstraintLayout>
