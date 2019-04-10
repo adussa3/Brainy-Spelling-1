@@ -1,6 +1,8 @@
 package com.example.jda8301.spellarhyme;
 
 import android.content.Intent;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.jda8301.spellarhyme.data.AppPreferencesHelper;
 import com.example.jda8301.spellarhyme.model.SegmentedWord;
+import com.example.jda8301.spellarhyme.utils.Bank;
 
 import java.util.List;
 
@@ -22,7 +25,6 @@ public class Unit2SelectionActivity extends AppCompatActivity {
     List<List<SegmentedWord>> segmentedWords = helper.getSegmentedWords();
 
     private ImageButton[] buttons = new ImageButton[4];
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,12 +61,31 @@ public class Unit2SelectionActivity extends AppCompatActivity {
             });
             start++;
         }
+        ColorMatrix matrix = new ColorMatrix();
+        matrix.setSaturation(0);
+        ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+
+        boolean a = Bank.isMastered("default", Bank.segmented, "cat", Bank.animals);
+        boolean b = Bank.isMastered("default", Bank.segmented, "dog", Bank.animals);
+        boolean c = Bank.isMastered("default", Bank.segmented, "hen", Bank.birds);
+        boolean d = Bank.isMastered("default", Bank.segmented, "fox", Bank.animals);
+        boolean e = Bank.isMastered("default", Bank.segmented, "cub", Bank.animals);
+        boolean f = Bank.isMastered("default", Bank.segmented, "ram", Bank.animals);
+        if (!(a && b && c)) {
+            ImageButton catdoghen = findViewById(R.id.imageButton6);
+            catdoghen.setColorFilter(filter);
+        }
+        if (!(d && e && f)) {
+            ImageButton foxcubram = findViewById(R.id.imageButton7);
+            foxcubram.setColorFilter(filter);
+        }
     }
 
     // Intents - goes to a different activity when the button is clicked
     public void onClickExit(View view) {
         Intent intent = new Intent(getApplicationContext(), StudentHomeActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public void onClickSelectWord(View view) {
