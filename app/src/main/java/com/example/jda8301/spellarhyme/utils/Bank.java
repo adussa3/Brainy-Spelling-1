@@ -401,8 +401,8 @@ public class Bank {
                 iv.setImageResource(imageID);
             }
         }
-    }
 
+    }
     public static String getLevel(String word) {
         Map<String, Integer> bank = Bank.getUserBank(Bank.user);
         for (String key : bank.keySet()) {

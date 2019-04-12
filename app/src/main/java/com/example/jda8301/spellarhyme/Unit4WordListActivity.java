@@ -47,8 +47,8 @@ public class Unit4WordListActivity extends AppCompatActivity {
 
         initializeComponents(savedInstanceState);
 
-        leftScroll = (ImageButton) findViewById(R.id.leftArrow);
-        rightScroll = (ImageButton) findViewById(R.id.rightArrow);
+        leftScroll = (ImageButton) findViewById(R.id.imageButton);
+        rightScroll = (ImageButton) findViewById(R.id.imageButton2);
 
         sv = (HorizontalScrollView) findViewById(R.id.horizontalScrollView2);
 

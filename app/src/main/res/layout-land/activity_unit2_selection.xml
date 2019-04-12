@@ -44,7 +44,7 @@
                 android:layout_height="200dp"
 
                 android:scaleType="centerCrop"
-                android:src="@drawable/spf_03" />
+                android:src="@drawable/fox_cub_ram" />
 
 
 

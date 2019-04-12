@@ -12,14 +12,13 @@ public class ConsonantWord {
     private int[] consonants;
     private int targetConsonant;
 
-    public ConsonantWord(String stringName, int[] sound, int[] silentLetters, int[] consonants, int targetConsonant, String category) {
+    public ConsonantWord(String stringName, String category, int[] sound, int[] silentLetters, int[] consonants, int targetConsonant) {
         this.stringName = stringName;
         this.category = category;
         this.sound = sound;
         this.silentLetters = silentLetters;
         this.consonants = consonants;
         this.targetConsonant = targetConsonant;
-        this.category = category;
     }
 
     public String getStringName() {
@@ -69,5 +68,4 @@ public class ConsonantWord {
     public void setTargetConsonant(int targetConsonant) {
         this.targetConsonant = targetConsonant;
     }
-
 }
