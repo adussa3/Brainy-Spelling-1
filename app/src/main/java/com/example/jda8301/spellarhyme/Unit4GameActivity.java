@@ -390,6 +390,9 @@ public class Unit4GameActivity extends AppCompatActivity {
 
                     } else {
                         AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
+                        if (levelState < currentWord.getSound().length) {
+                            Bank.setSpellCount("default", Bank.consonants, currentWord.getStringName(), currentWord.getCategory(), -1);
+                        }
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
@@ -490,7 +493,7 @@ public class Unit4GameActivity extends AppCompatActivity {
                 Button b = buttons.get(i);
                 b.setText("" + targetConsonant);
             } else {
-                int randIndex = (int) (Math.random() * (phonemes.size() - 1));
+                int randIndex = ((int) (Math.random() * (phonemes.size() - 1))+1);
                 buttons.get(i).setText(phonemes.get(randIndex));
             }
         }
@@ -500,6 +503,9 @@ public class Unit4GameActivity extends AppCompatActivity {
         levelState = Bank.getSpellCount("default", Bank.consonants,currentWord.getStringName(),currentWord.getCategory());
 //        Log.e("LEVEL STATE", Integer.toString(levelState));
 
+        if (levelState < 0) {
+            levelState = 0;
+        }
     }
 
     private void recreateActivity() {

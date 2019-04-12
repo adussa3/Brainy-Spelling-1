@@ -50,7 +50,7 @@ public class Unit4WordListActivity extends AppCompatActivity {
         leftScroll = (ImageButton) findViewById(R.id.leftArrow);
         rightScroll = (ImageButton) findViewById(R.id.rightArrow);
 
-        sv = (HorizontalScrollView) findViewById(R.id.unit4HorizontalSV);
+        sv = (HorizontalScrollView) findViewById(R.id.horizontalScrollView2);
 
         // Change Action Bar Title
         View actionBar = findViewById(R.id.actionBar);

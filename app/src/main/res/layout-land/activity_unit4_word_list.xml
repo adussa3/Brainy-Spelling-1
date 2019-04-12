@@ -13,7 +13,7 @@
         android:layout_height="wrap_content" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/leftArrow"
         style="@style/ScrollButton"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,8 +29,8 @@
         android:layout_marginEnd="8dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
         app:layout_constraintTop_toBottomOf="@+id/actionBar">
 
         <LinearLayout
@@ -135,7 +135,7 @@
     </HorizontalScrollView>
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/rightArrow"
         style="@style/ScrollButton"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"

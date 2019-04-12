@@ -168,7 +168,7 @@ public class Unit3GameActivity extends AppCompatActivity {
             }
         }
 
-        if (levelState == 0) {
+        if (levelState <= 0) {
             for (int i = 0; i < soundTextFields.size(); i++) {
                 if (currentWord.getSound()[i] != 0) {
                     soundTextFields.get(i).setText(helper.getPhonemeLetters().get(currentWord.getSound()[i]));
@@ -245,7 +245,7 @@ public class Unit3GameActivity extends AppCompatActivity {
                         currButton.setText(helper.getPhonemeLetters().get(thisPhoneme).toLowerCase());
                         buttonSoundID[index] = thisPhoneme;
                     } else {
-                        int randomInt = (int) (Math.random() * helper.getPhonemeLetters().size());
+                        int randomInt = ((int) (Math.random() * (helper.getPhonemeLetters().size()-1)) + 1);
 
 
                         for (int i = 0; i < 1; i++) {
@@ -310,7 +310,7 @@ public class Unit3GameActivity extends AppCompatActivity {
                         buttonSoundID[index] = randomInt;
                     }
                 } else {
-                    int randomInt = (int) (Math.random() * helper.getPhonemeLetters().size());
+                    int randomInt = ((int) (Math.random() * (helper.getPhonemeLetters().size()-1)) + 1);
 
 
                     for (int i = 0; i < 1; i++) {
@@ -354,7 +354,7 @@ public class Unit3GameActivity extends AppCompatActivity {
                                 currButton.setText(helper.getPhonemeLetters().get(thisPhoneme).toLowerCase());
                                 buttonSoundID[buttons.indexOf(currButton)] = thisPhoneme;
                             } else {
-                                int randomInt = (int) (Math.random() * helper.getPhonemeLetters().size());
+                                int randomInt = ((int) (Math.random() * (helper.getPhonemeLetters().size()-1)) + 1);
 
 
                                 for (int i = 0; i < 1; i++) {
@@ -387,6 +387,9 @@ public class Unit3GameActivity extends AppCompatActivity {
 
                     } else {
                         AudioPlayerHelper.getInstance().playAudio(Config.MISC_PATH + "incorrect");
+                        if (levelState < currentWord.getSound().length) {
+                            Bank.setSpellCount("default", Bank.vowels, currentWord.getStringName(), currentWord.getCategory(), -1);
+                        }
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
@@ -476,6 +479,10 @@ public class Unit3GameActivity extends AppCompatActivity {
 
         levelState = Bank.getSpellCount("default", Bank.vowels,currentWord.getStringName(), currentWord.getCategory());
 //        Log.e("LEVEL STATE", Integer.toString(levelState));
+
+        if (levelState < 0) {
+            levelState = 0;
+        }
 
     }
 
