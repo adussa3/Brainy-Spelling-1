@@ -21,7 +21,9 @@
 ### Troubleshooting
 - When the files or ID names are in the project, but not recognized, Build > Clean Project and Build > Rebuild Project
 
-<img src="https://github.com/adussa3/Spell-A-Rhyme/blob/master/images/Screen%20Shot%202019-04-15%20at%2010.52.25%20AM.png" width="70%" align="center">
+<p align="center">
+  <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/master/images/Screen%20Shot%202019-04-15%20at%2010.52.25%20AM.png" width="70%">
+</p>
 
 - When trying to run the application on an emulator, if there is an INSTALL_FAILED_INSUFFICIENT_STORAGE error, first try clearing the data in the emulator by going to Settings > Storage > Internal shared storage > Apps > Spell A Rhyme > Clear Data > OK. If this doesn’t work, delete the emulator and recreate it.
 
