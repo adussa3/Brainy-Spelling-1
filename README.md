@@ -20,6 +20,9 @@
 - Choose the device you just created and click OK
 ### Troubleshooting
 - When the files or ID names are in the project, but not recognized, Build > Clean Project and Build > Rebuild Project
+
+![Test Image 1](images/Screen Shot 2019-04-15 at 10.52.25 AM.png)
+
 - When trying to run the application on an emulator, if there is an INSTALL_FAILED_INSUFFICIENT_STORAGE error, first try clearing the data in the emulator by going to Settings > Storage > Internal shared storage > Apps > Spell A Rhyme > Clear Data > OK. If this doesn’t work, delete the emulator and recreate it.
 
 ## Release Notes
