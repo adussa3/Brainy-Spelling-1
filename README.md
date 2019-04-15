@@ -1,7 +1,7 @@
 # Spell-A-Rhyme
 ## Installation Guide
 ### Prerequisites
-- Download [Android Studio] (https://developer.android.com/studio/index.html)
+- Download [Android Studio](https://developer.android.com/studio/index.html)
 ### Download Instructions
 - Press ‘Check out project from Version Control’
 - Press ‘GitHub’
