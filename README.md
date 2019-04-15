@@ -43,6 +43,6 @@
 - **Bug**: in Units 3 and 4, after a while of playing, recreateActivity() does not finish() the current activity. This means that the user will have to click the exit door multiple times to exit out of spelling the word.
 - **Bug**: Scrolling with arrow buttons in Unit3WordListActivity and Unit4WordListActivity has a tendency to speed up dramatically while held down.
 - **Missing**: Attach the unspelled words in the Bank to the gameplay to learn it
-- **Missing**: Unit 2 has missing images for words. Currently, only two three-word sets are able to be selected. The other images are vertical and difficult to integrate into a level originally designed for just horizontal segmented images.
+- **Missing**: Unit 2 has missing images for words. Currently, only two three-word sets are able to be selected. The other images are vertical and difficult to integrate into a level originally designed for horizontal segmented images.
 - **Note:** after the Welcome screen, there are buttons for Join a Class, I’m a Teacher, and within the Free Play there is a Who’s Playing page (only Bob works for now). These additional features are to be implemented in the future and were not part of our backlog.
 
