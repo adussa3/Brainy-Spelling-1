@@ -36,12 +36,16 @@
 ### Bug Fixes
 - Crash caused by vertical orientation fixed by restricting application to horizontal view
 - Bank was not updating correctly because the category of each word was not properly provided
+- During Unit 2 gameplay, after spelling all three words correctly, the first two segments of 'hen' remained uncolored
+- On the Unit 4 consonant selection screen, consonants were misplaced because of a missing consonant letter
+- On Unit 3 and Unit 4 selection screens, the image buttons were different sizes because of significant differences in source images' sizes
 
 ### Known Bugs and Defects
 - **Bug**: Depending on the API that’s installed, some features are lost in the application
 - **Bug**: in Units 3 and 4, in a word where there are repeated letters (e.g. bubble) you can click on “b” twice in the same blank and there will not be another “b” option for the second “b” blank
 - **Bug**: in Units 3 and 4, after a while of playing, recreateActivity() does not finish() the current activity. This means that the user will have to click the exit door multiple times to exit out of spelling the word.
 - **Bug**: Scrolling with arrow buttons in Unit3WordListActivity and Unit4WordListActivity has a tendency to speed up dramatically while held down.
+- **Bug**: During Unit 1 and Unit 2 gameplay text fields only blink when user presses on an image, and not when user presses directly on text field.
 - **Missing**: Attach the unspelled words in the Bank to the gameplay to learn it
 - **Missing**: Unit 2 has missing images for words. Currently, only two three-word sets are able to be selected. The other images are vertical and difficult to integrate into a level originally designed for horizontal segmented images.
 - **Note:** after the Welcome screen, there are buttons for Join a Class, I’m a Teacher, and within the Free Play there is a Who’s Playing page (only Bob works for now). These additional features are to be implemented in the future and were not part of our backlog.
