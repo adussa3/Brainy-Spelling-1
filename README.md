@@ -64,8 +64,8 @@
 - The blanks were updated so that selected blank now blinks in orange so the player more easily recognizes which blank is selected.
 
 <p align="center">
-  <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Bank.png" width="70%">
-  <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Animal_Bank.png" width="70%">
+  <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Bank.png" width="45%">
+  <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Animal_Bank.png" width="45%">
 </p>
 
 ### Bug Fixes
