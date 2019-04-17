@@ -65,6 +65,7 @@
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Bank.png" width="45%">
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Animal_Bank.png" width="45%">
 </p>
+
 - Throughout the application, there are scrolls that can be scrolled through regularly, or with left and right arrows (tapping is easier for younger players).
 - The font is updated to be lowercase Comic Neue.
 - Images were all standardized to be the same canvas size so that they would show up equally spaced in the application.
