@@ -25,7 +25,7 @@
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Build.png" width="70%">
 </p>
 
-- When trying to run the application on an emulator, if there is an INSTALL_FAILED_INSUFFICIENT_STORAGE error, first try clearing the data in the emulator by going to Settings > Storage > Internal shared storage > Apps > Spell A Rhyme > Clear Data > OK. If this doesn’t work, delete the emulator and recreate it.
+- When trying to run the application on an emulator, if there is an INSTALL_FAILED_INSUFFICIENT_STORAGE error, first try clearing the data in the emulator by going to Settings > Storage > Internal shared storage > Apps > Spell A Rhyme > Clear Data > OK. 
 
 - Another way to resolve this issue is to open the AVD Manager. Under the "Actions" column, click on the arrow of the device and select "Wipe Data"
 
@@ -33,6 +33,7 @@
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Wipe_Data.png" width="70%">
 </p>
 
+-If this doesn’t work, delete the emulator and recreate it.
 ## Release Notes
 ### Software Features
 - **Unit 1** is a tutorial level that teaches the player how to spell words in the application. There are three words (“cat”, “dog”, “hen”) that the player can practice on by clicking on the word’s corresponding image. Once the word’s image occupies the majority of the screen, the player can tap on either the blank or the image segment above the blank to hear the phoneme to spell. The player can also tap on the letter options on the left to hear the letter’s phoneme. If the player selects the correct letter given the currently selected blank, the letter option will disappear and occupy the blank, and a “ding” sound will play. Then the corresponding image segment changes from black and white to colored. If the incorrect letter is selected, a “bloop” sound will play and the letter will not occupy the blank.
