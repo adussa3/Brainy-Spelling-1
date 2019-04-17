@@ -61,15 +61,14 @@
 </p>
 
 - **Bank** stores the words learned by the player. The bank is organized by category (e.g. animals, people, toys, etc.). After clicking on a category, images of all the words of that category are shown, but only the learned words are colored. The words that are not learned (i.e. have not been spelled correctly 3 times in a row) remain black and white.
-- Throughout the application, there are scrolls that can be scrolled through regularly, or with left and right arrows (tapping is easier for younger players).
-- The font is updated to be lowercase Comic Neue.
-- Images were all standardized to be the same canvas size so that they would show up equally spaced in the application.
-- The blanks were updated so that selected blank now blinks in orange so the player more easily recognizes which blank is selected.
-
 <p align="center">
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Bank.png" width="45%">
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Animal_Bank.png" width="45%">
 </p>
+- Throughout the application, there are scrolls that can be scrolled through regularly, or with left and right arrows (tapping is easier for younger players).
+- The font is updated to be lowercase Comic Neue.
+- Images were all standardized to be the same canvas size so that they would show up equally spaced in the application.
+- The blanks were updated so that selected blank now blinks in orange so the player more easily recognizes which blank is selected.
 
 ### Bug Fixes
 - Crash caused by vertical orientation fixed by restricting application to horizontal view
