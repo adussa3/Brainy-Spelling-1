@@ -33,7 +33,7 @@
   <img src="https://github.com/adussa3/Spell-A-Rhyme/blob/update_readme/images/Wipe_Data.png" width="70%">
 </p>
 
--If this doesn’t work, delete the emulator and recreate it.
+- If this doesn’t work, delete the emulator and recreate it.
 ## Release Notes
 ### Software Features
 - **Unit 1** is a tutorial level that teaches the player how to spell words in the application. There are three words (“cat”, “dog”, “hen”) that the player can practice on by clicking on the word’s corresponding image. Once the word’s image occupies the majority of the screen, the player can tap on either the blank or the image segment above the blank to hear the phoneme to spell. The player can also tap on the letter options on the left to hear the letter’s phoneme. If the player selects the correct letter given the currently selected blank, the letter option will disappear and occupy the blank, and a “ding” sound will play. Then the corresponding image segment changes from black and white to colored. If the incorrect letter is selected, a “bloop” sound will play and the letter will not occupy the blank.
@@ -74,6 +74,9 @@
 ### Bug Fixes
 - Crash caused by vertical orientation fixed by restricting application to horizontal view
 - Bank was not updating correctly because the category of each word was not properly provided
+- During Unit 2 gameplay, after spelling all three words correctly, the first two segments of 'hen' remained uncolored
+- On the Unit 4 consonant selection screen, consonants were misplaced because of a missing consonant letter
+- On Unit 3 and Unit 4 selection screens, the image buttons were different sizes because of significant differences in source images' sizes
 
 ### Known Bugs and Defects
 - **Bug**: Depending on the API that’s installed, some features are lost in the application
