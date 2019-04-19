@@ -18,12 +18,14 @@
 - Choose Nougat API 24
 - Run > Run 'app'
 - Choose the device you just created and click OK
-### Running the Application on your Android Device (downloading it)
+### Running the Application on your Android Device
 - Connect your device to the laptop
 - Open Android Studio
 - Run > Run 'app'
 - In the pop up screen, select your device, and click OK
 - The application will download onto your device
+### Downloading the Application onto your Android Device
+- ADD HERE
 ### Troubleshooting
 - When the files or ID names are in the project, but not recognized, Build > Clean Project and Build > Rebuild Project
 
