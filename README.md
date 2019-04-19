@@ -25,7 +25,11 @@
 - In the pop up screen, select your device, and click OK
 - The application will download onto your device
 ### Downloading the Application onto your Android Device
-- ADD HERE
+- Download **[Spell-A-Rhyme.apk](https://drive.google.com/open?id=1aAeAGczjAKk1EcHkt-73PoVaNQjVDtA2)** on your Android device
+- After it's downloaded, locate the file in your device's browser's downloads page or in a file manager application
+  - *Note: your device may warn that you're installing from an "Unknown source" because you're not installing the app from the Play Store. You may have to enable installing from unknown sources in your device's settings application (the toggle should be under "Security"). Instructions differ based on Android version and device manufacturer, but you can look up specific instructions for your device online.*
+- Tap on **Spell-A-Rhyme.apk** and the app will begin staging
+- After it finishes staging, tap "Install" and the app will install onto your device
 ### Troubleshooting
 - When the files or ID names are in the project, but not recognized, Build > Clean Project and Build > Rebuild Project
 
