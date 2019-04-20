@@ -3,7 +3,7 @@
 - You can install the application by [downloading the APK directly to your Android device](#install-apk), or by [using Android Studio](#install-with-android-studio).
 ---
 ### Install APK
-- Download **[Spell-A-Rhyme.apk](https://drive.google.com/open?id=1aAeAGczjAKk1EcHkt-73PoVaNQjVDtA2)** on your Android device
+- Download **[Spell-A-Rhyme.apk](https://drive.google.com/file/d/1LfC0XBmszEpdCcTV-D71C7LuE2emfvDP/view?usp=sharing)** on your Android device
 - After it's downloaded, locate the file in your device's browser's downloads page or in a file manager application
   - *Note: your device may warn that you're installing from an "Unknown source" because you're not installing the app from the Play Store. You may have to enable installing from unknown sources in your device's settings application (the toggle should be under "Security"). Instructions differ based on Android version and device manufacturer, but you can look up specific instructions for your device online.*
 - Tap on **Spell-A-Rhyme.apk** and the app will begin staging
