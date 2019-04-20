@@ -22,7 +22,7 @@ public class Unit4ConsonantListActivity extends AppCompatActivity {
 
     private TableLayout allRows;
 
-    private Button[] buttons = new Button[23];
+    private Button[] buttons = new Button[25];
 
 
 
@@ -106,21 +106,21 @@ public class Unit4ConsonantListActivity extends AppCompatActivity {
         buttons[7] = (Button) findViewById(R.id.buttonH);
         buttons[8] = (Button) findViewById(R.id.buttonJ);
         buttons[9] = (Button) findViewById(R.id.buttonK);
-        buttons[10] = (Button) findViewById(R.id.buttonL);
-        buttons[11] = (Button) findViewById(R.id.buttonM);
-        buttons[12] = (Button) findViewById(R.id.buttonN);
-        buttons[13] = (Button) findViewById(R.id.buttonP);
-        buttons[14] = (Button) findViewById(R.id.buttonQU);
-        buttons[15] = (Button) findViewById(R.id.buttonR);
-        buttons[16] = (Button) findViewById(R.id.buttonS);
-        buttons[17] = (Button) findViewById(R.id.buttonT);
-        buttons[18] = (Button) findViewById(R.id.buttonV);
-        buttons[19] = (Button) findViewById(R.id.buttonW);
-        buttons[20] = (Button) findViewById(R.id.buttonX);
-        buttons[21] = (Button) findViewById(R.id.buttonY);
-        buttons[22] = (Button) findViewById(R.id.buttonZ);
-
-
+        buttons[10] = (Button) findViewById(R.id.buttonL_voiced);
+        buttons[11] = (Button) findViewById(R.id.buttonL_unvoiced);
+        buttons[12] = (Button) findViewById(R.id.buttonM);
+        buttons[13] = (Button) findViewById(R.id.buttonN);
+        buttons[14] = (Button) findViewById(R.id.buttonP);
+        buttons[15] = (Button) findViewById(R.id.buttonQU);
+        buttons[16] = (Button) findViewById(R.id.buttonR);
+        buttons[17] = (Button) findViewById(R.id.buttonS_s);
+        buttons[18] = (Button) findViewById(R.id.buttonS_z);
+        buttons[19] = (Button) findViewById(R.id.buttonT);
+        buttons[20] = (Button) findViewById(R.id.buttonV);
+        buttons[21] = (Button) findViewById(R.id.buttonW);
+        buttons[22] = (Button) findViewById(R.id.buttonX);
+        buttons[23] = (Button) findViewById(R.id.buttonY);
+        buttons[24] = (Button) findViewById(R.id.buttonZ);
     }
 
 }

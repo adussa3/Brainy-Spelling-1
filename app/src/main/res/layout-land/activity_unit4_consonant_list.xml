@@ -167,7 +167,7 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/buttonL"
+                    android:id="@+id/buttonL_voiced"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
@@ -177,6 +177,23 @@
                     android:text="L"
                     android:textSize="36sp"
                     android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonL_unvoiced"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="L"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonM"
@@ -189,11 +206,6 @@
                     android:text="M"
                     android:textSize="36sp"
                     android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonN"
@@ -218,6 +230,11 @@
                     android:text="P"
                     android:textSize="36sp"
                     android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonQU"
@@ -230,11 +247,6 @@
                     android:text="QU"
                     android:textSize="36sp"
                     android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonR"
@@ -249,7 +261,24 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/buttonS"
+                    android:id="@+id/buttonS_s"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:text="S"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/buttonS_z"
                     android:layout_width="0dp"
                     android:layout_height="150dp"
                     android:layout_margin="8dp"
@@ -271,11 +300,6 @@
                     android:text="T"
                     android:textSize="36sp"
                     android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonV"
@@ -288,6 +312,11 @@
                     android:text="V"
                     android:textSize="36sp"
                     android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonW"
@@ -312,11 +341,6 @@
                     android:text="X"
                     android:textSize="36sp"
                     android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonY"
@@ -329,6 +353,12 @@
                     android:text="Y"
                     android:textSize="36sp"
                     android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/buttonZ"
@@ -341,6 +371,28 @@
                     android:text="Z"
                     android:textSize="36sp"
                     android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_rounded"
+                    android:fontFamily="casual"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
             </TableRow>
         </TableLayout>
     </ScrollView>
