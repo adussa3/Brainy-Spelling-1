@@ -4,10 +4,10 @@
     <string name="placeholder">CHANGE NAME</string>
 
     <!-- Welcome Activity -->
-    <string name="welcome_message">Welcome to Spell A Rhyme!</string>
+    <string name="welcome_message">Welcome to Brainy Spelling 1!</string>
 
     <!-- Home Activity -->
-    <string name="app_name">Spell A Rhyme</string>
+    <string name="app_name">Brainy Spelling 1</string>
     <string name="im_a_teacher">I\'m a Teacher</string>
 
     <!-- Teacher Login & Create Teacher Account Activities -->
