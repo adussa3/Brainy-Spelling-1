@@ -307,7 +307,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
