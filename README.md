@@ -49,7 +49,7 @@
 </p>
 
 - If this doesn’t work, delete the emulator and recreate it.
-## Release Notes
+## Release Notes v1.0
 ### Software Features
 - **Unit 1** is a tutorial level that teaches the player how to spell words in the application. There are three words (“cat”, “dog”, “hen”) that the player can practice on by clicking on the word’s corresponding image. Once the word’s image occupies the majority of the screen, the player can tap on either the blank or the image segment above the blank to hear the phoneme to spell. The player can also tap on the letter options on the left to hear the letter’s phoneme. If the player selects the correct letter given the currently selected blank, the letter option will disappear and occupy the blank, and a “ding” sound will play. Then the corresponding image segment changes from black and white to colored. If the incorrect letter is selected, a “bloop” sound will play and the letter will not occupy the blank.
 
@@ -98,6 +98,10 @@
 - **Bug**: in Units 3 and 4, in a word where there are repeated letters (e.g. bubble) you can click on “b” twice in the same blank and there will not be another “b” option for the second “b” blank
 - **Bug**: in Units 3 and 4, after a while of playing, recreateActivity() does not finish() the current activity. This means that the user will have to click the exit door multiple times to exit out of spelling the word.
 - **Bug**: Scrolling with arrow buttons in Unit3WordListActivity and Unit4WordListActivity has a tendency to speed up dramatically while held down.
+- **Bug**: when filling in the last letter in Unit 1, the instruction to pick another word plays before occupying the blank
+- **Improvement**: selecting the line blank should trigger the phoneme sound too
+- **Improvement**: line blanks should be thicker and higher up on the screen to be more obvious
+- **Improvement**: add a loading screen after clicking on a bank that takes awhile to load (e.g. Animals)
 - **Missing**: Attach the unspelled words in the Bank to the gameplay to learn it
 - **Missing**: Unit 2 has missing images for words. Currently, only two three-word sets are able to be selected. The other images are vertical and difficult to integrate into a level originally designed for just horizontal segmented images.
 - **Note:** after the Welcome screen, there are buttons for Join a Class, I’m a Teacher, and within the Free Play there is a Who’s Playing page (only Bob works for now). These additional features are to be implemented in the future and were not part of our backlog.
