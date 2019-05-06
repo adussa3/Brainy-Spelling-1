@@ -15,7 +15,7 @@
 - Open Android Studio
 - Press ‘Check out project from Version Control’
 - Press ‘GitHub’
-- Enter ‘https://github.com/adussa3/Spell-A-Rhyme.git’
+- Enter ‘https://github.com/adussa3/Brainy-Spelling-1.git’
 - Clone
 - You can alternatively clone or download the project from the GitHub link, and import the project into Android Studio
 - Press 'Make Project'
